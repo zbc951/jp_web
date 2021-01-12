@@ -1,0 +1,188 @@
+html {
+    body {
+        .game {
+            &.poker {
+                height: 925px;
+            }
+            //圖區+LOGO
+            .pokerimg {
+                position: relative;
+                width: 1200px;
+                margin: 0px auto;
+                //雙圖
+                .bgimg1 {
+                    width: 153px;
+                    height: 105px;
+                    background: url('../images/poker/poker_leftimg.png') no-repeat;
+                    background-size: 100%;
+                    position: fixed;
+                    margin: 25px 0px 0px 30px;
+                    animation: lword 1s linear 0s infinite;
+                }
+                .bgimg2 {
+                    width: 187px;
+                    height: 62px;
+                    background: url('../images/poker/poker_rightimg.png') no-repeat;
+                    background-size: 100%;
+                    position: fixed;
+                    margin: 25px 0px 0px 1050px;
+                    animation: poker_rightimg 1.5s linear 0s infinite;
+
+                }
+                .bgimg3 {
+                    width: 604px;
+                    height: 408px;
+                    background: url('../images/poker/poker_pokerimg.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 185px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    animation: poker_midimg 3s linear 0s infinite;
+                }
+                //LOGO
+                .logo {
+                    width: 628px;
+                    height: 152px;
+                    background: url('../images/word/poker_logo.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 40px;
+                }
+                //按鈕
+                button {
+                    width: 220px;
+                    height: 70px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 215px;
+                    background: #1194e3;
+                    border-radius: 40px;
+                    border: solid 5px #fff;
+                    color: #fff100;
+                    font-size: 18px;
+                    font-weight: bold;
+                    box-shadow: 0px 2px 7px 0px rgba(0,0,0,.48),2px 2px 3px 2px #fff inset;
+                    text-shadow: 0px 2px 0px #000;
+                    z-index: 2;
+                    &:hover,&:active,&.active {
+                        background: linear-gradient(to right, #00e990 0%, #00eff8 100%);
+                        background-color: #00eff8;
+                        color: #fff;
+                    }
+                }
+            }
+            //主區域
+            .gamebox {
+                &.poker {
+                    height: 600px;
+                    background: #be4700;
+                    box-shadow: 0px 0px 0px 4px #be4700;
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        li {
+                            height: 80%;
+                            &::before,&::after {
+                                display: none;
+                            }
+                            //搜尋行
+                            &.searchline {
+                                height: 20%;
+                            }
+                            //機台
+                            a {
+                                display: inline-block;
+                                width: 305px;
+                                height: 270px;
+                                margin: 0% 1.5% 0%;
+                                float: none;
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    &.turn {
+                                        div {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                                &:hover,&:active,&.active {
+                                    div {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    div {
+                                        background-position-X: 100%;
+                                    }
+                                }
+                                div {
+                                    background: url('../images/game_icon/poker_mainimg.png') no-repeat;
+                                    background-size: 200%;
+                                }
+                                button {
+                                    width: 160px;
+                                    height: 60px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+                                span {
+                                    bottom: -70px;
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //背景
+            .bg {
+                &.poker {
+                    background: url('../images/poker/poker_bg.png') no-repeat top center;
+                }
+            }
+        }
+    }
+}
+@keyframes poker_rightimg {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    20% {
+        transform: scale(0.8);
+    }
+    30% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(10deg);
+    }
+}
+@keyframes poker_midimg {
+    0% {
+        transform: translateX(-50%) translateY(0%);
+    }
+    20% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+    30% {
+        transform: translateX(-50%) translateY(0%);
+    }
+    70% {
+        transform: translateX(-50%) translateY(0%);
+    }
+    80% {
+        transform: translateX(-50%) translateY(-10%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0%);
+    }
+}

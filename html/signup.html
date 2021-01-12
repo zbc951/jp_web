@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>JP_web_signup</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+
+<body>
+    <main class="signup">
+        <!--註冊窗-->
+        <div class="signupbox">
+            <h1>アカウントを登録</h1>
+            <!--主區域-->
+            <div class="inputbox">
+                <input type="text" value="アカウント" onfocus="if(value=='アカウント'){value=''}" onblur="if(value ==''){value='アカウント'}">
+                <input type="text" value="連絡先番号" onfocus="if(value=='連絡先番号'){value=''}" onblur="if(value ==''){value='連絡先番号'}">
+                <input type="text" value="パスワード" onfocus="if(value=='パスワード'){value='',type='password'}" onblur="if(value ==''){value='パスワード',type='text'}">
+                <input type="text" value="認証コード" onfocus="if(value=='認証コード'){value=''}" onblur="if(value ==''){value='認証コード'}">
+                <button class="checkbtn">認証コードを送信</button>
+                <input type="text" value="パスワードを確認してください" onfocus="if(value=='パスワードを確認してください'){value=''}" onblur="if(value ==''){value='パスワードを確認してください'}">
+                <input type="text" value="招待コード" onfocus="if(value=='招待コード'){value=''}" onblur="if(value ==''){value='招待コード'}">
+                <input type="checkbox" class="check">
+                <span>関連する仕様と利用規約に同意してください</span>
+            </div>
+            <button class="signupbtn"><span></span></button>
+        </div>
+    </main>
+    <!--背景-->
+    <div class="bg"></div>
+</body>
+
+</html>

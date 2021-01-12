@@ -1,0 +1,185 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    //賭博窗
+                    .bettingWindow {
+                        width: 1135px;
+                        height: 720px;
+                        border: solid 5px #122845;
+                        border-radius: 15px;
+                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                        background-color: #2a4d7c;
+                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+                        position: relative;
+                        h1 {
+                            color: #ffffac;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding: 30px 0px 0px 30px;
+                        }
+                        .selectbox {
+                            width: 350px;
+                            line-height: 44px;
+                            margin: 30px 0px 0px 35px;
+                            font-size: 15px;
+                            color: #fff;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 0px;
+                                height: 0px;
+                                left: 322px;
+                                top: 17px;
+                                border-style: solid;
+                                border-width: 10px 6px 0px 6px;
+                                border-color: #29fff6 transparent transparent transparent;
+                                pointer-events: none;
+                            }
+                            &:nth-of-type(2) {
+                                width: 375px;
+                                position: absolute;
+                                top: 82px;
+                                left: 400px;
+                                margin: 0px;
+                                &::before {
+                                    left: 345px;
+                                }
+                            }
+                            &:nth-of-type(3) {
+                                margin-top: 15px;
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            select {
+                                float: right;
+                                width: 262px;
+                                height: 42px;
+                                border-radius: 10px;
+                                background: #183051;
+                                border: solid 1px #fff;
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                color: #fff;
+                                padding-left: 10px;
+                                font-size: 16px;
+                            }
+                            .calc {
+                                width: 15px;
+                                height: 15px;
+                                position: absolute;
+                                right: 14px;
+                                top: 13px;
+                                background: url('../images/discount/present_calc.png') no-repeat;
+                            }
+                            .contractbtn {
+                                width: 160px;
+                                height: 49px;
+                                border: solid 5px #b5203f;
+                                border-radius: 15px;
+                                background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
+                                position: absolute;
+                                right: -725px;
+                                top: -3px;
+                                &:hover,&:active,&.active {
+                                    &::before {
+                                        background: linear-gradient(to top,transparent 50%,#0000003b);
+                                    }
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 145px;
+                                    height: 40px;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    top: 3px;
+                                    border-radius: 5px 5px 0px 0px;
+                                    background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                }
+                                span {
+                                    color: #fff;
+                                    text-shadow: 1px 1px 0px #961530;
+                                    position: relative;
+                                    z-index: 1;
+                                    font-size: 17px;
+                                }
+                            }
+                            .datebtn {
+                                position: absolute;
+                                right: -395px;
+                                top: 0px;
+                                button {
+                                    width: 87px;
+                                    height: 43px;
+                                    border: solid 5px #00302e;
+                                    color: #fff;
+                                    font-size: 15px;
+                                    border-radius: 8px;
+                                    text-shadow: 1px 1px 0px #000;
+                                    background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                    &:hover,&:active,&.active {
+                                        background: #b5203f;
+                                        border-color: #ed5676;
+                                        text-shadow: none;
+                                    }
+                                    &:nth-of-type(2) {
+                                        transform: translateY(-2px);
+                                    }
+                                }
+                            }
+                        }
+                        .innerbox {
+                            width: 1070px;
+                            height: 460px;
+                            margin: 35px auto 0px;
+                            background: #507ab0;
+                            border: solid 1px #5885c2;
+                            border-radius: 15px;
+                            box-shadow: 0px 2px 0px 0px #0000003b inset;
+                            position: relative;
+                            .noMoney {
+                                position: absolute;
+                                color: #fff;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width:1415px) {
+    html {
+        body {
+            .innerPage {
+                article {
+                    .mid {
+                        .bettingWindow {
+                            width: 870px;
+                            .selectbox {
+                                .contractbtn {
+                                    right: -395px;
+                                    top: -123px;
+                                }
+                            }
+                            .innerbox {
+                                width: 830px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

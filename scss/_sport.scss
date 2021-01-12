@@ -1,0 +1,182 @@
+html {
+    body {
+        .game {
+            &.sport {
+                height: 925px;
+            }
+            //圖區+LOGO
+            .sportimg {
+                position: relative;
+                width: 1200px;
+                margin: 0px auto;
+                //四圖
+                .bgimg1 {
+                    width: 130px;
+                    height: 130px;
+                    background: url('../images/sport/sport_leftimg.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 185px;
+                    left: 220px;
+                    animation: sport_left1 1.5s ease-out 0s infinite;
+                }
+                .bgimg2 {
+                    width: 88px;
+                    height: 88px;
+                    background: url('../images/sport/sport_leftimg2.png') no-repeat;
+                    background-size: 100%;
+                    position: fixed;
+                    margin: 55px 0px 0px -290px;
+                    animation: sport_left2 1.5s linear 0s infinite;
+                }
+                .bgimg3 {
+                    width: 86px;
+                    height: 56px;
+                    background: url('../images/sport/sport_rightimg.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 60px;
+                    right: 225px;
+                    animation: sport_right1 1.5s ease-out 0s infinite;
+                }
+                .bgimg4 {
+                    width: 154px;
+                    height: 155px;
+                    background: url('../images/sport/sport_rightimg2.png') no-repeat;
+                    background-size: 100%;
+                    position: fixed;
+                    margin: 110px 0px 0px 1375px;
+                    animation: sport_left2 1.5s linear 0s infinite;
+                }
+                //LOGO
+                .logo {
+                    width: 436px;
+                    height: 266px;
+                    background: url('../images/word/sport_logo.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 40px;
+                }
+            }
+            //主區域
+            .gamebox {
+                &.sport {
+                    height: 590px;
+                    background: #97253b;
+                    box-shadow: 0px 0px 0px 4px #97253b;
+                    ul {
+                        li {
+                            height: 80%;
+                            &::before,&::after {
+                                display: none;
+                            }
+                            //搜尋行
+                            &.searchline {
+                                height: 20%;
+                            }
+                            //機台
+                            a {
+                                display: inline-block;
+                                width: 300px;
+                                height: 300px;
+                                margin: 0% 1.5% 0%;
+                                float: none;
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    &.turn {
+                                        div {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                                &:hover,&:active,&.active {
+                                    div {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    div {
+                                        background-position-X: 100%;
+                                    }
+                                }
+                                div {
+                                    background: url('../images/game_icon/sport_mainimg.png') no-repeat;
+                                    background-size: 200%;
+                                }
+                                button {
+                                    width: 160px;
+                                    height: 60px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                }
+                                span {
+                                    bottom: -55px;
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //背景
+            .bg {
+                &.sport {
+                    background: url('../images/sport/sport_bg.png') no-repeat top center;
+                }
+            }
+        }
+    }
+}
+@keyframes sport_left1 {
+    0% {
+        opacity: 0;
+        top: 0px;
+        left: -200px;
+    }
+    50% {
+        opacity: 0;
+        top: 0px;
+    }
+    65% {
+        transform: scale(1);
+    }
+    70% {
+        opacity: 1;
+        top: 160px;
+        transform: scaleX(1.2) scaleY(0.8);
+    }
+    100% {
+        opacity: 0;
+        top: 0px;
+    }
+}
+@keyframes sport_left2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+@keyframes sport_right1 {
+    0% {
+        transform: scale(1);
+    }
+    10% {
+        transform: scaleX(1.2) scaleY(0.8);
+    }
+    30% {
+        transform: scaleX(0.8) scaleY(1.2);
+    }
+    50% {
+        transform: scaleX(1.1) scaleY(0.9);
+    }
+    60% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+    70% {
+        transform: scale(1);
+    }
+}

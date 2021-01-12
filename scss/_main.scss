@@ -1,0 +1,1784 @@
+html {
+    width: 100%;
+    min-width: 1280px;
+    height: 100%;
+    background: #c6ffdc;
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #a7ddff;
+    }
+    ::-webkit-scrollbar-track {
+        background: #a3a3a3;
+    }
+    body {
+        //header
+        header {
+            width: 100%;
+            min-width: 1280px;
+            height: auto;
+            position: fixed;
+            z-index: 10;
+            background: #1acdbb;
+            //top
+            .top {
+                width: 100%;
+                height: 55px;
+                position: relative;
+                //語言列
+                .lang {
+                    float: left;
+                    position: relative;
+                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    /*for IE 9*/
+                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 7px;
+                        height: 7px;
+                        border-style: solid;
+                        border-width: 0px 2px 2px 0px;
+                        border-color: #fff;
+                        transform: rotate(45deg);
+                        right: 15px;
+                        top: 20px;
+                        pointer-events: none;
+                    }
+                    select {
+                        width: 130px;
+                        height: 35px;
+                        background: #0f3c31;
+                        border-radius: 3px;
+                        border: none;
+                        margin: 8px 0px 0px 28px;
+                        appearance:none;
+                        -moz-appearance:none;
+                        -webkit-appearance:none;
+                        font-size: 16px;
+                        color: #ffffff;
+                        padding-left: 15px;
+                        cursor: pointer;
+                        /*for IE*/
+                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                            width: 120px;
+                        }
+                        /*for IE 9*/
+                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                            width: 120px;
+                        }
+                        // option {
+                        //     color: #000;
+                        //     background: #fff;
+                        // }
+                    }
+                }
+                //帳號密碼
+                .account {
+                    display: none;
+                    float: right;
+                    width: auto;
+                    height: 50px;
+                    text-align: center;
+                    &.display {
+                        display: block;
+                    }
+                    li {
+                        display: inline-block;
+                        line-height: 50px;
+                        margin: 0px 3px;
+                        /*for IE*/
+                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                            line-height: 15px;
+                        }
+                        /*for IE 9*/
+                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                            line-height: 15px;
+                        }
+                        //忘記密碼
+                        .lost {
+                            color: #9214d2;
+                            font-size: 14px;
+                        }
+                        //輸入框
+                        input {
+                            width: 135px;
+                            height: 23px;
+                            border: solid 1px #9214d2;
+                            padding-left: 5px;
+                            font-size: 13px;
+                            &::placeholder {
+                                color: #858585;
+                                font-size: 12px;
+                            }
+                        }
+                        //btn
+                        button {
+                            padding: 5px 6px 2px;
+                            letter-spacing: 1px;
+                            color: #ffffff;
+                            /*for FireFox*/
+                            @media screen and (min--moz-device-pixel-ratio:0){
+                                padding: 5px 6px;
+                            }
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                padding: 5px 6px;
+                                margin-top: 11px;
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                padding: 5px 6px;
+                                margin-top: 11px;
+                            }
+                            &.loginbtn {
+                                border-radius: 3px;
+                                background: #8a1b2b;
+                                &:hover {
+                                    background: linear-gradient(to bottom, #ff0048 12%, #ffed9b 100%);
+                                    background-color: #ff0048;
+                                }
+                            }
+                            &.signbtn {
+                                border-radius: 3px;
+                                background:#ff7095;
+                                margin-right: 30px;
+                                &:hover {
+                                    background: linear-gradient(to bottom, #8901ca 12%, #a7ddff 100%);
+                                    background-color: #8901ca;
+                                }
+                            }
+                        }
+                    }
+                }
+                //登入後樣式
+                .loginstyle {
+                    display: none;
+                    float: right;
+                    width: auto;
+                    height: 50px;
+                    text-align: center;
+                    &.display {
+                        display: block;
+                    }
+                    li {
+                        display: inline-block;
+                        line-height: 50px;
+                        margin: 0px 3px;
+                        /*for IE*/
+                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                            line-height: 15px;
+                            margin-top: 13px;
+                        }
+                        /*for IE 9*/
+                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                            line-height: 15px;
+                            margin-top: 13px;
+                        }
+                        //選單
+                        &.list {
+                            position: relative;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 24px;
+                                right: 7px;
+                                width: 0px;
+                                height: 0px;
+                                border-style: solid;
+                                border-width: 5px 3px 0px 3px;
+                                border-color: #fff transparent transparent transparent;
+                                pointer-events: none;
+                            }
+                            select {
+                                width: 34px;
+                                height: 26px;
+                                background: #0f3c31;
+                                color: #fff;
+                                appearance:none;
+                                -moz-appearance:none;
+                                -webkit-appearance:none;
+                                padding-left: 5px;
+                                border: none;
+                                /*for FireFox*/
+                                @media screen and (min--moz-device-pixel-ratio:0){
+                                    width: 40px;
+                                }
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    width: 45px;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    width: 45px;
+                                }
+                                // option {
+                                //     background: #fff;
+                                //     color: #000;
+                                // }
+                            }
+                        }
+                        //現金三按鈕
+                        &.depositbtn,&.transbtn,&.withdrawbtn {
+                            &:hover,&:active,&.active {
+                                a {
+                                    transform: scale(0.9);
+                                    background: #ff6e1a;
+                                }
+                            }
+                            a {
+                                display: block;
+                                color: #fff;
+                                background: #8a1b2b;
+                                font-size: 15px;
+                                line-height: 25px;
+                                padding: 0px 5px 1px;
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    padding: 4px 8px 6px;
+                                    line-height: 18px;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    padding: 4px 8px 6px;
+                                    line-height: 18px;
+                                }
+                            }
+                        }
+                        //個人三按鈕
+                        &.personal,&.mail,&.logout {
+                            &.personal {
+                                a {
+                                    margin-left: 40px;
+                                }
+                            }
+                            &.mail {
+                                a {
+                                    &::before {
+                                        background-position-x: 50%;
+                                    }
+                                }
+                            }
+                            &.logout {
+                                a {
+                                    &::before {
+                                        background-position-x: 100%;
+                                    }
+                                }
+                            }
+                            a {
+                                display: block;
+                                color: #000;
+                                font-size: 14px;
+                                letter-spacing: 1px;
+                                position: relative;
+                                margin: 0px 15px;
+                                line-height: 25px;
+                                padding: 0px 5px 1px;
+                                &:hover,&:active,&.active {
+                                    background: #0d2523;
+                                    color: #fff;
+                                    &::before {
+                                        left: -25px;
+                                    }
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 22px;
+                                    height: 22px;
+                                    background: url('../images/index/login_ic.png') no-repeat;
+                                    background-size: 300%;
+                                    top: 2px;
+                                    left: -20px;
+                                    pointer-events: none;
+                                }
+                            }
+                        }
+                        //司服器
+                        .server {
+                            color: #8a1b2b;
+                        }
+                    }
+                }
+                //底線
+                .baseline {
+                    width: 100%;
+                    height: 5px;
+                    background: #8a1b2b;
+                    position: absolute;
+                    bottom: 0px;
+                }
+            }
+            //mid
+            .mid {
+                width: 100%;
+                height: 60px;
+                background: #0d2523;
+                overflow: hidden;
+                //連結按鈕
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    margin: 0px auto;
+                    text-align: center;
+                    li {
+                        display: inline-block;
+                        text-align: center;
+                        width: 8%;
+                        &.active {
+                            a {
+                                background: #8a1b2b;
+                                font-weight: bold;
+                                &:hover {
+                                    animation: none;
+                                }
+                            }
+                        }
+                        a {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            line-height: 60px;
+                            color: #ffffff;
+                            padding: 0px 10px;
+                            font-size: 17px;
+                            clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+                            transition: 0.1s transform;
+                            &:hover {
+                                background: #8a1b2b;
+                                animation: btnhover 0.3s 0s;
+                                font-weight: bold;
+                            }
+                            &:active {
+                                transform: scale(0.8);
+                            }
+                        }
+                    }
+                }
+            }
+            //小按鈕
+            .smallbtnbox {
+                //小按鈕
+                .smallbtn {
+                    display: block;
+                    position: absolute;
+                    width: 120px;
+                    height: 120px;
+                    background: url('../images/index/banner_ic.png') no-repeat;
+                    background-size: 600%;
+                    /*for IE 9*/
+                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        &:hover,&:active,&.active {
+                            transform: scale(1.2);
+                        }
+                    }
+                    &:hover,&:active,&.active {
+                        animation: smallbtnhover 0.5s 0s;
+                        transform: scale(1.2);
+                    }
+                    &.vip {
+                        right: 10px;
+                        top: 450px;
+                    }
+                    &.wallet {
+                        right: 10px;
+                        top: 360px;
+                        background-position-x: 20%;
+                    }
+                    &.refund {
+                        right: 10px;
+                        top: 270px;
+                        background-position-x: 40%;
+                    }
+                    &.teach {
+                        right: 10px;
+                        top: 180px;
+                        background-position-x: 60%;
+                    }
+                    &.custom {
+                        left: 10px;
+                        top: 305px;
+                        background-position-x: 80%;
+                    }
+                    &.cellphone {
+                        left: 10px;
+                        top: 215px;
+                        background-position-x: 100%;
+                    }
+                }
+                //小按鈕內小按鈕
+                div {
+                    display: none;
+                    width: 160px;
+                    position: absolute;
+                    left: 160px;
+                    &.display {
+                        display: block;
+                    }
+                    &.custombox {
+                        top: 257px;
+                        a {
+                            background: #ff4777;
+                        }
+                    }
+                    &.cellphonebox {
+                        top: 167px;
+                        a {
+                            background: #009e8e;
+                        }
+                    }
+                    a {
+                        display: block;
+                        width: 120px;
+                        height: 45px;
+                        padding: 0px;
+                        margin: 10px auto;
+                        border-radius: 30px;
+                        border: solid 6px #fff;
+                        position: relative;
+                        overflow: hidden;
+                        box-shadow: 1px 1px 3px 1px rgba(0,0,0,.2);
+                        font-weight: bold;
+                        font-size: 18px;
+                        line-height: 45px;
+                        text-align: center;
+                        color: #fff;
+                        text-shadow: 0px 3px 0px #000;
+                        &:hover,&:active,&.active {
+                            background: #ff7920;
+                            &::before {
+                                animation: btnbg linear 10s 0s infinite alternate;
+                            }
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 634px;
+                            height: 124px;
+                            background: url('../images/index/btn_bg.png');
+                            left: -30px;
+                            top: -30px;
+                        }
+                        &:nth-of-type(1) {
+                            animation: btnjumpin 0.2s ease-out 0s;
+                        }
+                        &:nth-of-type(2) {
+                            animation: btnjumpin 0.4s ease-out 0s;
+                        }
+                        &:nth-of-type(3) {
+                            animation: btnjumpin 0.6s ease-out 0s;
+                        }
+                    }
+                    .arrow {
+                        display: block;
+                        width: 35%;
+                        height: 0px;
+                        background: url('../images/index/arrow_b.png') no-repeat;
+                        padding-bottom: 18%;
+                        background-size: 100%;
+                        position: absolute;
+                        top: 0%;
+                        left: 0%;
+                        &:nth-of-type(1) {
+                            top: 20%;
+                            left: -16%;
+                            transform: rotate(-40deg);
+                            animation: arrowjumpout1 0.4s ease-out 0s;
+                        }
+                        &:nth-of-type(2) {
+                            top: 44%;
+                            left: -12%;
+                            animation: arrowjumpout2 0.6s ease-out 0s;
+                        }
+                        &:nth-of-type(3) {
+                            top: 68%;
+                            left: -16%;
+                            transform: rotate(40deg);
+                            animation: arrowjumpout3 0.8s ease-out 0s;
+                        }
+                    }
+                }
+            }
+        }
+        //main
+        main {
+            width: 100%;
+            height: auto;
+            margin-top: 115px;
+            overflow: hidden;
+            position: relative;
+            //跑馬燈
+            .marqueebox {
+                position: absolute;
+                z-index: 2;
+                top: 1%;
+                left: 52%;
+                transform: translateX(-50%);
+                width: 680px;
+                /*for IE*/
+                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                    &::before {
+                        display: none;
+                    }
+                }
+                /*for IE 9*/
+                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                    &::before {
+                        display: none;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    right: 1.5%;
+                    top: -1px;
+                    width: 0px;
+                    height: 103%;
+                    border-right: solid 2px #ff7095;
+                    transform: rotate(-26deg);
+                    z-index: 2;
+                }
+                marquee {
+                    background: #eefff5;
+                    padding: 10px 0px;
+                    border: solid 2px #ff7095;
+                    border-color: #ff7095 transparent  #ff7095 transparent;
+                    clip-path: polygon(0% 0%, 97% 0%, 100% 100%, 0% 100%);
+                    /*for IE*/
+                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                        border-color: #ff7095 #ff7095  #ff7095 transparent;
+                    }
+                    /*for IE 9*/
+                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        border-color: #ff7095 #ff7095  #ff7095 transparent;
+                    }
+                }
+                .postbg {
+                    display: block;
+                    width: 104px;
+                    height: 40px;
+                    clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%);
+                    background: #ff7095;
+                    position: absolute;
+                    top: 0px;
+                    left: -82px;
+                    z-index: 2;
+                    text-align: center;
+                    line-height: 40px;
+                    color: #fff;
+                    font-weight: bold;
+                }
+                .postdate {
+                    display: block;
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    width: 140px;
+                    height: 36px;
+                    z-index: 1;
+                    background: #eefff5;
+                    text-align: center;
+                    line-height: 36px;
+                    font-weight: bold;
+                    color: #ff7095;
+                }
+            }
+            //banner
+            .single-item {
+                width: 100%;
+                height: auto;
+                border-style: solid;
+                border-color: #fff;
+                border-width: 2px 0px 2px 0px;
+                margin-bottom: 0px !important;
+                a {
+                    outline: none;
+                }
+                //圖
+                .bannerimg {
+                    width: 100%;
+                    height: 0px;
+                    padding-top: 25.782%;
+                    background: url('../images/index/banner.png') no-repeat;
+                    background-size: 100%;
+                }
+                //點點位置
+                .slick-dots{
+                    bottom: 15px;
+                }
+                //點點間隔
+                .slick-dots li {
+                    margin: 0px 5px;
+                }
+                //點點被動呈現效果
+                .slick-dots li button:before {
+                    content: "";
+                    width: 12px;
+                    height: 12px;
+                    background: transparent;
+                    border: solid 2px #fff;
+                    opacity: 1;
+                    border-radius: 10px;
+                }
+                //點點觸發時效果
+                .slick-dots li.slick-active button:before {
+                    width: 12px;//圖源大小/無圖則與被動時一樣大小
+                    height: 12px;
+                    opacity: 1;
+                    // left: -12.5px;//移動位置=(觸發時-被動時)/2
+                    // top: -12.5px;
+                    border-radius: 30px;
+                    background: #8201cd;
+                }
+            }
+            //間隔
+            .midbar {
+                width: 100%;
+                height: 80px;
+                background: linear-gradient(to right, #ff527f 0%, #8a1b2b 100%);
+                background-color: #ff0042;
+                text-align: center;
+                position: relative;
+                p {
+                    color: #fff;
+                    line-height: 80px;
+                    font-size: 36px;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                }
+            }
+            //主區域
+            .mainbox {
+                width: 100%;
+                height: 0px;
+                padding-bottom: 30.313%;
+                background: url('../images/index/imgbox_bg.png') no-repeat top center;
+                background-size: 100%;
+                //上/下
+                .up,.down {
+                    width: 100%;
+                    height: 0px;
+                    padding-bottom: 15.157%;
+                    position: relative;
+                    &.up {
+                        .imgbox {
+                            top: 0px;
+                            &:nth-of-type(1) {
+                                left: 0%;
+                            }
+                            &:nth-of-type(2) {
+                                left: 28.55%;
+                            }
+                            &:nth-of-type(3) {
+                                left: 57.15%;
+                            }
+                            //上圖1
+                            .u1 {
+                                background-position: 0px 0px;
+                                background-size: 300%;
+                            }
+                            .img1 {
+                                width: 40%;
+                                height: 67%;
+                                background: url('../images/index/up_img1.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 3%;
+                                top: 7%;
+                            }
+                            .word1 {
+                                width: 38%;
+                                height: 36%;
+                                background: url('../images/word/up_word1.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 15%;
+                                top: 31%;
+                                transform: rotate(18deg);
+                            }
+                            //上圖2
+                            .u2 {
+                                background-position: 50% 0px;
+                                background-size: 300%;
+                            }
+                            .img2 {
+                                width: 40%;
+                                height: 100%;
+                                background: url('../images/index/up_img2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 3%;
+                                top: 11%;
+                            }
+                            .word2 {
+                                width: 32%;
+                                height: 34%;
+                                background: url('../images/word/up_word2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 17%;
+                                top: 32%;
+                                transform: rotate(18deg);
+                            }
+                            //上圖3
+                            .u3 {
+                                background-position: 100% 0px;
+                                background-size: 300%;
+                            }
+                            .img3 {
+                                width: 51%;
+                                height: 70%;
+                                background: url('../images/index/up_img3.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 7%;
+                                top: 9%;
+                            }
+                            .word3 {
+                                width: 44%;
+                                height: 20%;
+                                background: url('../images/word/up_word3.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 16%;
+                                top: 39%;
+                                z-index: 1;
+                            }
+                        }
+                    }
+                    &.down {
+                        .imgbox {
+                            bottom: 1px;
+                            &:nth-of-type(1) {
+                                left: 14.25%;
+                            }
+                            &:nth-of-type(2) {
+                                left: 42.88%;
+                            }
+                            &:nth-of-type(3) {
+                                right: 0px;
+                            }
+                            //下圖1
+                            .d1 {
+                                background-position: 0px 100%;
+                                background-size: 300%;
+                            }
+                            .img1 {
+                                width: 36%;
+                                height: 40%;
+                                background: url('../images/index/down_img1.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 4%;
+                                top: 24%;
+                            }
+                            .word1 {
+                                width: 31%;
+                                height: 30%;
+                                background: url('../images/word/down_word1.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 17%;
+                                top: 35%;
+                            }
+                            //下圖2
+                            .d2 {
+                                background-position: 50% 100%;
+                                background-size: 300%;
+                            }
+                            .img2 {
+                                width: 28%;
+                                height: 60%;
+                                background: url('../images/index/down_img2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 18%;
+                                top: 15%;
+                                z-index: 2;
+                            }
+                            .word2 {
+                                width: 55%;
+                                height: 21%;
+                                background: url('../images/word/down_word2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 9%;
+                                top: 39%;
+                                z-index: 3;
+                            }
+                            //下圖3
+                            .d3 {
+                                background-position: 100% 100%;
+                                background-size: 300%;
+                            }
+                            .img3 {
+                                width: 34%;
+                                height: 59%;
+                                background: url('../images/index/down_img3.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 13%;
+                                top: 16%;
+                            }
+                            .word3 {
+                                width: 55%;
+                                height: 17%;
+                                background: url('../images/word/down_word3.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 8%;
+                                top: 41%;
+                                z-index: 2;
+                            }
+                        }
+                    }
+                    //外框
+                    .imgbox {
+                        display: block;
+                        width: 28.59%;
+                        height: 0px;
+                        padding-bottom: 20.157%;
+                        position: absolute;
+                        &.hover {
+                            .imgbg {
+                                animation: imgboxhover 0.5s ease-in-out 0s;
+                            }
+                            .mask {
+                                height: 72%;
+                                animation: innermask 0.5s ease-in-out 0s;
+                                z-index: 3;
+                            }
+                            .imgbtn1,.imgbtn2 {
+                                display: block;
+                                animation: innerbtn 0.5s ease-out 0s,innerbtnfloat 1s ease-in-out 0.3s infinite alternate;
+                            }
+                            .btnshadow {
+                                display: block;
+                                animation: innershadow 0.5s ease-out 0s;
+                            }
+                        }
+                        &.hover_pub {
+                            div {
+                                &:nth-of-type(2) {
+                                    animation: innerword 0.5s ease-in-out 0s;
+                                    z-index: 4;
+                                    top: 15%;
+                                    left: 5%;
+                                    transform: rotate(-38deg);
+                                }
+                                &:nth-of-type(3) {
+                                    animation: innerimg 0.5s ease-in-out 0s;
+                                    top: -5%;
+                                    right: 5%;
+                                    transform: rotate(30deg);
+                                }
+                            }
+                        }
+                        &.hover_soc {
+                            div {
+                                &:nth-of-type(2) {
+                                    animation: innerword_soc 0.5s ease-in-out 0s;
+                                    z-index: 4;
+                                    top: 10%;
+                                    left: 10%;
+                                    transform: rotate(-18deg);
+                                }
+                                &:nth-of-type(3) {
+                                    animation: innerimg_soc 0.5s ease-in-out 0s;
+                                    top: -5%;
+                                    right: 0%;
+                                    transform: rotate(30deg);
+                                }
+                            }
+                        }
+                        &.hover_cat {
+                            .imgbg {
+                                animation: imgboxhover 0.5s ease-in-out 0s;
+                            }
+                            .mask {
+                                height: 72%;
+                                animation: innermask 0.5s ease-in-out 0s;
+                                z-index: 3;
+                            }
+                            div {
+                                &:nth-of-type(2) {
+                                    animation: innerword_soc 0.5s ease-in-out 0s;
+                                    z-index: 4;
+                                    top: 10%;
+                                    left: 10%;
+                                    transform: rotate(-18deg);
+                                }
+                                &:nth-of-type(3) {
+                                    animation: innerimg_cat 0.5s ease-in-out 0s;
+                                    top: -5%;
+                                    right: 5%;
+                                    transform: rotate(15deg);
+                                }
+                            }
+                        }
+                        &.hover_lot {
+                            .imgbg {
+                                animation: imgboxhover 0.5s ease-in-out 0s;
+                            }
+                            .mask {
+                                height: 72%;
+                                animation: innermask 0.5s ease-in-out 0s;
+                                z-index: 3;
+                            }
+                            div {
+                                &:nth-of-type(2) {
+                                    animation: innerword_lot 0.5s ease-in-out 0s;
+                                    z-index: 4;
+                                    top: 13%;
+                                    left: 13%;
+                                    transform: rotate(-38deg);
+                                }
+                                &:nth-of-type(3) {
+                                    animation: innerimg_lot 0.5s ease-in-out 0s;
+                                    top: 5%;
+                                    right: 5%;
+                                    transform: rotate(30deg);
+                                }
+                            }
+                        }
+                        &.hover_shark {
+                            .imgbg {
+                                animation: imgboxhover 0.5s ease-in-out 0s;
+                            }
+                            .mask {
+                                height: 72%;
+                                animation: innermask 0.5s ease-in-out 0s;
+                                z-index: 3;
+                            }
+                            div {
+                                &:nth-of-type(2) {
+                                    animation: innerword_shark 0.5s ease-in-out 0s;
+                                    z-index: 4;
+                                    top: 15%;
+                                    left: 0%;
+                                    transform: rotate(-38deg);
+                                }
+                                &:nth-of-type(3) {
+                                    animation: innerimg_shark 0.5s ease-in-out 0s;
+                                    top: -5%;
+                                    right: 15%;
+                                    transform: rotate(30deg);
+                                }
+                            }
+                        }
+                        &.hover_dice {
+                            .imgbg {
+                                animation: imgboxhover 0.5s ease-in-out 0s;
+                            }
+                            .mask {
+                                height: 72%;
+                                animation: innermask 0.5s ease-in-out 0s;
+                                z-index: 3;
+                            }
+                            div {
+                                &:nth-of-type(2) {
+                                    animation: innerword_shark 0.5s ease-in-out 0s;
+                                    z-index: 4;
+                                    top: 15%;
+                                    left: 0%;
+                                    transform: rotate(-38deg);
+                                }
+                                &:nth-of-type(3) {
+                                    animation: innerimg 0.5s ease-in-out 0s;
+                                    top: -5%;
+                                    right: 5%;
+                                    transform: rotate(30deg);
+                                }
+                            }
+                        }
+                        //圖框
+                        .imgbg {
+                            width: 100%;
+                            height: 0px;
+                            padding-bottom: 70.5%;
+                            overflow: hidden;
+                            background: url('../images/index/img_bg.png') no-repeat;
+                        }
+                        //遮罩
+                        .mask {
+                            position: absolute;
+                            width: 100%;
+                            height: 0%;
+                            bottom: -0.5%;
+                            background: linear-gradient(to bottom, #000,#1acdbb);
+                            clip-path: polygon(50% 0%, 100% 30%, 50% 100%, 0 30%);
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                display: none;
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                display: none;
+                            }
+                        }
+                        //圖片按鈕
+                        .imgbtn1 {
+                            display: none;
+                            width: 40%;
+                            height: 0px;
+                            background: url('../images/index/imgbtn1.png') no-repeat;
+                            background-size: 100%;
+                            padding-bottom: 16%;
+                            position: absolute;
+                            left: 50%;
+                            top: 40%;
+                            transform-origin: 0%;
+                            transform: translateX(-50%);
+                            z-index: 5;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                left: 30%;
+                                transform-origin: 50%;
+                            }
+                        }
+                        .imgbtn2 {
+                            display: none;
+                            width: 40%;
+                            height: 0px;
+                            background: url('../images/index/imgbtn2.png') no-repeat;
+                            background-size: 100%;
+                            padding-bottom: 16%;
+                            position: absolute;
+                            left: 50%;
+                            top: 40%;
+                            transform-origin: 0%;
+                            transform: translateX(-50%);
+                            z-index: 5;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                left: 30%;
+                                transform-origin: 50%;
+                            }
+                        }
+                        //按鈕陰影
+                        .btnshadow {
+                            display: none;
+                            width: 30%;
+                            height: 0px;
+                            background: url('../images/index/btnshadow.png') no-repeat;
+                            background-size: 100%;
+                            padding-bottom: 6%;
+                            position: absolute;
+                            left: 50%;
+                            top: 70%;
+                            transform: translateX(-50%);
+                            z-index: 5;
+                        }
+                        //感應區
+                        a {
+                            width: 100%;
+                            height: 0px;
+                            padding-bottom: 70%;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                            z-index: 10;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                width: 55%;
+                                padding-bottom: 30%;
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                width: 55%;
+                                padding-bottom: 30%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //footer
+        footer {
+            width: 100%;
+            height: auto;
+            //廠商
+            .partner {
+                width: 100%;
+                height: 100px;
+                border-style: solid;
+                border-color: #fff;
+                border-width: 2px 0px 1px 0px;
+                background: linear-gradient(to left, #05aa99 0%, #083b2b 100%);
+                background-color: #083b2b;
+                ul {
+                    text-align: center;
+                    font-size: 0px;
+                    li {
+                        display: inline-block;
+                        width: 172px;
+                        height: 46px;
+                        margin: 32px auto 0px;
+                        background: url('../images/index/paetner.png') no-repeat;
+                        &.turn {
+                            background-position-y: -46px;
+                        }
+                        &:nth-of-type(2) {
+                            background-position-x: -172px;
+                        }
+                        &:nth-of-type(3) {
+                            background-position-x: -344px;
+                        }
+                        &:nth-of-type(4) {
+                            background-position-x: -516px;
+                        }
+                        &:nth-of-type(5) {
+                            background-position-x: -688px;
+                        }
+                    }
+                }
+            }
+            //底
+            .bottombtn {
+                width: 100%;
+                height: 490px;
+                background: #1e2021;
+                position: relative;
+                //下底圖
+                .footer_bg {
+                    width: 100%;
+                    height: 0px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    background: url('../images/index/footer_bg.png') no-repeat;
+                    background-size: cover;
+                    padding-top: 26%;
+                }
+                //字區
+                ul {
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    font-size: 0px;
+                    position: relative;
+                    z-index: 2;
+                    li {
+                        text-align: left;
+                        display: inline-block;
+                        vertical-align: top;
+                        width: 18%;
+                        h1 {
+                            font-size: 20px;
+                            font-weight: bold;
+                            letter-spacing: 2px;
+                            padding: 80px 0px 28px;
+                            color: #87ffb7;
+                            &.btntitle {
+                                padding-left: 30px;
+                            }
+                        }
+                        a {
+                            display: block;
+                            width: 75%;
+                            font-size: 20px;
+                            color: #87ffb7;
+                            letter-spacing: 2px;
+                            line-height: 38px;
+                            position: relative;
+                            &:hover,&:active,&.active {
+                                background: linear-gradient(to left, #ff527f 0%, #8a1b2b 100%);
+                                background-color: #8a1b2b;
+                                border-radius: 20px;
+                                color: #fff;
+                                font-weight: bold;
+                                padding-left: 40px;
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                left: 12px;
+                                top: 9px;
+                                width: 0px;
+                                height: 0px;
+                                border-style: solid;
+                                border-color: transparent transparent transparent #fff;
+                                border-width: 0px;
+                            }
+                            &:hover:before {
+                                animation: footerarrow ease-out 0.3s 0s,arrowmove ease-in-out 1s 0.2s infinite alternate;
+                                border-width: 10px;
+                            }
+                            //右2按鈕
+                            &.footer_btn1,&.footer_btn2 {
+                                width: 256px;
+                                height: 50px;
+                                border-radius: 50px;
+                                background-size: 100%;
+                                border: solid 10px #fff;
+                                line-height: 50px;
+                                text-align: center;
+                                position: relative;
+                                overflow: hidden;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    width: 634px;
+                                    height: 124px;
+                                    background: url('../images/index/btn_bg.png');
+                                    left: -30px;
+                                    top: -30px;
+                                }
+                                &:hover,&:active {
+                                    padding: 0px;
+                                    &::before {
+                                        animation: btnbg linear 10s 0s infinite alternate;
+                                    }
+                                }
+                                &.footer_btn1 {
+                                    color: #fff;
+                                    background: #ff7327;
+                                }
+                                &.footer_btn2 {
+                                    margin-top: 15px;
+                                    color: #29224f;
+                                    background: #35ff87;
+                                }
+                                span {
+                                    position: relative;
+                                    z-index: 2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //filter
+        .filter {
+            display: none;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.8);
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 100;
+            &.display {
+                display: block;
+            }
+        }
+        //彈窗
+        .jumpbox {
+            .noacc {
+                display: none;
+                position: fixed;
+                width: 482px;
+                height: 239px;
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                background: url('../images/index/account_errorbg.png') no-repeat;
+                z-index: 101;
+                text-align: center;
+                &.display {
+                    display: block;
+                }
+                .cancelbtn {
+                    width: 41px;
+                    height: 40px;
+                    background: url('../images/index/xx.png') no-repeat;
+                    position: absolute;
+                    top: -30px;
+                    right: -30px;
+                    &:hover,&:active,&.acitve {
+                        animation: noacc_cancelbtn 0.8s linear 0s;
+                    }
+                }
+                h1 {
+                    padding: 35px 0px 50px;
+                    color: #783c00;
+                    font-weight: bold;
+                }
+                .accbtn {
+                    width: 140px;
+                    height: 46px;
+                    background: #783c00;
+                    border-radius: 10px;
+                    margin-top: 25px;
+                    position: relative;
+                    box-shadow: 0px 4px 0px 2px #512800,0px 0px 0px 2px #512800;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 95%;
+                        height: 30px;
+                        background: #8b4b0b;
+                        left: 50%;
+                        top: 6%;
+                        transform: translateX(-50%);
+                        border-radius: 5px 5px 10px 10px;
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        width: 95%;
+                        height: 10px;
+                        background: #a4601b;
+                        left: 50%;
+                        top: 6%;
+                        transform: translateX(-50%);
+                        border-radius: 10px;
+                    }
+                    &:hover,&:active,&.active {
+                        box-shadow: 0px 0px 0px 2px #512800;
+                        margin-top: 29px;
+                    }
+                    span {
+                        display: block;
+                        width: 55px;
+                        height: 25px;
+                        background: url('../images/word/signup_btnword.png') no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+}
+//anime
+//上列按鈕動畫
+@keyframes btnhover{
+    0% {
+        transform: scale(1);
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    20% {
+        transform: scale(1.3);
+    }
+    30% {
+        clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
+    }
+}
+//banner旁按鈕動畫
+@keyframes smallbtnhover {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.2) rotate(15deg);
+    }
+    40% {
+        transform: scale(1.2) rotate(-15deg);
+    }
+    60% {
+        transform: scale(1.2) rotate(5deg);
+    }
+    80% {
+        transform: scale(1.2) rotate(-5deg);
+    }
+
+}
+@keyframes btnjumpin {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes arrowjumpout1 {
+    0% {
+        opacity: 0;
+        transform: translateX(50%) rotate(-40deg);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(50%) rotate(-40deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%) rotate(-40deg);
+    }
+}
+@keyframes arrowjumpout2 {
+    0% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+@keyframes arrowjumpout3 {
+    0% {
+        opacity: 0;
+        transform: translateX(50%) rotate(40deg);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(50%) rotate(40deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%) rotate(40deg);
+    }
+}
+//主選單按鈕動畫
+@keyframes imgboxhover {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(0.6);
+    }
+    40% {
+        transform: scaleX(1.2) scaleY(0.8);
+    }
+    60% {
+        transform: scaleX(0.9) scaleY(1.1);
+    }
+}
+@keyframes innerword {
+    0% {
+        transform: scale(1);
+        left: 20%;
+        top: 30%;
+    }
+    20% {
+        transform: scale(0.6) rotate(10deg);
+        left: 35%;
+        top: 45%;
+    }
+    40% {
+        left: 20%;
+        top: 30%;
+        transform: scale(0.8) rotate(-30deg);
+    }
+    60% {
+        left: 5%;
+        top: 15%;
+        transform: scale(1.2) rotate(-38deg);
+    }
+}
+@keyframes innerword_soc {
+    0% {
+        transform: scale(1);
+        left: 20%;
+        top: 30%;
+    }
+    20% {
+        transform: scale(0.6) rotate(10deg);
+        left: 35%;
+        top: 45%;
+    }
+    40% {
+        left: 20%;
+        top: 30%;
+        transform: scale(0.8) rotate(0deg);
+    }
+    60% {
+        left: 8%;
+        top: 8%;
+        transform: scale(1.2) rotate(-18deg);
+    }
+}
+@keyframes innerword_lot {
+    0% {
+        transform: scale(1);
+        left: 20%;
+        top: 30%;
+    }
+    20% {
+        transform: scale(0.6) rotate(10deg);
+        left: 35%;
+        top: 45%;
+    }
+    40% {
+        left: 20%;
+        top: 30%;
+        transform: scale(0.8) rotate(0deg);
+    }
+    60% {
+        left: 13%;
+        top: 13%;
+        transform: scale(1.2) rotate(-38deg);
+    }
+}
+@keyframes innerword_shark {
+    0% {
+        transform: scale(1);
+        left: 20%;
+        top: 30%;
+    }
+    20% {
+        transform: scale(0.6) rotate(10deg);
+        left: 35%;
+        top: 45%;
+    }
+    40% {
+        left: 20%;
+        top: 30%;
+        transform: scale(0.8) rotate(0deg);
+    }
+    60% {
+        left: 0%;
+        top: 15%;
+        transform: scale(1.2) rotate(-38deg);
+    }
+}
+@keyframes innerimg {
+    0% {
+        transform: scale(1);
+        right: 10%;
+        top: 10%;
+    }
+    20% {
+        transform: scale(0.6) rotate(-10deg);
+        right: 30%;
+        top: 30%;
+    }
+    40% {
+        right: 10%;
+        top: 10%;
+        transform: scale(0.8) rotate(30deg);
+    }
+    60% {
+        top: -5%;
+        right: 5%;
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+@keyframes innerimg_soc {
+    0% {
+        transform: scale(1);
+        right: 10%;
+        top: 10%;
+    }
+    20% {
+        transform: scale(0.6) rotate(-10deg);
+        right: 20%;
+        top: 20%;
+    }
+    40% {
+        top: 10%;
+        right: 10%;
+        transform: scale(0.8) rotate(30deg);
+    }
+    60% {
+        top: -5%;
+        right: 0%;
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+@keyframes innerimg_cat {
+    0% {
+        transform: scale(1);
+        right: 10%;
+        top: 10%;
+    }
+    20% {
+        transform: scale(0.6) rotate(-10deg);
+        right: 20%;
+        top: 20%;
+    }
+    40% {
+        right: 10%;
+        top: 10%;
+        transform: scale(0.8) rotate(30deg);
+    }
+    60% {
+        top: -5%;
+        right: 5%;
+        transform: scale(1.2) rotate(15deg);
+    }
+}
+@keyframes innerimg_lot {
+    0% {
+        transform: scale(1);
+        right: 15%;
+        top: 15%;
+    }
+    20% {
+        transform: scale(0.6) rotate(-10deg);
+        right: 30%;
+        top: 40%;
+    }
+    40% {
+        right: 10%;
+        top: 10%;
+        transform: scale(0.8) rotate(30deg);
+    }
+    60% {
+        top: 5%;
+        right: 5%;
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+@keyframes innerimg_shark {
+    0% {
+        transform: scale(1);
+        right: 10%;
+        top: 10%;
+    }
+    20% {
+        transform: scale(0.6) rotate(-10deg);
+        right: 30%;
+        top: 30%;
+    }
+    40% {
+        right: 10%;
+        top: 10%;
+        transform: scale(0.8) rotate(30deg);
+    }
+    60% {
+        top: -5%;
+        right: 15%;
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+@keyframes innermask {
+    0% {
+        transform: scale(0);
+    }
+    20% {
+        transform: scaleX(0.2) scaleY(0.4);
+    }
+    40% {
+        transform: scaleX(0.4) scaleY(0.8);
+    }
+    60% {
+        transform: scaleX(0.8) scaleY(1.2);
+    }
+}
+@keyframes innerbtn {
+    0% {
+        transform: scale(0) translateX(-50%);
+    }
+    40% {
+        transform: scale(0.6) translateX(-50%);
+    }
+    60% {
+        transform: scale(1.2) translateX(-50%);
+    }
+}
+@keyframes innerbtnfloat {
+    0% {
+        transform: translateY(0%) translateX(-50%);
+    }
+    100% {
+        transform: translateY(10%) translateX(-50%);
+    }
+}
+@keyframes innershadow {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+}
+//彈窗動畫
+@keyframes noacc_cancelbtn {
+    0% {
+        transform: rotate(360deg);
+    }
+    33% {
+        transform: rotate(0deg);
+    }
+}
+//footer假按鈕動畫
+@keyframes btnbg {
+    0% {
+        left: -30px;
+    }
+    100% {
+        left: -330px;
+    }
+}
+@keyframes footerarrow {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes arrowmove {
+    0% {
+        left: 12px;
+    }
+    50% {
+        left: 16px;
+    }
+}
+//rwd
+@media only screen and(max-width:1700px) {
+    html {
+        body {
+            header {
+                .mid {
+                    ul {
+                        li {
+                            a {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:1420px) {
+    html {
+        body {
+            header {
+                .mid {
+                    ul {
+                        li {
+                            a {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

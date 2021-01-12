@@ -1,0 +1,128 @@
+html {
+    width: 100%;
+    min-width: 1280px;
+    height: 100%;
+    background: #8a1b2b;
+    ::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #a7ddff;
+    }
+    ::-webkit-scrollbar-track {
+        background: #a3a3a3;
+    }
+    body {
+        .signup {
+            width: 100%;
+            height: 100%;
+            transform: translateY(60px);
+            overflow: visible;
+            //註冊窗
+            .signupbox {
+                width: 760px;
+                height: 460px;
+                background: #1b1b1b;
+                margin: 0px auto;
+                border-radius: 50px;
+                box-shadow: 2px 7px 0px 3px #000,0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
+                text-align: center;
+                h1 {
+                    padding: 30px 0px;
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                //主區域
+                .inputbox {
+                    display: inline-block;
+                    width: 85%;
+                    height: auto;
+                    margin: 0px auto;
+                    position: relative;
+                    input {
+                        width: 290px;
+                        height: 32px;
+                        padding-left: 10px;
+                        font-size: 17px;
+                        margin: 0px 0px 30px;
+                        &:nth-of-type(odd) {
+                            float: left;
+                        }
+                        &:nth-of-type(even) {
+                            float: right;
+                        }
+                    }
+                    .check {
+                        width: 20px;
+                        height: 20px;
+                        margin: 0px 21px 30px 0px;
+                        cursor: pointer;
+                    }
+                    .checkbtn {
+                        position: absolute;
+                        padding: 3px 6px;
+                        background: #8a1b2b;
+                        color: #fff;
+                        top: 74px;
+                        right: 10px;
+                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                            padding: 6px;
+                        }
+                        /*for IE 9*/
+                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                            padding: 6px;
+                        }
+                    }
+                    span {
+                        color: #fff;
+                        float: left;
+                        margin-top: 2px;
+                    }
+                }
+                .signupbtn {
+                    width: 180px;
+                    height: 58px;
+                    background: linear-gradient(to top, #135838 0%, #20873b 100%);
+                    background-color: #135838;
+                    float: right;
+                    margin-right: 60px;
+                    border-radius: 15px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: #fff;
+                    letter-spacing: 5px;
+                    text-shadow: 2px 2px #000;
+                    box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
+                    position: relative;
+                    &:hover,&:active,&.active {
+                        background: linear-gradient(to bottom, #135838 0%, #20873b 100%);
+                        background-color: #20873b;
+                        box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
+                    }
+                    span {
+                        display: block;
+                        width: 55px;
+                        height: 25px;
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        background: url('../images/word/signup_btnword.png') no-repeat;
+                    }
+                }
+            }
+        }
+        //背景
+        .bg {
+            width: 100%;
+            min-width: 1280px;
+            height: 100%;
+            background: url('../images/signup/signup_bg.jpg') no-repeat top center;
+            position: absolute;
+            top: 0px;
+            z-index: -999;
+        }
+    }
+}

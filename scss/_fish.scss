@@ -1,0 +1,230 @@
+html {
+    body {
+        .game {
+            &.fish {
+                height: 928px;
+            }
+            //圖區+LOGO
+            .fishimg {
+                position: relative;
+                width: 1200px;
+                margin: 0px auto;
+                //雙圖
+                .bgimg1 {
+                    width: 141px;
+                    height: 102px;
+                    background: url('../images/fish/fish_leftimg2.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 195px;
+                    left: 8px;
+                    animation: fish_leftimg 3s linear 0s infinite;
+                }
+                .bgimg2 {
+                    width: 204px;
+                    height: 189px;
+                    background: url('../images/fish/fish_rightimg2.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 33px;
+                    right: 47px;
+                    animation: fish_rightimg 3s linear 0s infinite;
+                }
+                //LOGO
+                .logo {
+                    width: 790px;
+                    height: 221px;
+                    background: url('../images/word/fish_logo.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    left: 135px;
+                    top: 48px;
+                }
+                //按鈕
+                button {
+                    width: 184px;
+                    height: 60px;
+                    position: absolute;
+                    right: 280px;
+                    top: 215px;
+                    background: linear-gradient(to right, #00e990 0%, #00eff8 100%);
+                    background-color: #ff3d6a;
+                    border-radius: 30px;
+                    border: solid 5px #fff;
+                    color: #fff2a3;
+                    font-size: 18px;
+                    font-weight: bold;
+                    box-shadow: 0px 2px 7px 0px rgba(0,0,0,.48);
+                    text-shadow: 0px 2px 0px #000;
+                    z-index: 2;
+                    &:hover,&:active,&.active {
+                        background: linear-gradient(to right, #ffdf00 0%, #ff4b00 100%);
+                        background-color: #ff8e23;
+                        color: #fff;
+                    }
+                }
+            }
+            //主區域
+            .gamebox {
+                &.fish {
+                    height: 615px;
+                    background: #0359a5;
+                    box-shadow: 0px 0px 0px 4px #0359a5;
+                    ul {
+                        width: 100%;
+                        height: 100%;
+                        li {
+                            height: 80%;
+                            &::before,&::after {
+                                display: none;
+                            }
+                            //搜尋行
+                            &.searchline {
+                                height: 20%;
+                            }
+                            //機台
+                            a {
+                                display: inline-block;
+                                width: 320px;
+                                height: 320px;
+                                margin: 0% 1.5% 0%;
+                                float: none;
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    &.turn {
+                                        div {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                                &:hover,&:active,&.active {
+                                    div {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                &:nth-of-type(1) {
+                                    div {
+                                        background-position-Y: 13px;
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    div {
+                                        background-position-X: 50%;
+                                    }
+                                }
+                                &:nth-of-type(3) {
+                                    div {
+                                        background-position-X: 100%;
+                                        background-position-Y: -6px;
+                                    }
+                                }
+                                div {
+                                    background: url('../images/game_icon/fish_mainimg.png') no-repeat;
+                                    background-size: 300%;
+                                }
+                                button {
+                                    width: 160px;
+                                    height: 60px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    &.display {
+                                        top: 55%;
+                                    }
+                                }
+                                span {
+                                    bottom: -55px;
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //背景
+            .bg {
+                &.fish {
+                    background: url('../images/fish/fish_bg.png') no-repeat top center;
+                }
+            }
+        }
+    }
+}
+@keyframes fish_leftimg {
+    0% {
+        transform: scaleX(-1);
+        top: 195px;
+        left: 8px;
+    }
+    10% {
+        transform: scaleX(-1);
+        top: 260px;
+        left: 80px;
+    }
+    30% {
+        transform: scaleX(-1);
+        top: 200px;
+        left: 120px;
+    }
+    40% {
+        transform: scaleX(1);
+        top: 200px;
+        left: 120px;
+    }
+    70% {
+        transform: scaleX(1);
+        top: 170px;
+        left: -30px;
+    }
+    85% {
+        transform: scaleX(-1);
+        top: 170px;
+        left: -30px;
+    }
+    100% {
+        transform: scaleX(-1);
+        top: 195px;
+        left: 8px;
+    }
+}
+@keyframes fish_rightimg {
+    0% {
+        transform: scaleX(1);
+        top: 33px;
+        right: 47px;
+    }
+    10% {
+        transform: scaleX(1);
+        top: 100px;
+        right: 100px;
+    }
+    30% {
+        transform: scaleX(1);
+        top: 100px;
+        right: 100px;
+    }
+    40% {
+        transform: scaleX(-1);
+        top: 100px;
+        right: 100px;
+    }
+    60% {
+        transform: scaleX(-1);
+        top: 50px;
+        right: -50px;
+    }
+    80% {
+        transform: scaleX(-1);
+        top: 50px;
+        right: -50px;
+    }
+    90% {
+        transform: scaleX(1);
+        top: 50px;
+        right: -50px;
+    }
+    100% {
+        transform: scaleX(1);
+        top: 33px;
+        right: 47px;
+    }
+}

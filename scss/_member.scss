@@ -1,0 +1,381 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    //個人資料窗
+                    .memberWindow {
+                        width: 870px;
+                        height: 240px;
+                        border: solid 5px #122845;
+                        border-radius: 15px;
+                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                        background-color: #2a4d7c;
+                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+                        margin-bottom: 20px;
+                        h1 {
+                            color: #ffffac;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding: 15px 0px 15px 20px;
+                        }
+                        div {
+                            width: 790px;
+                            height: 130px;
+                            margin: 0px auto;
+                            background: #507ab0;
+                            border: solid 1px #5885c2;
+                            border-radius: 15px;
+                            padding: 20px;
+                            box-shadow: 0px 2px 0px 0px #0000003b inset;
+                            overflow: hidden;
+                            p {
+                                color: #fff;
+                                letter-spacing: 3px;
+                                font-size: 13px;
+                                &:nth-of-type(2) {
+                                    margin-top: 15px;
+                                }
+                                span {
+                                    display: inline-block;
+                                    width: 18px;
+                                    height: 22px;
+                                    background: linear-gradient(to top,#a2a2a2,#ffffff);
+                                    background-color: #a2a2a2;
+                                    color: #000;
+                                    text-align: center;
+                                    transform: translateY(2px);
+                                    line-height: 22px;
+                                    padding-left: 4px;
+                                    font-size: 15px;
+                                    border: solid 2px #fff;
+                                    border-bottom-width: 1px;
+                                    border-radius: 5px;
+                                    font-weight: bold;
+                                    margin: 0px 5px;
+                                    box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+                                    &:nth-of-type(1) {
+                                        margin-left: 8px;
+                                    }
+                                    &.active {
+                                        background: linear-gradient(to top,#a00f00,#ff0000);
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                            ul {
+                                li {
+                                    display: inline-block;
+                                    color: #fff;
+                                    margin-right: 35px;
+                                    &:nth-of-type(2) {
+                                        span {
+                                            background-position-x: -40px;
+                                        }
+                                    }
+                                    &:nth-of-type(3) {
+                                        span {
+                                            background-position-x: -80px;
+                                        }
+                                    }
+                                    &:nth-of-type(4) {
+                                        span {
+                                            background-position-x: -120px;
+                                        }
+                                    }
+                                    &.active {
+                                        color: #ffee5b;
+                                    }
+                                    span {
+                                        display: inline-block;
+                                        width: 40px;
+                                        height: 40px;
+                                        background: url('../images/member/member_ic.png') no-repeat;
+                                        margin: 24px 15px -13px 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    //情報窗
+                    .inforWindow {
+                        width: 880px;
+                        height: 460px;
+                        position: relative;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        .box {
+                            width: 870px;
+                            height: 680px;
+                            position: absolute;
+                            top: 55px;
+                            border: solid 5px #122845;
+                            border-radius: 15px;
+                            background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                            background-color: #2a4d7c;
+                            box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+                            z-index: 1;
+                            //雙按鈕
+                            .btnbox {
+                                button {
+                                    width: 200px;
+                                    height: 60px;
+                                    border-style: solid;
+                                    border-color: #122845;
+                                    border-width: 5px 5px 0px 5px;
+                                    border-radius: 60px 60px 0px 0px;
+                                    background: #2a4c79;
+                                    position: absolute;
+                                    top: -60px;
+                                    left: 20px;
+                                    box-shadow: 0px 5px 0px 0px #2a4c79,0px 3px 2px 0px #a7cdffa1 inset;
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 175px;
+                                        height: 50px;
+                                        background: linear-gradient(to top, transparent 50%, #00000047);
+                                        border-radius: 50px 50px 0px 0px;
+                                        left: 50%;
+                                        top: 5px;
+                                        transform: translateX(-50%);
+                                    }
+                                    &:last-child {
+                                        left: 230px;
+                                        span {
+                                            font-size: 14px;
+                                            color: #fff;
+                                            letter-spacing: 0px;
+                                        }
+                                    }
+                                    &.turn {
+                                        background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                        border-color: #b5203f;
+                                        box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+                                        top: -60px;
+                                        height: 55px;
+                                        &::before {
+                                            background: linear-gradient(to top, transparent 50%, #ffffff69);
+                                        }
+                                    }
+                                    span {
+                                        display: block;
+                                        width: 100%;
+                                        left: 0px;
+                                        position: absolute;
+                                        z-index: 1;
+                                        top: 15px;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        color: #d6e7ff;
+                                        letter-spacing: 3px;
+                                        text-shadow: 1px 1px 0px #000;
+                                    }
+                                }
+                            }
+                            h1 {
+                                color: #ffffac;
+                                font-size: 21px;
+                                font-weight: bold;
+                                padding: 25px 0px 0px 20px;
+                            }
+                            //基本情報
+                            .infor {
+                                display: none;
+                                &.display {
+                                    display: block;
+                                }
+                                ul {
+                                    li {
+                                        display: inline-block;
+                                        color: #fff;
+                                        height: 40px;
+                                        line-height: 40px;
+                                        margin-top: 20px;
+                                        position: relative;
+                                        &:nth-of-type(odd) {
+                                            width: 305px;
+                                            margin-left: 35px;
+                                        }
+                                        &:nth-of-type(even) {
+                                            width: 390px;
+                                            margin-left: 40px;
+                                            input {
+                                                width: 230px;
+                                            }
+                                        }
+                                        input {
+                                            float: right;
+                                            background: #183051;
+                                            width: 190px;
+                                            height: 38px;
+                                            padding-left: 10px;
+                                            font-size: 17px;
+                                            border-radius: 10px;
+                                            border: solid 1px #fff;
+                                            color: #fff;
+                                            &.lightbase {
+                                                background: #507ab0;
+                                                box-shadow: 0px 3px 0px 0px #0000005e inset;
+                                            }
+                                        }
+                                        span {
+                                            color: #29fff6;
+                                            position: absolute;
+                                            left: -20px;
+                                            top: -1px;
+                                        }
+                                        button {
+                                            position: absolute;
+                                            width: 75px;
+                                            height: 43px;
+                                            top: 0px;
+                                            right: -83px;
+                                            border: solid 5px #00302e;
+                                            color: #fff;
+                                            font-weight: bold;
+                                            font-size: 17px;
+                                            padding-bottom: 3px;
+                                            border-radius: 8px;
+                                            text-shadow: 1px 1px 0px #000;
+                                            background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                            &:hover,&:active,&.active {
+                                                background: #b5203f;
+                                                border-color: #ed5676;
+                                                text-shadow: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                .savebtn {
+                                    display: block;
+                                    margin: 30px auto 10px;
+                                    width: 240px;
+                                    height: 58px;
+                                    border: solid 5px #b5203f;
+                                    border-radius: 15px;
+                                    background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                    background-color: #f56684;
+                                    box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+                                    position: relative;
+                                    &:hover,&:active,&.active {
+                                        &::before {
+                                            background: linear-gradient(to top,transparent 50%,#00000052);
+                                        }
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 220px;
+                                        height: 40px;
+                                        border-radius: 8px 8px 0px 0px;
+                                        top: 5px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                    }
+                                    span {
+                                        font-size: 20px;
+                                        color: #fff;
+                                        position: relative;
+                                        z-index: 1;
+                                    }
+                                }
+                                p {
+                                    text-align: center;
+                                    color: #fff;
+                                    font-size: 15px;
+                                    a {
+                                        color: #ff5994;
+                                    }
+                                }
+                                .baseline {
+                                    width: 840px;
+                                    height: 3px;
+                                    background: #122845;
+                                    margin: 40px auto 0px;
+                                }
+                                .inputbox {
+                                    font-size: 14px;
+                                    color: #fff;
+                                    margin: 10px 0px 0px 40px;
+                                    input {
+                                        background: #183051;
+                                        width: 190px;
+                                        height: 42px;
+                                        padding-left: 10px;
+                                        font-size: 17px;
+                                        border-radius: 10px;
+                                        border: solid 1px #fff;
+                                        color: #fff;
+                                        margin-left: 15px;
+                                        &.lightbase {
+                                            background: #507ab0;
+                                            box-shadow: 0px 3px 0px 0px #0000005e inset;
+                                        }
+                                    }
+                                    button {
+                                        display: inline-block;
+                                        width: 75px;
+                                        height: 43px;
+                                        border: solid 5px #00302e;
+                                        color: #fff;
+                                        font-weight: bold;
+                                        font-size: 17px;
+                                        padding-bottom: 3px;
+                                        border-radius: 8px;
+                                        margin-left: 5px;
+                                        text-shadow: 1px 1px 0px #000;
+                                        transform: translateY(-1px);
+                                        background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                        &:hover,&:active,&.active {
+                                            background: #b5203f;
+                                            border-color: #ed5676;
+                                            text-shadow: none;
+                                        }
+                                    }
+                                }
+                            }
+                            .account {
+                                display: none;
+                                &.display {
+                                    display: block;
+                                }
+                                div {
+                                    width: 830px;
+                                    height: 305px;
+                                    margin: 0px auto;
+                                    background: #507ab0;
+                                    border: solid 1px #5885c2;
+                                    border-radius: 15px;
+                                    box-shadow: 0px 2px 0px 0px #0000003b inset;
+                                    position: relative;
+                                    .noMoney {
+                                        position: absolute;
+                                        color: #fff;
+                                        left: 50%;
+                                        top: 50%;
+                                        transform: translate(-50%,-50%);
+                                        letter-spacing: 3px;
+                                    }
+                                }
+                                ul {
+                                    margin-top: 10px;
+                                    text-align: center;
+                                    li {
+                                        display: inline-block;
+                                        color: #fff;
+                                        height: 50px;
+                                        line-height: 50px;
+                                        padding: 0px 25px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

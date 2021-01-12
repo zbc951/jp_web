@@ -1,0 +1,192 @@
+html {
+    body {
+        .game {
+            &.live {
+                height: 1275px;
+            }
+            //圖區+LOGO
+            .liveimg {
+                position: relative;
+                width: 1200px;
+                margin: 0px auto;
+                //雙圖
+                .bgimg1 {
+                    width: 430px;
+                    height: 524px;
+                    background: url('../images/live/live_leftimg1.png') no-repeat;
+                    background-size: 100%;
+                    position: fixed;
+                    margin: 15px 0px 0px -357px;
+                    animation: live_img1 2s ease-in-out 0s infinite alternate;
+                }
+                .bgimg2 {
+                    width: 274px;
+                    height: 574px;
+                    background: url('../images/live/live_leftimg2.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 25px;
+                    left: 5px;
+                    animation: live_leftimg2 1s ease-in-out 0s infinite;
+                }
+                .bgimg3 {
+                    width: 530px;
+                    height: 626px;
+                    background: url('../images/live/live_rightimg1.png') no-repeat;
+                    background-size: 100%;
+                    position: fixed;
+                    margin: 15px 0px 0px 1027px;
+                    animation: live_img1 1.5s ease-in-out 0s infinite alternate;
+                }
+                .bgimg4 {
+                    width: 354px;
+                    height: 496px;
+                    background: url('../images/live/live_rightimg2.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    top: 5px;
+                    right: -25px;
+                    animation: live_rightimg2 1.5s ease-in-out 0s infinite;
+                }
+                //LOGO
+                .logo {
+                    width: 379px;
+                    height: 220px;
+                    background: url('../images/word/live_logo.png') no-repeat;
+                    background-size: 100%;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    top: 30px;
+                }
+            }
+            .gamebox {
+                //主區域
+                &.live {
+                    height: 925px;
+                    background: #381b4b;
+                    box-shadow: 0px 0px 0px 4px #6e0db2;
+                    ul {
+                        li {
+                            height: 89%;
+                            text-align: left;
+                            &::before,&::after {
+                                display: none;
+                            }
+                            //搜尋行
+                            &.searchline {
+                                height: 11%;
+                            }
+                            //機台
+                            a {
+                                display: inline-block;
+                                width: 300px;
+                                height: 300px;
+                                margin: 0% 2.3% 0% 5%;
+                                text-align: center;
+                                float: none;
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    &.turn {
+                                        div {
+                                            transform: scale(1.2);
+                                        }
+                                    }
+                                }
+                                &:hover,&:active,&.active {
+                                    div {
+                                        transform: scale(1.2);
+                                    }
+                                }
+                                &:nth-of-type(2) {
+                                    div {
+                                        background-position-X: 25%;
+                                    }
+                                }
+                                &:nth-of-type(3) {
+                                    div {
+                                        background-position-X: 50%;
+                                    }
+                                }
+                                &:nth-of-type(4) {
+                                    margin-top: 7%;
+                                    div {
+                                        background-position-X: 75%;
+                                    }
+                                }
+                                &:nth-of-type(5) {
+                                    div {
+                                        background-position-X: 100%;
+                                    }
+                                }
+                                div {
+                                    background: url('../images/game_icon/live_mainimg.png') no-repeat;
+                                    background-size: 500%;
+                                }
+                                button {
+                                    width: 160px;
+                                    height: 60px;
+                                    font-size: 20px;
+                                    font-weight: bold;
+                                    top: 0%;
+                                    &.display {
+                                        top: 55%;
+                                    }
+                                }
+                                span {
+                                    bottom: -65px;
+                                    font-size: 26px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //背景
+            .bg {
+                &.live {
+                    background: url('../images/live/live_bg.png') no-repeat top center;
+                }
+            }
+        }
+    }
+}
+@keyframes live_img1 {
+    0% {
+        top: 130px;
+    }
+    100% {
+        top: 180px;
+    }
+}
+@keyframes live_leftimg2 {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(0.95);
+    }
+    40% {
+        transform: scaleX(0.95) scaleY(1.05);
+    }
+    60% {
+        transform: scaleX(1.05) scaleY(0.95);
+    }
+    70% {
+        transform: scale(1);
+    }
+}
+@keyframes live_rightimg2 {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1.1);
+    }
+    40% {
+        transform: scale(1.1) rotate(10deg);
+    }
+    70% {
+        transform: scale(1.1) rotate(-10deg);
+    }
+}

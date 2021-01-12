@@ -5,7 +5,7 @@ html {
                 //中
                 .mid {
                     //賭博窗
-                    .bettingWindow {
+                    .vipWindow {
                         width: 1135px;
                         height: 720px;
                         border: solid 5px #122845;
@@ -14,143 +14,215 @@ html {
                         background-color: #2a4d7c;
                         box-shadow: 0px 2px 3px 0px #a7cdffab inset;
                         position: relative;
+                        .topIC {
+                            width: 104px;
+                            height: 126px;
+                            background: url('../images/vip/vip_topIC.png') no-repeat;
+                        }
                         h1 {
-                            color: #ffffac;
                             font-size: 22px;
                             font-weight: bold;
-                            padding: 30px 0px 0px 30px;
-                        }
-                        .selectbox {
-                            width: 350px;
-                            line-height: 44px;
-                            margin: 30px 0px 0px 35px;
-                            font-size: 15px;
-                            color: #fff;
+                            color: #ffffac;
                             position: relative;
+                            padding: 30px 0px 50px 170px;
                             &::before {
                                 content: "";
                                 position: absolute;
-                                width: 0px;
-                                height: 0px;
-                                left: 322px;
-                                top: 17px;
-                                border-style: solid;
-                                border-width: 10px 6px 0px 6px;
-                                border-color: #29fff6 transparent transparent transparent;
-                                pointer-events: none;
+                                width: 104px;
+                                height: 126px;
+                                background: url('../images/vip/vip_topIC.png') no-repeat;
+                                left: 35px;
+                                top: -15px;
                             }
-                            &:nth-of-type(2) {
-                                width: 375px;
-                                position: absolute;
-                                top: 82px;
-                                left: 400px;
-                                margin: 0px;
-                                &::before {
-                                    left: 345px;
-                                }
-                            }
-                            &:nth-of-type(3) {
-                                margin-top: 15px;
-                                &::before {
-                                    display: none;
-                                }
-                            }
-                            select {
-                                float: right;
-                                width: 262px;
-                                height: 42px;
-                                border-radius: 10px;
-                                background: #183051;
-                                border: solid 1px #fff;
-                                appearance: none;
-                                -moz-appearance: none;
-                                -webkit-appearance: none;
-                                color: #fff;
-                                padding-left: 10px;
+                            p {
                                 font-size: 16px;
+                                color: #fff;
+                                padding-top: 18px;
+                                font-weight: normal;
                             }
-                            .calc {
-                                width: 15px;
-                                height: 15px;
-                                position: absolute;
-                                right: 14px;
-                                top: 13px;
-                                background: url('../images/discount/present_calc.png') no-repeat;
+                        }
+                        h2 {
+                            padding: 40px 0px 0px 35px;
+                            font-size: 20px;
+                            color: #fff;
+                            font-weight: bold;
+                        }
+                        .barbox {
+                            ul {
+                                text-align: center;
+                                li {
+                                    display: inline;
+                                    color: #fff;
+                                    margin-right: 145px;
+                                    &:last-child {
+                                        margin-right: 0px;
+                                    }
+                                    &.active {
+                                        font-size: 21px;
+                                        font-weight: bold;
+                                        color: #c0ff3e;
+                                    }
+                                }
                             }
-                            .contractbtn {
-                                width: 160px;
-                                height: 49px;
+                            .barBody {
+                                width: 1060px;
+                                height: 18px;
+                                border-radius: 15px;
+                                background: #507ab0;
+                                border: solid 1px #5885c2;
+                                box-shadow: 0px 2px 2px 0px #365276 inset;
+                                margin: 20px auto 0px;
+                                position: relative;
+                                &.short {
+                                    display: inline-block;
+                                    width: 400px;
+                                    height: 12px;
+                                    div {
+                                        background: linear-gradient(to top,#00b8b0 0%,#36fff6 100%);
+                                        background-color: #36fff6;
+                                        border-color: #36fff6;
+                                    }
+                                }
+                                div {
+                                    width: 21%;
+                                    height: calc(100% - 4px);
+                                    border-radius: 15px;
+                                    background: linear-gradient(to top,#87c800 0%,#c0ff3e 100%);
+                                    background-color: #87c800;
+                                    border: solid 2px #cdff65;
+                                    position: absolute;
+                                    left: 0%;
+                                }
+                            }
+                            span {
+                                display: inline-block;
+                                color: #fff;             
+                                padding: 0px 15px 0px 35px;
+                                transform: translateY(-1px);
+                                &.down {
+                                    padding-right: 31px;
+                                }
+                            }
+                            button {
+                                display: inline-block;
+                                width: 75px;
+                                height: 43px;
+                                border: solid 5px #00302e;
+                                color: #fff;
+                                font-weight: bold;
+                                font-size: 17px;
+                                border-radius: 8px;
+                                text-shadow: 1px 1px 0px #000;
+                                margin-left: 10px;
+                                background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                &:hover,&:active,&.active {
+                                    background: #b5203f;
+                                    border-color: #ed5676;
+                                    text-shadow: none;
+                                }
+                                &.savebtn {
+                                    display: inline-block;
+                                    width: 240px;
+                                    height: 48px;
+                                    border: solid 5px #b5203f;
+                                    border-radius: 15px;
+                                    background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                    background-color: #f56684;
+                                    box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+                                    position: relative;
+                                    &:hover,&:active,&.active {
+                                        &::before {
+                                            background: linear-gradient(to top,transparent 50%,#00000052);
+                                        }
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 220px;
+                                        height: 40px;
+                                        border-radius: 8px 8px 0px 0px;
+                                        top: 5px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                    }
+                                    span {
+                                        font-size: 20px;
+                                        color: #fff;
+                                        position: relative;
+                                        z-index: 1;
+                                    }
+                                }
+                            }
+                        }
+                        .baseline {
+                            width: 92%;
+                            height: 4px;
+                            background: #122845;
+                            margin: 30px auto 0px;
+                        }
+                        .innerbox {
+                            width: 1060px;
+                            height: 130px;
+                            border-radius: 15px;
+                            background: #507ab0;
+                            border: solid 1px #5885c2;
+                            box-shadow: 0px 2px 2px 0px #365276 inset;
+                            margin: 20px auto;
+                            position: relative;
+                            button {
+                                width: 240px;
+                                height: 58px;
                                 border: solid 5px #b5203f;
                                 border-radius: 15px;
                                 background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
-                                box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
+                                background-color: #f56684;
+                                box-shadow: 0px 3px 1px 0px #ffffff63 inset;
                                 position: absolute;
-                                right: -725px;
-                                top: -3px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                bottom: -80px;
+                                color: #fff;
+                                font-weight: bold;
+                                font-size: 20px;
+                                text-shadow: 1px 1px 0px #000;
                                 &:hover,&:active,&.active {
                                     &::before {
-                                        background: linear-gradient(to top,transparent 50%,#0000003b);
+                                        background: linear-gradient(to top,transparent 50%,#00000052);
                                     }
                                 }
                                 &::before {
                                     content: "";
                                     position: absolute;
-                                    width: 145px;
+                                    width: 220px;
                                     height: 40px;
+                                    border-radius: 8px 8px 0px 0px;
+                                    top: 5px;
                                     left: 50%;
                                     transform: translateX(-50%);
-                                    top: 3px;
-                                    border-radius: 5px 5px 0px 0px;
                                     background: linear-gradient(to top,transparent 50%,#ffc9e7);
                                 }
                                 span {
+                                    font-size: 20px;
                                     color: #fff;
-                                    text-shadow: 1px 1px 0px #961530;
                                     position: relative;
                                     z-index: 1;
-                                    font-size: 17px;
                                 }
                             }
-                            .datebtn {
-                                position: absolute;
-                                right: -395px;
-                                top: 0px;
-                                button {
-                                    width: 87px;
-                                    height: 43px;
-                                    border: solid 5px #00302e;
+                            ul {
+                                text-align: center;
+                                li {
+                                    display: inline-block;
                                     color: #fff;
-                                    font-size: 15px;
-                                    border-radius: 8px;
-                                    text-shadow: 1px 1px 0px #000;
-                                    background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
-                                    &:hover,&:active,&.active {
-                                        background: #b5203f;
-                                        border-color: #ed5676;
-                                        text-shadow: none;
-                                    }
-                                    &:nth-of-type(2) {
-                                        transform: translateY(-2px);
+                                    padding: 35px 30px 0px;
+                                    span {
+                                        color: #c0ff3e;
+                                        font-size: 28px;
+                                        font-weight: bold;
+                                        padding-top: 20px;
+                                        display: block;
                                     }
                                 }
-                            }
-                        }
-                        .innerbox {
-                            width: 1070px;
-                            height: 460px;
-                            margin: 35px auto 0px;
-                            background: #507ab0;
-                            border: solid 1px #5885c2;
-                            border-radius: 15px;
-                            box-shadow: 0px 2px 0px 0px #0000003b inset;
-                            position: relative;
-                            .noMoney {
-                                position: absolute;
-                                color: #fff;
-                                left: 50%;
-                                top: 50%;
-                                transform: translate(-50%,-50%);
-                                letter-spacing: 3px;
                             }
                         }
                     }

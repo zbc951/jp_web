@@ -40,7 +40,7 @@
                 <li class="transbtn"><a href="#">転送お金</a></li>
                 <li class="withdrawbtn"><a href="#">出金エリア</a></li>
                 <li class="personal"><a href="../mem/member.html">アカウント情報</a></li>
-                <li class="mail"><a href="./mail.html">メール</a></li>
+                <li class="mail"><a href="../mail.html">メール</a></li>
                 <li class="logout"><a href="../../index.html">ログアウト</a></li>
             </ul>
             <!--top底線-->
@@ -56,9 +56,9 @@
                 <li><a href="../lottery.html">ロト</a></li>
                 <li><a href="../fish.html">釣りゲーム</a></li>
                 <li><a href="../poker.html">カードゲーム</a></li>
-                <li><a href="./wallet.html">ポイントセンター</a></li>
+                <li><a href="../wallet/wallet.html">ポイントセンター</a></li>
                 <li><a href="../discount.html">特典センター</a></li>
-                <li><a href="#">VIPメンバー</a></li>
+                <li class="active"><a href="./vip.html">VIPメンバー</a></li>
             </ul>
         </section>
     </header>
@@ -83,11 +83,11 @@
                 <!--左列按鈕-->
                 <div class="leftbtnbox">
                     <a href="../mem/member.html"><span></span>個人情報</a>
-                    <a href="#"><span></span>VIPメンバー</a>
+                    <a href="./vip.html" class="active"><span></span>VIPメンバー</a>
                     <a href="../wallet/wallet.html"><span></span>ポイントセンター</a>
                     <a href="../mem/creditcard.html"><span></span>銀行カード</a>
-                    <a href="./deal.html"><span></span>ポイント履歴</a>
-                    <a href="./betting.html" class="active"><span></span>賭け記録</a>
+                    <a href="../record/deal.html"><span></span>ポイント履歴</a>
+                    <a href="../record/betting.html"><span></span>賭け記録</a>
                     <a href="../present.html"><span></span>キャンペン申請</a>
                     <a href="../mail.html"><span></span>メール</a>
                 </div>
@@ -95,42 +95,73 @@
             <!--中-->
             <section class="mid present">
                 <!--主窗-->
-                <div class="bettingWindow">
-                    <h1>賭け記録</h1>
-                    <div class="selectbox">
-                        アカウント
-                        <select name="" id="">
-                            <option value="">すべて</option>
-                            <option value="">すべて</option>
-                            <option value="">すべて</option>
-                        </select>
-                    </div>
-                    <div class="selectbox">
-                        プラットホーム
-                        <select name="" id="">
-                            <option value="">すべて</option>
-                            <option value="">すべて</option>
-                            <option value="">すべて</option>
-                        </select>
-                    </div>
-                    <div class="selectbox">
-                        日付
-                        <select name="" id="">
-                            <option value="">2021/1/4 - 2021/1/4</option>
-                            <option value="">2021/1/4 - 2021/1/5</option>
-                            <option value="">2021/1/4 - 2021/1/6</option>
-                        </select>
-                        <button class="calc"></button>
-                        <div class="datebtn">
-                            <button>昨日</button>
-                            <button>今日では</button>
-                            <button>今週</button>
-                            <button>今月</button>
+                <div class="vipWindow">
+                    <h1>
+                        レベル：JP_1
+                        <br>
+                        <p>預り金：$ 0&emsp;積分：$ 0</p>
+                    </h1>
+                    <div class="barbox">
+                        <ul>
+                            <li>ズンロン</li>
+                            <li class="active">君主</li>
+                            <li>ゴールド</li>
+                            <li>白金</li>
+                            <li>ダイヤモンド</li>
+                            <li>翡翠</li>
+                        </ul>
+                        <div class="barBody">
+                            <div></div>
                         </div>
-                        <button class="contractbtn"><span>お問い合わせ</span></button>
                     </div>
+                    <h2>次のレベルまでの距離</h2>
+                    <div class="barbox">
+                        <span>預り金</span>
+                        <div class="barBody short">
+                            <div></div>
+                        </div>
+                        <span>約$ 0をデポジットする必要があります</span>
+                    </div>
+                    <div class="barbox">
+                        <span class="down">積分</span>
+                        <div class="barBody short">
+                            <div></div>
+                        </div>
+                        <span>約$ 250のポイントが必要</span>
+                        <button>視点</button>
+                        <button class="savebtn">プロモーションを申し込む</button>
+                    </div>
+                    <div class="baseline"></div>
+                    <h2>JP_1 君主</h2>
                     <div class="innerbox">
-                        <span class="noMoney">まだデータはありません</span>
+                        <button>VIPの詳細</button>
+                        <ul>
+                            <li>
+                                毎日の引き出し
+                                <br>
+                                <span>200</span>
+                            </li>
+                            <li>
+                                1日の最大引き出し限度額
+                                <br>
+                                <span>200</span>
+                            </li>
+                            <li>
+                                アップグレードボーナス
+                                <br>
+                                <span>200</span>
+                            </li>
+                            <li>
+                                誕生日プレゼント
+                                <br>
+                                <span>200</span>
+                            </li>
+                            <li>
+                                毎月の赤い封筒
+                                <br>
+                                <span>200</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>

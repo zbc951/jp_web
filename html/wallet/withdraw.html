@@ -78,13 +78,13 @@
                 <div class="moneybtn">
                     <a href="./deposit.html"></a>
                     <a href="./transfer.html"></a>
-                    <a href="./withdraw.html"></a>
+                    <a href="./withdraw.html" class="active"></a>
                 </div>
                 <!--左列按鈕-->
                 <div class="leftbtnbox">
                     <a href="../mem/member.html"><span></span>個人情報</a>
                     <a href="../vip/vip.html"><span></span>VIPメンバー</a>
-                    <a href="./wallet.html" class="active"><span></span>ポイントセンター</a>
+                    <a href="./wallet.html"><span></span>ポイントセンター</a>
                     <a href="../mem/creditcard.html"><span></span>銀行カード</a>
                     <a href="../record/deal.html"><span></span>ポイント履歴</a>
                     <a href="../record/betting.html"><span></span>賭け記録</a>
@@ -95,13 +95,19 @@
             <!--中-->
             <section class="mid">
                 <!--資產窗-->
-                <div class="moneyWindow">
-                    <h1>ポイントセンター</h1>
-                    <div>
+                <div class="withdrawWindow">
+                    <h1>出金エリア</h1>
+                    <div class="innerbox">
                         <table>
                             <tr>
-                                <td colspan="2">
-                                    総資金
+                                <td>
+                                    ポイントセンター
+                                    <button class="rebtn"></button>
+                                    <br>
+                                    <span class="word_large word_lightgreen">$ 0</span>
+                                </td>
+                                <td>
+                                    引き出し額制限
                                     <br>
                                     <span class="word_large word_lightgreen">$ 0</span>
                                 </td>
@@ -111,55 +117,60 @@
                                     <span class="word_large word_lightgreen">$ 0</span>
                                 </td>
                             </tr>
+                        </table>
+                    </div>
+                    <div class="baseline"></div>
+                    <h1>プラットフォームウォレットを</h1>
+                    <div class="innerbox size2">
+                        <span class="noMoney">まだデータはありません</span>
+                    </div>
+                </div>
+                <!--下窗-->
+                <div class="withdrawWindow">
+                    <h1>出金申し込み</h1>
+                    <div class="innerbox size2">
+                        <table>
                             <tr>
                                 <td>
-                                    ポイントセンター
+                                    引き出しの数
                                     <br>
-                                    <span class="word_middle">$ 0</span>
-                                    <button>リサイクル</button>
-                                </td>
-                                <td>
-                                    アクティブウォレット
-                                    <br>
-                                    <span class="word_middle">$ 0</span>
+                                    <span class="word_large word_lightgreen">無制限</span>
+                                    <p>(今日利用可能)</p>
                                 </td>
                                 <td>
                                     引き出し額制限
                                     <br>
-                                    <span class="word_middle">$ 0</span>
+                                    <span class="word_large word_lightgreen">無制限</span>
+                                    <p>(今日利用可能)</p>
+                                </td>
+                                <td>
+                                    単一の割り当て
+                                    <br>
+                                    <span class="word_large word_lightgreen">1000</span>
+                                    <p>(1回の引き出しの上限)</p>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                </div>
-                <!--錢包窗-->
-                <div class="walletWindow">
-                    <div class="box">
-                        <!--雙按鈕-->
-                        <div class="btnbox">
-                            <button><span>プラットホーム</span></button>
-                            <button class="turn"><span>アクティブウォレット</span></button>
-                        </div>
-                        <!--平台錢包-->
-                        <div class="platform display">
-                            <h1>プラットホームの詳細</h1>
-                            <div>
-                                <span class="noMoney">まだデータはありません</span>
-                            </div>
-                        </div>
-                        <!--活動錢包-->
-                        <div class="freeWallet">
-                            <ul>
-                                <li>用語</li>
-                                <li>イベント名</li>
-                                <li>残高</li>
-                                <li>ポイントの進捗状況</li>
-                                <li>オペレーティング</li>
-                            </ul>
-                            <div>
-                                <span class="noMoney">まだデータはありません</span>
-                            </div> 
-                        </div>
+                    <div class="selectbox">
+                        <span>※</span>銀行を選択
+                        <select name="" id="">
+                            <option value="">選択してください</option>
+                            <option value="">選択してください</option>
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <div class="selectbox">
+                        <span>※</span>引き出し金額
+                        <input type="text">
+                    </div>
+                    <button class="savebtn"><span>送信を確認</span></button>
+                    <div class="remindbox">
+                        <h2>重要なリマインダー</h2>
+                        <p>1.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                        <p>2.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                        <p>3.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                        <p>4.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
                     </div>
                 </div>
             </section>

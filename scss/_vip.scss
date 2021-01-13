@@ -48,6 +48,7 @@ html {
                             font-weight: bold;
                         }
                         .barbox {
+                            position: relative;
                             ul {
                                 text-align: center;
                                 li {
@@ -237,16 +238,32 @@ html {
             .innerPage {
                 article {
                     .mid {
-                        .bettingWindow {
+                        .vipWindow {
                             width: 870px;
-                            .selectbox {
-                                .contractbtn {
-                                    right: -395px;
-                                    top: -123px;
+                            .barbox {
+                                ul {
+                                    li {
+                                        margin-right: 95px;
+                                    }
+                                }
+                                .barBody {
+                                    width: 805px;
+                                }
+                                button {
+                                    &.savebtn {
+                                        position: absolute;
+                                        top: -80px;
+                                        right: 38px;
+                                    }
                                 }
                             }
                             .innerbox {
                                 width: 830px;
+                                ul {
+                                    li {
+                                        padding: 35px 10px 0px;
+                                    }
+                                }
                             }
                         }
                     }

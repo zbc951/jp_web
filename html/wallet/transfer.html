@@ -56,7 +56,7 @@
                 <li><a href="../lottery.html">ロト</a></li>
                 <li><a href="../fish.html">釣りゲーム</a></li>
                 <li><a href="../poker.html">カードゲーム</a></li>
-                <li class="active"><a href="./wallet.html">ポイントセンター</a></li>
+                <li><a href="./wallet.html">ポイントセンター</a></li>
                 <li><a href="../discount.html">特典センター</a></li>
                 <li><a href="../vip/vip.html">VIPメンバー</a></li>
             </ul>
@@ -77,14 +77,14 @@
                 <!--現金三按鈕-->
                 <div class="moneybtn">
                     <a href="./deposit.html"></a>
-                    <a href="./transfer.html"></a>
+                    <a href="./transfer.html" class="active"></a>
                     <a href="./withdraw.html"></a>
                 </div>
                 <!--左列按鈕-->
                 <div class="leftbtnbox">
                     <a href="../mem/member.html"><span></span>個人情報</a>
                     <a href="../vip/vip.html"><span></span>VIPメンバー</a>
-                    <a href="./wallet.html" class="active"><span></span>ポイントセンター</a>
+                    <a href="./wallet.html"><span></span>ポイントセンター</a>
                     <a href="../mem/creditcard.html"><span></span>銀行カード</a>
                     <a href="../record/deal.html"><span></span>ポイント履歴</a>
                     <a href="../record/betting.html"><span></span>賭け記録</a>
@@ -95,71 +95,60 @@
             <!--中-->
             <section class="mid">
                 <!--資產窗-->
-                <div class="moneyWindow">
-                    <h1>ポイントセンター</h1>
-                    <div>
+                <div class="transWindow">
+                    <h1>転送</h1>
+                    <div class="innerbox">
                         <table>
                             <tr>
                                 <td colspan="2">
-                                    総資金
-                                    <br>
-                                    <span class="word_large word_lightgreen">$ 0</span>
-                                </td>
-                                <td>
-                                    利用可能な金額
-                                    <br>
-                                    <span class="word_large word_lightgreen">$ 0</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
                                     ポイントセンター
+                                    <button class="rebtn"></button>
                                     <br>
-                                    <span class="word_middle">$ 0</span>
-                                    <button>リサイクル</button>
+                                    <span class="word_large word_lightgreen">$ 0</span>
                                 </td>
                                 <td>
                                     アクティブウォレット
                                     <br>
-                                    <span class="word_middle">$ 0</span>
-                                </td>
-                                <td>
-                                    引き出し額制限
-                                    <br>
-                                    <span class="word_middle">$ 0</span>
+                                    <span class="word_large word_lightgreen">$ 0</span>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                </div>
-                <!--錢包窗-->
-                <div class="walletWindow">
-                    <div class="box">
-                        <!--雙按鈕-->
-                        <div class="btnbox">
-                            <button><span>プラットホーム</span></button>
-                            <button class="turn"><span>アクティブウォレット</span></button>
-                        </div>
-                        <!--平台錢包-->
-                        <div class="platform display">
-                            <h1>プラットホームの詳細</h1>
-                            <div>
-                                <span class="noMoney">まだデータはありません</span>
-                            </div>
-                        </div>
-                        <!--活動錢包-->
-                        <div class="freeWallet">
-                            <ul>
-                                <li>用語</li>
-                                <li>イベント名</li>
-                                <li>残高</li>
-                                <li>ポイントの進捗状況</li>
-                                <li>オペレーティング</li>
-                            </ul>
-                            <div>
-                                <span class="noMoney">まだデータはありません</span>
-                            </div> 
-                        </div>
+                    <div class="baseline"></div>
+                    <h1>プラットフォームウォレットを</h1>
+                    <div class="innerbox size2">
+                        <span class="noMoney">まだデータはありません</span>
+                    </div>
+                    <div class="baseline"></div>
+                    <h1>屋内転送<span>あなたの金額の出入り</span></h1>
+                    <div class="selectbox">
+                        ゲームプラットフォームを
+                        <select name="" id="">
+                            <option value="">選択してください</option>
+                            <option value="">選択してください</option>
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <div class="selectbox">
+                        <span class="arrow_big"></span>
+                        <select name="" id="">
+                            <option value="">選択してください</option>
+                            <option value="">選択してください</option>
+                            <option value="">選択してください</option>
+                        </select>
+                    </div>
+                    <button class="savebtn"><span>確認する</span></button>
+                    <div class="baseline"></div>
+                    <h1>アクティブウォレット</h1>
+                    <ul>
+                        <li>用語</li>
+                        <li>イベント名</li>
+                        <li>残高</li>
+                        <li>ポイントの進捗状況</li>
+                        <li>操作</li>
+                    </ul>
+                    <div class="innerbox size3">
+                        <span class="noMoney">まだデータはありません</span>
                     </div>
                 </div>
             </section>
@@ -167,38 +156,23 @@
             <section class="rightside">
                 <!--下注紀錄-->
                 <div class="bettingWindow">
-                    <h1>賭け記録</h1>
+                    <h1>転送記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <div>
                         <span class="noMoney">まだデータはありません</span>
                     </div>
-                </div>
-                <!--活動-->
-                <div class="activeWindow">
-                    <h1>特典センター</h1>
-                    <button class="askbtn"><span>照会へ</span></button>
-                    <a href="#"></a>
-                    <a href="#"></a>
                 </div>
             </section>
             <!--最右列-->
             <section class="fixside">
                 <!--下注紀錄-->
                 <div class="bettingWindow">
-                    <button class="windowBtn"><span></span><p>賭け記録</p></button>
-                    <h1>賭け記録</h1>
+                    <button class="windowBtn"><span></span><p>転送記録</p></button>
+                    <h1>転送記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <div>
                         <span class="noMoney">まだデータはありません</span>
                     </div>
-                </div>
-                <!--活動-->
-                <div class="activeWindow">
-                    <button class="windowBtn"><span></span><p>特典センター</p></button>
-                    <h1>特典センター</h1>
-                    <button class="askbtn"><span>照会へ</span></button>
-                    <a href="#"></a>
-                    <a href="#"></a>
                 </div>
             </section>
         </article>

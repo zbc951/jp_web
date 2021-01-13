@@ -60,8 +60,15 @@ html {
                             box-shadow: 0px 2px 0px 0px #ffffff80 inset;
                             position: relative;
                             &:hover,&:active,&.active {
-                                animation: smallbtnhover 0.3s linear 0s;
-                                transform: scale(1.2);
+                                background: linear-gradient(to top,#273f5f,#2a4d7c);
+                                background-color: #2a4d7c;
+                                border-color: #122845;
+                                &::before {
+                                    background: linear-gradient(to top, transparent 50%, #00000045);
+                                }
+                                &::after {
+                                    background-position-y: 100%;
+                                }
                             }
                             &::before {
                                 content: "";

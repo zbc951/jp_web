@@ -1,0 +1,239 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    //個人資料窗
+                    .withdrawWindow {
+                        width: 870px;
+                        height: 390px;
+                        border: solid 5px #122845;
+                        border-radius: 15px;
+                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                        background-color: #2a4d7c;
+                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+                        margin-bottom: 20px;
+                        &:last-child {
+                            height: 560px;
+                            margin-bottom: 0px;
+                            .innerbox {
+                                table {
+                                    tr {
+                                        text-align: center;
+                                        td {
+                                            padding-left: 0px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        h1 {
+                            color: #ffffac;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding: 15px 0px 15px 20px;
+                        }
+                        .baseline {
+                            width: 95%;
+                            height: 3px;
+                            background: #122845;
+                            margin: 30px auto 10px;
+                        }
+                        .selectbox {
+                            display: inline-block;
+                            color: #fff;
+                            margin: 30px 0px 20px 20px;
+                            position: relative;
+                            &:nth-of-type(3) {
+                                margin-left: 68px;
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 0px;
+                                height: 0px;
+                                right: 20px;
+                                top: 17px;
+                                border-style: solid;
+                                border-width: 10px 6px 0px 6px;
+                                border-color: #29fff6 transparent transparent transparent;
+                                pointer-events: none;
+                            }
+                            select {
+                                width: 250px;
+                                height: 42px;
+                                border: solid 1px #c8dfff;
+                                background: #183051;
+                                box-shadow: 0px 2px 2px 0px #102036 inset;
+                                border-radius: 10px;
+                                color: #fff;
+                                padding-left: 10px;
+                                font-size: 16px;
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                margin-left: 15px;
+                            }
+                            input {
+                                width: 250px;
+                                height: 42px;
+                                border: solid 1px #c8dfff;
+                                background: #183051;
+                                box-shadow: 0px 2px 2px 0px #102036 inset;
+                                border-radius: 10px;
+                                color: #fff;
+                                padding-left: 10px;
+                                font-size: 16px;
+                                appearance: none;
+                                -moz-appearance: none;
+                                -webkit-appearance: none;
+                                margin-left: 15px;
+                            }
+                            span {
+                                color: #29fff6;
+                            }
+                        }
+                        .savebtn {
+                            display: block;
+                            width: 240px;
+                            height: 62px;
+                            border: solid 5px #b5203f;
+                            border-radius: 15px;
+                            background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                            background-color: #f56684;
+                            box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+                            position: relative;
+                            margin: 10px auto 30px;
+                            &:hover,&:active,&.active {
+                                &::before {
+                                    background: linear-gradient(to top,transparent 50%,#00000052);
+                                }
+                            }
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 220px;
+                                height: 40px;
+                                border-radius: 8px 8px 0px 0px;
+                                top: 5px;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                            }
+                            span {
+                                font-size: 20px;
+                                color: #fff;
+                                position: relative;
+                                z-index: 1;
+                                font-weight: bold;
+                                text-shadow: 1px 1px 0px #961530;
+                            }
+                        }
+                        .innerbox {
+                            width: 830px;
+                            height: 90px;
+                            margin: 0px auto;
+                            background: #507ab0;
+                            border-radius: 15px;
+                            border: solid 1px #5885c2;
+                            box-shadow: 0px 2px 2px 0px #365276 inset;
+                            overflow: hidden;
+                            position: relative;
+                            &.size2 {
+                                height: 110px;
+                            }
+                            &.size3 {
+                                height: 300px;
+                            }
+                            table {
+                                width: 100%;
+                                height: 100%;
+                                tr {
+                                    td {
+                                        width: 33%;
+                                        padding: 15px 0px 0px 30px;
+                                        font-size: 17px;
+                                        color: #fff;
+                                        position: relative;
+                                        border-right: solid 3px #274060;
+                                        &:last-child {
+                                            border: none;
+                                        }
+                                        span {
+                                            display: block;
+                                            padding-top: 10px;
+                                            font-size: 32px;
+                                            color: #c0ff3e;
+                                            font-weight: bold;
+                                        }
+                                        p {
+                                            margin-top: 10px;
+                                        }
+                                        .rebtn {
+                                            width: 40px;
+                                            height: 40px;
+                                            border-radius: 30px;
+                                            border: solid 5px #003643;
+                                            position: absolute;
+                                            top: 3px;
+                                            left: 175px;
+                                            background: linear-gradient(to top,#00adc1 23%,#1ed2d9 63%);
+                                            background-color: #00adc1;
+                                            box-shadow: 0px 3px 3px 0px #56ffff inset;
+                                            &:hover,&:active,&.active {
+                                                &::before {
+                                                    animation: rebtn2 0.6s linear 0s infinite;
+                                                }
+                                            }
+                                            &::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 17px;
+                                                height: 17px;
+                                                background: url('../images/wallet/arrow_re.png') no-repeat;
+                                                left: 50%;
+                                                top: 50%;
+                                                transform: translate(-50%,-50%);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .noMoney {
+                                position: absolute;
+                                color: #fff;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+                            }
+                        }
+                        .remindbox {
+                            width: 790px;
+                            height: 120px;
+                            padding: 20px;
+                            border: solid 5px #ffff85;
+                            border-radius: 15px;
+                            background: #ff5858;
+                            margin: 0px auto;
+                            box-shadow: 0px 3px 3px 0px #c51d1d inset;
+                            h2 {
+                                font-size: 18px;
+                                font-weight: bold;
+                                color: #f5f6a9;
+                                padding-bottom: 15px;
+                            }
+                            p {
+                                color: #fff;
+                                line-height: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

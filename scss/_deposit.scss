@@ -1,0 +1,46 @@
+html {
+    body {
+        .innerPage {
+            article {
+                //中
+                .mid {
+                    //主窗
+                    .depositWindow {
+                        width: 870px;
+                        height: 720px;
+                        border: solid 5px #122845;
+                        border-radius: 15px;
+                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                        background-color: #2a4d7c;
+                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+                        h1 {
+                            color: #ffffac;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding: 15px 0px 15px 20px;
+                        }
+                        button {
+                            width: 160px;
+                            height: 52px;
+                            border: solid 5px #00302e;
+                            color: #fff;
+                            font-size: 15px;
+                            border-radius: 8px;
+                            text-shadow: 1px 1px 0px #000;
+                            background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                            margin: 15px 0px 0px 50px;
+                            &:last-child {
+                                margin-left: 15px;
+                            }
+                            &:hover,&:active,&.active {
+                                background: #b5203f;
+                                border-color: #ed5676;
+                                text-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

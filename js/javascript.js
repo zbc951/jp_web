@@ -255,3 +255,22 @@ $(function(){
 		$('.posts .rowbtn div').css('left','240px');
 	})
 })
+//rule
+$(function(){
+	$('.rule .btnWindow h1').click(function(){
+		$(this).closest('div').addClass('open');
+		$(this).closest('div').siblings().removeClass('open');
+	})
+	$('.btnWindow li').click(function(){
+		$('.btnWindow li').removeClass('active');
+		$(this).addClass('active');
+	})
+	$('.btnWindow .accountBtn').click(function(){
+		$('.rule .account').addClass('display');
+		$('.rule .account').siblings().removeClass('display');
+	})
+	$('.btnWindow .GDBtn').click(function(){
+		$('.rule .GD').addClass('display');
+		$('.rule .GD').siblings().removeClass('display');
+	})
+})

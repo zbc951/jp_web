@@ -11,7 +11,7 @@ html {
                 .leftside {
                     float: left;
                     width: 360px;
-                    height: 730px;
+                    height: calc(100% - 25px);
                     margin: 18px 18px 0px 0px;
                     padding-left: 20px;
                     //左窗
@@ -30,6 +30,13 @@ html {
                             background-color: #008b7c;
                             h1 {
                                 color: #fffbb4;
+                                &::after {
+                                    background-position-x: 100%;
+                                    transform: rotate(90deg);
+                                }
+                            }
+                            ul {
+                                display: block;
                             }
                         }
                         &:nth-of-type(2) {
@@ -59,6 +66,7 @@ html {
                             padding-left: 40px;
                             color: #fff;
                             position: relative;
+                            cursor: pointer;
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -75,6 +83,35 @@ html {
                                 width: 23px;
                                 height: 24px;
                                 background: url('../images/rule/arrow_play.png') no-repeat;
+                                right: 25px;
+                                top: 27px;
+                            }
+                        }
+                        ul {
+                            width: 270px;
+                            margin: 0px auto;
+                            display: none;
+                            li {
+                                width: 176px;
+                                color: #fff;
+                                font-size: 22px;
+                                height: 46px;
+                                line-height: 46px;
+                                padding: 0px 40px;
+                                border-radius: 15px;
+                                border: solid 4px transparent;
+                                position: relative;
+                                cursor: pointer;
+                                &:hover,&:active {
+                                    background: #ff3644;
+                                    color: #fffbb4;
+                                }
+                                &.active {
+                                    background: #ff3644;
+                                    color: #fffbb4;
+                                    box-shadow: 0px 0px 0px 4px #ff3644;
+                                    border: solid 4px #0cb9a6;
+                                }
                             }
                         }
                     }
@@ -82,216 +119,106 @@ html {
                 //中
                 .mid {
                     float: left;
-                    width: 880px;
-                    height: 730px;
-                    margin: 18px 18px 0px 0px;
-                    //資產窗
-                    .moneyWindow {
-                        width: 870px;
-                        height: 240px;
-                        border: solid 5px #122845;
-                        border-radius: 15px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                        margin-bottom: 20px;
-                        h1 {
-                            color: #ffffac;
-                            font-size: 19px;
-                            font-weight: bold;
-                            letter-spacing: 5px;
-                            padding: 15px 0px 15px 20px;
+                    width: 1060px;
+                    height: calc(100% - 25px);
+                    margin: 18px 0px 0px 0px;
+                    .innerbox {
+                        display: none;
+                        width: 960px;
+                        height: 810px;
+                        padding: 35px 40px;
+                        border: solid 6px #122845;
+                        border-radius: 25px;
+                        box-shadow: 0px 0px 0px 5px #fff inset,0px 0px 0px 10px #66c9bf inset;
+                        background: linear-gradient(to top,#008b7c 0%,#00ab99 100%);
+                        background-color: #008b7c;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                        position: relative;
+                        &.display {
+                            display: block;
                         }
-                        div {
-                            width: 830px;
-                            height: 170px;
-                            margin: 0px auto;
-                            background: #507ab0;
-                            border: solid 1px #5885c2;
-                            border-radius: 15px;
-                            box-shadow: 0px 2px 0px 0px #0000003b inset;
-                            overflow: hidden;
-                            table {
-                                width: 100%;
-                                height: 100%;
-                                tr {
-                                    &:nth-of-type(1) {
-                                        border-bottom: solid 2px #274060;
+                        h2 {
+                            color: #fff;
+                            font-size: 21px;
+                            font-weight: bold;
+                            padding-bottom: 10px;
+                        }
+                        p {
+                            color: #fff;
+                            font-size: 18px;
+                            line-height: 31px;
+                            &.lastP {
+                                padding-bottom: 60px;
+                            }
+                        }
+                        .codeBox {
+                            width: 290px;
+                            height: 470px;
+                            background: #40bbad;
+                            border-radius: 20px;
+                            border: solid 1px #fff;
+                            position: absolute;
+                            top: 35px;
+                            left: 340px;
+                            text-align: center;
+                            &:nth-of-type(2) {
+                                left: 680px;
+                                .cellphoneIC {
+                                    background-position-x: 100%;
+                                }
+                                button {
+                                    background: #95ff24;
+                                    span {
+                                        color: #005d3d;
                                     }
-                                    &:nth-of-type(2) {
-                                        td {
-                                            &:nth-of-type(1) {
-                                                width: 37%;
-                                            }
-                                            &:nth-of-type(2) {
-                                                width: 29.5%;
-                                            }
-                                            &:nth-of-type(3) {
-                                                width: 33.5%;
-                                            }
-                                        }
+                                }
+                            }
+                            .cellphoneIC {
+                                width: 145px;
+                                height: 45px;
+                                background: url('../images/rule/rule_cellphoneIC.png') no-repeat;
+                                margin: 20px auto 10px;
+                            }
+                            p {
+                                color: #fff;
+                                font-size: 12px;
+                                letter-spacing: 2px;
+                            }
+                            .QRcode {
+                                width: 200px;
+                                height: 200px;
+                                background: url('../images/rule/rule_QRcode.png') no-repeat;
+                                margin: 20px auto 40px;
+                            }
+                            button {
+                                width: 250px;
+                                height: 65px;
+                                background: #ff3644;
+                                overflow: hidden;
+                                border: solid 8px #fff;
+                                border-radius: 50px;
+                                position: relative;
+                                &:hover,&:active,&.active {
+                                    font-weight: bold;
+                                    &::before {
+                                        animation: btnbg linear 10s 0s infinite alternate;
                                     }
-                                    td {
-                                        padding: 12px 0px 12px 30px;
-                                        font-size: 18px;
-                                        color: #fff;
-                                        position: relative;
-                                        &:nth-of-type(2) {
-                                            border-left: solid 2px #274060;
-                                        }
-                                        &:last-child {
-                                            border-left: solid 3px #274060;
-                                        }
-                                    }
+                                }
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    background: url('../images/index/btn_bg.png') no-repeat;
+                                    width: 634px;
+                                    height: 124px;
+                                    left: -40px;
+                                    top: -38px;
                                 }
                                 span {
-                                    display: block;
-                                    margin-top: 7px;
-                                    &.word_middle {
-                                        font-size: 24px;
-                                        font-weight: bold;
-                                    }
-                                    &.word_large {
-                                        font-size: 32px;
-                                        font-weight: bold;
-                                    }
-                                    &.word_lightgreen {
-                                        color: #c0ff3e;
-                                    }
-                                }
-                                button {
-                                    position: absolute;
-                                    width: 105px;
-                                    height: 50px;
-                                    border: solid 4px #bb304d;
-                                    border-radius: 10px;
-                                    right: 13px;
-                                    top: 16px;
-                                    color: #fff;
-                                    letter-spacing: 3px;
-                                    text-shadow: 1px 1px 0px #000;
-                                    background: linear-gradient(to bottom,#ff92a9 50%,#f56684 50%);
-                                    background-color: #f56684;
-                                    &:hover,&:active,&.active {
-                                        text-shadow: -1px -1px 0px #000;
-                                        background: #b5203f;
-                                        border-color: #ed5676;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //錢包窗
-                    .walletWindow {
-                        width: 880px;
-                        height: 460px;
-                        position: relative;
-                        .box {
-                            width: 870px;
-                            height: 395px;
-                            position: absolute;
-                            bottom: 0px;
-                            border: solid 5px #122845;
-                            border-radius: 15px;
-                            background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                            background-color: #2a4d7c;
-                            box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                            z-index: 1;
-                            //雙按鈕
-                            .btnbox {
-                                button {
-                                    width: 200px;
-                                    height: 60px;
-                                    border-style: solid;
-                                    border-color: #122845;
-                                    border-width: 5px 5px 0px 5px;
-                                    border-radius: 60px 60px 0px 0px;
-                                    background: #2a4c79;
-                                    position: absolute;
-                                    top: -60px;
-                                    left: 20px;
-                                    box-shadow: 0px 5px 0px 0px #2a4c79,0px 3px 2px 0px #a7cdffa1 inset;
-                                    &::before {
-                                        content: "";
-                                        position: absolute;
-                                        width: 175px;
-                                        height: 50px;
-                                        background: linear-gradient(to top, transparent 50%, #00000047);
-                                        border-radius: 50px 50px 0px 0px;
-                                        left: 50%;
-                                        top: 5px;
-                                        transform: translateX(-50%);
-                                    }
-                                    &:last-child {
-                                        left: 230px;
-                                        span {
-                                            font-size: 14px;
-                                        }
-                                    }
-                                    &.turn {
-                                        background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
-                                        border-color: #b5203f;
-                                        box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-                                        top: -60px;
-                                        height: 55px;
-                                        &::before {
-                                            background: linear-gradient(to top, transparent 50%, #ffffff69);
-                                        }
-                                    }
-                                    span {
-                                        display: block;
-                                        width: 100%;
-                                        left: 0px;
-                                        position: absolute;
-                                        z-index: 1;
-                                        top: 15px;
-                                        font-size: 17px;
-                                        color: #fff;
-                                        text-shadow: 1px 1px 0px #000;
-                                    }
-                                }
-                            }
-                            h1 {
-                                color: #ffffac;
-                                font-size: 19px;
-                                font-weight: bold;
-                                letter-spacing: 5px;
-                                padding: 25px 0px 25px 20px;
-                            }
-                            //平台錢包/活動錢包
-                            .platform,.freeWallet {
-                                display: none;
-                                &.display {
-                                    display: block;
-                                }
-                                div {
-                                    width: 830px;
-                                    height: 305px;
-                                    margin: 0px auto;
-                                    background: #507ab0;
-                                    border: solid 1px #5885c2;
-                                    border-radius: 15px;
-                                    box-shadow: 0px 2px 0px 0px #0000003b inset;
                                     position: relative;
-                                    .noMoney {
-                                        position: absolute;
-                                        color: #fff;
-                                        left: 50%;
-                                        top: 50%;
-                                        transform: translate(-50%,-50%);
-                                        letter-spacing: 3px;
-                                    }
-                                }
-                                ul {
-                                    margin-top: 10px;
-                                    text-align: center;
-                                    li {
-                                        display: inline-block;
-                                        color: #fff;
-                                        height: 50px;
-                                        line-height: 50px;
-                                        padding: 0px 43px;
-                                    }
+                                    color: #fff;
+                                    font-size: 18px;
+                                    letter-spacing: 2px;
                                 }
                             }
                         }

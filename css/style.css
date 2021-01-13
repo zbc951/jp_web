@@ -7800,7 +7800,7 @@ html body .rule article {
 html body .rule article .leftside {
   float: left;
   width: 360px;
-  height: 730px;
+  height: calc(100% - 25px);
   margin: 18px 18px 0px 0px;
   padding-left: 20px;
 }
@@ -7827,6 +7827,15 @@ html body .rule article .leftside .btnWindow.open {
 html body .rule article .leftside .btnWindow.open h1 {
   color: #fffbb4;
 }
+html body .rule article .leftside .btnWindow.open h1::after {
+  background-position-x: 100%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+html body .rule article .leftside .btnWindow.open ul {
+  display: block;
+}
 html body .rule article .leftside .btnWindow:nth-of-type(2) h1::before {
   background-position-x: -65px;
 }
@@ -7842,6 +7851,7 @@ html body .rule article .leftside .btnWindow h1 {
   padding-left: 40px;
   color: #fff;
   position: relative;
+  cursor: pointer;
 }
 html body .rule article .leftside .btnWindow h1::before {
   content: "";
@@ -7859,233 +7869,147 @@ html body .rule article .leftside .btnWindow h1::after {
   width: 23px;
   height: 24px;
   background: url("../images/rule/arrow_play.png") no-repeat;
+  right: 25px;
+  top: 27px;
+}
+html body .rule article .leftside .btnWindow ul {
+  width: 270px;
+  margin: 0px auto;
+  display: none;
+}
+html body .rule article .leftside .btnWindow ul li {
+  width: 176px;
+  color: #fff;
+  font-size: 22px;
+  height: 46px;
+  line-height: 46px;
+  padding: 0px 40px;
+  border-radius: 15px;
+  border: solid 4px transparent;
+  position: relative;
+  cursor: pointer;
+}
+html body .rule article .leftside .btnWindow ul li:hover, html body .rule article .leftside .btnWindow ul li:active {
+  background: #ff3644;
+  color: #fffbb4;
+}
+html body .rule article .leftside .btnWindow ul li.active {
+  background: #ff3644;
+  color: #fffbb4;
+  -webkit-box-shadow: 0px 0px 0px 4px #ff3644;
+          box-shadow: 0px 0px 0px 4px #ff3644;
+  border: solid 4px #0cb9a6;
 }
 html body .rule article .mid {
   float: left;
-  width: 880px;
-  height: 730px;
-  margin: 18px 18px 0px 0px;
+  width: 1060px;
+  height: calc(100% - 25px);
+  margin: 18px 0px 0px 0px;
 }
-html body .rule article .mid .moneyWindow {
-  width: 870px;
-  height: 240px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-  margin-bottom: 20px;
-}
-html body .rule article .mid .moneyWindow h1 {
-  color: #ffffac;
-  font-size: 19px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding: 15px 0px 15px 20px;
-}
-html body .rule article .mid .moneyWindow div {
-  width: 830px;
-  height: 170px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
-  overflow: hidden;
-}
-html body .rule article .mid .moneyWindow div table {
-  width: 100%;
-  height: 100%;
-}
-html body .rule article .mid .moneyWindow div table tr:nth-of-type(1) {
-  border-bottom: solid 2px #274060;
-}
-html body .rule article .mid .moneyWindow div table tr:nth-of-type(2) td:nth-of-type(1) {
-  width: 37%;
-}
-html body .rule article .mid .moneyWindow div table tr:nth-of-type(2) td:nth-of-type(2) {
-  width: 29.5%;
-}
-html body .rule article .mid .moneyWindow div table tr:nth-of-type(2) td:nth-of-type(3) {
-  width: 33.5%;
-}
-html body .rule article .mid .moneyWindow div table tr td {
-  padding: 12px 0px 12px 30px;
-  font-size: 18px;
-  color: #fff;
-  position: relative;
-}
-html body .rule article .mid .moneyWindow div table tr td:nth-of-type(2) {
-  border-left: solid 2px #274060;
-}
-html body .rule article .mid .moneyWindow div table tr td:last-child {
-  border-left: solid 3px #274060;
-}
-html body .rule article .mid .moneyWindow div table span {
-  display: block;
-  margin-top: 7px;
-}
-html body .rule article .mid .moneyWindow div table span.word_middle {
-  font-size: 24px;
-  font-weight: bold;
-}
-html body .rule article .mid .moneyWindow div table span.word_large {
-  font-size: 32px;
-  font-weight: bold;
-}
-html body .rule article .mid .moneyWindow div table span.word_lightgreen {
-  color: #c0ff3e;
-}
-html body .rule article .mid .moneyWindow div table button {
-  position: absolute;
-  width: 105px;
-  height: 50px;
-  border: solid 4px #bb304d;
-  border-radius: 10px;
-  right: 13px;
-  top: 16px;
-  color: #fff;
-  letter-spacing: 3px;
-  text-shadow: 1px 1px 0px #000;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff92a9), color-stop(50%, #f56684));
-  background: -o-linear-gradient(top, #ff92a9 50%, #f56684 50%);
-  background: linear-gradient(to bottom, #ff92a9 50%, #f56684 50%);
-  background-color: #f56684;
-}
-html body .rule article .mid .moneyWindow div table button:hover, html body .rule article .mid .moneyWindow div table button:active, html body .rule article .mid .moneyWindow div table button.active {
-  text-shadow: -1px -1px 0px #000;
-  background: #b5203f;
-  border-color: #ed5676;
-}
-html body .rule article .mid .walletWindow {
-  width: 880px;
-  height: 460px;
-  position: relative;
-}
-html body .rule article .mid .walletWindow .box {
-  width: 870px;
-  height: 395px;
-  position: absolute;
-  bottom: 0px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-  z-index: 1;
-}
-html body .rule article .mid .walletWindow .box .btnbox button {
-  width: 200px;
-  height: 60px;
-  border-style: solid;
-  border-color: #122845;
-  border-width: 5px 5px 0px 5px;
-  border-radius: 60px 60px 0px 0px;
-  background: #2a4c79;
-  position: absolute;
-  top: -60px;
-  left: 20px;
-  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-}
-html body .rule article .mid .walletWindow .box .btnbox button::before {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
-  background: linear-gradient(to top, transparent 50%, #00000047);
-  border-radius: 50px 50px 0px 0px;
-  left: 50%;
-  top: 5px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-html body .rule article .mid .walletWindow .box .btnbox button:last-child {
-  left: 230px;
-}
-html body .rule article .mid .walletWindow .box .btnbox button:last-child span {
-  font-size: 14px;
-}
-html body .rule article .mid .walletWindow .box .btnbox button.turn {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  border-color: #b5203f;
-  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-  top: -60px;
-  height: 55px;
-}
-html body .rule article .mid .walletWindow .box .btnbox button.turn::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
-  background: linear-gradient(to top, transparent 50%, #ffffff69);
-}
-html body .rule article .mid .walletWindow .box .btnbox button span {
-  display: block;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
-  font-size: 17px;
-  color: #fff;
-  text-shadow: 1px 1px 0px #000;
-}
-html body .rule article .mid .walletWindow .box h1 {
-  color: #ffffac;
-  font-size: 19px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding: 25px 0px 25px 20px;
-}
-html body .rule article .mid .walletWindow .box .platform, html body .rule article .mid .walletWindow .box .freeWallet {
+html body .rule article .mid .innerbox {
   display: none;
-}
-html body .rule article .mid .walletWindow .box .platform.display, html body .rule article .mid .walletWindow .box .freeWallet.display {
-  display: block;
-}
-html body .rule article .mid .walletWindow .box .platform div, html body .rule article .mid .walletWindow .box .freeWallet div {
-  width: 830px;
-  height: 305px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
+  width: 960px;
+  height: 810px;
+  padding: 35px 40px;
+  border: solid 6px #122845;
+  border-radius: 25px;
+  -webkit-box-shadow: 0px 0px 0px 5px #fff inset, 0px 0px 0px 10px #66c9bf inset;
+          box-shadow: 0px 0px 0px 5px #fff inset, 0px 0px 0px 10px #66c9bf inset;
+  background: -webkit-gradient(linear, left bottom, left top, from(#008b7c), to(#00ab99));
+  background: -o-linear-gradient(bottom, #008b7c 0%, #00ab99 100%);
+  background: linear-gradient(to top, #008b7c 0%, #00ab99 100%);
+  background-color: #008b7c;
+  overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
 }
-html body .rule article .mid .walletWindow .box .platform div .noMoney, html body .rule article .mid .walletWindow .box .freeWallet div .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  letter-spacing: 3px;
+html body .rule article .mid .innerbox.display {
+  display: block;
 }
-html body .rule article .mid .walletWindow .box .platform ul, html body .rule article .mid .walletWindow .box .freeWallet ul {
-  margin-top: 10px;
+html body .rule article .mid .innerbox h2 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+html body .rule article .mid .innerbox p {
+  color: #fff;
+  font-size: 18px;
+  line-height: 31px;
+}
+html body .rule article .mid .innerbox p.lastP {
+  padding-bottom: 60px;
+}
+html body .rule article .mid .innerbox .codeBox {
+  width: 290px;
+  height: 470px;
+  background: #40bbad;
+  border-radius: 20px;
+  border: solid 1px #fff;
+  position: absolute;
+  top: 35px;
+  left: 340px;
   text-align: center;
 }
-html body .rule article .mid .walletWindow .box .platform ul li, html body .rule article .mid .walletWindow .box .freeWallet ul li {
-  display: inline-block;
+html body .rule article .mid .innerbox .codeBox:nth-of-type(2) {
+  left: 680px;
+}
+html body .rule article .mid .innerbox .codeBox:nth-of-type(2) .cellphoneIC {
+  background-position-x: 100%;
+}
+html body .rule article .mid .innerbox .codeBox:nth-of-type(2) button {
+  background: #95ff24;
+}
+html body .rule article .mid .innerbox .codeBox:nth-of-type(2) button span {
+  color: #005d3d;
+}
+html body .rule article .mid .innerbox .codeBox .cellphoneIC {
+  width: 145px;
+  height: 45px;
+  background: url("../images/rule/rule_cellphoneIC.png") no-repeat;
+  margin: 20px auto 10px;
+}
+html body .rule article .mid .innerbox .codeBox p {
   color: #fff;
-  height: 50px;
-  line-height: 50px;
-  padding: 0px 43px;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+html body .rule article .mid .innerbox .codeBox .QRcode {
+  width: 200px;
+  height: 200px;
+  background: url("../images/rule/rule_QRcode.png") no-repeat;
+  margin: 20px auto 40px;
+}
+html body .rule article .mid .innerbox .codeBox button {
+  width: 250px;
+  height: 65px;
+  background: #ff3644;
+  overflow: hidden;
+  border: solid 8px #fff;
+  border-radius: 50px;
+  position: relative;
+}
+html body .rule article .mid .innerbox .codeBox button:hover, html body .rule article .mid .innerbox .codeBox button:active, html body .rule article .mid .innerbox .codeBox button.active {
+  font-weight: bold;
+}
+html body .rule article .mid .innerbox .codeBox button:hover::before, html body .rule article .mid .innerbox .codeBox button:active::before, html body .rule article .mid .innerbox .codeBox button.active::before {
+  -webkit-animation: btnbg linear 10s 0s infinite alternate;
+          animation: btnbg linear 10s 0s infinite alternate;
+}
+html body .rule article .mid .innerbox .codeBox button::before {
+  content: "";
+  position: absolute;
+  background: url("../images/index/btn_bg.png") no-repeat;
+  width: 634px;
+  height: 124px;
+  left: -40px;
+  top: -38px;
+}
+html body .rule article .mid .innerbox .codeBox button span {
+  position: relative;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 2px;
 }
 html body .rule .bg {
   width: 100%;

@@ -36,9 +36,9 @@
                         <option value="">9</option>
                     </select>
                 </li>
-                <li class="depositbtn"><a href="#">入金エリア</a></li>
-                <li class="transbtn"><a href="#">転送お金</a></li>
-                <li class="withdrawbtn"><a href="#">出金エリア</a></li>
+                <li class="depositbtn"><a href="./wallet/deposit.html">入金エリア</a></li>
+                <li class="transbtn"><a href="./wallet/transfer.html">転送お金</a></li>
+                <li class="withdrawbtn"><a href="./wallet/withdraw.html">出金エリア</a></li>
                 <li class="personal"><a href="./mem/member.html">アカウント情報</a></li>
                 <li class="mail"><a href="./mail.html">メール</a></li>
                 <li class="logout"><a href="../index.html">ログアウト</a></li>
@@ -65,26 +65,57 @@
     <!--main-->
     <main class="discount">
         <!--主區域-->
-        <section class="discount_mainbox">
-            <div class="bannerbox">
-                <div></div>
-            </div>
-            <div class="contentbox">
-                <div class="title">イベント<button onclick="history.go(-1)"></button></div>
-                <h1>《イベント時間》</h1>
-                <p>第1回 : 2020年12月25日朝9時から2020年12月28日朝9時まで</p>
-                <p>第2回 : 2021年1月1日朝9時から2021年1月4日朝9時まで</p>
-                <h1>《参加方法》</h1>
-                <p>各期間中、1キャンペーン日中に合計$100以上を、【入金 & 対象ゲームでプレイ】することにより、翌日にリベンジギフトが当たる資格を獲得です!</p>
-                <p>※ここでの1キャンペーン日とは、朝9時から24時間を指します。</p>
-                <h1>《各期間の対象ゲーム》</h1>
-                <p>第1回開催期間 : 全スロットゲーム</p>
-                <p>第2回開催期間 : 全ライブカジノゲーム</p>
-                <h1>《リベンジギフト》</h1>
-                <p>獲得資格を手に入れたプレイヤー様の中から、ランダムに選ばれたプレイヤー様に、キャッシュ$10が翌日夕方6時に進呈されます。</p>
-                <p class="lastP">リベンジギフトを手に入れて、翌日も追加プレイに挑むチャンスは全部で6回! どうぞ、1日たりともお見逃しなく</p>
-            </div>
-        </section>
+        <article>
+            <!--選單-->
+            <section class="discount_mainbox display">
+                <div class="leftside">
+                    <button class="active"></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </div>
+                <div class="mid">
+                    <div class="imgBox openPage1">
+                        <div></div>
+                        <p>イベント</p>
+                        <button>イベントを見る</button>
+                    </div>
+                    <div class="imgBox">
+                        <div class="img2"></div>
+                        <p>イベント</p>
+                        <button>イベントを見る</button>
+                    </div>
+                    <div class="imgBox">
+                        <div class="img3"></div>
+                        <p>イベント</p>
+                        <button>イベントを見る</button>
+                    </div>
+                </div>
+            </section>
+            <!--內頁1-->
+            <section class="discount_innerpage page1">
+                <div class="bannerbox">
+                    <div></div>
+                </div>
+                <div class="contentbox">
+                    <div class="title">イベント<button></button></div>
+                    <div class="hideBoard">
+                        <h1>《イベント時間》</h1>
+                        <p>第1回 : 2020年12月25日朝9時から2020年12月28日朝9時まで</p>
+                        <p>第2回 : 2021年1月1日朝9時から2021年1月4日朝9時まで</p>
+                        <h1>《参加方法》</h1>
+                        <p>各期間中、1キャンペーン日中に合計$100以上を、【入金 & 対象ゲームでプレイ】することにより、翌日にリベンジギフトが当たる資格を獲得です!</p>
+                        <p>※ここでの1キャンペーン日とは、朝9時から24時間を指します。</p>
+                        <h1>《各期間の対象ゲーム》</h1>
+                        <p>第1回開催期間 : 全スロットゲーム</p>
+                        <p>第2回開催期間 : 全ライブカジノゲーム</p>
+                        <h1>《リベンジギフト》</h1>
+                        <p>獲得資格を手に入れたプレイヤー様の中から、ランダムに選ばれたプレイヤー様に、キャッシュ$10が翌日夕方6時に進呈されます。</p>
+                        <p class="lastP">リベンジギフトを手に入れて、翌日も追加プレイに挑むチャンスは全部で6回! どうぞ、1日たりともお見逃しなく</p>
+                    </div>
+                </div>
+            </section>
+        </article>
         <!--背景-->
         <div class="bg"></div>
     </main>

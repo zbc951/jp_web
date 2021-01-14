@@ -274,3 +274,18 @@ $(function(){
 		$('.rule .GD').siblings().removeClass('display');
 	})
 })
+//discount
+$(function(){
+	$('.discount_mainbox .leftside button').click(function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+	})
+	$('.openPage1').click(function(){
+		$('.page1').addClass('display');
+		$('.discount_mainbox').removeClass('display');
+	})
+	$('.discount_innerpage .contentbox .title button').click(function(){
+		$('.discount_innerpage').removeClass('display');
+		$('.discount_mainbox').addClass('display');
+	})
+})

@@ -142,6 +142,7 @@ html {
                             }
                             &:nth-of-type(1) {
                                 border-color: #b23f00;
+                                background-color: #ff7e00;
                                 background: linear-gradient(to top,#ff7e00 23%,#ff9e21 63%);
                                 &:hover,&:active,&.active {
                                     background: linear-gradient(to top,#273f5f,#2a4d7c);

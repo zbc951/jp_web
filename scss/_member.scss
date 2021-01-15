@@ -55,11 +55,20 @@ html {
                                     font-weight: bold;
                                     margin: 0px 5px;
                                     box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+                                    /*for IE*/
+                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                        padding-left: 3px;
+                                    }
+                                    /*for IE 9*/
+                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                        padding-left: 3px;
+                                    }
                                     &:nth-of-type(1) {
                                         margin-left: 8px;
                                     }
                                     &.active {
                                         background: linear-gradient(to top,#a00f00,#ff0000);
+                                        background-color: #ff0000;
                                         color: #fff;
                                     }
                                 }
@@ -98,7 +107,7 @@ html {
                             }
                         }
                     }
-                    //情報窗
+                    //下窗
                     .inforWindow {
                         width: 880px;
                         height: 460px;
@@ -149,6 +158,7 @@ html {
                                     }
                                     &.turn {
                                         background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                        background-color: #f56684;
                                         border-color: #b5203f;
                                         box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
                                         top: -60px;
@@ -241,6 +251,15 @@ html {
                                             border-radius: 8px;
                                             text-shadow: 1px 1px 0px #000;
                                             background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                            background-color: #148883;
+                                            /*for IE*/
+                                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                                line-height: 0px;
+                                            }
+                                            /*for IE 9*/
+                                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                                line-height: 0px;
+                                            }
                                             &:hover,&:active,&.active {
                                                 background: #b5203f;
                                                 border-color: #ed5676;
@@ -301,6 +320,14 @@ html {
                                     font-size: 14px;
                                     color: #fff;
                                     margin: 10px 0px 0px 40px;
+                                    /*for IE*/
+                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                        margin-bottom: 50px;
+                                    }
+                                    /*for IE 9*/
+                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                        margin-bottom: 50px;
+                                    }
                                     input {
                                         background: #183051;
                                         width: 190px;
@@ -330,6 +357,15 @@ html {
                                         text-shadow: 1px 1px 0px #000;
                                         transform: translateY(-1px);
                                         background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                        background-color: #148883;
+                                        /*for IE*/
+                                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                            line-height: 0px;
+                                        }
+                                        /*for IE 9*/
+                                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                            line-height: 0px;
+                                        }
                                         &:hover,&:active,&.active {
                                             background: #b5203f;
                                             border-color: #ed5676;

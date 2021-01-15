@@ -3610,6 +3610,7 @@ html body .innerPage article .leftside .leftbtnbox a::before {
 }
 html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1) {
   border-color: #b23f00;
+  background-color: #ff7e00;
   background: linear-gradient(to top, #ff7e00 23%, #ff9e21 63%);
 }
 html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1):hover, html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1):active, html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1).active {
@@ -4105,12 +4106,25 @@ html body .innerPage article .mid .memberWindow div p span {
   font-weight: bold;
   margin: 0px 5px;
   box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .memberWindow div p span {
+    padding-left: 3px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .memberWindow div p span {
+    padding-left: 3px;
+  }
 }
 html body .innerPage article .mid .memberWindow div p span:nth-of-type(1) {
   margin-left: 8px;
 }
 html body .innerPage article .mid .memberWindow div p span.active {
   background: linear-gradient(to top, #a00f00, #ff0000);
+  background-color: #ff0000;
   color: #fff;
 }
 html body .innerPage article .mid .memberWindow div ul li {
@@ -4188,6 +4202,7 @@ html body .innerPage article .mid .inforWindow .box .btnbox button:last-child sp
 }
 html body .innerPage article .mid .inforWindow .box .btnbox button.turn {
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
   top: -60px;
@@ -4278,6 +4293,19 @@ html body .innerPage article .mid .inforWindow .box .infor ul li button {
   border-radius: 8px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .inforWindow .box .infor ul li button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .inforWindow .box .infor ul li button {
+    line-height: 0px;
+  }
 }
 html body .innerPage article .mid .inforWindow .box .infor ul li button:hover, html body .innerPage article .mid .inforWindow .box .infor ul li button:active, html body .innerPage article .mid .inforWindow .box .infor ul li button.active {
   background: #b5203f;
@@ -4334,6 +4362,18 @@ html body .innerPage article .mid .inforWindow .box .infor .inputbox {
   font-size: 14px;
   color: #fff;
   margin: 10px 0px 0px 40px;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .inforWindow .box .infor .inputbox {
+    margin-bottom: 50px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .inforWindow .box .infor .inputbox {
+    margin-bottom: 50px;
+  }
 }
 html body .innerPage article .mid .inforWindow .box .infor .inputbox input {
   background: #183051;
@@ -4364,6 +4404,19 @@ html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
   text-shadow: 1px 1px 0px #000;
   transform: translateY(-1px);
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
+    line-height: 0px;
+  }
 }
 html body .innerPage article .mid .inforWindow .box .infor .inputbox button:hover, html body .innerPage article .mid .inforWindow .box .infor .inputbox button:active, html body .innerPage article .mid .inforWindow .box .infor .inputbox button.active {
   background: #b5203f;

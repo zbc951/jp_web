@@ -68,6 +68,15 @@ select, input {
   outline: none;
 }
 
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+select::-ms-expand {
+  display: none;
+}
+
 html {
   font-family: "my_font";
   background: white;
@@ -3744,6 +3753,18 @@ html body .innerPage article .mid .moneyWindow div table button {
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to bottom, #ff92a9 50%, #f56684 50%);
   background-color: #f56684;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .moneyWindow div table button {
+    padding-left: 10px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .moneyWindow div table button {
+    padding-left: 10px;
+  }
 }
 html body .innerPage article .mid .moneyWindow div table button:hover, html body .innerPage article .mid .moneyWindow div table button:active, html body .innerPage article .mid .moneyWindow div table button.active {
   text-shadow: -1px -1px 0px #000;
@@ -3799,6 +3820,7 @@ html body .innerPage article .mid .walletWindow .box .btnbox button:last-child s
 }
 html body .innerPage article .mid .walletWindow .box .btnbox button.turn {
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
   top: -60px;
@@ -5828,6 +5850,18 @@ html body .innerPage article .mid .vipWindow .barbox span {
 }
 html body .innerPage article .mid .vipWindow .barbox span.down {
   padding-right: 31px;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .vipWindow .barbox span.down {
+    padding-right: 26px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .vipWindow .barbox span.down {
+    padding-right: 26px;
+  }
 }
 html body .innerPage article .mid .vipWindow .barbox button {
   display: inline-block;
@@ -5841,6 +5875,7 @@ html body .innerPage article .mid .vipWindow .barbox button {
   text-shadow: 1px 1px 0px #000;
   margin-left: 10px;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
 }
 html body .innerPage article .mid .vipWindow .barbox button:hover, html body .innerPage article .mid .vipWindow .barbox button:active, html body .innerPage article .mid .vipWindow .barbox button.active {
   background: #b5203f;
@@ -5937,7 +5972,7 @@ html body .innerPage article .mid .vipWindow .innerbox ul {
 html body .innerPage article .mid .vipWindow .innerbox ul li {
   display: inline-block;
   color: #fff;
-  padding: 35px 30px 0px;
+  padding: 35px 25px 0px;
 }
 html body .innerPage article .mid .vipWindow .innerbox ul li span {
   color: #c0ff3e;

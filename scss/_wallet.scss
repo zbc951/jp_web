@@ -208,7 +208,7 @@ html {
                     width: 880px;
                     height: 730px;
                     margin: 18px 18px 0px 0px;
-                    //資產窗
+                    //上窗
                     .moneyWindow {
                         width: 870px;
                         height: 240px;
@@ -295,6 +295,14 @@ html {
                                     text-shadow: 1px 1px 0px #000;
                                     background: linear-gradient(to bottom,#ff92a9 50%,#f56684 50%);
                                     background-color: #f56684;
+                                    /*for IE*/
+                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                        padding-left: 10px;
+                                    }
+                                    /*for IE 9*/
+                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                        padding-left: 10px;
+                                    }
                                     &:hover,&:active,&.active {
                                         text-shadow: -1px -1px 0px #000;
                                         background: #b5203f;
@@ -304,7 +312,7 @@ html {
                             }
                         }
                     }
-                    //錢包窗
+                    //下窗
                     .walletWindow {
                         width: 880px;
                         height: 460px;
@@ -353,6 +361,7 @@ html {
                                     }
                                     &.turn {
                                         background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                        background-color: #f56684;
                                         border-color: #b5203f;
                                         box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
                                         top: -60px;

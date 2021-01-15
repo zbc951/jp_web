@@ -102,6 +102,14 @@ html {
                                 transform: translateY(-1px);
                                 &.down {
                                     padding-right: 31px;
+                                    /*for IE*/
+                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                        padding-right: 26px;
+                                    }
+                                    /*for IE 9*/
+                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                        padding-right: 26px;
+                                    }
                                 }
                             }
                             button {
@@ -116,6 +124,7 @@ html {
                                 text-shadow: 1px 1px 0px #000;
                                 margin-left: 10px;
                                 background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                background-color: #148883;
                                 &:hover,&:active,&.active {
                                     background: #b5203f;
                                     border-color: #ed5676;
@@ -215,7 +224,7 @@ html {
                                 li {
                                     display: inline-block;
                                     color: #fff;
-                                    padding: 35px 30px 0px;
+                                    padding: 35px 25px 0px;
                                     span {
                                         color: #c0ff3e;
                                         font-size: 28px;

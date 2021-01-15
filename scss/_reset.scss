@@ -59,6 +59,14 @@ select,input {
     font-family: "my_font";
     outline: none;
 }
+select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    &::-ms-expand {
+        display: none;
+    }
+}
 html {
     font-family: "my_font";
     background: white;

@@ -2,21 +2,25 @@ html {
     body {
         .rule {
             border-top: solid 3px #fff;
-            height: 925px;
             article {
-                max-width: 1460px;
-                height: 100%;
+                width: 86.259%;
+                // max-width: 1450px;
+                // height: 100%;
+                padding-bottom: 48.303%;
+                height: 0px;
                 margin: 0px auto;
                 //左列
                 .leftside {
                     float: left;
-                    width: 360px;
-                    height: calc(100% - 25px);
+                    width: 290px;
+                    height: 0px;
+                    padding-bottom: 62.07%;
+                    // height: calc(100% - 25px);
                     margin: 18px 18px 0px 0px;
-                    padding-left: 20px;
+                    padding-left: 80px;
                     //左窗
                     .btnWindow {
-                        width: 350px;
+                        width: 280px;
                         height: 76px;
                         border: solid 5px #122845;
                         border-radius: 18px;
@@ -62,7 +66,7 @@ html {
                         }
                         h1 {
                             line-height: 76px;
-                            font-size: 24px;
+                            font-size: 21px;
                             padding-left: 40px;
                             color: #fff;
                             position: relative;
@@ -75,7 +79,7 @@ html {
                                 background: url('../images/rule/rule_leftIC.png') no-repeat;
                                 background-size: 400%;
                                 left: -33px;
-                                top: 8px;
+                                top: 6px;
                             }
                             &::after {
                                 content: "";
@@ -88,16 +92,18 @@ html {
                             }
                         }
                         ul {
-                            width: 270px;
+                            width: 240px;
                             margin: 0px auto;
                             display: none;
                             li {
-                                width: 176px;
+                                width: 180px;
                                 color: #fff;
                                 font-size: 22px;
-                                height: 46px;
-                                line-height: 46px;
-                                padding: 0px 40px;
+                                font-size: 18px;
+                                height: 40px;
+                                line-height: 40px;
+                                padding: 0px 26px;
+                                margin-bottom: 8px;
                                 border-radius: 15px;
                                 border: solid 4px transparent;
                                 position: relative;
@@ -119,14 +125,19 @@ html {
                 //中
                 .mid {
                     float: left;
-                    width: 1060px;
-                    height: calc(100% - 25px);
+                    // width: 1060px;
+                    width: 64.171%;
+                    height: 0px;
+                    padding-bottom: 62.07%;
+                    // height: calc(100% - 25px);
                     margin: 18px 0px 0px 0px;
                     .innerbox {
                         display: none;
-                        width: 960px;
-                        height: 810px;
-                        padding: 35px 40px;
+                        // width: 960px;
+                        // height: 810px;
+                        width: 89.435%;
+                        height: 0px;
+                        padding: 35px 40px 89%;
                         border: solid 6px #122845;
                         border-radius: 25px;
                         box-shadow: 0px 0px 0px 5px #fff inset,0px 0px 0px 10px #66c9bf inset;
@@ -138,87 +149,91 @@ html {
                         &.display {
                             display: block;
                         }
-                        h2 {
-                            color: #fff;
-                            font-size: 21px;
-                            font-weight: bold;
-                            padding-bottom: 10px;
-                        }
-                        p {
-                            color: #fff;
-                            font-size: 18px;
-                            line-height: 31px;
-                            &.lastP {
-                                padding-bottom: 60px;
-                            }
-                        }
-                        .codeBox {
-                            width: 290px;
-                            height: 470px;
-                            background: #40bbad;
-                            border-radius: 20px;
-                            border: solid 1px #fff;
+                        .pbox {
+                            width: 92%;
                             position: absolute;
-                            top: 35px;
-                            left: 340px;
-                            text-align: center;
-                            &:nth-of-type(2) {
-                                left: 680px;
-                                .cellphoneIC {
-                                    background-position-x: 100%;
-                                }
-                                button {
-                                    background: #95ff24;
-                                    span {
-                                        color: #005d3d;
-                                    }
-                                }
-                            }
-                            .cellphoneIC {
-                                width: 145px;
-                                height: 45px;
-                                background: url('../images/rule/rule_cellphoneIC.png') no-repeat;
-                                margin: 20px auto 10px;
+                            h2 {
+                                color: #fff;
+                                font-size: 21px;
+                                font-weight: bold;
+                                padding-bottom: 10px;
                             }
                             p {
                                 color: #fff;
-                                font-size: 12px;
-                                letter-spacing: 2px;
+                                font-size: 18px;
+                                line-height: 31px;
+                                &.lastP {
+                                    padding-bottom: 60px;
+                                }
                             }
-                            .QRcode {
-                                width: 200px;
-                                height: 200px;
-                                background: url('../images/rule/rule_QRcode.png') no-repeat;
-                                margin: 20px auto 40px;
-                            }
-                            button {
-                                width: 250px;
-                                height: 65px;
-                                background: #ff3644;
-                                overflow: hidden;
-                                border: solid 8px #fff;
-                                border-radius: 50px;
-                                position: relative;
-                                &:hover,&:active,&.active {
-                                    font-weight: bold;
-                                    &::before {
-                                        animation: btnbg linear 10s 0s infinite alternate;
+                            .codeBox {
+                                width: 290px;
+                                height: 470px;
+                                background: #40bbad;
+                                border-radius: 20px;
+                                border: solid 1px #fff;
+                                text-align: center;
+                                position: absolute;
+                                top: 10%;
+                                left: 35%;
+                                &:nth-of-type(2) {
+                                    left: 68%;
+                                    .cellphoneIC {
+                                        background-position-x: 100%;
+                                    }
+                                    button {
+                                        background: #95ff24;
+                                        span {
+                                            color: #005d3d;
+                                        }
                                     }
                                 }
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    background: url('../images/index/btn_bg.png') no-repeat;
-                                    width: 634px;
-                                    height: 124px;
-                                    left: -40px;
-                                    top: -38px;
+                                .cellphoneIC {
+                                    width: 145px;
+                                    height: 45px;
+                                    background: url('../images/rule/rule_cellphoneIC.png') no-repeat;
+                                    margin: 20px auto 10px;
                                 }
-                                span {
-                                    position: relative;
+                                p {
                                     color: #fff;
-                                    font-size: 18px;
+                                    font-size: 12px;
                                     letter-spacing: 2px;
+                                }
+                                .QRcode {
+                                    width: 200px;
+                                    height: 200px;
+                                    background: url('../images/rule/rule_QRcode.png') no-repeat;
+                                    margin: 20px auto 40px;
+                                }
+                                button {
+                                    width: 250px;
+                                    height: 65px;
+                                    background: #ff3644;
+                                    overflow: hidden;
+                                    border: solid 8px #fff;
+                                    border-radius: 50px;
+                                    position: relative;
+                                    &:hover,&:active,&.active {
+                                        font-weight: bold;
+                                        &::before {
+                                            animation: btnbg linear 10s 0s infinite alternate;
+                                        }
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        background: url('../images/index/btn_bg.png') no-repeat;
+                                        width: 634px;
+                                        height: 124px;
+                                        left: -40px;
+                                        top: -38px;
+                                    }
+                                    span {
+                                        position: relative;
+                                        color: #fff;
+                                        font-size: 18px;
+                                        letter-spacing: 2px;
+                                    }
                                 }
                             }
                         }
@@ -237,20 +252,24 @@ html {
         }
     }
 }
-@media only screen and(max-width:1410px) {
+@media only screen and(max-width:1800px) {
     html {
         body {
-            .innerPage {
+            .rule {
                 article {
-                    width: 1145px;
                     .mid {
-                        margin-right: 0px;
-                    }
-                    .rightside {
-                        display: none;
-                    }
-                    .fixside {
-                        display: block;
+                        .innerbox {
+                            &.GD {
+                                .codeBox {
+                                    position: static;
+                                    float: left;
+                                    margin: 20px 0px 50px 0px;
+                                    &:nth-of-type(2) {
+                                        margin-left: 10px;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }

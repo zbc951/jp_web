@@ -144,51 +144,65 @@ html {
                                         }
                                     }
                                 }
-                                .mail {
-                                    width: 90%;
-                                    height: 100px;
-                                    margin: 0px 0px 10px 30px;
-                                    padding-right: 30px;
-                                    border: solid 5px #122845;
-                                    border-radius: 60px 20px 20px 60px;
-                                    background: #507ab0;
-                                    box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
-                                    text-align: left;
-                                    position: relative;
-                                    cursor: pointer;
-                                    &:hover,&:active,&.active {
-                                        border-color: #64e1dc;
-                                        background: #ee5978;
-                                        box-shadow: 0px 3px 3px #ee5978 inset,0px -4px 0px 0px #ff8cab inset;
+                                .mailBox {
+                                    overflow: auto;
+                                    height: 480px;
+                                    .mail {
+                                        width: 90%;
+                                        height: 100px;
+                                        margin: 0px 0px 10px 30px;
+                                        padding-right: 30px;
+                                        border: solid 5px #122845;
+                                        border-radius: 60px 20px 20px 60px;
+                                        background: #507ab0;
+                                        box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
+                                        text-align: left;
+                                        position: relative;
+                                        cursor: pointer;
+                                        &:hover,&:active {
+                                            border-color: #64e1dc;
+                                            background: #ee5978;
+                                            box-shadow: 0px 3px 3px #ee5978 inset,0px -4px 0px 0px #ff8cab inset;
+                                            .mail_ic {
+                                                background-position-x: 100%;
+                                            }
+                                        }
+                                        &.active {
+                                            background: #2a4d7c;
+                                            &:hover,&:active {
+                                                box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
+                                                border-color: #122845;
+                                                .mail_ic {
+                                                    background-position-x: 0%;
+                                                }
+                                            }
+                                        }
                                         .mail_ic {
-                                            background-position-x: 100%;
+                                            display: block;
+                                            width: 67px;
+                                            height: 66px;
+                                            background: url('../images/mail/mail_ic.png') no-repeat;
+                                            position: absolute;
+                                            top: 50%;
+                                            transform: translateY(-50%);
+                                            left: 20px;
                                         }
-                                    }
-                                    .mail_ic {
-                                        display: block;
-                                        width: 67px;
-                                        height: 66px;
-                                        background: url('../images/mail/mail_ic.png') no-repeat;
-                                        position: absolute;
-                                        top: 50%;
-                                        transform: translateY(-50%);
-                                        left: 20px;
-                                    }
-                                    h1 {
-                                        margin: 17px 0px 0px 104px;
-                                        color: #fff7b2;
-                                        font-size: 19px;
-                                        span {
+                                        h1 {
+                                            margin: 17px 0px 0px 104px;
+                                            color: #fff7b2;
+                                            font-size: 19px;
+                                            span {
+                                                color: #fff;
+                                                font-size: 17px;
+                                                margin-left: 10px;
+                                            }
+                                        }
+                                        p {
                                             color: #fff;
-                                            font-size: 17px;
-                                            margin-left: 10px;
+                                            margin: 12px 0px 0px 104px;
+                                            font-size: 15px;
+                                            line-height: 20px;
                                         }
-                                    }
-                                    p {
-                                        color: #fff;
-                                        margin: 12px 0px 0px 104px;
-                                        font-size: 15px;
-                                        line-height: 20px;
                                     }
                                 }
                                 .page {

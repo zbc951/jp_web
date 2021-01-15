@@ -287,5 +287,15 @@ $(function(){
 	$('.discount_innerpage .contentbox .title button').click(function(){
 		$('.discount_innerpage').removeClass('display');
 		$('.discount_mainbox').addClass('display');
+		$('.discount article').removeClass('inner');
+	})
+	$('.discount_mainbox .imgBox').click(function(){
+		$('.discount article').addClass('inner');
+	})
+})
+//mail
+$(function(){
+	$('.mail').click(function(){
+		$(this).addClass('active')
 	})
 })

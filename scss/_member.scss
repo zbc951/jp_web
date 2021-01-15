@@ -4,7 +4,7 @@ html {
             article {
                 //中
                 .mid {
-                    //個人資料窗
+                    //上窗
                     .memberWindow {
                         width: 870px;
                         height: 240px;
@@ -103,11 +103,9 @@ html {
                         width: 880px;
                         height: 460px;
                         position: relative;
-                        overflow-x: hidden;
-                        overflow-y: auto;
                         .box {
                             width: 870px;
-                            height: 680px;
+                            height: 395px;
                             position: absolute;
                             top: 55px;
                             border: solid 5px #122845;
@@ -183,6 +181,9 @@ html {
                             //基本情報
                             .infor {
                                 display: none;
+                                height: 345px;
+                                overflow: auto;
+                                padding-bottom: 50px;
                                 &.display {
                                     display: block;
                                 }

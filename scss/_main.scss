@@ -9,9 +9,11 @@ html {
     }
     ::-webkit-scrollbar-thumb {
         background: #a7ddff;
+        border-radius: 5px;
     }
     ::-webkit-scrollbar-track {
         background: #a3a3a3;
+        border-radius: 5px;
     }
     body {
         //header

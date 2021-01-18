@@ -781,10 +781,17 @@ html {
                                 right: 0px;
                             }
                             //下圖1
+                            //彩票背景
                             .d1 {
                                 background-position: 0px 100%;
                                 background-size: 300%;
                             }
+                            //賽艇背景
+                            .d1_2 {
+                                background: url('../images/index/img_bg_2.png') no-repeat;
+                                background-size: 100%;
+                            }
+                            //彩票圖
                             .img1 {
                                 width: 36%;
                                 height: 40%;
@@ -794,14 +801,36 @@ html {
                                 right: 4%;
                                 top: 24%;
                             }
+                            //賽艇圖
+                            .img1_2 {
+                                width: 45%;
+                                height: 70%;
+                                background: url('../images/index/down_img1_2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 11%;
+                                top: 20%;
+                            }
+                            //彩票字
                             .word1 {
                                 width: 31%;
                                 height: 30%;
+                                position: absolute;
                                 background: url('../images/word/down_word1.png') no-repeat;
                                 background-size: 100%;
-                                position: absolute;
                                 left: 17%;
                                 top: 35%;
+                            }
+                            //賽艇字
+                            .word1_2 {
+                                width: 54%;
+                                height: 20%;
+                                background: url('../images/word/down_word1_2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 11%;
+                                top: 40%;
+                                z-index: 1;
                             }
                             //下圖2
                             .d2 {
@@ -949,10 +978,10 @@ html {
                             }
                             div {
                                 &:nth-of-type(2) {
-                                    animation: innerword_lot 0.5s ease-in-out 0s;
+                                    animation: innerword_boat 0.5s ease-in-out 0s;
                                     z-index: 4;
-                                    top: 13%;
-                                    left: 13%;
+                                    top: 20%;
+                                    left: 5%;
                                     transform: rotate(-38deg);
                                 }
                                 &:nth-of-type(3) {
@@ -1533,6 +1562,28 @@ html {
     60% {
         left: 13%;
         top: 13%;
+        transform: scale(1.2) rotate(-38deg);
+    }
+}
+@keyframes innerword_boat {
+    0% {
+        transform: scale(1);
+        left: 10%;
+        top: 40%;
+    }
+    20% {
+        transform: scale(0.6) rotate(10deg);
+        left: 25%;
+        top: 50%;
+    }
+    40% {
+        left: 20%;
+        top: 45%;
+        transform: scale(0.8) rotate(0deg);
+    }
+    60% {
+        left: 5%;
+        top: 20%;
         transform: scale(1.2) rotate(-38deg);
     }
 }

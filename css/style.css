@@ -4752,33 +4752,20 @@ html body .innerPage article .leftside {
 html body .innerPage article .leftside .personalWindow {
   width: 235px;
   height: 90px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
 }
-html body .innerPage article .leftside .personalWindow div {
+html body .innerPage article .leftside .personalWindow .innerbox {
   width: 205px;
   height: 58px;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
   margin: 16px auto 0px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
   text-align: center;
 }
-html body .innerPage article .leftside .personalWindow div p {
+html body .innerPage article .leftside .personalWindow .innerbox p {
   font-size: 18px;
   color: #fff;
   line-height: 26px;
   padding-top: 3px;
 }
-html body .innerPage article .leftside .personalWindow div p:nth-of-type(2) {
+html body .innerPage article .leftside .personalWindow .innerbox p:nth-of-type(2) {
   padding: 0px;
   font-size: 16px;
 }
@@ -4857,20 +4844,20 @@ html body .innerPage article .leftside .leftbtnbox a {
   display: block;
   width: 175px;
   height: 50px;
+  margin-bottom: 8px;
+  position: relative;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  padding-left: 60px;
   border: solid 5px #184c4a;
   border-radius: 15px;
-  margin-bottom: 8px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
   background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
   -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
           box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-  position: relative;
-  color: #fff;
-  font-size: 20px;
-  line-height: 50px;
-  padding-left: 60px;
 }
 html body .innerPage article .leftside .leftbtnbox a:hover, html body .innerPage article .leftside .leftbtnbox a:active, html body .innerPage article .leftside .leftbtnbox a.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
@@ -4958,81 +4945,59 @@ html body .innerPage article .mid {
   height: 730px;
   margin: 18px 18px 0px 0px;
 }
-html body .innerPage article .mid .moneyWindow {
+html body .innerPage article .mid.walletWindow .topWindow {
   width: 870px;
   height: 240px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   margin-bottom: 20px;
 }
-html body .innerPage article .mid .moneyWindow h1 {
-  color: #ffffac;
-  font-size: 19px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  padding: 15px 0px 15px 20px;
-}
-html body .innerPage article .mid .moneyWindow div {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox {
   width: 830px;
   height: 170px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
-  overflow: hidden;
 }
-html body .innerPage article .mid .moneyWindow div table {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table {
   width: 100%;
   height: 100%;
 }
-html body .innerPage article .mid .moneyWindow div table tr:nth-of-type(1) {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr:nth-of-type(1) {
   border-bottom: solid 2px #274060;
 }
-html body .innerPage article .mid .moneyWindow div table tr:nth-of-type(2) td:nth-of-type(1) {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr:nth-of-type(2) td:nth-of-type(1) {
   width: 37%;
 }
-html body .innerPage article .mid .moneyWindow div table tr:nth-of-type(2) td:nth-of-type(2) {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr:nth-of-type(2) td:nth-of-type(2) {
   width: 29.5%;
 }
-html body .innerPage article .mid .moneyWindow div table tr:nth-of-type(2) td:nth-of-type(3) {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr:nth-of-type(2) td:nth-of-type(3) {
   width: 33.5%;
 }
-html body .innerPage article .mid .moneyWindow div table tr td {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr td {
   padding: 12px 0px 12px 30px;
   font-size: 18px;
   color: #fff;
   position: relative;
 }
-html body .innerPage article .mid .moneyWindow div table tr td:nth-of-type(2) {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr td:nth-of-type(2) {
   border-left: solid 2px #274060;
 }
-html body .innerPage article .mid .moneyWindow div table tr td:last-child {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table tr td:last-child {
   border-left: solid 3px #274060;
 }
-html body .innerPage article .mid .moneyWindow div table span {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table span {
   display: block;
   margin-top: 7px;
 }
-html body .innerPage article .mid .moneyWindow div table span.word_middle {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table span.word_middle {
   font-size: 24px;
   font-weight: bold;
 }
-html body .innerPage article .mid .moneyWindow div table span.word_large {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table span.word_large {
   font-size: 32px;
   font-weight: bold;
 }
-html body .innerPage article .mid .moneyWindow div table span.word_lightgreen {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table span.word_lightgreen {
   color: #c0ff3e;
 }
-html body .innerPage article .mid .moneyWindow div table button {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table button {
   position: absolute;
   width: 105px;
   height: 50px;
@@ -5051,141 +5016,50 @@ html body .innerPage article .mid .moneyWindow div table button {
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .moneyWindow div table button {
+  html body .innerPage article .mid.walletWindow .topWindow .innerbox table button {
     padding-left: 10px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .moneyWindow div table button {
+  html body .innerPage article .mid.walletWindow .topWindow .innerbox table button {
     padding-left: 10px;
   }
 }
-html body .innerPage article .mid .moneyWindow div table button:hover, html body .innerPage article .mid .moneyWindow div table button:active, html body .innerPage article .mid .moneyWindow div table button.active {
+html body .innerPage article .mid.walletWindow .topWindow .innerbox table button:hover, html body .innerPage article .mid.walletWindow .topWindow .innerbox table button:active, html body .innerPage article .mid.walletWindow .topWindow .innerbox table button.active {
   text-shadow: -1px -1px 0px #000;
   background: #b5203f;
   border-color: #ed5676;
 }
-html body .innerPage article .mid .walletWindow {
+html body .innerPage article .mid.walletWindow .bottomWindow {
   width: 880px;
   height: 460px;
   position: relative;
 }
-html body .innerPage article .mid .walletWindow .box {
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox {
   width: 870px;
   height: 395px;
   position: absolute;
-  bottom: 0px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+  top: 55px;
   z-index: 1;
 }
-html body .innerPage article .mid .walletWindow .box .btnbox button {
-  width: 200px;
-  height: 60px;
-  border-style: solid;
-  border-color: #122845;
-  border-width: 5px 5px 0px 5px;
-  border-radius: 60px 60px 0px 0px;
-  background: #2a4c79;
-  position: absolute;
-  top: -60px;
-  left: 20px;
-  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-}
-html body .innerPage article .mid .walletWindow .box .btnbox button::before {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
-  background: linear-gradient(to top, transparent 50%, #00000047);
-  border-radius: 50px 50px 0px 0px;
-  left: 50%;
-  top: 5px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-html body .innerPage article .mid .walletWindow .box .btnbox button:last-child {
-  left: 230px;
-}
-html body .innerPage article .mid .walletWindow .box .btnbox button:last-child span {
-  font-size: 14px;
-}
-html body .innerPage article .mid .walletWindow .box .btnbox button.turn {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  border-color: #b5203f;
-  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-  top: -60px;
-  height: 55px;
-}
-html body .innerPage article .mid .walletWindow .box .btnbox button.turn::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
-  background: linear-gradient(to top, transparent 50%, #ffffff69);
-}
-html body .innerPage article .mid .walletWindow .box .btnbox button span {
-  display: block;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
-  font-size: 17px;
-  color: #fff;
-  text-shadow: 1px 1px 0px #000;
-}
-html body .innerPage article .mid .walletWindow .box h1 {
-  color: #ffffac;
-  font-size: 19px;
-  font-weight: bold;
-  letter-spacing: 5px;
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox h1 {
   padding: 25px 0px 25px 20px;
 }
-html body .innerPage article .mid .walletWindow .box .platform, html body .innerPage article .mid .walletWindow .box .freeWallet {
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet {
   display: none;
 }
-html body .innerPage article .mid .walletWindow .box .platform.display, html body .innerPage article .mid .walletWindow .box .freeWallet.display {
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform.display, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet.display {
   display: block;
 }
-html body .innerPage article .mid .walletWindow .box .platform div, html body .innerPage article .mid .walletWindow .box .freeWallet div {
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox {
   width: 830px;
   height: 305px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
 }
-html body .innerPage article .mid .walletWindow .box .platform div .noMoney, html body .innerPage article .mid .walletWindow .box .freeWallet div .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  letter-spacing: 3px;
-}
-html body .innerPage article .mid .walletWindow .box .platform ul, html body .innerPage article .mid .walletWindow .box .freeWallet ul {
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform ul, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet ul {
   margin-top: 10px;
   text-align: center;
 }
-html body .innerPage article .mid .walletWindow .box .platform ul li, html body .innerPage article .mid .walletWindow .box .freeWallet ul li {
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform ul li, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet ul li {
   display: inline-block;
   color: #fff;
   height: 50px;
@@ -5201,6 +5075,7 @@ html body .innerPage article .rightside, html body .innerPage article .fixside {
 html body .innerPage article .rightside h1, html body .innerPage article .fixside h1 {
   color: #ffffac;
   font-size: 17px;
+  letter-spacing: 0px;
   padding: 20px 0px 15px 15px;
 }
 html body .innerPage article .rightside .askbtn, html body .innerPage article .fixside .askbtn {
@@ -5211,13 +5086,15 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
   right: -20px;
   border: solid 5px #122845;
   border-radius: 10px;
+  padding-top: 3px;
+  border: solid 5px #184c4a;
+  border-radius: 15px;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
   background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
-  -webkit-box-shadow: 0px 2px 0px 0px #ffffff5c inset;
-          box-shadow: 0px 2px 0px 0px #ffffff5c inset;
-  padding-top: 3px;
+  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
   /*for IE*/
   /*for IE 9*/
 }
@@ -5276,52 +5153,21 @@ html body .innerPage article .rightside .askbtn span, html body .innerPage artic
 html body .innerPage article .rightside .bettingWindow, html body .innerPage article .fixside .bettingWindow {
   width: 225px;
   height: 340px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   margin-bottom: 20px;
   position: relative;
 }
-html body .innerPage article .rightside .bettingWindow div, html body .innerPage article .fixside .bettingWindow div {
+html body .innerPage article .rightside .bettingWindow .innerbox, html body .innerPage article .fixside .bettingWindow .innerbox {
   width: 200px;
   height: 270px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
 }
-html body .innerPage article .rightside .bettingWindow div .noMoney, html body .innerPage article .fixside .bettingWindow div .noMoney {
+html body .innerPage article .rightside .bettingWindow .innerbox .noRecord, html body .innerPage article .fixside .bettingWindow .innerbox .noRecord {
   width: 100%;
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  letter-spacing: 3px;
   font-size: 12px;
   text-align: center;
 }
 html body .innerPage article .rightside .activeWindow, html body .innerPage article .fixside .activeWindow {
   width: 225px;
   height: 350px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   position: relative;
 }
 html body .innerPage article .rightside .activeWindow a, html body .innerPage article .fixside .activeWindow a {
@@ -5349,14 +5195,7 @@ html body .innerPage article .fixside .windowBtn {
   width: 60px;
   height: 170px;
   border-radius: 60px 0px 0px 60px;
-  border: solid 5px #122845;
   border-right-width: 0px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   left: -60px;
   top: 15px;
   -webkit-box-shadow: 3px 0px 3px 0px #a7cdffab inset, 4px 0px 0px 0px #284873;
@@ -5425,6 +5264,144 @@ html body .innerPage .bg {
   z-index: -999;
 }
 
+.bg_darkblue {
+  border: solid 5px #122845;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
+  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
+  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
+  background-color: #2a4d7c;
+  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+}
+
+.innerbox {
+  background: #507ab0;
+  border: solid 1px #5885c2;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
+          box-shadow: 0px 2px 0px 0px #0000003b inset;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+.innerbox .noRecord {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  letter-spacing: 3px;
+}
+
+.separateBox .btnbox button {
+  width: 200px;
+  height: 60px;
+  border-style: solid;
+  border-color: #122845;
+  border-width: 5px 5px 0px 5px;
+  border-radius: 60px 60px 0px 0px;
+  background: #2a4c79;
+  position: absolute;
+  top: -60px;
+  left: 20px;
+  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
+          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
+}
+.separateBox .btnbox button::before {
+  content: "";
+  position: absolute;
+  width: 175px;
+  height: 50px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
+  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
+  background: linear-gradient(to top, transparent 50%, #00000047);
+  border-radius: 50px 50px 0px 0px;
+  left: 50%;
+  top: 5px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.separateBox .btnbox button:last-child {
+  left: 230px;
+}
+.separateBox .btnbox button:last-child span {
+  font-size: 14px;
+}
+.separateBox .btnbox button.turn {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
+  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
+  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
+  border-color: #b5203f;
+  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+  top: -60px;
+  height: 55px;
+}
+.separateBox .btnbox button.turn::before {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
+  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
+  background: linear-gradient(to top, transparent 50%, #ffffff69);
+}
+.separateBox .btnbox button span {
+  display: block;
+  width: 100%;
+  left: 0px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  font-size: 17px;
+  color: #fff;
+  text-shadow: 1px 1px 0px #000;
+}
+
+.savebtn {
+  display: block;
+  border: solid 5px #b5203f;
+  border-radius: 15px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
+  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
+  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
+  -webkit-box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+          box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+  position: relative;
+}
+.savebtn:hover::before, .savebtn:active::before, .savebtn.active::before {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
+  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
+  background: linear-gradient(to top, transparent 50%, #00000052);
+}
+.savebtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
+  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  background: linear-gradient(to top, transparent 50%, #ffc9e7);
+}
+.savebtn span {
+  font-size: 20px;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  color: #ffffac;
+  font-size: 19px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  padding: 15px 0px 15px 20px;
+}
+
 @media only screen and (max-width: 1410px) {
   html body .innerPage article {
     width: 1145px;
@@ -5439,46 +5416,28 @@ html body .innerPage .bg {
     display: block;
   }
 }
-html body .innerPage article .mid .memberWindow {
+html body .innerPage article .mid.memberWindow .topWindow {
   width: 870px;
   height: 240px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   margin-bottom: 20px;
 }
-html body .innerPage article .mid .memberWindow h1 {
-  color: #ffffac;
+html body .innerPage article .mid.memberWindow .topWindow h1 {
   font-size: 22px;
-  font-weight: bold;
-  padding: 15px 0px 15px 20px;
 }
-html body .innerPage article .mid .memberWindow div {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox {
   width: 790px;
   height: 130px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
   padding: 20px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
-  overflow: hidden;
 }
-html body .innerPage article .mid .memberWindow div p {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox p {
   color: #fff;
   letter-spacing: 3px;
   font-size: 13px;
 }
-html body .innerPage article .mid .memberWindow div p:nth-of-type(2) {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox p:nth-of-type(2) {
   margin-top: 15px;
 }
-html body .innerPage article .mid .memberWindow div p span {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
   display: inline-block;
   width: 18px;
   height: 22px;
@@ -5505,152 +5464,84 @@ html body .innerPage article .mid .memberWindow div p span {
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .memberWindow div p span {
+  html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
     padding-left: 3px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .memberWindow div p span {
+  html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
     padding-left: 3px;
   }
 }
-html body .innerPage article .mid .memberWindow div p span:nth-of-type(1) {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox p span:nth-of-type(1) {
   margin-left: 8px;
 }
-html body .innerPage article .mid .memberWindow div p span.active {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active {
   background: -webkit-gradient(linear, left bottom, left top, from(#a00f00), to(#ff0000));
   background: -o-linear-gradient(bottom, #a00f00, #ff0000);
   background: linear-gradient(to top, #a00f00, #ff0000);
   background-color: #ff0000;
   color: #fff;
 }
-html body .innerPage article .mid .memberWindow div ul li {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li {
   display: inline-block;
   color: #fff;
   margin-right: 35px;
 }
-html body .innerPage article .mid .memberWindow div ul li:nth-of-type(2) span {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li:nth-of-type(2) span {
   background-position-x: -40px;
 }
-html body .innerPage article .mid .memberWindow div ul li:nth-of-type(3) span {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li:nth-of-type(3) span {
   background-position-x: -80px;
 }
-html body .innerPage article .mid .memberWindow div ul li:nth-of-type(4) span {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li:nth-of-type(4) span {
   background-position-x: -120px;
 }
-html body .innerPage article .mid .memberWindow div ul li.active {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li.active {
   color: #ffee5b;
 }
-html body .innerPage article .mid .memberWindow div ul li span {
+html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li span {
   display: inline-block;
   width: 40px;
   height: 40px;
   background: url("../images/member/member_ic.png") no-repeat;
   margin: 24px 15px -13px 0px;
 }
-html body .innerPage article .mid .inforWindow {
+html body .innerPage article .mid.memberWindow .bottomWindow {
   width: 880px;
   height: 460px;
   position: relative;
 }
-html body .innerPage article .mid .inforWindow .box {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox {
   width: 870px;
   height: 395px;
   position: absolute;
   top: 55px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   z-index: 1;
 }
-html body .innerPage article .mid .inforWindow .box .btnbox button {
-  width: 200px;
-  height: 60px;
-  border-style: solid;
-  border-color: #122845;
-  border-width: 5px 5px 0px 5px;
-  border-radius: 60px 60px 0px 0px;
-  background: #2a4c79;
-  position: absolute;
-  top: -60px;
-  left: 20px;
-  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-}
-html body .innerPage article .mid .inforWindow .box .btnbox button::before {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
-  background: linear-gradient(to top, transparent 50%, #00000047);
-  border-radius: 50px 50px 0px 0px;
-  left: 50%;
-  top: 5px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-html body .innerPage article .mid .inforWindow .box .btnbox button:last-child {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .btnbox button:last-child {
   left: 230px;
 }
-html body .innerPage article .mid .inforWindow .box .btnbox button:last-child span {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .btnbox button:last-child span {
   font-size: 14px;
   color: #fff;
   letter-spacing: 0px;
 }
-html body .innerPage article .mid .inforWindow .box .btnbox button.turn {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  border-color: #b5203f;
-  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-  top: -60px;
-  height: 55px;
-}
-html body .innerPage article .mid .inforWindow .box .btnbox button.turn::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
-  background: linear-gradient(to top, transparent 50%, #ffffff69);
-}
-html body .innerPage article .mid .inforWindow .box .btnbox button span {
-  display: block;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #d6e7ff;
-  letter-spacing: 3px;
-  text-shadow: 1px 1px 0px #000;
-}
-html body .innerPage article .mid .inforWindow .box h1 {
-  color: #ffffac;
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox h1 {
   font-size: 21px;
-  font-weight: bold;
   padding: 25px 0px 0px 20px;
 }
-html body .innerPage article .mid .inforWindow .box .infor {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor {
   display: none;
   height: 345px;
   overflow: auto;
   padding-bottom: 50px;
   scrollbar-width: thin;
 }
-html body .innerPage article .mid .inforWindow .box .infor.display {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor.display {
   display: block;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li {
   display: inline-block;
   color: #fff;
   height: 40px;
@@ -5658,18 +5549,18 @@ html body .innerPage article .mid .inforWindow .box .infor ul li {
   margin-top: 20px;
   position: relative;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li:nth-of-type(odd) {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(odd) {
   width: 305px;
   margin-left: 35px;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li:nth-of-type(even) {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(even) {
   width: 390px;
   margin-left: 40px;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li:nth-of-type(even) input {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(even) input {
   width: 230px;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li input {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li input {
   float: right;
   background: #183051;
   width: 190px;
@@ -5680,18 +5571,18 @@ html body .innerPage article .mid .inforWindow .box .infor ul li input {
   border: solid 1px #fff;
   color: #fff;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li input.lightbase {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li input.lightbase {
   background: #507ab0;
   -webkit-box-shadow: 0px 3px 0px 0px #0000005e inset;
           box-shadow: 0px 3px 0px 0px #0000005e inset;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li span {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li span {
   color: #29fff6;
   position: absolute;
   left: -20px;
   top: -1px;
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li button {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
   position: absolute;
   width: 75px;
   height: 43px;
@@ -5712,76 +5603,46 @@ html body .innerPage article .mid .inforWindow .box .infor ul li button {
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .inforWindow .box .infor ul li button {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
     line-height: 0px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .inforWindow .box .infor ul li button {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
     line-height: 0px;
   }
 }
-html body .innerPage article .mid .inforWindow .box .infor ul li button:hover, html body .innerPage article .mid .inforWindow .box .infor ul li button:active, html body .innerPage article .mid .inforWindow .box .infor ul li button.active {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button.active {
   background: #b5203f;
   border-color: #ed5676;
   text-shadow: none;
 }
-html body .innerPage article .mid .inforWindow .box .infor .savebtn {
-  display: block;
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .savebtn {
   margin: 30px auto 10px;
   width: 240px;
   height: 58px;
-  border: solid 5px #b5203f;
-  border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  -webkit-box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-          box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-  position: relative;
 }
-html body .innerPage article .mid .inforWindow .box .infor .savebtn:hover::before, html body .innerPage article .mid .inforWindow .box .infor .savebtn:active::before, html body .innerPage article .mid .inforWindow .box .infor .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
-  background: linear-gradient(to top, transparent 50%, #00000052);
-}
-html body .innerPage article .mid .inforWindow .box .infor .savebtn::before {
-  content: "";
-  position: absolute;
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .savebtn::before {
   width: 220px;
   height: 40px;
   border-radius: 8px 8px 0px 0px;
   top: 5px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
-  background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
-html body .innerPage article .mid .inforWindow .box .infor .savebtn span {
-  font-size: 20px;
-  color: #fff;
-  position: relative;
-  z-index: 1;
-}
-html body .innerPage article .mid .inforWindow .box .infor p {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor p {
   text-align: center;
   color: #fff;
   font-size: 15px;
 }
-html body .innerPage article .mid .inforWindow .box .infor p a {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor p a {
   color: #ff5994;
 }
-html body .innerPage article .mid .inforWindow .box .infor .baseline {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .baseline {
   width: 840px;
   height: 3px;
   background: #122845;
   margin: 40px auto 0px;
 }
-html body .innerPage article .mid .inforWindow .box .infor .inputbox {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
   font-size: 14px;
   color: #fff;
   margin: 10px 0px 0px 40px;
@@ -5789,16 +5650,16 @@ html body .innerPage article .mid .inforWindow .box .infor .inputbox {
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .inforWindow .box .infor .inputbox {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
     margin-bottom: 50px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .inforWindow .box .infor .inputbox {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
     margin-bottom: 50px;
   }
 }
-html body .innerPage article .mid .inforWindow .box .infor .inputbox input {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox input {
   background: #183051;
   width: 190px;
   height: 42px;
@@ -5809,12 +5670,12 @@ html body .innerPage article .mid .inforWindow .box .infor .inputbox input {
   color: #fff;
   margin-left: 15px;
 }
-html body .innerPage article .mid .inforWindow .box .infor .inputbox input.lightbase {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox input.lightbase {
   background: #507ab0;
   -webkit-box-shadow: 0px 3px 0px 0px #0000005e inset;
           box-shadow: 0px 3px 0px 0px #0000005e inset;
 }
-html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
   display: inline-block;
   width: 75px;
   height: 43px;
@@ -5837,27 +5698,27 @@ html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
     line-height: 0px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .inforWindow .box .infor .inputbox button {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
     line-height: 0px;
   }
 }
-html body .innerPage article .mid .inforWindow .box .infor .inputbox button:hover, html body .innerPage article .mid .inforWindow .box .infor .inputbox button:active, html body .innerPage article .mid .inforWindow .box .infor .inputbox button.active {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button.active {
   background: #b5203f;
   border-color: #ed5676;
   text-shadow: none;
 }
-html body .innerPage article .mid .inforWindow .box .account {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account {
   display: none;
 }
-html body .innerPage article .mid .inforWindow .box .account.display {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account.display {
   display: block;
 }
-html body .innerPage article .mid .inforWindow .box .account div {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account div {
   width: 830px;
   height: 305px;
   margin: 0px auto;
@@ -5868,7 +5729,7 @@ html body .innerPage article .mid .inforWindow .box .account div {
           box-shadow: 0px 2px 0px 0px #0000003b inset;
   position: relative;
 }
-html body .innerPage article .mid .inforWindow .box .account div .noMoney {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account div .noMoney {
   position: absolute;
   color: #fff;
   left: 50%;
@@ -5878,11 +5739,11 @@ html body .innerPage article .mid .inforWindow .box .account div .noMoney {
           transform: translate(-50%, -50%);
   letter-spacing: 3px;
 }
-html body .innerPage article .mid .inforWindow .box .account ul {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account ul {
   margin-top: 10px;
   text-align: center;
 }
-html body .innerPage article .mid .inforWindow .box .account ul li {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account ul li {
   display: inline-block;
   color: #fff;
   height: 50px;

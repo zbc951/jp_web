@@ -141,6 +141,16 @@ html {
                                     box-shadow: 0px 3px 1px 0px #ffffff63 inset;
                                     position: relative;
                                     &:hover,&:active,&.active {
+                                        /*for IE*/
+                                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                            border-color: #f56684;
+                                            background-color: #b5203f;
+                                        }
+                                        /*for IE 9*/
+                                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                            border-color: #f56684;
+                                            background-color: #b5203f;
+                                        }
                                         &::before {
                                             background: linear-gradient(to top,transparent 50%,#00000052);
                                         }
@@ -197,6 +207,19 @@ html {
                                 font-size: 20px;
                                 text-shadow: 1px 1px 0px #000;
                                 &:hover,&:active,&.active {
+                                    /*for IE*/
+                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                        border-color: #f56684;
+                                        background-color: #b5203f;
+                                    }
+                                    /*for IE 9*/
+                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                        border-color: #f56684;
+                                        background-color: #b5203f;
+                                    }
+                                    &::before {
+                                        background: linear-gradient(to top,transparent 50%,#00000052);
+                                    }
                                     &::before {
                                         background: linear-gradient(to top,transparent 50%,#00000052);
                                     }

@@ -6,6 +6,7 @@ html {
                 .mid {
                     overflow-x: hidden;
                     overflow-y: auto;
+                    scrollbar-width: thin;
                     //個人資料窗
                     .transWindow {
                         width: 870px;
@@ -47,6 +48,12 @@ html {
                             color: #fff;
                             margin: 15px 0px 20px 20px;
                             position: relative;
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                &::before {
+                                    display: none;
+                                }
+                            }
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -94,6 +101,16 @@ html {
                             position: relative;
                             margin: 0px auto;
                             &:hover,&:active,&.active {
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    border-color: #f56684;
+                                    background-color: #b5203f;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    border-color: #f56684;
+                                    background-color: #b5203f;
+                                }
                                 &::before {
                                     background: linear-gradient(to top,transparent 50%,#00000052);
                                 }

@@ -3,6 +3,7 @@ html {
     min-width: 1280px;
     height: 100%;
     background: #c6ffdc;
+    scrollbar-width: thin;
     ::-webkit-scrollbar {
         width: 5px;
         height: 5px;
@@ -33,11 +34,6 @@ html {
                 .lang {
                     float: left;
                     position: relative;
-                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                        &::before {
-                            display: none;
-                        }
-                    }
                     /*for IE 9*/
                     @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                         &::before {
@@ -190,18 +186,6 @@ html {
                         //選單
                         &.list {
                             position: relative;
-                            /*for IE*/
-                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                                &::before {
-                                    display: none;
-                                }
-                            }
-                            /*for IE 9*/
-                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                                &::before {
-                                    display: none;
-                                }
-                            }
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -213,6 +197,19 @@ html {
                                 border-width: 5px 3px 0px 3px;
                                 border-color: #fff transparent transparent transparent;
                                 pointer-events: none;
+                            }
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                &::before {
+                                    top: 12px;
+                                    right: 10px;
+                                }
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                &::before {
+                                    display: none;
+                                }
                             }
                             select {
                                 width: 34px;

@@ -50,6 +50,7 @@ html {
                                     }
                                     &.turn {
                                         background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                                        background-color: #f56684;
                                         border-color: #b5203f;
                                         box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
                                         top: -60px;
@@ -134,6 +135,7 @@ html {
                                         right: 150px;
                                         text-shadow: 1px 1px 0px #000;
                                         background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                        background-color: #148883;
                                         &:hover,&:active,&.active {
                                             background: #b5203f;
                                             border-color: #ed5676;
@@ -329,6 +331,7 @@ html {
                                         right: 150px;
                                         text-shadow: 1px 1px 0px #000;
                                         background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+                                        background-color: #148883;
                                         &:hover,&:active,&.active {
                                             background: #b5203f;
                                             border-color: #ed5676;

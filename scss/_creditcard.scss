@@ -132,6 +132,16 @@ html {
                             text-shadow: 1px 1px 0px #000;
                             font-weight: bold;
                             &:hover,&:active,&.active {
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    border-color: #f56684;
+                                    background-color: #b5203f;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    border-color: #f56684;
+                                    background-color: #b5203f;
+                                }
                                 &::before {
                                     background: linear-gradient(to top,transparent 50%,#00000052);
                                 }

@@ -452,7 +452,23 @@ html {
                         background-color: #148883;
                         box-shadow: 0px 2px 0px 0px #ffffff5c inset;
                         padding-top: 3px;
+                        /*for IE*/
+                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                            padding: 0px;
+                        }
+                        /*for IE 9*/
+                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                            padding: 0px;
+                        }
                         &:hover,&:active,&.active {
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                background-color: #2ea8a2;
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                background-color: #2ea8a2;
+                            }
                             &::before {
                                 background: linear-gradient(to top,transparent 50%,#0000005e);
                             }

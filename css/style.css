@@ -93,6 +93,7 @@ html {
   min-width: 1280px;
   height: 100%;
   background: #c6ffdc;
+  scrollbar-width: thin;
 }
 html ::-webkit-scrollbar {
   width: 5px;
@@ -123,11 +124,6 @@ html body header .top .lang {
   float: left;
   position: relative;
   /*for IE 9*/
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body header .top .lang::before {
-    display: none;
-  }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang::before {
@@ -292,16 +288,6 @@ html body header .top .loginstyle li.list {
   /*for IE*/
   /*for IE 9*/
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body header .top .loginstyle li.list::before {
-    display: none;
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body header .top .loginstyle li.list::before {
-    display: none;
-  }
-}
 html body header .top .loginstyle li.list::before {
   content: "";
   position: absolute;
@@ -313,6 +299,17 @@ html body header .top .loginstyle li.list::before {
   border-width: 5px 3px 0px 3px;
   border-color: #fff transparent transparent transparent;
   pointer-events: none;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body header .top .loginstyle li.list::before {
+    top: 12px;
+    right: 10px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body header .top .loginstyle li.list::before {
+    display: none;
+  }
 }
 html body header .top .loginstyle li.list select {
   width: 34px;
@@ -3905,6 +3902,32 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
   background-color: #148883;
   box-shadow: 0px 2px 0px 0px #ffffff5c inset;
   padding-top: 3px;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .rightside .askbtn, html body .innerPage article .fixside .askbtn {
+    padding: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .rightside .askbtn, html body .innerPage article .fixside .askbtn {
+    padding: 0px;
+  }
+}
+html body .innerPage article .rightside .askbtn:hover, html body .innerPage article .rightside .askbtn:active, html body .innerPage article .rightside .askbtn.active, html body .innerPage article .fixside .askbtn:hover, html body .innerPage article .fixside .askbtn:active, html body .innerPage article .fixside .askbtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .rightside .askbtn:hover, html body .innerPage article .rightside .askbtn:active, html body .innerPage article .rightside .askbtn.active, html body .innerPage article .fixside .askbtn:hover, html body .innerPage article .fixside .askbtn:active, html body .innerPage article .fixside .askbtn.active {
+    background-color: #2ea8a2;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .rightside .askbtn:hover, html body .innerPage article .rightside .askbtn:active, html body .innerPage article .rightside .askbtn.active, html body .innerPage article .fixside .askbtn:hover, html body .innerPage article .fixside .askbtn:active, html body .innerPage article .fixside .askbtn.active {
+    background-color: #2ea8a2;
+  }
 }
 html body .innerPage article .rightside .askbtn:hover::before, html body .innerPage article .rightside .askbtn:active::before, html body .innerPage article .rightside .askbtn.active::before, html body .innerPage article .fixside .askbtn:hover::before, html body .innerPage article .fixside .askbtn:active::before, html body .innerPage article .fixside .askbtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000005e);
@@ -4257,6 +4280,7 @@ html body .innerPage article .mid .inforWindow .box .infor {
   height: 345px;
   overflow: auto;
   padding-bottom: 50px;
+  scrollbar-width: thin;
 }
 html body .innerPage article .mid .inforWindow .box .infor.display {
   display: block;
@@ -4606,6 +4630,22 @@ html body .innerPage article .mid .addCardWindow .savebtn {
   text-shadow: 1px 1px 0px #000;
   font-weight: bold;
 }
+html body .innerPage article .mid .addCardWindow .savebtn:hover, html body .innerPage article .mid .addCardWindow .savebtn:active, html body .innerPage article .mid .addCardWindow .savebtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .addCardWindow .savebtn:hover, html body .innerPage article .mid .addCardWindow .savebtn:active, html body .innerPage article .mid .addCardWindow .savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .addCardWindow .savebtn:hover, html body .innerPage article .mid .addCardWindow .savebtn:active, html body .innerPage article .mid .addCardWindow .savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
 html body .innerPage article .mid .addCardWindow .savebtn:hover::before, html body .innerPage article .mid .addCardWindow .savebtn:active::before, html body .innerPage article .mid .addCardWindow .savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
@@ -4677,6 +4717,7 @@ html body .innerPage article .mid .presentWindow .box .btnbox button:last-child 
 }
 html body .innerPage article .mid .presentWindow .box .btnbox button.turn {
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
   top: -60px;
@@ -4733,6 +4774,12 @@ html body .innerPage article .mid .presentWindow .box .goods .selectbox {
   font-size: 15px;
   color: #fff;
   position: relative;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox::before {
+    display: none;
+  }
 }
 html body .innerPage article .mid .presentWindow .box .goods .selectbox::before {
   content: "";
@@ -4773,6 +4820,12 @@ html body .innerPage article .mid .presentWindow .box .goods .selectbox .calc {
   right: 14px;
   top: 13px;
   background: url("../images/discount/present_calc.png") no-repeat;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .calc {
+    display: none;
+  }
 }
 html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn {
   width: 160px;
@@ -4780,13 +4833,30 @@ html body .innerPage article .mid .presentWindow .box .goods .selectbox .contrac
   border: solid 5px #b5203f;
   border-radius: 15px;
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
   position: absolute;
   right: -725px;
   top: -3px;
 }
+html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
 html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover::before, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active::before, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000003b);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active {
+    background-color: #b5203f;
+    border-color: #f56684;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active {
+    background-color: #b5203f;
+    border-color: #f56684;
+  }
 }
 html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn::before {
   content: "";
@@ -4820,6 +4890,9 @@ html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn
   border-radius: 8px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
+  /*for IE*/
+  /*for IE 9*/
 }
 html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button.active {
   background: #b5203f;
@@ -4827,7 +4900,29 @@ html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn
   text-shadow: none;
 }
 html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:nth-of-type(2) {
+  /*for IE*/
+  /*for IE 9*/
   transform: translateY(-2px);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:nth-of-type(2) {
+    transform: translateY(0px);
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:nth-of-type(2) {
+    transform: translateY(0px);
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button {
+    line-height: 0px;
+  }
 }
 html body .innerPage article .mid .presentWindow .box .goods .baseline {
   width: 94%;
@@ -4939,6 +5034,7 @@ html body .innerPage article .mid .messageWindow .box .btnbox button:last-child 
 }
 html body .innerPage article .mid .messageWindow .box .btnbox button.turn {
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
   top: -60px;
@@ -5022,6 +5118,7 @@ html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox b
   right: 150px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
 }
 html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button:hover, html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button:active, html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button.active {
   background: #b5203f;
@@ -5214,6 +5311,7 @@ html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button 
   right: 150px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
 }
 html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button:hover, html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button:active, html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button.active {
   background: #b5203f;
@@ -5389,6 +5487,7 @@ html body .innerPage article .mid .dealWindow .box .btnbox button:nth-of-type(4)
 }
 html body .innerPage article .mid .dealWindow .box .btnbox button.turn {
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
   top: -60px;
@@ -5430,6 +5529,7 @@ html body .innerPage article .mid .dealWindow .box .record .selectbox {
   font-size: 15px;
   color: #fff;
   position: relative;
+  /*for IE 9*/
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox::before {
   content: "";
@@ -5448,6 +5548,11 @@ html body .innerPage article .mid .dealWindow .box .record .selectbox:nth-of-typ
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox:nth-of-type(2)::before {
   display: none;
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox::before {
+    display: none;
+  }
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox select {
   float: right;
@@ -5470,6 +5575,12 @@ html body .innerPage article .mid .dealWindow .box .record .selectbox .calc {
   right: 14px;
   top: 13px;
   background: url("../images/discount/present_calc.png") no-repeat;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .calc {
+    display: none;
+  }
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn {
   width: 160px;
@@ -5477,13 +5588,30 @@ html body .innerPage article .mid .dealWindow .box .record .selectbox .contractb
   border: solid 5px #b5203f;
   border-radius: 15px;
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
   position: absolute;
   right: -725px;
   top: -3px;
 }
+html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
 html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover::before, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active::before, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000003b);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active {
+    background-color: #b5203f;
+    border-color: #f56684;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active {
+    background-color: #b5203f;
+    border-color: #f56684;
+  }
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn::before {
   content: "";
@@ -5517,6 +5645,9 @@ html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn b
   border-radius: 8px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
+  /*for IE*/
+  /*for IE 9*/
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button.active {
   background: #b5203f;
@@ -5524,7 +5655,29 @@ html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn b
   text-shadow: none;
 }
 html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:nth-of-type(2) {
+  /*for IE*/
+  /*for IE 9*/
   transform: translateY(-2px);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:nth-of-type(2) {
+    transform: translateY(0px);
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:nth-of-type(2) {
+    transform: translateY(0px);
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button {
+    line-height: 0px;
+  }
 }
 html body .innerPage article .mid .dealWindow .box .record .baseline {
   width: 94%;
@@ -5613,6 +5766,12 @@ html body .innerPage article .mid .bettingWindow .selectbox {
   font-size: 15px;
   color: #fff;
   position: relative;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .bettingWindow .selectbox::before {
+    display: none;
+  }
 }
 html body .innerPage article .mid .bettingWindow .selectbox::before {
   content: "";
@@ -5663,6 +5822,12 @@ html body .innerPage article .mid .bettingWindow .selectbox .calc {
   right: 14px;
   top: 13px;
   background: url("../images/discount/present_calc.png") no-repeat;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .bettingWindow .selectbox .calc {
+    display: none;
+  }
 }
 html body .innerPage article .mid .bettingWindow .selectbox .contractbtn {
   width: 160px;
@@ -5670,13 +5835,30 @@ html body .innerPage article .mid .bettingWindow .selectbox .contractbtn {
   border: solid 5px #b5203f;
   border-radius: 15px;
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
   box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
   position: absolute;
   right: -725px;
   top: -3px;
 }
+html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
 html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover::before, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active::before, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000003b);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active {
+    background-color: #b5203f;
+    border-color: #f56684;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active {
+    background-color: #b5203f;
+    border-color: #f56684;
+  }
 }
 html body .innerPage article .mid .bettingWindow .selectbox .contractbtn::before {
   content: "";
@@ -5710,6 +5892,9 @@ html body .innerPage article .mid .bettingWindow .selectbox .datebtn button {
   border-radius: 8px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
+  /*for IE*/
+  /*for IE 9*/
 }
 html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:hover, html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:active, html body .innerPage article .mid .bettingWindow .selectbox .datebtn button.active {
   background: #b5203f;
@@ -5717,7 +5902,29 @@ html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:hove
   text-shadow: none;
 }
 html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:nth-of-type(2) {
+  /*for IE*/
+  /*for IE 9*/
   transform: translateY(-2px);
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:nth-of-type(2) {
+    transform: translateY(0px);
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:nth-of-type(2) {
+    transform: translateY(0px);
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button {
+    line-height: 0px;
+  }
 }
 html body .innerPage article .mid .bettingWindow .innerbox {
   width: 1070px;
@@ -5893,6 +6100,22 @@ html body .innerPage article .mid .vipWindow .barbox button.savebtn {
   box-shadow: 0px 3px 1px 0px #ffffff63 inset;
   position: relative;
 }
+html body .innerPage article .mid .vipWindow .barbox button.savebtn:hover, html body .innerPage article .mid .vipWindow .barbox button.savebtn:active, html body .innerPage article .mid .vipWindow .barbox button.savebtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .vipWindow .barbox button.savebtn:hover, html body .innerPage article .mid .vipWindow .barbox button.savebtn:active, html body .innerPage article .mid .vipWindow .barbox button.savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .vipWindow .barbox button.savebtn:hover, html body .innerPage article .mid .vipWindow .barbox button.savebtn:active, html body .innerPage article .mid .vipWindow .barbox button.savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
 html body .innerPage article .mid .vipWindow .barbox button.savebtn:hover::before, html body .innerPage article .mid .vipWindow .barbox button.savebtn:active::before, html body .innerPage article .mid .vipWindow .barbox button.savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
@@ -5945,6 +6168,25 @@ html body .innerPage article .mid .vipWindow .innerbox button {
   font-weight: bold;
   font-size: 20px;
   text-shadow: 1px 1px 0px #000;
+}
+html body .innerPage article .mid .vipWindow .innerbox button:hover, html body .innerPage article .mid .vipWindow .innerbox button:active, html body .innerPage article .mid .vipWindow .innerbox button.active {
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .vipWindow .innerbox button:hover, html body .innerPage article .mid .vipWindow .innerbox button:active, html body .innerPage article .mid .vipWindow .innerbox button.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .vipWindow .innerbox button:hover, html body .innerPage article .mid .vipWindow .innerbox button:active, html body .innerPage article .mid .vipWindow .innerbox button.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
+html body .innerPage article .mid .vipWindow .innerbox button:hover::before, html body .innerPage article .mid .vipWindow .innerbox button:active::before, html body .innerPage article .mid .vipWindow .innerbox button.active::before {
+  background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid .vipWindow .innerbox button:hover::before, html body .innerPage article .mid .vipWindow .innerbox button:active::before, html body .innerPage article .mid .vipWindow .innerbox button.active::before {
   background: linear-gradient(to top, transparent 50%, #00000052);
@@ -6007,6 +6249,7 @@ html body .innerPage article .mid .vipWindow .innerbox ul li span {
 html body .innerPage article .mid {
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 html body .innerPage article .mid .transWindow {
   width: 870px;
@@ -6049,6 +6292,12 @@ html body .innerPage article .mid .transWindow .selectbox {
   color: #fff;
   margin: 15px 0px 20px 20px;
   position: relative;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .transWindow .selectbox::before {
+    display: none;
+  }
 }
 html body .innerPage article .mid .transWindow .selectbox::before {
   content: "";
@@ -6095,6 +6344,22 @@ html body .innerPage article .mid .transWindow .savebtn {
   box-shadow: 0px 3px 1px 0px #ffffff63 inset;
   position: relative;
   margin: 0px auto;
+}
+html body .innerPage article .mid .transWindow .savebtn:hover, html body .innerPage article .mid .transWindow .savebtn:active, html body .innerPage article .mid .transWindow .savebtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .transWindow .savebtn:hover, html body .innerPage article .mid .transWindow .savebtn:active, html body .innerPage article .mid .transWindow .savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .transWindow .savebtn:hover, html body .innerPage article .mid .transWindow .savebtn:active, html body .innerPage article .mid .transWindow .savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
 }
 html body .innerPage article .mid .transWindow .savebtn:hover::before, html body .innerPage article .mid .transWindow .savebtn:active::before, html body .innerPage article .mid .transWindow .savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #00000052);
@@ -6221,6 +6486,7 @@ html body .innerPage article .mid .depositWindow button {
   border-radius: 8px;
   text-shadow: 1px 1px 0px #000;
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
+  background-color: #148883;
   margin: 15px 0px 0px 50px;
 }
 html body .innerPage article .mid .depositWindow button:last-child {
@@ -6269,6 +6535,12 @@ html body .innerPage article .mid .withdrawWindow .selectbox {
   color: #fff;
   margin: 30px 0px 20px 20px;
   position: relative;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .withdrawWindow .selectbox::before {
+    display: none;
+  }
 }
 html body .innerPage article .mid .withdrawWindow .selectbox:nth-of-type(3) {
   margin-left: 68px;
@@ -6332,6 +6604,22 @@ html body .innerPage article .mid .withdrawWindow .savebtn {
   box-shadow: 0px 3px 1px 0px #ffffff63 inset;
   position: relative;
   margin: 10px auto 30px;
+}
+html body .innerPage article .mid .withdrawWindow .savebtn:hover, html body .innerPage article .mid .withdrawWindow .savebtn:active, html body .innerPage article .mid .withdrawWindow .savebtn.active {
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid .withdrawWindow .savebtn:hover, html body .innerPage article .mid .withdrawWindow .savebtn:active, html body .innerPage article .mid .withdrawWindow .savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid .withdrawWindow .savebtn:hover, html body .innerPage article .mid .withdrawWindow .savebtn:active, html body .innerPage article .mid .withdrawWindow .savebtn.active {
+    border-color: #f56684;
+    background-color: #b5203f;
+  }
 }
 html body .innerPage article .mid .withdrawWindow .savebtn:hover::before, html body .innerPage article .mid .withdrawWindow .savebtn:active::before, html body .innerPage article .mid .withdrawWindow .savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #00000052);

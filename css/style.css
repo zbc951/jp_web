@@ -3620,18 +3620,9 @@ html body .innerPage article .leftside .leftbtnbox a {
   padding-left: 60px;
   border: solid 5px #184c4a;
   border-radius: 15px;
-<<<<<<< HEAD
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
   box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-=======
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
-  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
-  background: linear-gradient(to top, #148883 42%, #3a9995 100%);
-  background-color: #148883;
-  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 html body .innerPage article .leftside .leftbtnbox a:hover, html body .innerPage article .leftside .leftbtnbox a:active, html body .innerPage article .leftside .leftbtnbox a.active {
   background: linear-gradient(to top, #273f5f, #2a4d7c);
@@ -3847,18 +3838,9 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
   padding-top: 3px;
   border: solid 5px #184c4a;
   border-radius: 15px;
-<<<<<<< HEAD
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
   box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-=======
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
-  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
-  background: linear-gradient(to top, #148883 42%, #3a9995 100%);
-  background-color: #148883;
-  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   /*for IE*/
   /*for IE 9*/
 }
@@ -4018,30 +4000,16 @@ html body .innerPage .bg {
 .bg_darkblue {
   border: solid 5px #122845;
   border-radius: 15px;
-<<<<<<< HEAD
   background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
   background-color: #2a4d7c;
   box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-=======
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 
 .innerbox {
   background: #507ab0;
   border: solid 1px #5885c2;
   border-radius: 15px;
-<<<<<<< HEAD
   box-shadow: 0px 2px 0px 0px #0000003b inset;
-=======
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   margin: 0px auto;
   overflow: hidden;
   position: relative;
@@ -4051,13 +4019,7 @@ html body .innerPage .bg {
   color: #fff;
   left: 50%;
   top: 50%;
-<<<<<<< HEAD
   transform: translate(-50%, -50%);
-=======
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   letter-spacing: 3px;
 }
 
@@ -4072,34 +4034,18 @@ html body .innerPage .bg {
   position: absolute;
   top: -60px;
   left: 20px;
-<<<<<<< HEAD
   box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-=======
-  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 .separateBox .btnbox button::before {
   content: "";
   position: absolute;
   width: 175px;
   height: 50px;
-<<<<<<< HEAD
-=======
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: linear-gradient(to top, transparent 50%, #00000047);
   border-radius: 50px 50px 0px 0px;
   left: 50%;
   top: 5px;
-<<<<<<< HEAD
   transform: translateX(-50%);
-=======
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 .separateBox .btnbox button:last-child {
   left: 230px;
@@ -4108,29 +4054,14 @@ html body .innerPage .bg {
   font-size: 14px;
 }
 .separateBox .btnbox button.turn {
-<<<<<<< HEAD
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-=======
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  border-color: #b5203f;
-  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   top: -60px;
   height: 55px;
 }
 .separateBox .btnbox button.turn::before {
-<<<<<<< HEAD
-=======
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: linear-gradient(to top, transparent 50%, #ffffff69);
 }
 .separateBox .btnbox button span {
@@ -4149,38 +4080,21 @@ html body .innerPage .bg {
   display: block;
   border: solid 5px #b5203f;
   border-radius: 15px;
-<<<<<<< HEAD
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
   box-shadow: 0px 3px 1px 0px #ffffff63 inset;
   position: relative;
 }
-=======
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  -webkit-box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-          box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-  position: relative;
-}
 .savebtn:hover::before, .savebtn:active::before, .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 .savebtn::before {
   content: "";
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 .savebtn span {
   font-size: 20px;
   color: #fff;
@@ -4188,7 +4102,103 @@ html body .innerPage .bg {
   z-index: 1;
 }
 
-<<<<<<< HEAD
+.selectBox {
+  width: 330px;
+  line-height: 44px;
+  margin: 30px 0px 0px 35px;
+  font-size: 15px;
+  color: #fff;
+  position: relative;
+  /*for IE 9*/
+}
+.selectBox::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  left: 302px;
+  top: 17px;
+  border-style: solid;
+  border-width: 10px 6px 0px 6px;
+  border-color: #29fff6 transparent transparent transparent;
+  pointer-events: none;
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .selectBox::before {
+    display: none;
+  }
+}
+.selectBox select {
+  float: right;
+  width: 262px;
+  height: 42px;
+  border-radius: 10px;
+  background: #183051;
+  border: solid 1px #fff;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: #fff;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.selectBox .calc {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 14px;
+  top: 13px;
+  background: url("../images/discount/present_calc.png") no-repeat;
+  /*for IE 9*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .selectBox .calc {
+    display: none;
+  }
+}
+.selectBox .datebtn {
+  position: absolute;
+  right: -390px;
+  top: -3px;
+}
+.selectBox .datebtn button {
+  width: 87px;
+  height: 43px;
+  font-size: 15px;
+  /*for IE*/
+  /*for IE 9*/
+}
+.selectBox .datebtn button:hover, .selectBox .datebtn button:active, .selectBox .datebtn button.active {
+  background: #b5203f;
+  border-color: #ed5676;
+  text-shadow: none;
+}
+.selectBox .datebtn button:nth-of-type(2) {
+  padding-top: 3px;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .selectBox .datebtn button:nth-of-type(2) {
+    padding-top: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .selectBox .datebtn button:nth-of-type(2) {
+    padding-top: 0px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .selectBox .datebtn button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  .selectBox .datebtn button {
+    line-height: 0px;
+  }
+}
+
 .baseline {
   width: 840px;
   height: 3px;
@@ -4273,8 +4283,6 @@ html body .innerPage .bg {
   text-shadow: none;
 }
 
-=======
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 h1 {
   color: #ffffac;
   font-size: 19px;
@@ -4326,56 +4334,25 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
   background-color: #a2a2a2;
   color: #000;
   text-align: center;
-<<<<<<< HEAD
   transform: translateY(2px);
   line-height: 22px;
   padding-left: 3px;
-=======
-  -webkit-transform: translateY(2px);
-      -ms-transform: translateY(2px);
-          transform: translateY(2px);
-  line-height: 22px;
-  padding-left: 4px;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   font-size: 15px;
   border: solid 2px #fff;
   border-bottom-width: 1px;
   border-radius: 5px;
   font-weight: bold;
   margin: 0px 5px;
-<<<<<<< HEAD
   box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
-=======
-  -webkit-box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
-          box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
-  /*for IE*/
-  /*for IE 9*/
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
-    padding-left: 3px;
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
-    padding-left: 3px;
-  }
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span:nth-of-type(1) {
   margin-left: 8px;
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active {
-<<<<<<< HEAD
-=======
-  background: -webkit-gradient(linear, left bottom, left top, from(#a00f00), to(#ff0000));
-  background: -o-linear-gradient(bottom, #a00f00, #ff0000);
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: linear-gradient(to top, #a00f00, #ff0000);
   background-color: #ff0000;
   color: #fff;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active2 {
   background: linear-gradient(to top, #9da000, #d0ff00);
   background-color: #d0ff00;
@@ -4384,8 +4361,6 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.activ
   background: linear-gradient(to top, #00a043, #2bff00);
   background-color: #2bff00;
 }
-=======
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li {
   display: inline-block;
   color: #fff;
@@ -4403,12 +4378,9 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li:nth-of
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li.active {
   color: #ffee5b;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li.active span {
   background-position-y: 100%;
 }
-=======
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li span {
   display: inline-block;
   width: 40px;
@@ -4438,11 +4410,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .btnbo
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox h1 {
   font-size: 21px;
-<<<<<<< HEAD
   padding: 25px 0px 25px 20px;
-=======
-  padding: 25px 0px 0px 20px;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor {
   display: none;
@@ -4450,57 +4418,12 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor.display {
   display: block;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow {
   overflow: auto;
   height: 300px;
   scrollbar-width: thin;
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputList li button {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li {
-  display: inline-block;
-  color: #fff;
-  height: 40px;
-  line-height: 40px;
-  margin-top: 20px;
-  position: relative;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(odd) {
-  width: 305px;
-  margin-left: 35px;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(even) {
-  width: 390px;
-  margin-left: 40px;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(even) input {
-  width: 230px;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li input {
-  float: right;
-  background: #183051;
-  width: 190px;
-  height: 38px;
-  padding-left: 10px;
-  font-size: 17px;
-  border-radius: 10px;
-  border: solid 1px #fff;
-  color: #fff;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li input.lightbase {
-  background: #507ab0;
-  -webkit-box-shadow: 0px 3px 0px 0px #0000005e inset;
-          box-shadow: 0px 3px 0px 0px #0000005e inset;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li span {
-  color: #29fff6;
-  position: absolute;
-  left: -20px;
-  top: -1px;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   position: absolute;
   width: 75px;
   height: 43px;
@@ -4517,7 +4440,6 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -4538,43 +4460,16 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
-=======
-  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
-    line-height: 0px;
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
-    line-height: 0px;
-  }
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button.active {
-  background: #b5203f;
-  border-color: #ed5676;
-  text-shadow: none;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .savebtn {
-  margin: 30px auto 10px;
-  width: 240px;
-  height: 58px;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .savebtn::before {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   width: 220px;
   height: 40px;
   border-radius: 8px 8px 0px 0px;
   top: 5px;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow p {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor p {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   text-align: center;
   color: #fff;
   font-size: 15px;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow p a {
   color: #ff5994;
 }
@@ -4582,18 +4477,6 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   margin: 40px auto 0px;
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor p a {
-  color: #ff5994;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .baseline {
-  width: 840px;
-  height: 3px;
-  background: #122845;
-  margin: 40px auto 0px;
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   font-size: 14px;
   color: #fff;
   margin: 10px 0px 0px 40px;
@@ -4601,28 +4484,16 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
-=======
-  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
     margin-bottom: 50px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
     margin-bottom: 50px;
   }
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox input {
-=======
-  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
-    margin-bottom: 50px;
-  }
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox input {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: #183051;
   width: 190px;
   height: 42px;
@@ -4633,59 +4504,30 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   color: #fff;
   margin-left: 15px;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox input.lightbase {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox input.lightbase {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: #507ab0;
   box-shadow: 0px 3px 0px 0px #0000005e inset;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   display: inline-block;
   width: 75px;
   height: 43px;
-  border: solid 5px #00302e;
-  color: #fff;
-  font-weight: bold;
-  font-size: 17px;
-  padding-bottom: 3px;
-  border-radius: 8px;
   margin-left: 5px;
-  text-shadow: 1px 1px 0px #000;
   transform: translateY(-1px);
-  background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
-  background-color: #148883;
   /*for IE*/
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
-=======
-  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
     line-height: 0px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
     line-height: 0px;
   }
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button.active {
-=======
-  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
-    line-height: 0px;
-  }
-}
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button.active {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: #b5203f;
   border-color: #ed5676;
   text-shadow: none;
@@ -4696,38 +4538,14 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .accou
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account.display {
   display: block;
 }
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account div {
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account .innerbox {
   width: 830px;
   height: 305px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
 }
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account div .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 3px;
-}
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account .nameList {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account ul {
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   margin-top: 10px;
 }
-<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account .nameList li {
-=======
-html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account ul li {
-  display: inline-block;
-  color: #fff;
->>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   height: 50px;
   line-height: 50px;
   padding: 0px 25px;
@@ -4842,194 +4660,75 @@ html body .innerPage article .mid.longBoard {
   margin-right: 0px;
   width: 1145px;
 }
-html body .innerPage article .mid .presentWindow {
+html body .innerPage article .mid.presentWindow .topWindow {
   width: 100%;
   height: 100%;
   position: relative;
 }
-html body .innerPage article .mid .presentWindow .box {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox {
   width: 1135px;
   height: 665px;
   position: absolute;
   top: 55px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   z-index: 1;
 }
-html body .innerPage article .mid .presentWindow .box .btnbox button {
-  width: 200px;
-  height: 60px;
-  border-style: solid;
-  border-color: #122845;
-  border-width: 5px 5px 0px 5px;
-  border-radius: 60px 60px 0px 0px;
-  background: #2a4c79;
-  position: absolute;
-  top: -60px;
-  left: 20px;
-  box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-}
-html body .innerPage article .mid .presentWindow .box .btnbox button::before {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 50px;
-  background: linear-gradient(to top, transparent 50%, #00000047);
-  border-radius: 50px 50px 0px 0px;
-  left: 50%;
-  top: 5px;
-  transform: translateX(-50%);
-}
-html body .innerPage article .mid .presentWindow .box .btnbox button:last-child {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .btnbox button:last-child {
   left: 230px;
 }
-html body .innerPage article .mid .presentWindow .box .btnbox button.turn {
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  border-color: #b5203f;
-  box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-  top: -60px;
-  height: 55px;
-}
-html body .innerPage article .mid .presentWindow .box .btnbox button.turn::before {
-  background: linear-gradient(to top, transparent 50%, #ffffff69);
-}
-html body .innerPage article .mid .presentWindow .box .btnbox button span {
-  display: block;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .btnbox button:last-child span {
   font-size: 17px;
-  color: #fff;
-  text-shadow: 1px 1px 0px #000;
 }
-html body .innerPage article .mid .presentWindow .box .presents {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .presents {
   display: none;
 }
-html body .innerPage article .mid .presentWindow .box .presents.display {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .presents.display {
   display: block;
 }
-html body .innerPage article .mid .presentWindow .box .presents div {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .presents div {
   width: 1060px;
   height: 580px;
   margin: 35px auto 0px;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
 }
-html body .innerPage article .mid .presentWindow .box .presents div .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 3px;
-}
-html body .innerPage article .mid .presentWindow .box .goods {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods {
   display: none;
 }
-html body .innerPage article .mid .presentWindow .box .goods.display {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods.display {
   display: block;
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox {
-  width: 330px;
-  line-height: 44px;
-  margin: 30px 0px 0px 35px;
-  font-size: 15px;
-  color: #fff;
-  position: relative;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox::before {
-    display: none;
-  }
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  left: 302px;
-  top: 17px;
-  border-style: solid;
-  border-width: 10px 6px 0px 6px;
-  border-color: #29fff6 transparent transparent transparent;
-  pointer-events: none;
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox:nth-of-type(2) {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox:nth-of-type(2) {
   margin-top: 15px;
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox:nth-of-type(2)::before {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox:nth-of-type(2)::before {
   display: none;
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox select {
-  float: right;
-  width: 262px;
-  height: 42px;
-  border-radius: 10px;
-  background: #183051;
-  border: solid 1px #fff;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  color: #fff;
-  padding-left: 10px;
-  font-size: 16px;
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .calc {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  right: 14px;
-  top: 13px;
-  background: url("../images/discount/present_calc.png") no-repeat;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .calc {
-    display: none;
-  }
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn {
+  display: inline-block;
   width: 160px;
   height: 49px;
-  border: solid 5px #b5203f;
-  border-radius: 15px;
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
   position: absolute;
   right: -725px;
   top: -3px;
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active {
   /*for IE*/
   /*for IE 9*/
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover::before, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active::before, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active::before {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover::before, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active::before, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000003b);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active {
+  html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn.active {
+  html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
   }
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn::before {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn::before {
   content: "";
   position: absolute;
   width: 145px;
@@ -5040,203 +4739,84 @@ html body .innerPage article .mid .presentWindow .box .goods .selectbox .contrac
   border-radius: 5px 5px 0px 0px;
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .contractbtn span {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn span {
   color: #fff;
   text-shadow: 1px 1px 0px #961530;
   position: relative;
   z-index: 1;
   font-size: 17px;
 }
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn {
-  position: absolute;
-  right: -390px;
-  top: 0px;
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button {
-  width: 87px;
-  height: 43px;
-  border: solid 5px #00302e;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 8px;
-  text-shadow: 1px 1px 0px #000;
-  background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
-  background-color: #148883;
-  /*for IE*/
-  /*for IE 9*/
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:hover, html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:active, html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button.active {
-  background: #b5203f;
-  border-color: #ed5676;
-  text-shadow: none;
-}
-html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:nth-of-type(2) {
-  /*for IE*/
-  /*for IE 9*/
-  transform: translateY(-2px);
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:nth-of-type(2) {
-    transform: translateY(0px);
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button:nth-of-type(2) {
-    transform: translateY(0px);
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button {
-    line-height: 0px;
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .presentWindow .box .goods .selectbox .datebtn button {
-    line-height: 0px;
-  }
-}
-html body .innerPage article .mid .presentWindow .box .goods .baseline {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .baseline {
   width: 94%;
-  height: 3px;
   margin: 30px auto 0px;
-  background: #122845;
 }
-html body .innerPage article .mid .presentWindow .box .goods h1 {
-  color: #ffffac;
-  font-size: 19px;
-  font-weight: bold;
-  letter-spacing: 5px;
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods h1 {
   padding: 30px 0px 0px 30px;
 }
-html body .innerPage article .mid .presentWindow .box .goods ul {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .nameList {
   margin-top: 10px;
-  text-align: center;
 }
-html body .innerPage article .mid .presentWindow .box .goods ul li {
-  display: inline-block;
-  color: #fff;
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .nameList li {
   height: 50px;
   line-height: 50px;
   padding: 0px 95px;
 }
-html body .innerPage article .mid .presentWindow .box .goods .innerbox {
+html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .innerbox {
   width: 1070px;
   height: 355px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
-}
-html body .innerPage article .mid .presentWindow .box .goods .innerbox .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 3px;
 }
 
 @media only screen and (max-width: 1415px) {
   html body .innerPage article .mid.longBoard {
     width: 880px;
   }
-  html body .innerPage article .mid.longBoard .presentWindow .box {
+  html body .innerPage article .mid.longBoard.presentWindow .topWindow .separateBox {
     width: 870px;
   }
-  html body .innerPage article .mid.longBoard .presentWindow .box .presents div {
+  html body .innerPage article .mid.longBoard.presentWindow .topWindow .separateBox .presents div {
     width: 830px;
   }
-  html body .innerPage article .mid.longBoard .presentWindow .box .goods .selectbox .contractbtn {
+  html body .innerPage article .mid.longBoard.presentWindow .topWindow .separateBox .goods .selectBox .savebtn {
     right: -390px;
     top: -60px;
   }
-  html body .innerPage article .mid.longBoard .presentWindow .box .goods ul li {
+  html body .innerPage article .mid.longBoard.presentWindow .topWindow .separateBox .goods .nameList li {
     padding: 0px 75px;
   }
-  html body .innerPage article .mid.longBoard .presentWindow .box .goods .innerbox {
+  html body .innerPage article .mid.longBoard.presentWindow .topWindow .separateBox .goods .innerbox {
     width: 830px;
   }
 }
-html body .innerPage article .mid .messageWindow {
+html body .innerPage article .mid.mailWindow .topWindow {
   width: 100%;
   height: 100%;
   position: relative;
 }
-html body .innerPage article .mid .messageWindow .box {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox {
   width: 1135px;
   height: 665px;
   position: absolute;
   top: 55px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   z-index: 1;
 }
-html body .innerPage article .mid .messageWindow .box .btnbox button {
-  width: 200px;
-  height: 60px;
-  border-style: solid;
-  border-color: #122845;
-  border-width: 5px 5px 0px 5px;
-  border-radius: 60px 60px 0px 0px;
-  background: #2a4c79;
-  position: absolute;
-  top: -60px;
-  left: 20px;
-  box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-}
-html body .innerPage article .mid .messageWindow .box .btnbox button::before {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 50px;
-  background: linear-gradient(to top, transparent 50%, #00000047);
-  border-radius: 50px 50px 0px 0px;
-  left: 50%;
-  top: 5px;
-  transform: translateX(-50%);
-}
-html body .innerPage article .mid .messageWindow .box .btnbox button:last-child {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .btnbox button:last-child {
   left: 230px;
 }
-html body .innerPage article .mid .messageWindow .box .btnbox button.turn {
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  border-color: #b5203f;
-  box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-  top: -60px;
-  height: 55px;
-}
-html body .innerPage article .mid .messageWindow .box .btnbox button.turn::before {
-  background: linear-gradient(to top, transparent 50%, #ffffff69);
-}
-html body .innerPage article .mid .messageWindow .box .btnbox button span {
-  display: block;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .btnbox button:last-child span {
   font-size: 17px;
-  color: #fff;
-  text-shadow: 1px 1px 0px #000;
 }
-html body .innerPage article .mid .messageWindow .box .messages {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages {
   display: none;
 }
-html body .innerPage article .mid .messageWindow .box .messages.display {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages.display {
   display: block;
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox {
   width: 100%;
   height: auto;
   margin: 20px 25px;
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .rowbtn {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox .rowbtn {
   width: 280px;
   height: 50px;
   background: #183051;
@@ -5244,7 +4824,7 @@ html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .
   border-radius: 12px;
   position: relative;
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .rowbtn p {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox .rowbtn p {
   float: left;
   width: 50%;
   height: 100%;
@@ -5255,7 +4835,7 @@ html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .
   position: relative;
   cursor: pointer;
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .rowbtn div {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox .rowbtn div {
   width: 130px;
   height: 40px;
   border: solid 5px #b5203f;
@@ -5265,7 +4845,7 @@ html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .
   box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
   transition: 0.25s all;
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .rowbtn div::before {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox .rowbtn div::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -5276,160 +4856,29 @@ html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox .
   height: 30px;
   background: linear-gradient(to top, transparent 50%, #df244c);
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox button {
   position: absolute;
   width: 90px;
   height: 40px;
-  border: solid 5px #00302e;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 8px;
   letter-spacing: 2px;
   top: 27px;
   right: 150px;
-  text-shadow: 1px 1px 0px #000;
-  background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
-  background-color: #148883;
 }
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button:hover, html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button:active, html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button.active {
-  background: #b5203f;
-  border-color: #ed5676;
-  text-shadow: none;
-}
-html body .innerPage article .mid .messageWindow .box .messages .messagebtnbox button:nth-of-type(2) {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox button:nth-of-type(2) {
   right: 50px;
 }
-html body .innerPage article .mid .messageWindow .box .messages .mailBox {
-  overflow: auto;
-  height: 480px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail {
-  width: 90%;
-  height: 100px;
-  margin: 0px 0px 10px 30px;
-  padding-right: 30px;
-  border: solid 5px #122845;
-  border-radius: 60px 20px 20px 60px;
-  background: #507ab0;
-  box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
-  text-align: left;
-  position: relative;
-  cursor: pointer;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail:hover, html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail:active {
-  border-color: #64e1dc;
-  background: #ee5978;
-  box-shadow: 0px 3px 3px #ee5978 inset, 0px -4px 0px 0px #ff8cab inset;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail:hover .mail_ic, html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail:active .mail_ic {
-  background-position-x: 100%;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail.active {
-  background: #2a4d7c;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail.active:hover, html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail.active:active {
-  box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
-  border-color: #122845;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail.active:hover .mail_ic, html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail.active:active .mail_ic {
-  background-position-x: 0%;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail .mail_ic {
-  display: block;
-  width: 67px;
-  height: 66px;
-  background: url("../images/mail/mail_ic.png") no-repeat;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 20px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail h1 {
-  margin: 17px 0px 0px 104px;
-  color: #fff7b2;
-  font-size: 19px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail h1 span {
-  color: #fff;
-  font-size: 17px;
-  margin-left: 10px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .mailBox .mail p {
-  color: #fff;
-  margin: 12px 0px 0px 104px;
-  font-size: 15px;
-  line-height: 20px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .page {
-  position: absolute;
-  width: 100px;
-  height: 50px;
-  border: solid 1px #fff;
-  background: #183051;
-  border-radius: 12px;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button {
-  position: absolute;
-  width: 55px;
-  height: 55px;
-  border-radius: 30px;
-  border: solid 5px #00302e;
-  background: linear-gradient(to top, #148883 42%, #3a9995 100%);
-  background-color: #148883;
-  box-shadow: 0px 3px 3px 0px #6be3de inset;
-  right: -70px;
-  top: -3px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button:hover, html body .innerPage article .mid .messageWindow .box .messages .page button:active, html body .innerPage article .mid .messageWindow .box .messages .page button.active {
-  background: linear-gradient(to top, #ffd633 42%, #ffa200 99%);
-  border-color: #994c00;
-  box-shadow: 0px 3px 3px 0px #c95a00 inset;
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button:hover::before, html body .innerPage article .mid .messageWindow .box .messages .page button:active::before, html body .innerPage article .mid .messageWindow .box .messages .page button.active::before {
-  background-position-x: 100%;
-  transform: scaleX(-1);
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button::before {
-  content: "";
-  position: absolute;
-  width: 33px;
-  height: 29px;
-  background: url("../images/mail/arrow_gy.png") no-repeat;
-  background-size: 200%;
-  top: 9px;
-  left: 6px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button:nth-of-type(2) {
-  left: -70px;
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button:nth-of-type(2):hover::before, html body .innerPage article .mid .messageWindow .box .messages .page button:nth-of-type(2):active::before, html body .innerPage article .mid .messageWindow .box .messages .page button:nth-of-type(2).active::before {
-  background-position-x: 100%;
-  transform: scaleX(1);
-}
-html body .innerPage article .mid .messageWindow .box .messages .page button:nth-of-type(2)::before {
-  transform: scaleX(-1);
-}
-html body .innerPage article .mid .messageWindow .box .messages .page p {
-  color: #fff;
-  font-size: 22px;
-  line-height: 50px;
-}
-html body .innerPage article .mid .messageWindow .box .posts {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts {
   display: none;
 }
-html body .innerPage article .mid .messageWindow .box .posts.display {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts.display {
   display: block;
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox {
   width: 100%;
   height: auto;
   margin: 20px 25px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox .rowbtn {
   width: 360px;
   height: 50px;
   background: #183051;
@@ -5437,7 +4886,7 @@ html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn
   border-radius: 12px;
   position: relative;
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn p {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox .rowbtn p {
   float: left;
   width: 120px;
   height: 100%;
@@ -5448,7 +4897,7 @@ html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn
   position: relative;
   cursor: pointer;
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn div {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox .rowbtn div {
   width: 110px;
   height: 40px;
   border: solid 5px #b5203f;
@@ -5458,7 +4907,7 @@ html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn
   box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
   transition: 0.25s all;
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn div::before {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox .rowbtn div::before {
   content: "";
   position: absolute;
   left: 50%;
@@ -5469,30 +4918,23 @@ html body .innerPage article .mid .messageWindow .box .posts .postbtnbox .rowbtn
   height: 30px;
   background: linear-gradient(to top, transparent 50%, #df244c);
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox button {
   position: absolute;
   width: 90px;
   height: 40px;
-  border: solid 5px #00302e;
-  color: #fff;
-  font-size: 16px;
-  border-radius: 8px;
   letter-spacing: 2px;
   top: 27px;
   right: 150px;
-  text-shadow: 1px 1px 0px #000;
-  background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
-  background-color: #148883;
 }
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button:hover, html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button:active, html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button.active {
-  background: #b5203f;
-  border-color: #ed5676;
-  text-shadow: none;
-}
-html body .innerPage article .mid .messageWindow .box .posts .postbtnbox button:nth-of-type(2) {
+html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox button:nth-of-type(2) {
   right: 50px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail {
+
+.mailBox {
+  overflow: auto;
+  height: 480px;
+}
+.mailBox .mail {
   width: 90%;
   height: 100px;
   margin: 0px 0px 10px 30px;
@@ -5505,15 +4947,25 @@ html body .innerPage article .mid .messageWindow .box .posts .mail {
   position: relative;
   cursor: pointer;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail:hover, html body .innerPage article .mid .messageWindow .box .posts .mail:active, html body .innerPage article .mid .messageWindow .box .posts .mail.active {
+.mailBox .mail:hover, .mailBox .mail:active {
   border-color: #64e1dc;
   background: #ee5978;
   box-shadow: 0px 3px 3px #ee5978 inset, 0px -4px 0px 0px #ff8cab inset;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail:hover .mail_ic, html body .innerPage article .mid .messageWindow .box .posts .mail:active .mail_ic, html body .innerPage article .mid .messageWindow .box .posts .mail.active .mail_ic {
+.mailBox .mail:hover .mail_ic, .mailBox .mail:active .mail_ic {
   background-position-x: 100%;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail .mail_ic {
+.mailBox .mail.active {
+  background: #2a4d7c;
+}
+.mailBox .mail.active:hover, .mailBox .mail.active:active {
+  box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
+  border-color: #122845;
+}
+.mailBox .mail.active:hover .mail_ic, .mailBox .mail.active:active .mail_ic {
+  background-position-x: 0%;
+}
+.mailBox .mail .mail_ic {
   display: block;
   width: 67px;
   height: 66px;
@@ -5523,23 +4975,25 @@ html body .innerPage article .mid .messageWindow .box .posts .mail .mail_ic {
   transform: translateY(-50%);
   left: 20px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail h1 {
+.mailBox .mail h1 {
   margin: 17px 0px 0px 104px;
+  padding: 0px;
   color: #fff7b2;
   font-size: 19px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail h1 span {
+.mailBox .mail h1 span {
   color: #fff;
   font-size: 17px;
   margin-left: 10px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .mail p {
+.mailBox .mail p {
   color: #fff;
   margin: 12px 0px 0px 104px;
   font-size: 15px;
   line-height: 20px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .page {
+
+.page {
   position: absolute;
   width: 100px;
   height: 50px;
@@ -5551,7 +5005,7 @@ html body .innerPage article .mid .messageWindow .box .posts .page {
   transform: translateX(-50%);
   text-align: center;
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button {
+.page button {
   position: absolute;
   width: 55px;
   height: 55px;
@@ -5563,16 +5017,16 @@ html body .innerPage article .mid .messageWindow .box .posts .page button {
   right: -70px;
   top: -3px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button:hover, html body .innerPage article .mid .messageWindow .box .posts .page button:active, html body .innerPage article .mid .messageWindow .box .posts .page button.active {
+.page button:hover, .page button:active, .page button.active {
   background: linear-gradient(to top, #ffd633 42%, #ffa200 99%);
   border-color: #994c00;
   box-shadow: 0px 3px 3px 0px #c95a00 inset;
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button:hover::before, html body .innerPage article .mid .messageWindow .box .posts .page button:active::before, html body .innerPage article .mid .messageWindow .box .posts .page button.active::before {
+.page button:hover::before, .page button:active::before, .page button.active::before {
   background-position-x: 100%;
   transform: scaleX(-1);
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button::before {
+.page button::before {
   content: "";
   position: absolute;
   width: 33px;
@@ -5582,17 +5036,17 @@ html body .innerPage article .mid .messageWindow .box .posts .page button::befor
   top: 9px;
   left: 6px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button:nth-of-type(2) {
+.page button:nth-of-type(2) {
   left: -70px;
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button:nth-of-type(2):hover::before, html body .innerPage article .mid .messageWindow .box .posts .page button:nth-of-type(2):active::before, html body .innerPage article .mid .messageWindow .box .posts .page button:nth-of-type(2).active::before {
+.page button:nth-of-type(2):hover::before, .page button:nth-of-type(2):active::before, .page button:nth-of-type(2).active::before {
   background-position-x: 100%;
   transform: scaleX(1);
 }
-html body .innerPage article .mid .messageWindow .box .posts .page button:nth-of-type(2)::before {
+.page button:nth-of-type(2)::before {
   transform: scaleX(-1);
 }
-html body .innerPage article .mid .messageWindow .box .posts .page p {
+.page p {
   color: #fff;
   font-size: 22px;
   line-height: 50px;
@@ -5606,432 +5060,196 @@ html body .innerPage article .mid .messageWindow .box .posts .page p {
     width: 870px;
   }
 }
-html body .innerPage article .mid .dealWindow {
+html body .innerPage article .mid.dealWindow .topWindow {
   width: 100%;
   height: 100%;
   position: relative;
 }
-html body .innerPage article .mid .dealWindow .box {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox {
   width: 1135px;
   height: 665px;
   position: absolute;
   top: 55px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   z-index: 1;
 }
-html body .innerPage article .mid .dealWindow .box .btnbox button {
-  width: 200px;
-  height: 60px;
-  border-style: solid;
-  border-color: #122845;
-  border-width: 5px 5px 0px 5px;
-  border-radius: 60px 60px 0px 0px;
-  background: #2a4c79;
-  position: absolute;
-  top: -60px;
-  left: 20px;
-  box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-}
-html body .innerPage article .mid .dealWindow .box .btnbox button::before {
-  content: "";
-  position: absolute;
-  width: 175px;
-  height: 50px;
-  background: linear-gradient(to top, transparent 50%, #00000047);
-  border-radius: 50px 50px 0px 0px;
-  left: 50%;
-  top: 5px;
-  transform: translateX(-50%);
-}
-html body .innerPage article .mid .dealWindow .box .btnbox button:nth-of-type(2) {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .btnbox button:nth-of-type(2) {
   left: 230px;
 }
-html body .innerPage article .mid .dealWindow .box .btnbox button:nth-of-type(3) {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .btnbox button:nth-of-type(3) {
   left: 440px;
 }
-html body .innerPage article .mid .dealWindow .box .btnbox button:nth-of-type(4) {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .btnbox button:nth-of-type(4) {
   left: 650px;
 }
-html body .innerPage article .mid .dealWindow .box .btnbox button.turn {
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  border-color: #b5203f;
-  box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-  top: -60px;
-  height: 55px;
-}
-html body .innerPage article .mid .dealWindow .box .btnbox button.turn::before {
-  background: linear-gradient(to top, transparent 50%, #ffffff69);
-}
-html body .innerPage article .mid .dealWindow .box .btnbox button span {
-  display: block;
-  width: 100%;
-  left: 0px;
-  position: absolute;
-  z-index: 1;
-  top: 15px;
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .btnbox button:nth-of-type(4) span {
   font-size: 17px;
-  color: #fff;
-  text-shadow: 1px 1px 0px #000;
 }
-html body .innerPage article .mid .dealWindow .box .record.audit, html body .innerPage article .mid .dealWindow .box .record.actWallet, html body .innerPage article .mid .dealWindow .box .record.point, html body .innerPage article .mid .dealWindow .box .record.sell {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.actWallet, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell {
   display: none;
 }
-html body .innerPage article .mid .dealWindow .box .record.audit.display, html body .innerPage article .mid .dealWindow .box .record.actWallet.display, html body .innerPage article .mid .dealWindow .box .record.point.display, html body .innerPage article .mid .dealWindow .box .record.sell.display {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit.display, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.actWallet.display, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point.display, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell.display {
   display: block;
 }
-html body .innerPage article .mid .dealWindow .box .record.point ul li {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point ul li {
   padding: 0px 100px;
 }
-html body .innerPage article .mid .dealWindow .box .record.sell ul li {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell ul li {
   padding: 0px 20px;
 }
-html body .innerPage article .mid .dealWindow .box .record.sell .innerbox {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell .innerbox {
   height: 515px;
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox {
-  width: 330px;
-  line-height: 44px;
-  margin: 30px 0px 0px 35px;
-  font-size: 15px;
-  color: #fff;
-  position: relative;
-  /*for IE 9*/
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  left: 302px;
-  top: 17px;
-  border-style: solid;
-  border-width: 10px 6px 0px 6px;
-  border-color: #29fff6 transparent transparent transparent;
-  pointer-events: none;
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox:nth-of-type(2) {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox:nth-of-type(2) {
   margin-top: 15px;
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox:nth-of-type(2)::before {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox:nth-of-type(2)::before {
   display: none;
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox::before {
-    display: none;
-  }
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox select {
-  float: right;
-  width: 262px;
-  height: 42px;
-  border-radius: 10px;
-  background: #183051;
-  border: solid 1px #fff;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  color: #fff;
-  padding-left: 10px;
-  font-size: 16px;
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox .calc {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  right: 14px;
-  top: 13px;
-  background: url("../images/discount/present_calc.png") no-repeat;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .calc {
-    display: none;
-  }
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn {
+  display: inline-block;
   width: 160px;
   height: 49px;
-  border: solid 5px #b5203f;
-  border-radius: 15px;
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
   position: absolute;
   right: -725px;
   top: -3px;
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active {
   /*for IE*/
   /*for IE 9*/
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover::before, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active::before, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active::before {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover::before, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active::before, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000003b);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn.active {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
   }
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn::before {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn::before {
   content: "";
   position: absolute;
-  width: 145px;
-  height: 40px;
+  width: 140px;
+  height: 35px;
   left: 50%;
   transform: translateX(-50%);
-  top: 3px;
-  border-radius: 5px 5px 0px 0px;
+  top: 5px;
+  border-radius: 10px 10px 0px 0px;
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox .contractbtn span {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn span {
   color: #fff;
   text-shadow: 1px 1px 0px #961530;
   position: relative;
   z-index: 1;
   font-size: 17px;
 }
-html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn {
-  position: absolute;
-  right: -390px;
-  top: 0px;
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button {
-  width: 87px;
-  height: 43px;
-  border: solid 5px #00302e;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 8px;
-  text-shadow: 1px 1px 0px #000;
-  background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
-  background-color: #148883;
-  /*for IE*/
-  /*for IE 9*/
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:hover, html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:active, html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button.active {
-  background: #b5203f;
-  border-color: #ed5676;
-  text-shadow: none;
-}
-html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:nth-of-type(2) {
-  /*for IE*/
-  /*for IE 9*/
-  transform: translateY(-2px);
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:nth-of-type(2) {
-    transform: translateY(0px);
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button:nth-of-type(2) {
-    transform: translateY(0px);
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button {
-    line-height: 0px;
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .dealWindow .box .record .selectbox .datebtn button {
-    line-height: 0px;
-  }
-}
-html body .innerPage article .mid .dealWindow .box .record .baseline {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .baseline {
   width: 94%;
-  height: 3px;
   margin: 30px auto 0px;
-  background: #122845;
 }
-html body .innerPage article .mid .dealWindow .box .record h1 {
-  color: #ffffac;
-  font-size: 19px;
-  font-weight: bold;
-  letter-spacing: 5px;
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record h1 {
   padding: 30px 0px 0px 30px;
 }
-html body .innerPage article .mid .dealWindow .box .record ul {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .nameList {
   margin-top: 10px;
-  text-align: center;
 }
-html body .innerPage article .mid .dealWindow .box .record ul li {
-  display: inline-block;
-  color: #fff;
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .nameList li {
   height: 50px;
   line-height: 50px;
   padding: 0px 50px;
 }
-html body .innerPage article .mid .dealWindow .box .record .innerbox {
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox {
   width: 1070px;
   height: 355px;
-  margin: 0px auto;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
-}
-html body .innerPage article .mid .dealWindow .box .record .innerbox .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 3px;
 }
 
 @media only screen and (max-width: 1415px) {
-  html body .innerPage article .mid.present {
-    width: 880px;
-  }
-  html body .innerPage article .mid.present .dealWindow .box {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox {
     width: 870px;
   }
-  html body .innerPage article .mid.present .dealWindow .box .record ul li {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn {
+    right: -390px;
+    top: -60px;
+  }
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .nameList li {
     padding: 0px 30px;
   }
-  html body .innerPage article .mid.present .dealWindow .box .record .innerbox {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox {
     width: 830px;
   }
-  html body .innerPage article .mid.present .dealWindow .box .record.point ul li {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point .nameList li {
     padding: 0px 70px;
   }
-  html body .innerPage article .mid.present .dealWindow .box .record.sell ul li {
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell .nameList li {
     font-size: 14px;
     padding: 0px 10px;
   }
 }
-html body .innerPage article .mid .bettingWindow {
+html body .innerPage article .mid.bettingWindow .topWindow {
   width: 1135px;
   height: 720px;
-  border: solid 5px #122845;
-  border-radius: 15px;
-  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
-  background-color: #2a4d7c;
-  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   position: relative;
 }
-html body .innerPage article .mid .bettingWindow h1 {
-  color: #ffffac;
+html body .innerPage article .mid.bettingWindow .topWindow h1 {
   font-size: 22px;
-  font-weight: bold;
   padding: 30px 0px 0px 30px;
 }
-html body .innerPage article .mid .bettingWindow .selectbox {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox {
   width: 350px;
-  line-height: 44px;
-  margin: 30px 0px 0px 35px;
-  font-size: 15px;
-  color: #fff;
-  position: relative;
-  /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .bettingWindow .selectbox::before {
-    display: none;
-  }
-}
-html body .innerPage article .mid .bettingWindow .selectbox::before {
-  content: "";
-  position: absolute;
-  width: 0px;
-  height: 0px;
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox::before {
   left: 322px;
-  top: 17px;
-  border-style: solid;
-  border-width: 10px 6px 0px 6px;
-  border-color: #29fff6 transparent transparent transparent;
-  pointer-events: none;
 }
-html body .innerPage article .mid .bettingWindow .selectbox:nth-of-type(2) {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox:nth-of-type(2) {
   width: 375px;
   position: absolute;
   top: 82px;
   left: 400px;
   margin: 0px;
 }
-html body .innerPage article .mid .bettingWindow .selectbox:nth-of-type(2)::before {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox:nth-of-type(2)::before {
   left: 345px;
 }
-html body .innerPage article .mid .bettingWindow .selectbox:nth-of-type(3) {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox:nth-of-type(3) {
   margin-top: 15px;
 }
-html body .innerPage article .mid .bettingWindow .selectbox:nth-of-type(3)::before {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox:nth-of-type(3)::before {
   display: none;
 }
-html body .innerPage article .mid .bettingWindow .selectbox select {
-  float: right;
-  width: 262px;
-  height: 42px;
-  border-radius: 10px;
-  background: #183051;
-  border: solid 1px #fff;
-  appearance: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  color: #fff;
-  padding-left: 10px;
-  font-size: 16px;
-}
-html body .innerPage article .mid .bettingWindow .selectbox .calc {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  right: 14px;
-  top: 13px;
-  background: url("../images/discount/present_calc.png") no-repeat;
-  /*for IE 9*/
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .bettingWindow .selectbox .calc {
-    display: none;
-  }
-}
-html body .innerPage article .mid .bettingWindow .selectbox .contractbtn {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn {
   width: 160px;
   height: 49px;
-  border: solid 5px #b5203f;
-  border-radius: 15px;
-  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
-  background-color: #f56684;
-  box-shadow: 0px 1px 1px 0px #ffc6e4 inset;
   position: absolute;
-  right: -725px;
+  right: -710px;
   top: -3px;
 }
-html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active {
   /*for IE*/
   /*for IE 9*/
 }
-html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover::before, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active::before, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active::before {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover::before, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active::before, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active::before {
   background: linear-gradient(to top, transparent 50%, #0000003b);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active {
+  html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:hover, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn:active, html body .innerPage article .mid .bettingWindow .selectbox .contractbtn.active {
+  html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
   }
 }
-html body .innerPage article .mid .bettingWindow .selectbox .contractbtn::before {
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn::before {
   content: "";
   position: absolute;
   width: 145px;
@@ -6042,89 +5260,27 @@ html body .innerPage article .mid .bettingWindow .selectbox .contractbtn::before
   border-radius: 5px 5px 0px 0px;
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
-html body .innerPage article .mid .bettingWindow .selectbox .contractbtn span {
-  color: #fff;
+html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn span {
   text-shadow: 1px 1px 0px #961530;
   position: relative;
   z-index: 1;
   font-size: 17px;
 }
-html body .innerPage article .mid .bettingWindow .selectbox .datebtn {
-  position: absolute;
-  right: -395px;
-  top: 0px;
-}
-html body .innerPage article .mid .bettingWindow .selectbox .datebtn button {
-  width: 87px;
-  height: 43px;
-  border: solid 5px #00302e;
-  color: #fff;
-  font-size: 15px;
-  border-radius: 8px;
-  text-shadow: 1px 1px 0px #000;
-  background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
-  background-color: #148883;
-  /*for IE*/
-  /*for IE 9*/
-}
-html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:hover, html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:active, html body .innerPage article .mid .bettingWindow .selectbox .datebtn button.active {
-  background: #b5203f;
-  border-color: #ed5676;
-  text-shadow: none;
-}
-html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:nth-of-type(2) {
-  /*for IE*/
-  /*for IE 9*/
-  transform: translateY(-2px);
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:nth-of-type(2) {
-    transform: translateY(0px);
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button:nth-of-type(2) {
-    transform: translateY(0px);
-  }
-}
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button {
-    line-height: 0px;
-  }
-}
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
-  html body .innerPage article .mid .bettingWindow .selectbox .datebtn button {
-    line-height: 0px;
-  }
-}
-html body .innerPage article .mid .bettingWindow .innerbox {
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox {
   width: 1070px;
   height: 460px;
   margin: 35px auto 0px;
-  background: #507ab0;
-  border: solid 1px #5885c2;
-  border-radius: 15px;
-  box-shadow: 0px 2px 0px 0px #0000003b inset;
-  position: relative;
-}
-html body .innerPage article .mid .bettingWindow .innerbox .noMoney {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  letter-spacing: 3px;
 }
 
 @media only screen and (max-width: 1415px) {
-  html body .innerPage article .mid .bettingWindow {
+  html body .innerPage article .mid.bettingWindow .topWindow {
     width: 870px;
   }
-  html body .innerPage article .mid .bettingWindow .selectbox .contractbtn {
-    right: -395px;
+  html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn {
+    right: -390px;
     top: -123px;
   }
-  html body .innerPage article .mid .bettingWindow .innerbox {
+  html body .innerPage article .mid.bettingWindow .topWindow .innerbox {
     width: 830px;
   }
 }
@@ -6366,7 +5522,7 @@ html body .innerPage article .mid.vipWindow .topWindow .innerbox .nameList li sp
   html body .innerPage article .mid.vipWindow .topWindow .innerbox {
     width: 830px;
   }
-  html body .innerPage article .mid.vipWindow .topWindow .innerbox ul li {
+  html body .innerPage article .mid.vipWindow .topWindow .innerbox .nameList li {
     padding: 35px 10px 0px;
   }
 }

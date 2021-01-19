@@ -3,450 +3,153 @@ html {
         .innerPage {
             article {
                 //中
-                .mid {
-                    //優惠窗
-                    .messageWindow {
-                        width: 100%;
-                        height: 100%;
-                        position: relative;
-                        .box {
-                            width: 1135px;
-                            height: 665px;
-                            position: absolute;
-                            top: 55px;
-                            border: solid 5px #122845;
-                            border-radius: 15px;
-                            background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                            background-color: #2a4d7c;
-                            box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                            z-index: 1;
-                            //雙按鈕
-                            .btnbox {
-                                button {
-                                    width: 200px;
-                                    height: 60px;
-                                    border-style: solid;
-                                    border-color: #122845;
-                                    border-width: 5px 5px 0px 5px;
-                                    border-radius: 60px 60px 0px 0px;
-                                    background: #2a4c79;
-                                    position: absolute;
-                                    top: -60px;
-                                    left: 20px;
-                                    box-shadow: 0px 5px 0px 0px #2a4c79,0px 3px 2px 0px #a7cdffa1 inset;
-                                    &::before {
-                                        content: "";
-                                        position: absolute;
-                                        width: 175px;
-                                        height: 50px;
-                                        background: linear-gradient(to top, transparent 50%, #00000047);
-                                        border-radius: 50px 50px 0px 0px;
-                                        left: 50%;
-                                        top: 5px;
-                                        transform: translateX(-50%);
-                                    }
-                                    &:last-child {
-                                        left: 230px;
-                                    }
-                                    &.turn {
-                                        background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
-                                        background-color: #f56684;
-                                        border-color: #b5203f;
-                                        box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-                                        top: -60px;
-                                        height: 55px;
-                                        &::before {
-                                            background: linear-gradient(to top, transparent 50%, #ffffff69);
-                                        }
-                                    }
-                                    span {
-                                        display: block;
-                                        width: 100%;
-                                        left: 0px;
-                                        position: absolute;
-                                        z-index: 1;
-                                        top: 15px;
-                                        font-size: 17px;
-                                        color: #fff;
-                                        text-shadow: 1px 1px 0px #000;
-                                    }
-                                }
-                            }
-                            //優惠申請
-                            .messages {
-                                display: none;
-                                &.display {
-                                    display: block;
-                                }
-                                .messagebtnbox {
-                                    width: 100%;
-                                    height: auto;
-                                    margin: 20px 25px;
-                                    .rowbtn {
-                                        width: 280px;
-                                        height: 50px;
-                                        background: #183051;
-                                        border: solid 1px #fff;
-                                        border-radius: 12px;
-                                        position: relative;
-                                        p {
-                                            float: left;
-                                            width: 50%;
-                                            height: 100%;
-                                            line-height: 50px;
-                                            text-align: center;
-                                            color: #fff;
-                                            font-size: 20px;
-                                            position: relative;
-                                            cursor: pointer;
-                                        }
-                                        div {
-                                            width: 130px;
-                                            height: 40px;
-                                            border: solid 5px #b5203f;
-                                            border-radius: 12px;
-                                            position: absolute;
-                                            background: #ed5474;
-                                            box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
-                                            transition: 0.25s all;
-                                            &::before {
-                                                content: "";
-                                                position: absolute;
-                                                left: 50%;
-                                                top: 5px;
-                                                border-radius: 5px 5px 0px 0px;
-                                                transform: translateX(-50%);
-                                                width: 120px;
-                                                height: 30px;
-                                                background: linear-gradient(to top,transparent 50%,#df244c);
-                                            }
-                                        }
-                                    }
+                .mid { 
+                    &.mailWindow {
+                        .topWindow {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            .separateBox {
+                                width: 1135px;
+                                height: 665px;
+                                position: absolute;
+                                top: 55px;
+                                z-index: 1;
+                                //雙按鈕
+                                .btnbox {
                                     button {
-                                        position: absolute;
-                                        width: 90px;
-                                        height: 40px;
-                                        border: solid 5px #00302e;
-                                        color: #fff;
-                                        font-size: 16px;
-                                        border-radius: 8px;
-                                        letter-spacing: 2px;
-                                        top: 27px;
-                                        right: 150px;
-                                        text-shadow: 1px 1px 0px #000;
-                                        background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
-                                        background-color: #148883;
-                                        &:hover,&:active,&.active {
-                                            background: #b5203f;
-                                            border-color: #ed5676;
-                                            text-shadow: none;
-                                        }
-                                        &:nth-of-type(2) {
-                                            right: 50px;
+                                        &:last-child {
+                                            left: 230px;
+                                            span {
+                                                font-size: 17px;
+                                            }
                                         }
                                     }
                                 }
-                                .mailBox {
-                                    overflow: auto;
-                                    height: 480px;
-                                    .mail {
-                                        width: 90%;
-                                        height: 100px;
-                                        margin: 0px 0px 10px 30px;
-                                        padding-right: 30px;
-                                        border: solid 5px #122845;
-                                        border-radius: 60px 20px 20px 60px;
-                                        background: #507ab0;
-                                        box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
-                                        text-align: left;
-                                        position: relative;
-                                        cursor: pointer;
-                                        &:hover,&:active {
-                                            border-color: #64e1dc;
-                                            background: #ee5978;
-                                            box-shadow: 0px 3px 3px #ee5978 inset,0px -4px 0px 0px #ff8cab inset;
-                                            .mail_ic {
-                                                background-position-x: 100%;
+                                //優惠申請
+                                .messages {
+                                    display: none;
+                                    &.display {
+                                        display: block;
+                                    }
+                                    .messagebtnbox {
+                                        width: 100%;
+                                        height: auto;
+                                        margin: 20px 25px;
+                                        .rowbtn {
+                                            width: 280px;
+                                            height: 50px;
+                                            background: #183051;
+                                            border: solid 1px #fff;
+                                            border-radius: 12px;
+                                            position: relative;
+                                            p {
+                                                float: left;
+                                                width: 50%;
+                                                height: 100%;
+                                                line-height: 50px;
+                                                text-align: center;
+                                                color: #fff;
+                                                font-size: 20px;
+                                                position: relative;
+                                                cursor: pointer;
                                             }
-                                        }
-                                        &.active {
-                                            background: #2a4d7c;
-                                            &:hover,&:active {
-                                                box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
-                                                border-color: #122845;
-                                                .mail_ic {
-                                                    background-position-x: 0%;
+                                            div {
+                                                width: 130px;
+                                                height: 40px;
+                                                border: solid 5px #b5203f;
+                                                border-radius: 12px;
+                                                position: absolute;
+                                                background: #ed5474;
+                                                box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
+                                                transition: 0.25s all;
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 50%;
+                                                    top: 5px;
+                                                    border-radius: 5px 5px 0px 0px;
+                                                    transform: translateX(-50%);
+                                                    width: 120px;
+                                                    height: 30px;
+                                                    background: linear-gradient(to top,transparent 50%,#df244c);
                                                 }
                                             }
                                         }
-                                        .mail_ic {
-                                            display: block;
-                                            width: 67px;
-                                            height: 66px;
-                                            background: url('../images/mail/mail_ic.png') no-repeat;
+                                        button {
                                             position: absolute;
-                                            top: 50%;
-                                            transform: translateY(-50%);
-                                            left: 20px;
-                                        }
-                                        h1 {
-                                            margin: 17px 0px 0px 104px;
-                                            color: #fff7b2;
-                                            font-size: 19px;
-                                            span {
-                                                color: #fff;
-                                                font-size: 17px;
-                                                margin-left: 10px;
-                                            }
-                                        }
-                                        p {
-                                            color: #fff;
-                                            margin: 12px 0px 0px 104px;
-                                            font-size: 15px;
-                                            line-height: 20px;
-                                        }
-                                    }
-                                }
-                                .page {
-                                    position: absolute;
-                                    width: 100px;
-                                    height: 50px;
-                                    border: solid 1px #fff;
-                                    background: #183051;
-                                    border-radius: 12px;
-                                    bottom: 30px;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    text-align: center;
-                                    button {
-                                        position: absolute;
-                                        width: 55px;
-                                        height: 55px;
-                                        border-radius: 30px;
-                                        border: solid 5px #00302e;
-                                        background: linear-gradient(to top,#148883 42%,#3a9995 100%);
-                                        background-color: #148883;
-                                        box-shadow: 0px 3px 3px 0px #6be3de inset;
-                                        right: -70px;
-                                        top: -3px;
-                                        &:hover,&:active,&.active {
-                                            background: linear-gradient(to top,#ffd633 42%,#ffa200 99%);
-                                            border-color: #994c00;
-                                            box-shadow: 0px 3px 3px 0px #c95a00 inset;
-                                              &::before {
-                                                  background-position-x: 100%;
-                                                  transform: scaleX(-1);
-                                              }  
-                                        }
-                                        &::before {
-                                            content: "";
-                                            position: absolute;
-                                            width: 33px;
-                                            height: 29px;
-                                            background: url('../images/mail/arrow_gy.png') no-repeat;
-                                            background-size: 200%;
-                                            top: 9px;
-                                            left: 6px;
-                                        }
-                                        &:nth-of-type(2) {
-                                            left: -70px;
-                                            &:hover,&:active,&.active {
-                                                &::before {
-                                                    background-position-x: 100%;
-                                                    transform: scaleX(1);
-                                                }  
-                                            }
-                                            &::before {
-                                                transform: scaleX(-1);
-                                            }
-                                        }
-                                    }
-                                    p {
-                                        color: #fff;
-                                        font-size: 22px;
-                                        line-height: 50px;
-                                    }
-                                }
-                            }
-                            //特典申請
-                            .posts {
-                                display: none;
-                                &.display {
-                                    display: block;
-                                }
-                                .postbtnbox {
-                                    width: 100%;
-                                    height: auto;
-                                    margin: 20px 25px;
-                                    .rowbtn {
-                                        width: 360px;
-                                        height: 50px;
-                                        background: #183051;
-                                        border: solid 1px #fff;
-                                        border-radius: 12px;
-                                        position: relative;
-                                        p {
-                                            float: left;
-                                            width: 120px;
-                                            height: 100%;
-                                            line-height: 50px;
-                                            text-align: center;
-                                            color: #fff;
-                                            font-size: 20px;
-                                            position: relative;
-                                            cursor: pointer;
-                                        }
-                                        div {
-                                            width: 110px;
+                                            width: 90px;
                                             height: 40px;
-                                            border: solid 5px #b5203f;
-                                            border-radius: 12px;
-                                            position: absolute;
-                                            background: #ed5474;
-                                            box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
-                                            transition: 0.25s all;
-                                            &::before {
-                                                content: "";
-                                                position: absolute;
-                                                left: 50%;
-                                                top: 5px;
-                                                border-radius: 5px 5px 0px 0px;
-                                                transform: translateX(-50%);
-                                                width: 120px;
-                                                height: 30px;
-                                                background: linear-gradient(to top,transparent 50%,#df244c);
+                                            letter-spacing: 2px;
+                                            top: 27px;
+                                            right: 150px;
+                                            &:nth-of-type(2) {
+                                                right: 50px;
                                             }
                                         }
                                     }
-                                    button {
-                                        position: absolute;
-                                        width: 90px;
-                                        height: 40px;
-                                        border: solid 5px #00302e;
-                                        color: #fff;
-                                        font-size: 16px;
-                                        border-radius: 8px;
-                                        letter-spacing: 2px;
-                                        top: 27px;
-                                        right: 150px;
-                                        text-shadow: 1px 1px 0px #000;
-                                        background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
-                                        background-color: #148883;
-                                        &:hover,&:active,&.active {
-                                            background: #b5203f;
-                                            border-color: #ed5676;
-                                            text-shadow: none;
-                                        }
-                                        &:nth-of-type(2) {
-                                            right: 50px;
-                                        }
-                                    }
                                 }
-                                .mail {
-                                    width: 90%;
-                                    height: 100px;
-                                    margin: 0px 0px 10px 30px;
-                                    padding-right: 30px;
-                                    border: solid 5px #122845;
-                                    border-radius: 60px 20px 20px 60px;
-                                    background: #507ab0;
-                                    box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
-                                    text-align: left;
-                                    position: relative;
-                                    cursor: pointer;
-                                    &:hover,&:active,&.active {
-                                        border-color: #64e1dc;
-                                        background: #ee5978;
-                                        box-shadow: 0px 3px 3px #ee5978 inset,0px -4px 0px 0px #ff8cab inset;
-                                        .mail_ic {
-                                            background-position-x: 100%;
-                                        }
-                                    }
-                                    .mail_ic {
+                                //特典申請
+                                .posts {
+                                    display: none;
+                                    &.display {
                                         display: block;
-                                        width: 67px;
-                                        height: 66px;
-                                        background: url('../images/mail/mail_ic.png') no-repeat;
-                                        position: absolute;
-                                        top: 50%;
-                                        transform: translateY(-50%);
-                                        left: 20px;
                                     }
-                                    h1 {
-                                        margin: 17px 0px 0px 104px;
-                                        color: #fff7b2;
-                                        font-size: 19px;
-                                        span {
-                                            color: #fff;
-                                            font-size: 17px;
-                                            margin-left: 10px;
-                                        }
-                                    }
-                                    p {
-                                        color: #fff;
-                                        margin: 12px 0px 0px 104px;
-                                        font-size: 15px;
-                                        line-height: 20px;
-                                    }
-                                }
-                                .page {
-                                    position: absolute;
-                                    width: 100px;
-                                    height: 50px;
-                                    border: solid 1px #fff;
-                                    background: #183051;
-                                    border-radius: 12px;
-                                    bottom: 30px;
-                                    left: 50%;
-                                    transform: translateX(-50%);
-                                    text-align: center;
-                                    button {
-                                        position: absolute;
-                                        width: 55px;
-                                        height: 55px;
-                                        border-radius: 30px;
-                                        border: solid 5px #00302e;
-                                        background: linear-gradient(to top,#148883 42%,#3a9995 100%);
-                                        background-color: #148883;
-                                        box-shadow: 0px 3px 3px 0px #6be3de inset;
-                                        right: -70px;
-                                        top: -3px;
-                                        &:hover,&:active,&.active {
-                                            background: linear-gradient(to top,#ffd633 42%,#ffa200 99%);
-                                            border-color: #994c00;
-                                            box-shadow: 0px 3px 3px 0px #c95a00 inset;
-                                              &::before {
-                                                  background-position-x: 100%;
-                                                  transform: scaleX(-1);
-                                              }  
-                                        }
-                                        &::before {
-                                            content: "";
-                                            position: absolute;
-                                            width: 33px;
-                                            height: 29px;
-                                            background: url('../images/mail/arrow_gy.png') no-repeat;
-                                            background-size: 200%;
-                                            top: 9px;
-                                            left: 6px;
-                                        }
-                                        &:nth-of-type(2) {
-                                            left: -70px;
-                                            &:hover,&:active,&.active {
+                                    .postbtnbox {
+                                        width: 100%;
+                                        height: auto;
+                                        margin: 20px 25px;
+                                        .rowbtn {
+                                            width: 360px;
+                                            height: 50px;
+                                            background: #183051;
+                                            border: solid 1px #fff;
+                                            border-radius: 12px;
+                                            position: relative;
+                                            p {
+                                                float: left;
+                                                width: 120px;
+                                                height: 100%;
+                                                line-height: 50px;
+                                                text-align: center;
+                                                color: #fff;
+                                                font-size: 20px;
+                                                position: relative;
+                                                cursor: pointer;
+                                            }
+                                            div {
+                                                width: 110px;
+                                                height: 40px;
+                                                border: solid 5px #b5203f;
+                                                border-radius: 12px;
+                                                position: absolute;
+                                                background: #ed5474;
+                                                box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
+                                                transition: 0.25s all;
                                                 &::before {
-                                                    background-position-x: 100%;
-                                                    transform: scaleX(1);
-                                                }  
-                                            }
-                                            &::before {
-                                                transform: scaleX(-1);
+                                                    content: "";
+                                                    position: absolute;
+                                                    left: 50%;
+                                                    top: 5px;
+                                                    border-radius: 5px 5px 0px 0px;
+                                                    transform: translateX(-50%);
+                                                    width: 120px;
+                                                    height: 30px;
+                                                    background: linear-gradient(to top,transparent 50%,#df244c);
+                                                }
                                             }
                                         }
-                                    }
-                                    p {
-                                        color: #fff;
-                                        font-size: 22px;
-                                        line-height: 50px;
+                                        button {
+                                            position: absolute;
+                                            width: 90px;
+                                            height: 40px;
+                                            letter-spacing: 2px;
+                                            top: 27px;
+                                            right: 150px;
+                                            &:nth-of-type(2) {
+                                                right: 50px;
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -455,6 +158,128 @@ html {
                 }
             }
         }
+    }
+}
+.mailBox {
+    overflow: auto;
+    height: 480px;
+    .mail {
+        width: 90%;
+        height: 100px;
+        margin: 0px 0px 10px 30px;
+        padding-right: 30px;
+        border: solid 5px #122845;
+        border-radius: 60px 20px 20px 60px;
+        background: #507ab0;
+        box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
+        text-align: left;
+        position: relative;
+        cursor: pointer;
+        &:hover,&:active {
+            border-color: #64e1dc;
+            background: #ee5978;
+            box-shadow: 0px 3px 3px #ee5978 inset,0px -4px 0px 0px #ff8cab inset;
+            .mail_ic {
+                background-position-x: 100%;
+            }
+        }
+        &.active {
+            background: #2a4d7c;
+            &:hover,&:active {
+                box-shadow: 0px 3px 3px #83ade3 inset,0px -4px 0px 0px #2d5384 inset;
+                border-color: #122845;
+                .mail_ic {
+                    background-position-x: 0%;
+                }
+            }
+        }
+        .mail_ic {
+            display: block;
+            width: 67px;
+            height: 66px;
+            background: url('../images/mail/mail_ic.png') no-repeat;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 20px;
+        }
+        h1 {
+            margin: 17px 0px 0px 104px;
+            padding: 0px;
+            color: #fff7b2;
+            font-size: 19px;
+            span {
+                color: #fff;
+                font-size: 17px;
+                margin-left: 10px;
+            }
+        }
+        p {
+            color: #fff;
+            margin: 12px 0px 0px 104px;
+            font-size: 15px;
+            line-height: 20px;
+        }
+    }
+}
+.page {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    border: solid 1px #fff;
+    background: #183051;
+    border-radius: 12px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    button {
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        border-radius: 30px;
+        border: solid 5px #00302e;
+        background: linear-gradient(to top,#148883 42%,#3a9995 100%);
+        background-color: #148883;
+        box-shadow: 0px 3px 3px 0px #6be3de inset;
+        right: -70px;
+        top: -3px;
+        &:hover,&:active,&.active {
+            background: linear-gradient(to top,#ffd633 42%,#ffa200 99%);
+            border-color: #994c00;
+            box-shadow: 0px 3px 3px 0px #c95a00 inset;
+              &::before {
+                  background-position-x: 100%;
+                  transform: scaleX(-1);
+              }  
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 33px;
+            height: 29px;
+            background: url('../images/mail/arrow_gy.png') no-repeat;
+            background-size: 200%;
+            top: 9px;
+            left: 6px;
+        }
+        &:nth-of-type(2) {
+            left: -70px;
+            &:hover,&:active,&.active {
+                &::before {
+                    background-position-x: 100%;
+                    transform: scaleX(1);
+                }  
+            }
+            &::before {
+                transform: scaleX(-1);
+            }
+        }
+    }
+    p {
+        color: #fff;
+        font-size: 22px;
+        line-height: 50px;
     }
 }
 @media only screen and (max-width:1415px) {

@@ -68,8 +68,8 @@
             <!--左列-->
             <section class="leftside">
                 <!--個人資訊窗-->
-                <div class="personalWindow">
-                    <div>
+                <div class="personalWindow bg_darkblue">
+                    <div class="innerbox">
                         <p>qaz121&emsp;JP_1</p>
                         <p>47日目に参加する</p>
                     </div>
@@ -93,10 +93,10 @@
                 </div>
             </section>
             <!--中-->
-            <section class="mid present">
+            <section class="mid longBoard dealWindow">
                 <!--主窗-->
-                <div class="dealWindow">
-                    <div class="box">
+                <div class="topWindow">
+                    <div class="separateBox bg_darkblue">
                         <!--四按鈕-->
                         <div class="btnbox">
                             <button><span>監査記録</span></button>
@@ -106,7 +106,7 @@
                         </div>
                         <!--監察紀錄-->
                         <div class="record audit display">
-                            <div class="selectbox">
+                            <div class="selectBox">
                                 タイプ
                                 <select name="" id="">
                                     <option value="">入金</option>
@@ -114,7 +114,7 @@
                                     <option value="">入金</option>
                                 </select>
                             </div>
-                            <div class="selectbox">
+                            <div class="selectBox">
                                 日付
                                 <select name="" id="">
                                     <option value="">2021/1/4 - 2021/1/4</option>
@@ -123,16 +123,16 @@
                                 </select>
                                 <button class="calc"></button>
                                 <div class="datebtn">
-                                    <button>昨日</button>
-                                    <button>今日では</button>
-                                    <button>今週</button>
-                                    <button>今月</button>
+                                    <button class="greenBtn">昨日</button>
+                                    <button class="greenBtn">今日では</button>
+                                    <button class="greenBtn">今週</button>
+                                    <button class="greenBtn">今月</button>
                                 </div>
-                                <button class="contractbtn"><span>お問い合わせ</span></button>
+                                <button class="savebtn"><span>お問い合わせ</span></button>
                             </div>
                             <div class="baseline"></div>
                             <h1>監査記録</h1>
-                            <ul>
+                            <ul class="nameList">
                                 <li>取引日</li>
                                 <li>トランザクションタイプ</li>
                                 <li>取引内容</li>
@@ -141,12 +141,12 @@
                                 <li>理由</li>
                             </ul>
                             <div class="innerbox">
-                                <span class="noMoney">まだデータはありません</span>
+                                <span class="noRecord">まだデータはありません</span>
                             </div>
                         </div>
                         <!--活動錢包紀錄-->
                         <div class="record actWallet">
-                            <div class="selectbox">
+                            <div class="selectBox">
                                 タイプ
                                 <select name="" id="">
                                     <option value="">すべて</option>
@@ -154,7 +154,7 @@
                                     <option value="">すべて</option>
                                 </select>
                             </div>
-                            <div class="selectbox">
+                            <div class="selectBox">
                                 日付
                                 <select name="" id="">
                                     <option value="">2021/1/4 - 2021/1/4</option>
@@ -163,16 +163,16 @@
                                 </select>
                                 <button class="calc"></button>
                                 <div class="datebtn">
-                                    <button>昨日</button>
-                                    <button>今日では</button>
-                                    <button>今週</button>
-                                    <button>今月</button>
+                                    <button class="greenBtn">昨日</button>
+                                    <button class="greenBtn">今日では</button>
+                                    <button class="greenBtn">今週</button>
+                                    <button class="greenBtn">今月</button>
                                 </div>
-                                <button class="contractbtn"><span>お問い合わせ</span></button>
+                                <button class="savebtn"><span>お問い合わせ</span></button>
                             </div>
                             <div class="baseline"></div>
                             <h1>アクティブなウォレットレコード</h1>
-                            <ul>
+                            <ul class="nameList">
                                 <li>イベント名</li>
                                 <li>購入日</li>
                                 <li>購入価格</li>
@@ -181,12 +181,12 @@
                                 <li>ギフトポイント</li>
                             </ul>
                             <div class="innerbox">
-                                <span class="noMoney">まだデータはありません</span>
+                                <span class="noRecord">まだデータはありません</span>
                             </div>
                         </div>
                         <!--點數紀錄-->
                         <div class="record point">
-                            <div class="selectbox">
+                            <div class="selectBox">
                                 タイプ
                                 <select name="" id="">
                                     <option value="">すべて</option>
@@ -194,7 +194,7 @@
                                     <option value="">すべて</option>
                                 </select>
                             </div>
-                            <div class="selectbox">
+                            <div class="selectBox">
                                 日付
                                 <select name="" id="">
                                     <option value="">2021/1/4 - 2021/1/4</option>
@@ -203,29 +203,29 @@
                                 </select>
                                 <button class="calc"></button>
                                 <div class="datebtn">
-                                    <button>昨日</button>
-                                    <button>今日では</button>
-                                    <button>今週</button>
-                                    <button>今月</button>
+                                    <button class="greenBtn">昨日</button>
+                                    <button class="greenBtn">今日では</button>
+                                    <button class="greenBtn">今週</button>
+                                    <button class="greenBtn">今月</button>
                                 </div>
-                                <button class="contractbtn"><span>お問い合わせ</span></button>
+                                <button class="savebtn"><span>お問い合わせ</span></button>
                             </div>
                             <div class="baseline"></div>
                             <h1>ポイント記録</h1>
-                            <ul>
+                            <ul class="nameList">
                                 <li>の種類</li>
                                 <li>時間</li>
                                 <li>プラットホーム</li>
                                 <li>取引金額</li>
                             </ul>
                             <div class="innerbox">
-                                <span class="noMoney">まだデータはありません</span>
+                                <span class="noRecord">まだデータはありません</span>
                             </div>
                         </div>
                         <!--銷售紀錄-->
                         <div class="record sell">
                             <h1>売上高記録</h1>
-                            <ul>
+                            <ul class="nameList">
                                 <li>ナンバリング</li>
                                 <li>状態</li>
                                 <li>金額</li>
@@ -238,7 +238,7 @@
                                 <li>備考</li>
                             </ul>
                             <div class="innerbox">
-                                <span class="noMoney">まだデータはありません</span>
+                                <span class="noRecord">まだデータはありません</span>
                             </div>
                         </div>
                     </div>

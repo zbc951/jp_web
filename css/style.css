@@ -3620,9 +3620,18 @@ html body .innerPage article .leftside .leftbtnbox a {
   padding-left: 60px;
   border: solid 5px #184c4a;
   border-radius: 15px;
+<<<<<<< HEAD
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
   box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+=======
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
+  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
+  background: linear-gradient(to top, #148883 42%, #3a9995 100%);
+  background-color: #148883;
+  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 html body .innerPage article .leftside .leftbtnbox a:hover, html body .innerPage article .leftside .leftbtnbox a:active, html body .innerPage article .leftside .leftbtnbox a.active {
   background: linear-gradient(to top, #273f5f, #2a4d7c);
@@ -3838,9 +3847,18 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
   padding-top: 3px;
   border: solid 5px #184c4a;
   border-radius: 15px;
+<<<<<<< HEAD
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
   box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+=======
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
+  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
+  background: linear-gradient(to top, #148883 42%, #3a9995 100%);
+  background-color: #148883;
+  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   /*for IE*/
   /*for IE 9*/
 }
@@ -4000,16 +4018,30 @@ html body .innerPage .bg {
 .bg_darkblue {
   border: solid 5px #122845;
   border-radius: 15px;
+<<<<<<< HEAD
   background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
   background-color: #2a4d7c;
   box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+=======
+  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
+  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
+  background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
+  background-color: #2a4d7c;
+  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 
 .innerbox {
   background: #507ab0;
   border: solid 1px #5885c2;
   border-radius: 15px;
+<<<<<<< HEAD
   box-shadow: 0px 2px 0px 0px #0000003b inset;
+=======
+  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
+          box-shadow: 0px 2px 0px 0px #0000003b inset;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   margin: 0px auto;
   overflow: hidden;
   position: relative;
@@ -4019,7 +4051,13 @@ html body .innerPage .bg {
   color: #fff;
   left: 50%;
   top: 50%;
+<<<<<<< HEAD
   transform: translate(-50%, -50%);
+=======
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   letter-spacing: 3px;
 }
 
@@ -4034,18 +4072,34 @@ html body .innerPage .bg {
   position: absolute;
   top: -60px;
   left: 20px;
+<<<<<<< HEAD
   box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
+=======
+  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
+          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 .separateBox .btnbox button::before {
   content: "";
   position: absolute;
   width: 175px;
   height: 50px;
+<<<<<<< HEAD
+=======
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
+  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: linear-gradient(to top, transparent 50%, #00000047);
   border-radius: 50px 50px 0px 0px;
   left: 50%;
   top: 5px;
+<<<<<<< HEAD
   transform: translateX(-50%);
+=======
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 .separateBox .btnbox button:last-child {
   left: 230px;
@@ -4054,14 +4108,29 @@ html body .innerPage .bg {
   font-size: 14px;
 }
 .separateBox .btnbox button.turn {
+<<<<<<< HEAD
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
   border-color: #b5203f;
   box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+=======
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
+  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
+  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
+  border-color: #b5203f;
+  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   top: -60px;
   height: 55px;
 }
 .separateBox .btnbox button.turn::before {
+<<<<<<< HEAD
+=======
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
+  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: linear-gradient(to top, transparent 50%, #ffffff69);
 }
 .separateBox .btnbox button span {
@@ -4080,11 +4149,38 @@ html body .innerPage .bg {
   display: block;
   border: solid 5px #b5203f;
   border-radius: 15px;
+<<<<<<< HEAD
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
   box-shadow: 0px 3px 1px 0px #ffffff63 inset;
   position: relative;
 }
+=======
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
+  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
+  background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
+  background-color: #f56684;
+  -webkit-box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+          box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+  position: relative;
+}
+.savebtn:hover::before, .savebtn:active::before, .savebtn.active::before {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
+  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
+  background: linear-gradient(to top, transparent 50%, #00000052);
+}
+.savebtn::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
+  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  background: linear-gradient(to top, transparent 50%, #ffc9e7);
+}
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 .savebtn span {
   font-size: 20px;
   color: #fff;
@@ -4092,6 +4188,7 @@ html body .innerPage .bg {
   z-index: 1;
 }
 
+<<<<<<< HEAD
 .baseline {
   width: 840px;
   height: 3px;
@@ -4176,6 +4273,8 @@ html body .innerPage .bg {
   text-shadow: none;
 }
 
+=======
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 h1 {
   color: #ffffac;
   font-size: 19px;
@@ -4227,25 +4326,56 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
   background-color: #a2a2a2;
   color: #000;
   text-align: center;
+<<<<<<< HEAD
   transform: translateY(2px);
   line-height: 22px;
   padding-left: 3px;
+=======
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
+  line-height: 22px;
+  padding-left: 4px;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   font-size: 15px;
   border: solid 2px #fff;
   border-bottom-width: 1px;
   border-radius: 5px;
   font-weight: bold;
   margin: 0px 5px;
+<<<<<<< HEAD
   box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+=======
+  -webkit-box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+          box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
+    padding-left: 3px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
+    padding-left: 3px;
+  }
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span:nth-of-type(1) {
   margin-left: 8px;
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active {
+<<<<<<< HEAD
+=======
+  background: -webkit-gradient(linear, left bottom, left top, from(#a00f00), to(#ff0000));
+  background: -o-linear-gradient(bottom, #a00f00, #ff0000);
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: linear-gradient(to top, #a00f00, #ff0000);
   background-color: #ff0000;
   color: #fff;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active2 {
   background: linear-gradient(to top, #9da000, #d0ff00);
   background-color: #d0ff00;
@@ -4254,6 +4384,8 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.activ
   background: linear-gradient(to top, #00a043, #2bff00);
   background-color: #2bff00;
 }
+=======
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li {
   display: inline-block;
   color: #fff;
@@ -4271,9 +4403,12 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li:nth-of
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li.active {
   color: #ffee5b;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li.active span {
   background-position-y: 100%;
 }
+=======
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 html body .innerPage article .mid.memberWindow .topWindow .innerbox ul li span {
   display: inline-block;
   width: 40px;
@@ -4303,7 +4438,11 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .btnbo
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox h1 {
   font-size: 21px;
+<<<<<<< HEAD
   padding: 25px 0px 25px 20px;
+=======
+  padding: 25px 0px 0px 20px;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor {
   display: none;
@@ -4311,12 +4450,57 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor.display {
   display: block;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow {
   overflow: auto;
   height: 300px;
   scrollbar-width: thin;
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputList li button {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li {
+  display: inline-block;
+  color: #fff;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 20px;
+  position: relative;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(odd) {
+  width: 305px;
+  margin-left: 35px;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(even) {
+  width: 390px;
+  margin-left: 40px;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li:nth-of-type(even) input {
+  width: 230px;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li input {
+  float: right;
+  background: #183051;
+  width: 190px;
+  height: 38px;
+  padding-left: 10px;
+  font-size: 17px;
+  border-radius: 10px;
+  border: solid 1px #fff;
+  color: #fff;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li input.lightbase {
+  background: #507ab0;
+  -webkit-box-shadow: 0px 3px 0px 0px #0000005e inset;
+          box-shadow: 0px 3px 0px 0px #0000005e inset;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li span {
+  color: #29fff6;
+  position: absolute;
+  left: -20px;
+  top: -1px;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   position: absolute;
   width: 75px;
   height: 43px;
@@ -4333,6 +4517,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -4353,16 +4538,43 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
+=======
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
+    line-height: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button {
+    line-height: 0px;
+  }
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor ul li button.active {
+  background: #b5203f;
+  border-color: #ed5676;
+  text-shadow: none;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .savebtn {
+  margin: 30px auto 10px;
+  width: 240px;
+  height: 58px;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .savebtn::before {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   width: 220px;
   height: 40px;
   border-radius: 8px 8px 0px 0px;
   top: 5px;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow p {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor p {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   text-align: center;
   color: #fff;
   font-size: 15px;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow p a {
   color: #ff5994;
 }
@@ -4370,6 +4582,18 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   margin: 40px auto 0px;
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor p a {
+  color: #ff5994;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .baseline {
+  width: 840px;
+  height: 3px;
+  background: #122845;
+  margin: 40px auto 0px;
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   font-size: 14px;
   color: #fff;
   margin: 10px 0px 0px 40px;
@@ -4377,16 +4601,28 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
+=======
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
     margin-bottom: 50px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
     margin-bottom: 50px;
   }
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox input {
+=======
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox {
+    margin-bottom: 50px;
+  }
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox input {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: #183051;
   width: 190px;
   height: 42px;
@@ -4397,11 +4633,19 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   color: #fff;
   margin-left: 15px;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox input.lightbase {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox input.lightbase {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: #507ab0;
   box-shadow: 0px 3px 0px 0px #0000005e inset;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   display: inline-block;
   width: 75px;
   height: 43px;
@@ -4420,16 +4664,28 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
+=======
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
     line-height: 0px;
   }
 }
 @media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+<<<<<<< HEAD
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
     line-height: 0px;
   }
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button.active {
+=======
+  html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button {
+    line-height: 0px;
+  }
+}
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .inputbox button.active {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   background: #b5203f;
   border-color: #ed5676;
   text-shadow: none;
@@ -4458,10 +4714,20 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .accou
   transform: translate(-50%, -50%);
   letter-spacing: 3px;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account .nameList {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account ul {
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   margin-top: 10px;
 }
+<<<<<<< HEAD
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account .nameList li {
+=======
+html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .account ul li {
+  display: inline-block;
+  color: #fff;
+>>>>>>> 323ae100b4ee4e758ed40dcea078cf7f89d99df9
   height: 50px;
   line-height: 50px;
   padding: 0px 25px;

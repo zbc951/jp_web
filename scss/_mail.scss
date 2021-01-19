@@ -288,10 +288,9 @@ html {
             .innerPage {
                 article {
                     .mid {
-                        &.present {
-                            width: 880px;
-                            .messageWindow {
-                                .box {
+                        &.mailWindow {
+                            .topWindow {
+                                .separateBox {
                                     width: 870px;
                                 }
                             }

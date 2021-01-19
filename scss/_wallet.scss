@@ -306,8 +306,99 @@ html {
                                         display: block;
                                     }
                                     .innerbox {
-                                        width: 830px;
-                                        height: 305px;
+                                        width: 780px;
+                                        height: 275px;
+                                        padding: 15px 25px;
+                                        text-align: center;
+                                        overflow: auto;
+                                        .overBox {
+                                            display: inline-block;
+                                            width: 140px;
+                                            height: 90px;
+                                            background: linear-gradient(to top,#31dbca 50%,#63f8e9 50%);
+                                            background-color: #31dbca;
+                                            border-radius: 15px;
+                                            border: solid 5px #294b78;
+                                            margin: 0px 2px 5px 0px;
+                                            text-align: left;
+                                            position: relative;
+                                            &.nmar {
+                                                margin-right: 0px;
+                                            }
+                                            &.active {
+                                                .walletBtn {
+                                                    display: block;
+                                                }
+                                            }
+                                            .savebtn {
+                                                width: 140px;
+                                                height: 25px;
+                                                position: absolute;
+                                                border-radius: 10px;
+                                            }
+                                            .innerWallet {
+                                                display: none;
+                                                width: 130px;
+                                                height: 25px;
+                                                border: solid 5px #cd002b;
+                                                border-radius: 8px;
+                                                background: linear-gradient(to top, #ff4b71 23%, #ff5478 63%);
+                                                background-color: #ff5478;
+                                                box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
+                                                position: absolute;
+                                                color: #fff;
+                                                font-size: 14px;
+                                                text-align: center;
+                                                line-height: 25px;
+                                                font-weight: bold;
+                                                top: -15px;
+                                                right: -140px;
+                                                z-index: 1;
+                                                &.display {
+                                                    display: block;
+                                                }
+                                                &::before {
+                                                    content: "";
+                                                    position: absolute;
+                                                    width: 0px;
+                                                    height: 0px;
+                                                    border-style: solid;
+                                                    border-width: 8px 10px 8px 0px;
+                                                    border-color: transparent #cd002b transparent transparent;
+                                                    left: -15px;
+                                                    top: 5px;
+                                                }
+                                            }
+                                            .walletBtn {
+                                                display: none;
+                                                width: 25px;
+                                                height: 25px;
+                                                border-radius: 20px;
+                                                background: linear-gradient(to top, #ff4b71 23%, #ff5478 63%);
+                                                background-color: #ff5478;
+                                                position: absolute;
+                                                top: 4px;
+                                                right: 15px;
+                                                border: solid 5px #cd002b;
+                                                box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
+                                                text-align: center;
+                                                line-height: 25px;
+                                                font-weight: bold;
+                                                color: #fff;
+                                                font-size: 20px;
+                                                cursor: pointer;
+                                            }
+                                            p {
+                                                font-size: 22px;
+                                                font-weight: bold;
+                                                line-height: 44px;
+                                                padding-left: 10px;
+                                                position: relative;
+                                                &.num {
+                                                    font-size: 32px;
+                                                }
+                                            }
+                                        }
                                     }
                                     ul {
                                         margin-top: 10px;
@@ -401,6 +492,11 @@ html {
                         .innerbox {
                             width: 200px;
                             height: 270px;
+                            h2 {
+                                color: #ffffac;
+                                font-size: 18px;
+                                padding: 10px 0px 10px 20px;
+                            }
                             .noRecord {
                                 width: 100%;
                                 font-size: 12px;

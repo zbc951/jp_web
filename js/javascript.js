@@ -314,3 +314,9 @@ $(function(){
 		$('.addCard').addClass('display');
 	})
 })
+//innerWallet
+$(function(){
+	$('.walletBtn').hover(function(){
+		$('.innerWallet').toggleClass('display');
+	})
+})

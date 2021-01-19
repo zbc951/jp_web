@@ -3801,8 +3801,97 @@ html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platf
   display: block;
 }
 html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox {
-  width: 830px;
-  height: 305px;
+  width: 780px;
+  height: 275px;
+  padding: 15px 25px;
+  text-align: center;
+  overflow: auto;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox {
+  display: inline-block;
+  width: 140px;
+  height: 90px;
+  background: linear-gradient(to top, #31dbca 50%, #63f8e9 50%);
+  background-color: #31dbca;
+  border-radius: 15px;
+  border: solid 5px #294b78;
+  margin: 0px 2px 5px 0px;
+  text-align: left;
+  position: relative;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox.nmar, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox.nmar {
+  margin-right: 0px;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox.active .walletBtn, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox.active .walletBtn {
+  display: block;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox .savebtn, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox .savebtn {
+  width: 140px;
+  height: 25px;
+  position: absolute;
+  border-radius: 10px;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox .innerWallet, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox .innerWallet {
+  display: none;
+  width: 130px;
+  height: 25px;
+  border: solid 5px #cd002b;
+  border-radius: 8px;
+  background: linear-gradient(to top, #ff4b71 23%, #ff5478 63%);
+  background-color: #ff5478;
+  box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
+  position: absolute;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  top: -15px;
+  right: -140px;
+  z-index: 1;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox .innerWallet.display, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox .innerWallet.display {
+  display: block;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox .innerWallet::before, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox .innerWallet::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 8px 10px 8px 0px;
+  border-color: transparent #cd002b transparent transparent;
+  left: -15px;
+  top: 5px;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox .walletBtn, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox .walletBtn {
+  display: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background: linear-gradient(to top, #ff4b71 23%, #ff5478 63%);
+  background-color: #ff5478;
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  border: solid 5px #cd002b;
+  box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
+  text-align: center;
+  line-height: 25px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox p, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox p {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 44px;
+  padding-left: 10px;
+  position: relative;
+}
+html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox p.num, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox p.num {
+  font-size: 32px;
 }
 html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform ul, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet ul {
   margin-top: 10px;
@@ -3899,6 +3988,11 @@ html body .innerPage article .rightside .bettingWindow, html body .innerPage art
 html body .innerPage article .rightside .bettingWindow .innerbox, html body .innerPage article .fixside .bettingWindow .innerbox {
   width: 200px;
   height: 270px;
+}
+html body .innerPage article .rightside .bettingWindow .innerbox h2, html body .innerPage article .fixside .bettingWindow .innerbox h2 {
+  color: #ffffac;
+  font-size: 18px;
+  padding: 10px 0px 10px 20px;
 }
 html body .innerPage article .rightside .bettingWindow .innerbox .noRecord, html body .innerPage article .fixside .bettingWindow .innerbox .noRecord {
   width: 100%;
@@ -5053,10 +5147,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
 }
 
 @media only screen and (max-width: 1415px) {
-  html body .innerPage article .mid.present {
-    width: 880px;
-  }
-  html body .innerPage article .mid.present .messageWindow .box {
+  html body .innerPage article .mid.mailWindow .topWindow .separateBox {
     width: 870px;
   }
 }

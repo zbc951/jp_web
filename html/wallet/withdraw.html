@@ -68,8 +68,8 @@
             <!--左列-->
             <section class="leftside">
                 <!--個人資訊窗-->
-                <div class="personalWindow">
-                    <div>
+                <div class="personalWindow bg_darkblue">
+                    <div class="innerbox">
                         <p>qaz121&emsp;JP_1</p>
                         <p>47日目に参加する</p>
                     </div>
@@ -93,9 +93,9 @@
                 </div>
             </section>
             <!--中-->
-            <section class="mid">
+            <section class="mid withdrawWindow">
                 <!--資產窗-->
-                <div class="withdrawWindow">
+                <div class="topWindow bg_darkblue">
                     <h1>出金エリア</h1>
                     <div class="innerbox">
                         <table>
@@ -122,70 +122,72 @@
                     <div class="baseline"></div>
                     <h1>プラットフォームウォレットを</h1>
                     <div class="innerbox size2">
-                        <span class="noMoney">まだデータはありません</span>
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--下窗-->
-                <div class="withdrawWindow">
+                <div class="topWindow bg_darkblue">
                     <h1>出金申し込み</h1>
-                    <div class="innerbox size2">
-                        <table>
-                            <tr>
-                                <td>
-                                    引き出しの数
-                                    <br>
-                                    <span class="word_large word_lightgreen">無制限</span>
-                                    <p>(今日利用可能)</p>
-                                </td>
-                                <td>
-                                    引き出し額制限
-                                    <br>
-                                    <span class="word_large word_lightgreen">無制限</span>
-                                    <p>(今日利用可能)</p>
-                                </td>
-                                <td>
-                                    単一の割り当て
-                                    <br>
-                                    <span class="word_large word_lightgreen">1000</span>
-                                    <p>(1回の引き出しの上限)</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="selectbox">
-                        <span>※</span>銀行を選択
-                        <select name="" id="">
-                            <option value="">選択してください</option>
-                            <option value="">選択してください</option>
-                            <option value="">選択してください</option>
-                        </select>
-                    </div>
-                    <div class="selectbox">
-                        <span>※</span>引き出し金額
-                        <input type="text">
-                    </div>
-                    <button class="savebtn"><span>送信を確認</span></button>
-                    <div class="remindbox">
-                        <h2>重要なリマインダー</h2>
-                        <p>1.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
-                        <p>2.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
-                        <p>3.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
-                        <p>4.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                    <div class="flowBox">
+                        <div class="innerbox size2">
+                            <table>
+                                <tr>
+                                    <td>
+                                        引き出しの数
+                                        <br>
+                                        <span class="word_large word_lightgreen">無制限</span>
+                                        <p>(今日利用可能)</p>
+                                    </td>
+                                    <td>
+                                        引き出し額制限
+                                        <br>
+                                        <span class="word_large word_lightgreen">無制限</span>
+                                        <p>(今日利用可能)</p>
+                                    </td>
+                                    <td>
+                                        単一の割り当て
+                                        <br>
+                                        <span class="word_large word_lightgreen">1000</span>
+                                        <p>(1回の引き出しの上限)</p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="selectbox">
+                            <span>※</span>銀行を選択
+                            <select name="" id="">
+                                <option value="">選択してください</option>
+                                <option value="">選択してください</option>
+                                <option value="">選択してください</option>
+                            </select>
+                        </div>
+                        <div class="selectbox">
+                            <span>※</span>引き出し金額
+                            <input type="text">
+                        </div>
+                        <button class="savebtn"><span>送信を確認</span></button>
+                        <div class="remindbox">
+                            <h2>重要なリマインダー</h2>
+                            <p>1.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                            <p>2.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                            <p>3.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                            <p>4.重要なリマインダー重要なリマインダー重要なリマインダー重要なリマインダー</p>
+                        </div>
                     </div>
                 </div>
             </section>
             <!--右列-->
             <section class="rightside">
                 <!--下注紀錄-->
-                <div class="bettingWindow">
+                <div class="bettingWindow bg_darkblue">
                     <h1>賭け記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
-                    <div>
-                        <span class="noMoney">まだデータはありません</span>
+                    <div class="innerbox">
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--活動-->
-                <div class="activeWindow">
+                <div class="activeWindow bg_darkblue">
                     <h1>特典センター</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <a href="#"></a>
@@ -195,17 +197,17 @@
             <!--最右列-->
             <section class="fixside">
                 <!--下注紀錄-->
-                <div class="bettingWindow">
-                    <button class="windowBtn"><span></span><p>賭け記録</p></button>
+                <div class="bettingWindow bg_darkblue">
+                    <button class="windowBtn bg_darkblue"><span></span><p>賭け記録</p></button>
                     <h1>賭け記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
-                    <div>
-                        <span class="noMoney">まだデータはありません</span>
+                    <div class="innerbox">
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--活動-->
-                <div class="activeWindow">
-                    <button class="windowBtn"><span></span><p>特典センター</p></button>
+                <div class="activeWindow bg_darkblue">
+                    <button class="windowBtn bg_darkblue"><span></span><p>特典センター</p></button>
                     <h1>特典センター</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <a href="#"></a>

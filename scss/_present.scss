@@ -4,7 +4,7 @@ html {
             article {
                 //中
                 .mid {
-                    &.present {
+                    &.longBoard {
                         margin-right: 0px;
                         width: 1145px;
                     }
@@ -306,7 +306,7 @@ html {
             .innerPage {
                 article {
                     .mid {
-                        &.present {
+                        &.longBoard {
                             width: 880px;
                             .presentWindow {
                                 .box {

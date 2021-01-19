@@ -68,8 +68,8 @@
             <!--左列-->
             <section class="leftside">
                 <!--個人資訊窗-->
-                <div class="personalWindow">
-                    <div>
+                <div class="personalWindow bg_darkblue">
+                    <div class="innerbox">
                         <p>qaz121&emsp;JP_1</p>
                         <p>47日目に参加する</p>
                     </div>
@@ -93,12 +93,17 @@
                 </div>
             </section>
             <!--中-->
-            <section class="mid">
+            <section class="mid memberWindow">
                 <!--上窗-->
-                <div class="memberWindow">
+                <div class="topWindow bg_darkblue">
                     <h1>個人情報</h1>
-                    <div>
-                        <p>アカウントのセキュリティレベル：<span class="active">低</span><span>中</span><span>高</span></p>
+                    <div class="innerbox">
+                        <p>
+                            アカウントのセキュリティレベル：
+                            <span class="active">低</span>
+                            <span class="active2">中</span>
+                            <span class="active3">高</span>
+                        </p>
                         <p>アカウントのセキュリティを確保するために、必要に応じて関連するセキュリティ情報を入力してください</p>
                         <ul>
                             <li><span></span>基本情報</li>
@@ -109,8 +114,8 @@
                     </div>
                 </div>
                 <!--下窗-->
-                <div class="inforWindow">
-                    <div class="box">
+                <div class="bottomWindow">
+                    <div class="separateBox bg_darkblue">
                         <!--雙按鈕-->
                         <div class="btnbox">
                             <button><span>基本情報</span></button>
@@ -119,31 +124,33 @@
                         <!--基本情報-->
                         <div class="infor display">
                             <h1>基本情報</h1>
-                            <ul>
-                                <li><span>※</span>お名前<input type="text"></li>
-                                <li>アカウント<input type="text" class="lightbase" value="qaz121"></li>
-                                <li><span>※</span>誕生日<input type="text"></li>
-                                <li>招待コード<input type="text" class="lightbase" value="Mbac0d2d"><button>copy</button></li>
-                                <li>携帯電話番号<input type="text" value="123456789" class="lightbase"></li>
-                                <li>プロモーションURL<input type="text" value="https://mbnj-demo.op8899.net"><button>copy</button></li>
-                                <li><span>※</span>電子メール<input type="text"></li>
-                                <li>住所<input type="text"></li>
-                                <li><span>※</span>LINE<input type="text"></li>
-                                <li><span>※</span>WeChat<input type="text"></li>
-                            </ul>
-                            <button class="savebtn"><span>保存データ</span></button>
-                            <p>基本情報が間違っていますか？<a href="#">カスタマーサービスに連絡</a></p>
-                            <div class="baseline"></div>
-                            <h1>パスワードを変更する</h1>
-                            <div class="inputbox">
-                                パスワード
-                                <input type="text">
-                                <button>変更</button>
+                            <div class="flowWindow">
+                                <ul class="inputList">
+                                    <li><span>※</span>お名前<input type="text"></li>
+                                    <li>アカウント<input type="text" class="lightbase" value="qaz121"></li>
+                                    <li><span>※</span>誕生日<input type="text"></li>
+                                    <li>招待コード<input type="text" class="lightbase" value="Mbac0d2d"><button class="greenBtn">copy</button></li>
+                                    <li>携帯電話番号<input type="text" value="123456789" class="lightbase"></li>
+                                    <li>プロモーションURL<input type="text" value="https://mbnj-demo.op8899.net"><button class="greenBtn">copy</button></li>
+                                    <li><span>※</span>電子メール<input type="text"></li>
+                                    <li>住所<input type="text"></li>
+                                    <li><span>※</span>LINE<input type="text"></li>
+                                    <li><span>※</span>WeChat<input type="text"></li>
+                                </ul>
+                                <button class="savebtn"><span>保存データ</span></button>
+                                <p>基本情報が間違っていますか？<a href="#">カスタマーサービスに連絡</a></p>
+                                <div class="baseline"></div>
+                                <h1>パスワードを変更する</h1>
+                                <div class="inputbox">
+                                    パスワード
+                                    <input type="text">
+                                    <button>変更</button>
+                                </div>
                             </div>
                         </div>
                         <!--帳號訊息-->
                         <div class="account">
-                            <ul>
+                            <ul class="nameList">
                                 <li>コード</li>
                                 <li>プラットホーム</li>
                                 <li>プレイヤーID</li>
@@ -161,15 +168,15 @@
             <!--右列-->
             <section class="rightside">
                 <!--下注紀錄-->
-                <div class="bettingWindow">
+                <div class="bettingWindow bg_darkblue">
                     <h1>賭け記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
-                    <div>
-                        <span class="noMoney">まだデータはありません</span>
+                    <div class="innerbox">
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--活動-->
-                <div class="activeWindow">
+                <div class="activeWindow bg_darkblue">
                     <h1>特典センター</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <a href="#"></a>
@@ -179,17 +186,17 @@
             <!--最右列-->
             <section class="fixside">
                 <!--下注紀錄-->
-                <div class="bettingWindow">
-                    <button class="windowBtn"><span></span><p>賭け記録</p></button>
+                <div class="bettingWindow bg_darkblue">
+                    <button class="windowBtn bg_darkblue"><span></span><p>賭け記録</p></button>
                     <h1>賭け記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
-                    <div>
-                        <span class="noMoney">まだデータはありません</span>
+                    <div class="innerbox">
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--活動-->
-                <div class="activeWindow">
-                    <button class="windowBtn"><span></span><p>特典センター</p></button>
+                <div class="activeWindow bg_darkblue">
+                    <button class="windowBtn bg_darkblue"><span></span><p>特典センター</p></button>
                     <h1>特典センター</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <a href="#"></a>

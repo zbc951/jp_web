@@ -12,23 +12,14 @@ html {
                     width: 245px;
                     height: 730px;
                     margin: 18px 18px 0px 0px;
-                    //個人資訊窗
+                    //上窗
                     .personalWindow {
                         width: 235px;
                         height: 90px;
-                        border: solid 5px #122845;
-                        border-radius: 15px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                        div {
+                        .innerbox {
                             width: 205px;
                             height: 58px;
-                            background: #507ab0;
-                            border: solid 1px #5885c2;
-                            border-radius: 15px;
                             margin: 16px auto 0px;
-                            box-shadow: 0px 2px 0px 0px #0000003b inset;
                             text-align: center;
                             p {
                                 font-size: 18px;
@@ -109,17 +100,17 @@ html {
                             display: block;
                             width: 175px;
                             height: 50px;
-                            border: solid 5px #184c4a;
-                            border-radius: 15px;
                             margin-bottom: 8px;
-                            background: linear-gradient(to top,#148883 42%,#3a9995 100%);
-                            background-color: #148883;
-                            box-shadow: 0px 3px 0px 0px #ffffff5c inset;
                             position: relative;
                             color: #fff;
                             font-size: 20px;
                             line-height: 50px;
                             padding-left: 60px;
+                            border: solid 5px #184c4a;
+                            border-radius: 15px;
+                            background: linear-gradient(to top,#148883 42%,#3a9995 100%);
+                            background-color: #148883;
+                            box-shadow: 0px 3px 0px 0px #ffffff5c inset;
                             &:hover,&:active,&.active {
                                 background: linear-gradient(to top,#273f5f,#2a4d7c);
                                 background-color: #2a4d7c;
@@ -207,221 +198,127 @@ html {
                     width: 880px;
                     height: 730px;
                     margin: 18px 18px 0px 0px;
-                    //上窗
-                    .moneyWindow {
-                        width: 870px;
-                        height: 240px;
-                        border: solid 5px #122845;
-                        border-radius: 15px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                        margin-bottom: 20px;
-                        h1 {
-                            color: #ffffac;
-                            font-size: 19px;
-                            font-weight: bold;
-                            letter-spacing: 5px;
-                            padding: 15px 0px 15px 20px;
-                        }
-                        div {
-                            width: 830px;
-                            height: 170px;
-                            margin: 0px auto;
-                            background: #507ab0;
-                            border: solid 1px #5885c2;
-                            border-radius: 15px;
-                            box-shadow: 0px 2px 0px 0px #0000003b inset;
-                            overflow: hidden;
-                            table {
-                                width: 100%;
-                                height: 100%;
-                                tr {
-                                    &:nth-of-type(1) {
-                                        border-bottom: solid 2px #274060;
-                                    }
-                                    &:nth-of-type(2) {
-                                        td {
-                                            &:nth-of-type(1) {
-                                                width: 37%;
-                                            }
-                                            &:nth-of-type(2) {
-                                                width: 29.5%;
-                                            }
-                                            &:nth-of-type(3) {
-                                                width: 33.5%;
-                                            }
-                                        }
-                                    }
-                                    td {
-                                        padding: 12px 0px 12px 30px;
-                                        font-size: 18px;
-                                        color: #fff;
-                                        position: relative;
-                                        &:nth-of-type(2) {
-                                            border-left: solid 2px #274060;
-                                        }
-                                        &:last-child {
-                                            border-left: solid 3px #274060;
-                                        }
-                                    }
-                                }
-                                span {
-                                    display: block;
-                                    margin-top: 7px;
-                                    &.word_middle {
-                                        font-size: 24px;
-                                        font-weight: bold;
-                                    }
-                                    &.word_large {
-                                        font-size: 32px;
-                                        font-weight: bold;
-                                    }
-                                    &.word_lightgreen {
-                                        color: #c0ff3e;
-                                    }
-                                }
-                                button {
-                                    position: absolute;
-                                    width: 105px;
-                                    height: 50px;
-                                    border: solid 4px #bb304d;
-                                    border-radius: 10px;
-                                    right: 13px;
-                                    top: 16px;
-                                    color: #fff;
-                                    letter-spacing: 3px;
-                                    text-shadow: 1px 1px 0px #000;
-                                    background: linear-gradient(to bottom,#ff92a9 50%,#f56684 50%);
-                                    background-color: #f56684;
-                                    /*for IE*/
-                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                                        padding-left: 10px;
-                                    }
-                                    /*for IE 9*/
-                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                                        padding-left: 10px;
-                                    }
-                                    &:hover,&:active,&.active {
-                                        text-shadow: -1px -1px 0px #000;
-                                        background: #b5203f;
-                                        border-color: #ed5676;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    //下窗
-                    .walletWindow {
-                        width: 880px;
-                        height: 460px;
-                        position: relative;
-                        .box {
+                    &.walletWindow {
+                        //上窗
+                        .topWindow {
                             width: 870px;
-                            height: 395px;
-                            position: absolute;
-                            bottom: 0px;
-                            border: solid 5px #122845;
-                            border-radius: 15px;
-                            background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                            background-color: #2a4d7c;
-                            box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                            z-index: 1;
-                            //雙按鈕
-                            .btnbox {
-                                button {
-                                    width: 200px;
-                                    height: 60px;
-                                    border-style: solid;
-                                    border-color: #122845;
-                                    border-width: 5px 5px 0px 5px;
-                                    border-radius: 60px 60px 0px 0px;
-                                    background: #2a4c79;
-                                    position: absolute;
-                                    top: -60px;
-                                    left: 20px;
-                                    box-shadow: 0px 5px 0px 0px #2a4c79,0px 3px 2px 0px #a7cdffa1 inset;
-                                    &::before {
-                                        content: "";
-                                        position: absolute;
-                                        width: 175px;
-                                        height: 50px;
-                                        background: linear-gradient(to top, transparent 50%, #00000047);
-                                        border-radius: 50px 50px 0px 0px;
-                                        left: 50%;
-                                        top: 5px;
-                                        transform: translateX(-50%);
-                                    }
-                                    &:last-child {
-                                        left: 230px;
-                                        span {
-                                            font-size: 14px;
+                            height: 240px;
+                            margin-bottom: 20px;
+                            .innerbox {
+                                width: 830px;
+                                height: 170px;
+                                table {
+                                    width: 100%;
+                                    height: 100%;
+                                    tr {
+                                        &:nth-of-type(1) {
+                                            border-bottom: solid 2px #274060;
                                         }
-                                    }
-                                    &.turn {
-                                        background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
-                                        background-color: #f56684;
-                                        border-color: #b5203f;
-                                        box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-                                        top: -60px;
-                                        height: 55px;
-                                        &::before {
-                                            background: linear-gradient(to top, transparent 50%, #ffffff69);
+                                        &:nth-of-type(2) {
+                                            td {
+                                                &:nth-of-type(1) {
+                                                    width: 37%;
+                                                }
+                                                &:nth-of-type(2) {
+                                                    width: 29.5%;
+                                                }
+                                                &:nth-of-type(3) {
+                                                    width: 33.5%;
+                                                }
+                                            }
+                                        }
+                                        td {
+                                            padding: 12px 0px 12px 30px;
+                                            font-size: 18px;
+                                            color: #fff;
+                                            position: relative;
+                                            &:nth-of-type(2) {
+                                                border-left: solid 2px #274060;
+                                            }
+                                            &:last-child {
+                                                border-left: solid 3px #274060;
+                                            }
                                         }
                                     }
                                     span {
                                         display: block;
-                                        width: 100%;
-                                        left: 0px;
-                                        position: absolute;
-                                        z-index: 1;
-                                        top: 15px;
-                                        font-size: 17px;
-                                        color: #fff;
-                                        text-shadow: 1px 1px 0px #000;
+                                        margin-top: 7px;
+                                        &.word_middle {
+                                            font-size: 24px;
+                                            font-weight: bold;
+                                        }
+                                        &.word_large {
+                                            font-size: 32px;
+                                            font-weight: bold;
+                                        }
+                                        &.word_lightgreen {
+                                            color: #c0ff3e;
+                                        }
                                     }
-                                }
-                            }
-                            h1 {
-                                color: #ffffac;
-                                font-size: 19px;
-                                font-weight: bold;
-                                letter-spacing: 5px;
-                                padding: 25px 0px 25px 20px;
-                            }
-                            //平台錢包/活動錢包
-                            .platform,.freeWallet {
-                                display: none;
-                                &.display {
-                                    display: block;
-                                }
-                                div {
-                                    width: 830px;
-                                    height: 305px;
-                                    margin: 0px auto;
-                                    background: #507ab0;
-                                    border: solid 1px #5885c2;
-                                    border-radius: 15px;
-                                    box-shadow: 0px 2px 0px 0px #0000003b inset;
-                                    position: relative;
-                                    .noMoney {
+                                    button {
                                         position: absolute;
-                                        color: #fff;
-                                        left: 50%;
-                                        top: 50%;
-                                        transform: translate(-50%,-50%);
-                                        letter-spacing: 3px;
-                                    }
-                                }
-                                ul {
-                                    margin-top: 10px;
-                                    text-align: center;
-                                    li {
-                                        display: inline-block;
-                                        color: #fff;
+                                        width: 105px;
                                         height: 50px;
-                                        line-height: 50px;
-                                        padding: 0px 43px;
+                                        border: solid 4px #bb304d;
+                                        border-radius: 10px;
+                                        right: 13px;
+                                        top: 16px;
+                                        color: #fff;
+                                        letter-spacing: 3px;
+                                        text-shadow: 1px 1px 0px #000;
+                                        background: linear-gradient(to bottom,#ff92a9 50%,#f56684 50%);
+                                        background-color: #f56684;
+                                        /*for IE*/
+                                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                            padding-left: 10px;
+                                        }
+                                        /*for IE 9*/
+                                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                            padding-left: 10px;
+                                        }
+                                        &:hover,&:active,&.active {
+                                            text-shadow: -1px -1px 0px #000;
+                                            background: #b5203f;
+                                            border-color: #ed5676;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        //下窗
+                        .bottomWindow {
+                            width: 880px;
+                            height: 460px;
+                            position: relative;
+                            .separateBox {
+                                width: 870px;
+                                height: 395px;
+                                position: absolute;
+                                top: 55px;
+                                z-index: 1;
+                                h1 {
+                                    padding: 25px 0px 25px 20px;
+                                }
+                                //平台錢包/活動錢包
+                                .platform,.freeWallet {
+                                    display: none;
+                                    &.display {
+                                        display: block;
+                                    }
+                                    .innerbox {
+                                        width: 830px;
+                                        height: 305px;
+                                    }
+                                    ul {
+                                        margin-top: 10px;
+                                        text-align: center;
+                                        li {
+                                            display: inline-block;
+                                            color: #fff;
+                                            height: 50px;
+                                            line-height: 50px;
+                                            padding: 0px 43px;
+                                        }
                                     }
                                 }
                             }
@@ -437,6 +334,7 @@ html {
                     h1 {
                         color: #ffffac;
                         font-size: 17px;
+                        letter-spacing: 0px;
                         padding: 20px 0px 15px 15px;
                     }
                     .askbtn {
@@ -447,10 +345,12 @@ html {
                         right: -20px;
                         border: solid 5px #122845;
                         border-radius: 10px;
+                        padding-top: 3px;
+                        border: solid 5px #184c4a;
+                        border-radius: 15px;
                         background: linear-gradient(to top,#148883 42%,#3a9995 100%);
                         background-color: #148883;
-                        box-shadow: 0px 2px 0px 0px #ffffff5c inset;
-                        padding-top: 3px;
+                        box-shadow: 0px 3px 0px 0px #ffffff5c inset;
                         /*for IE*/
                         @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                             padding: 0px;
@@ -496,30 +396,13 @@ html {
                     .bettingWindow {
                         width: 225px;
                         height: 340px;
-                        border: solid 5px #122845;
-                        border-radius: 15px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
                         margin-bottom: 20px;
                         position: relative;
-                        div {
+                        .innerbox {
                             width: 200px;
                             height: 270px;
-                            margin: 0px auto;
-                            background: #507ab0;
-                            border: solid 1px #5885c2;
-                            border-radius: 15px;
-                            box-shadow: 0px 2px 0px 0px #0000003b inset;
-                            position: relative;
-                            .noMoney {
+                            .noRecord {
                                 width: 100%;
-                                position: absolute;
-                                color: #fff;
-                                left: 50%;
-                                top: 50%;
-                                transform: translate(-50%,-50%);
-                                letter-spacing: 3px;
                                 font-size: 12px;
                                 text-align: center;
                             }
@@ -529,11 +412,6 @@ html {
                     .activeWindow {
                         width: 225px;
                         height: 350px;
-                        border: solid 5px #122845;
-                        border-radius: 15px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
                         position: relative;
                         a {
                             display: block;
@@ -562,11 +440,7 @@ html {
                         width: 60px;
                         height: 170px;
                         border-radius: 60px 0px 0px 60px;
-                        border: solid 5px #122845;
                         border-right-width: 0px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
                         left: -60px;
                         top: 15px;
                         box-shadow: 3px 0px 3px 0px #a7cdffab inset, 4px 0px 0px 0px #284873;
@@ -639,6 +513,201 @@ html {
         }
     }
 }
+
+//共用規格
+
+//藍底背景
+.bg_darkblue {
+    border: solid 5px #122845;
+    border-radius: 15px;
+    background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+    background-color: #2a4d7c;
+    box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+}
+//淺藍底背框
+.innerbox {
+    background: #507ab0;
+    border: solid 1px #5885c2;
+    border-radius: 15px;
+    box-shadow: 0px 2px 0px 0px #0000003b inset;
+    margin: 0px auto;
+    overflow: hidden;
+    position: relative;
+    .noRecord {
+        position: absolute;
+        color: #fff;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        letter-spacing: 3px;
+    }
+}
+//多按鈕內框
+.separateBox {
+    //雙按鈕
+    .btnbox {
+        button {
+            width: 200px;
+            height: 60px;
+            border-style: solid;
+            border-color: #122845;
+            border-width: 5px 5px 0px 5px;
+            border-radius: 60px 60px 0px 0px;
+            background: #2a4c79;
+            position: absolute;
+            top: -60px;
+            left: 20px;
+            box-shadow: 0px 5px 0px 0px #2a4c79,0px 3px 2px 0px #a7cdffa1 inset;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 175px;
+                height: 50px;
+                background: linear-gradient(to top, transparent 50%, #00000047);
+                border-radius: 50px 50px 0px 0px;
+                left: 50%;
+                top: 5px;
+                transform: translateX(-50%);
+            }
+            &:last-child {
+                left: 230px;
+                span {
+                    font-size: 14px;
+                }
+            }
+            &.turn {
+                background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+                background-color: #f56684;
+                border-color: #b5203f;
+                box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+                top: -60px;
+                height: 55px;
+                &::before {
+                    background: linear-gradient(to top, transparent 50%, #ffffff69);
+                }
+            }
+            span {
+                display: block;
+                width: 100%;
+                left: 0px;
+                position: absolute;
+                z-index: 1;
+                top: 15px;
+                font-size: 17px;
+                color: #fff;
+                text-shadow: 1px 1px 0px #000;
+            }
+        }
+    }
+}
+//大粉底按鈕
+.savebtn {
+    display: block;
+    border: solid 5px #b5203f;
+    border-radius: 15px;
+    background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
+    background-color: #f56684;
+    box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+    position: relative;
+    span {
+        font-size: 20px;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
+}
+//分隔線
+.baseline {
+    width: 840px;
+    height: 3px;
+    background: #122845;
+}
+//白字橫列
+.nameList {
+    text-align: center;
+    li {
+        display: inline-block;
+        color: #fff;
+    }
+}
+//input格式
+.inputList {
+    li {
+        display: inline-block;
+        color: #fff;
+        height: 40px;
+        line-height: 40px;
+        margin-top: 20px;
+        position: relative;
+        &:nth-of-type(odd) {
+            width: 305px;
+            margin-left: 35px;
+        }
+        &:nth-of-type(even) {
+            width: 390px;
+            margin-left: 40px;
+            input {
+                width: 230px;
+            }
+        }
+        input {
+            float: right;
+            background: #183051;
+            width: 190px;
+            height: 38px;
+            padding-left: 10px;
+            font-size: 17px;
+            border-radius: 10px;
+            border: solid 1px #fff;
+            color: #fff;
+            &.lightbase {
+                background: #507ab0;
+                box-shadow: 0px 3px 0px 0px #0000005e inset;
+            }
+        }
+        span {
+            color: #29fff6;
+            position: absolute;
+            left: -20px;
+            top: -1px;
+        }
+    }
+}
+//綠底按鈕
+.greenBtn {
+    border: solid 5px #00302e;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    padding-bottom: 3px;
+    border-radius: 8px;
+    text-shadow: 1px 1px 0px #000;
+    background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
+    background-color: #148883;
+    /*for IE*/
+    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+        line-height: 0px;
+    }
+    /*for IE 9*/
+    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+        line-height: 0px;
+    }
+    &:hover,&:active,&.active {
+        background: #b5203f;
+        border-color: #ed5676;
+        text-shadow: none;
+    }
+}
+//h1規格
+h1 {
+    color: #ffffac;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding: 15px 0px 15px 20px;
+}
+
+//內頁共用RWD
 @media only screen and(max-width:1410px) {
     html {
         body {

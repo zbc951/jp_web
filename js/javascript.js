@@ -299,3 +299,18 @@ $(function(){
 		$(this).addClass('active')
 	})
 })
+//creditcard
+$(function(){
+	$('.cardWindow .card1').click(function(){
+		$('.cardName1').addClass('display');
+		$('.cardName1').siblings().removeClass('display');
+		$('.reCardName').addClass('display');
+		$('.addCardName').removeClass('display');
+	})
+	$('.addCardBtn').click(function(){
+		$('.addCard').siblings().removeClass('display');
+		$('.addCardName').addClass('display');
+		$('.reCardName').removeClass('display');
+		$('.addCard').addClass('display');
+	})
+})

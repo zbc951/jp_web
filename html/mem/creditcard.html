@@ -68,8 +68,8 @@
             <!--左列-->
             <section class="leftside">
                 <!--個人資訊窗-->
-                <div class="personalWindow">
-                    <div>
+                <div class="personalWindow bg_darkblue">
+                    <div class="innerbox">
                         <p>qaz121&emsp;JP_1</p>
                         <p>47日目に参加する</p>
                     </div>
@@ -93,38 +93,46 @@
                 </div>
             </section>
             <!--中-->
-            <section class="mid">
-                <!--卡片窗-->
-                <div class="cardWindow">
+            <section class="mid cardWindow">
+                <!--上窗-->
+                <div class="topWindow bg_darkblue">
                     <h1>カード管理<p>カード数 1 / 無制限</p></h1>
-                    <button class="card"></button>
-                    <button><span class="plus"></span><span class="word">新しい銀行カード（口座）</span></button>
+                    <button class="card1"></button>
+                    <button class="addCardBtn"><span class="plus"></span><span class="word">新しい銀行カード（口座）</span></button>
                 </div>
-                <!--新增卡片窗-->
-                <div class="addCardWindow">
+                <!--下窗-->
+                <div class="bottomWindow bg_darkblue">
                     <h1>新しい銀行カード</h1>
-                    <ul>
+                    <ul class="inputList cardName1">
+                        <li><span>※</span>銀行名<input type="text" value="銀行名" disabled="disabled"></li>
+                        <li><span>※</span>銀行口座<input type="text" value="銀行口座" disabled="disabled"></li>
+                        <li><span>※</span>支店名<input type="text" value="支店名" disabled="disabled"></li>
+                        <li><span>※</span>銀行口座を確認する<input type="text" value="銀行口座を確認する" disabled="disabled"></li>
+                        <li><span>※</span>アカウント名<input type="text" value="アカウント名" disabled="disabled"></li>
+                    </ul>
+                    <ul class="inputList addCard display">
                         <li><span>※</span>銀行名<input type="text"></li>
                         <li><span>※</span>銀行口座<input type="text"></li>
                         <li><span>※</span>支店名<input type="text"></li>
                         <li><span>※</span>銀行口座を確認する<input type="text"></li>
                         <li><span>※</span>アカウント名<input type="text"></li>
                     </ul>
-                    <button class="savebtn"><span>確認する</span></button>
+                    <button class="savebtn reCardName"><span>更正</span></button>
+                    <button class="savebtn addCardName display"><span>確認する</span></button>
                 </div>
             </section>
             <!--右列-->
             <section class="rightside">
                 <!--下注紀錄-->
-                <div class="bettingWindow">
+                <div class="bettingWindow bg_darkblue">
                     <h1>賭け記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
-                    <div>
-                        <span class="noMoney">まだデータはありません</span>
+                    <div class="innerbox">
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--活動-->
-                <div class="activeWindow">
+                <div class="activeWindow bg_darkblue">
                     <h1>特典センター</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <a href="#"></a>
@@ -134,17 +142,17 @@
             <!--最右列-->
             <section class="fixside">
                 <!--下注紀錄-->
-                <div class="bettingWindow">
-                    <button class="windowBtn"><span></span><p>賭け記録</p></button>
+                <div class="bettingWindow bg_darkblue">
+                    <button class="windowBtn bg_darkblue"><span></span><p>賭け記録</p></button>
                     <h1>賭け記録</h1>
                     <button class="askbtn"><span>照会へ</span></button>
-                    <div>
-                        <span class="noMoney">まだデータはありません</span>
+                    <div class="innerbox">
+                        <span class="noRecord">まだデータはありません</span>
                     </div>
                 </div>
                 <!--活動-->
-                <div class="activeWindow">
-                    <button class="windowBtn"><span></span><p>特典センター</p></button>
+                <div class="activeWindow bg_darkblue">
+                    <button class="windowBtn bg_darkblue"><span></span><p>特典センター</p></button>
                     <h1>特典センター</h1>
                     <button class="askbtn"><span>照会へ</span></button>
                     <a href="#"></a>

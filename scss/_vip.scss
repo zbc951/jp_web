@@ -4,142 +4,122 @@ html {
             article {
                 //中
                 .mid {
-                    //賭博窗
-                    .vipWindow {
-                        width: 1135px;
-                        height: 720px;
-                        border: solid 5px #122845;
-                        border-radius: 15px;
-                        background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
-                        background-color: #2a4d7c;
-                        box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-                        position: relative;
-                        .topIC {
-                            width: 104px;
-                            height: 126px;
-                            background: url('../images/vip/vip_topIC.png') no-repeat;
-                        }
-                        h1 {
-                            font-size: 22px;
-                            font-weight: bold;
-                            color: #ffffac;
+                    &.vipWindow {
+                        //賭博窗
+                        .topWindow {
+                            width: 1135px;
+                            height: 720px;
+                            border: solid 5px #122845;
+                            border-radius: 15px;
+                            background: linear-gradient(to top,#273f5f 0%,#2a4d7c 100%);
+                            background-color: #2a4d7c;
+                            box-shadow: 0px 2px 3px 0px #a7cdffab inset;
                             position: relative;
-                            padding: 30px 0px 50px 170px;
-                            &::before {
-                                content: "";
-                                position: absolute;
+                            .topIC {
                                 width: 104px;
                                 height: 126px;
                                 background: url('../images/vip/vip_topIC.png') no-repeat;
-                                left: 35px;
-                                top: -15px;
                             }
-                            p {
-                                font-size: 16px;
-                                color: #fff;
-                                padding-top: 18px;
-                                font-weight: normal;
-                            }
-                        }
-                        h2 {
-                            padding: 40px 0px 0px 35px;
-                            font-size: 20px;
-                            color: #fff;
-                            font-weight: bold;
-                        }
-                        .barbox {
-                            position: relative;
-                            ul {
-                                text-align: center;
-                                li {
-                                    display: inline;
-                                    color: #fff;
-                                    margin-right: 145px;
-                                    &:last-child {
-                                        margin-right: 0px;
-                                    }
-                                    &.active {
-                                        font-size: 21px;
-                                        font-weight: bold;
-                                        color: #c0ff3e;
-                                    }
-                                }
-                            }
-                            .barBody {
-                                width: 1060px;
-                                height: 18px;
-                                border-radius: 15px;
-                                background: #507ab0;
-                                border: solid 1px #5885c2;
-                                box-shadow: 0px 2px 2px 0px #365276 inset;
-                                margin: 20px auto 0px;
+                            h1 {
+                                font-size: 22px;
                                 position: relative;
-                                &.short {
-                                    display: inline-block;
-                                    width: 400px;
-                                    height: 12px;
-                                    div {
-                                        background: linear-gradient(to top,#00b8b0 0%,#36fff6 100%);
-                                        background-color: #36fff6;
-                                        border-color: #36fff6;
-                                    }
-                                }
-                                div {
-                                    width: 21%;
-                                    height: calc(100% - 4px);
-                                    border-radius: 15px;
-                                    background: linear-gradient(to top,#87c800 0%,#c0ff3e 100%);
-                                    background-color: #87c800;
-                                    border: solid 2px #cdff65;
+                                padding: 30px 0px 50px 170px;
+                                &::before {
+                                    content: "";
                                     position: absolute;
-                                    left: 0%;
+                                    width: 104px;
+                                    height: 126px;
+                                    background: url('../images/vip/vip_topIC.png') no-repeat;
+                                    left: 35px;
+                                    top: -15px;
+                                }
+                                p {
+                                    font-size: 16px;
+                                    color: #fff;
+                                    padding-top: 18px;
+                                    font-weight: normal;
                                 }
                             }
-                            span {
-                                display: inline-block;
-                                color: #fff;             
-                                padding: 0px 15px 0px 35px;
-                                transform: translateY(-1px);
-                                &.down {
-                                    padding-right: 31px;
-                                    /*for IE*/
-                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                                        padding-right: 26px;
-                                    }
-                                    /*for IE 9*/
-                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                                        padding-right: 26px;
-                                    }
-                                }
-                            }
-                            button {
-                                display: inline-block;
-                                width: 75px;
-                                height: 43px;
-                                border: solid 5px #00302e;
+                            h2 {
+                                padding: 40px 0px 0px 35px;
+                                font-size: 20px;
                                 color: #fff;
                                 font-weight: bold;
-                                font-size: 17px;
-                                border-radius: 8px;
-                                text-shadow: 1px 1px 0px #000;
-                                margin-left: 10px;
-                                background: linear-gradient(to top,#148883 50%,#57c9c4 50%);
-                                background-color: #148883;
-                                &:hover,&:active,&.active {
-                                    background: #b5203f;
-                                    border-color: #ed5676;
-                                    text-shadow: none;
+                            }
+                            .barbox {
+                                position: relative;
+                                ul {
+                                    text-align: center;
+                                    li {
+                                        display: inline;
+                                        color: #fff;
+                                        margin-right: 145px;
+                                        &:last-child {
+                                            margin-right: 0px;
+                                        }
+                                        &.active {
+                                            font-size: 21px;
+                                            font-weight: bold;
+                                            color: #c0ff3e;
+                                        }
+                                    }
                                 }
-                                &.savebtn {
+                                .barBody {
+                                    width: 1060px;
+                                    height: 18px;
+                                    border-radius: 15px;
+                                    background: #507ab0;
+                                    border: solid 1px #5885c2;
+                                    box-shadow: 0px 2px 2px 0px #365276 inset;
+                                    margin: 20px auto 0px;
+                                    position: relative;
+                                    &.short {
+                                        display: inline-block;
+                                        width: 400px;
+                                        height: 12px;
+                                        div {
+                                            background: linear-gradient(to top,#00b8b0 0%,#36fff6 100%);
+                                            background-color: #36fff6;
+                                            border-color: #36fff6;
+                                        }
+                                    }
+                                    div {
+                                        width: 21%;
+                                        height: calc(100% - 4px);
+                                        border-radius: 15px;
+                                        background: linear-gradient(to top,#87c800 0%,#c0ff3e 100%);
+                                        background-color: #87c800;
+                                        border: solid 2px #cdff65;
+                                        position: absolute;
+                                        left: 0%;
+                                    }
+                                }
+                                span {
+                                    display: inline-block;
+                                    color: #fff;             
+                                    padding: 0px 15px 0px 35px;
+                                    transform: translateY(-1px);
+                                    &.down {
+                                        padding-right: 31px;
+                                        /*for IE*/
+                                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                            padding-right: 26px;
+                                        }
+                                        /*for IE 9*/
+                                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                            padding-right: 26px;
+                                        }
+                                    }
+                                }
+                                .greenBtn {
+                                    display: inline-block;
+                                    width: 75px;
+                                    height: 43px;
+                                }
+                                .savebtn {
                                     display: inline-block;
                                     width: 240px;
                                     height: 48px;
-                                    border: solid 5px #b5203f;
-                                    border-radius: 15px;
-                                    background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
-                                    background-color: #f56684;
-                                    box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-                                    position: relative;
                                     &:hover,&:active,&.active {
                                         /*for IE*/
                                         @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
@@ -167,93 +147,70 @@ html {
                                         background: linear-gradient(to top,transparent 50%,#ffc9e7);
                                     }
                                     span {
-                                        font-size: 20px;
-                                        color: #fff;
-                                        position: relative;
-                                        z-index: 1;
+                                        display: inline;
+                                        font-size: 16px;
+                                        transform: translateY(0px);
+                                        padding: 0px;
                                     }
                                 }
                             }
-                        }
-                        .baseline {
-                            width: 92%;
-                            height: 4px;
-                            background: #122845;
-                            margin: 30px auto 0px;
-                        }
-                        .innerbox {
-                            width: 1060px;
-                            height: 130px;
-                            border-radius: 15px;
-                            background: #507ab0;
-                            border: solid 1px #5885c2;
-                            box-shadow: 0px 2px 2px 0px #365276 inset;
-                            margin: 20px auto;
-                            position: relative;
-                            button {
-                                width: 240px;
-                                height: 58px;
-                                border: solid 5px #b5203f;
-                                border-radius: 15px;
-                                background: linear-gradient(to top,#f56684 42%,#ff92a9 100%);
-                                background-color: #f56684;
-                                box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-                                position: absolute;
-                                left: 50%;
-                                transform: translateX(-50%);
-                                bottom: -80px;
-                                color: #fff;
-                                font-weight: bold;
-                                font-size: 20px;
-                                text-shadow: 1px 1px 0px #000;
-                                &:hover,&:active,&.active {
-                                    /*for IE*/
-                                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-                                        border-color: #f56684;
-                                        background-color: #b5203f;
-                                    }
-                                    /*for IE 9*/
-                                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
-                                        border-color: #f56684;
-                                        background-color: #b5203f;
-                                    }
-                                    &::before {
-                                        background: linear-gradient(to top,transparent 50%,#00000052);
-                                    }
-                                    &::before {
-                                        background: linear-gradient(to top,transparent 50%,#00000052);
-                                    }
-                                }
-                                &::before {
-                                    content: "";
+                            .baseline {
+                                width: 92%;
+                                margin: 30px auto 0px;
+                            }
+                            .innerbox {
+                                width: 1060px;
+                                height: 130px;
+                                margin: 20px auto;
+                                overflow: visible;
+                                button {
+                                    width: 240px;
+                                    height: 58px;
                                     position: absolute;
-                                    width: 220px;
-                                    height: 40px;
-                                    border-radius: 8px 8px 0px 0px;
-                                    top: 5px;
                                     left: 50%;
                                     transform: translateX(-50%);
-                                    background: linear-gradient(to top,transparent 50%,#ffc9e7);
-                                }
-                                span {
+                                    bottom: -80px;
+                                    color: #fff;
+                                    font-weight: bold;
                                     font-size: 20px;
-                                    color: #fff;
-                                    position: relative;
-                                    z-index: 1;
+                                    text-shadow: 1px 1px 0px #000;
+                                    &:hover,&:active,&.active {
+                                        /*for IE*/
+                                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                            border-color: #f56684;
+                                            background-color: #b5203f;
+                                        }
+                                        /*for IE 9*/
+                                        @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                            border-color: #f56684;
+                                            background-color: #b5203f;
+                                        }
+                                        &::before {
+                                            background: linear-gradient(to top,transparent 50%,#00000052);
+                                        }
+                                    }
+                                    &::before {
+                                        content: "";
+                                        position: absolute;
+                                        width: 220px;
+                                        height: 40px;
+                                        border-radius: 8px 8px 0px 0px;
+                                        top: 5px;
+                                        left: 50%;
+                                        transform: translateX(-50%);
+                                        background: linear-gradient(to top,transparent 50%,#ffc9e7);
+                                    }
                                 }
-                            }
-                            ul {
-                                text-align: center;
-                                li {
-                                    display: inline-block;
-                                    color: #fff;
-                                    padding: 35px 25px 0px;
-                                    span {
-                                        color: #c0ff3e;
-                                        font-size: 28px;
-                                        font-weight: bold;
-                                        padding-top: 20px;
-                                        display: block;
+                                .nameList {
+                                    li {
+                                        padding: 35px 25px 0px;
+                                        span {
+                                            color: #c0ff3e;
+                                            font-size: 28px;
+                                            font-weight: bold;
+                                            padding-top: 20px;
+                                            display: block;
+                                        }
                                     }
                                 }
                             }
@@ -270,30 +227,32 @@ html {
             .innerPage {
                 article {
                     .mid {
-                        .vipWindow {
-                            width: 870px;
-                            .barbox {
-                                ul {
-                                    li {
-                                        margin-right: 95px;
+                        &.vipWindow {
+                            .topWindow {
+                                width: 870px;
+                                .barbox {
+                                    ul {
+                                        li {
+                                            margin-right: 95px;
+                                        }
+                                    }
+                                    .barBody {
+                                        width: 805px;
+                                    }
+                                    button {
+                                        &.savebtn {
+                                            position: absolute;
+                                            top: -80px;
+                                            right: 38px;
+                                        }
                                     }
                                 }
-                                .barBody {
-                                    width: 805px;
-                                }
-                                button {
-                                    &.savebtn {
-                                        position: absolute;
-                                        top: -80px;
-                                        right: 38px;
-                                    }
-                                }
-                            }
-                            .innerbox {
-                                width: 830px;
-                                ul {
-                                    li {
-                                        padding: 35px 10px 0px;
+                                .innerbox {
+                                    width: 830px;
+                                    ul {
+                                        li {
+                                            padding: 35px 10px 0px;
+                                        }
                                     }
                                 }
                             }

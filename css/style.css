@@ -125,7 +125,7 @@ html body header .top .lang {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang::before {
     display: none;
   }
@@ -165,7 +165,7 @@ html body header .top .lang select {
     width: 120px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang select {
     width: 120px;
   }
@@ -192,7 +192,7 @@ html body header .top .account li {
     line-height: 15px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .account li {
     line-height: 15px;
   }
@@ -231,7 +231,7 @@ html body header .top .account li button {
     margin-top: 11px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .account li button {
     padding: 5px 6px;
     margin-top: 11px;
@@ -277,7 +277,7 @@ html body header .top .loginstyle li {
     margin-top: 13px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li {
     line-height: 15px;
     margin-top: 13px;
@@ -306,7 +306,7 @@ html body header .top .loginstyle li.list::before {
     right: 10px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.list::before {
     display: none;
   }
@@ -335,7 +335,7 @@ html body header .top .loginstyle li.list select {
     width: 45px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.list select {
     width: 45px;
   }
@@ -360,7 +360,7 @@ html body header .top .loginstyle li.depositbtn a, html body header .top .logins
     line-height: 18px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.depositbtn a, html body header .top .loginstyle li.transbtn a, html body header .top .loginstyle li.withdrawbtn a {
     padding: 4px 8px 6px;
     line-height: 18px;
@@ -466,7 +466,7 @@ html body header .smallbtnbox .smallbtn {
   background-size: 600%;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .smallbtnbox .smallbtn:hover, html body header .smallbtnbox .smallbtn:active, html body header .smallbtnbox .smallbtn.active {
     transform: scale(1.2);
   }
@@ -617,7 +617,7 @@ html body main .marqueebox {
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .marqueebox::before {
     display: none;
   }
@@ -648,7 +648,7 @@ html body main .marqueebox marquee {
     border-color: #ff7095 #ff7095 #ff7095 transparent;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .marqueebox marquee {
     border-color: #ff7095 #ff7095 #ff7095 transparent;
   }
@@ -1092,7 +1092,7 @@ html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox .mask {
     display: none;
   }
@@ -1172,7 +1172,7 @@ html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
     padding-bottom: 30%;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
     width: 55%;
     padding-bottom: 30%;
@@ -1900,7 +1900,7 @@ html body .signup .signupbox .inputbox .checkbtn {
     padding: 6px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .signup .signupbox .inputbox .checkbtn {
     padding: 6px;
   }
@@ -2162,7 +2162,7 @@ html body .game .gamebox ul li.searchline .rebtn:hover, html body .game .gamebox
     padding: 5px 3px 5px 20px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn:hover, html body .game .gamebox ul li.searchline .rebtn:active, html body .game .gamebox ul li.searchline .rebtn.active {
     padding: 5px 3px 5px 20px;
   }
@@ -2179,7 +2179,7 @@ html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game 
     left: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game .gamebox ul li.searchline .rebtn:active::before, html body .game .gamebox ul li.searchline .rebtn.active::before {
     animation: none;
     left: 0px;
@@ -2202,7 +2202,7 @@ html body .game .gamebox ul li.searchline .rebtn::before {
     left: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn {
     padding: 1px 1px 1px 20px;
   }
@@ -2233,7 +2233,7 @@ html body .game .gamebox ul li a {
   float: left;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li a.turn div {
     transform: scale(1.3);
   }
@@ -2497,6 +2497,110 @@ html body .gotop span {
   background-size: 100%;
   margin: 0px auto;
 }
+html body .jumpbox .transWallet {
+  display: none;
+  position: fixed;
+  width: 482px;
+  height: 326px;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../images/slot/slot_jumpBoxBG.png") no-repeat;
+  z-index: 101;
+  text-align: center;
+}
+html body .jumpbox .transWallet.display {
+  display: block;
+}
+html body .jumpbox .transWallet .cancelbtn {
+  width: 41px;
+  height: 40px;
+  background: url("../images/index/xx.png") no-repeat;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+html body .jumpbox .transWallet .cancelbtn:hover, html body .jumpbox .transWallet .cancelbtn:active, html body .jumpbox .transWallet .cancelbtn.acitve {
+  animation: noacc_cancelbtn 0.8s linear 0s;
+}
+html body .jumpbox .transWallet h1 {
+  padding: 35px 0px 45px;
+  color: #783c00;
+  font-weight: bold;
+}
+html body .jumpbox .transWallet p {
+  letter-spacing: 5px;
+}
+html body .jumpbox .transWallet p span {
+  font-weight: bold;
+  padding-left: 15px;
+  letter-spacing: 0px;
+}
+html body .jumpbox .transWallet .selectBox {
+  color: #000;
+  width: 274px;
+  margin: 20px auto;
+  font-size: 18px;
+  padding-right: 23px;
+}
+html body .jumpbox .transWallet .selectBox::before {
+  left: 245px;
+  border-color: #8b4b0b transparent transparent transparent;
+}
+html body .jumpbox .transWallet .selectBox select {
+  width: 195px;
+  padding-left: 15px;
+  border: solid 2px #5f5f5f;
+  background: #fff3bf;
+  color: #512800;
+}
+html body .jumpbox .transWallet .accbtn {
+  width: 270px;
+  height: 46px;
+  background: #783c00;
+  border-radius: 10px;
+  margin-top: 25px;
+  position: relative;
+  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
+}
+html body .jumpbox .transWallet .accbtn::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 30px;
+  background: #8b4b0b;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  border-radius: 5px 5px 10px 10px;
+}
+html body .jumpbox .transWallet .accbtn::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 10px;
+  background: #a4601b;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+html body .jumpbox .transWallet .accbtn:hover, html body .jumpbox .transWallet .accbtn:active, html body .jumpbox .transWallet .accbtn.active {
+  box-shadow: 0px 0px 0px 2px #512800;
+  margin-top: 29px;
+}
+html body .jumpbox .transWallet .accbtn span {
+  display: block;
+  width: 98px;
+  height: 21px;
+  background: url("../images/word/slot_jumpBoxWord.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+}
 
 @keyframes money {
   0% {
@@ -2617,7 +2721,7 @@ html body .game .gamebox.fish ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.fish ul li a.turn div {
     transform: scale(1.2);
   }
@@ -2813,7 +2917,7 @@ html body .game .gamebox.sport ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.sport ul li a.turn div {
     transform: scale(1.2);
   }
@@ -2988,7 +3092,7 @@ html body .game .gamebox.poker ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.poker ul li a.turn div {
     transform: scale(1.2);
   }
@@ -3106,7 +3210,7 @@ html body .game .gamebox.lottery ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.lottery ul li a.turn div {
     transform: scale(1.2);
   }
@@ -3218,7 +3322,7 @@ html body .game .gamebox.live ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.live ul li a.turn div {
     transform: scale(1.2);
   }
@@ -3769,7 +3873,7 @@ html body .innerPage article .mid.walletWindow .topWindow .innerbox table button
     padding-left: 10px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.walletWindow .topWindow .innerbox table button {
     padding-left: 10px;
   }
@@ -3938,7 +4042,7 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
     padding: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .rightside .askbtn, html body .innerPage article .fixside .askbtn {
     padding: 0px;
   }
@@ -3952,7 +4056,7 @@ html body .innerPage article .rightside .askbtn:hover, html body .innerPage arti
     background-color: #2ea8a2;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .rightside .askbtn:hover, html body .innerPage article .rightside .askbtn:active, html body .innerPage article .rightside .askbtn.active, html body .innerPage article .fixside .askbtn:hover, html body .innerPage article .fixside .askbtn:active, html body .innerPage article .fixside .askbtn.active {
     background-color: #2ea8a2;
   }
@@ -3987,7 +4091,11 @@ html body .innerPage article .rightside .bettingWindow, html body .innerPage art
 }
 html body .innerPage article .rightside .bettingWindow .innerbox, html body .innerPage article .fixside .bettingWindow .innerbox {
   width: 200px;
-  height: 270px;
+  height: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  padding-bottom: 20px;
 }
 html body .innerPage article .rightside .bettingWindow .innerbox h2, html body .innerPage article .fixside .bettingWindow .innerbox h2 {
   color: #ffffac;
@@ -3998,6 +4106,21 @@ html body .innerPage article .rightside .bettingWindow .innerbox .noRecord, html
   width: 100%;
   font-size: 12px;
   text-align: center;
+}
+html body .innerPage article .rightside .bettingWindow .innerbox p, html body .innerPage article .fixside .bettingWindow .innerbox p {
+  color: #fff;
+  padding-left: 20px;
+  position: relative;
+}
+html body .innerPage article .rightside .bettingWindow .innerbox p span, html body .innerPage article .fixside .bettingWindow .innerbox p span {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+}
+html body .innerPage article .rightside .bettingWindow .innerbox .baseline, html body .innerPage article .fixside .bettingWindow .innerbox .baseline {
+  background: #6b9cdd;
+  height: 2px;
+  margin-top: 10px;
 }
 html body .innerPage article .rightside .activeWindow, html body .innerPage article .fixside .activeWindow {
   width: 225px;
@@ -4217,7 +4340,7 @@ html body .innerPage .bg {
   border-color: #29fff6 transparent transparent transparent;
   pointer-events: none;
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox::before {
     display: none;
   }
@@ -4245,7 +4368,7 @@ html body .innerPage .bg {
   background: url("../images/discount/present_calc.png") no-repeat;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .calc {
     display: none;
   }
@@ -4277,7 +4400,7 @@ html body .innerPage .bg {
     padding-top: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .datebtn button:nth-of-type(2) {
     padding-top: 0px;
   }
@@ -4287,7 +4410,7 @@ html body .innerPage .bg {
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .datebtn button {
     line-height: 0px;
   }
@@ -4366,7 +4489,7 @@ html body .innerPage .bg {
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .greenBtn {
     line-height: 0px;
   }
@@ -4539,7 +4662,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -4582,7 +4705,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     margin-bottom: 50px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
     margin-bottom: 50px;
   }
@@ -4616,7 +4739,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
     line-height: 0px;
   }
@@ -4729,7 +4852,7 @@ html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover, html 
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:active, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -4816,7 +4939,7 @@ html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -5181,8 +5304,26 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.aud
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit.display, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.actWallet.display, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point.display, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell.display {
   display: block;
 }
-html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point ul li {
-  padding: 0px 100px;
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit .innerbox {
+  height: 285px;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit .innerbox table tr td:nth-of-type(1) {
+  width: 25%;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit .innerbox table tr td:nth-of-type(2) {
+  width: 25%;
+  padding-left: 22px;
+  text-align: left;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit .innerbox table tr td:nth-of-type(3) {
+  width: 25%;
+  padding-right: 36px;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit .innerbox table tr td:nth-of-type(4) {
+  width: 25%;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.actWallet ul li {
+  padding: 0px 50px;
 }
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell ul li {
   padding: 0px 20px;
@@ -5217,7 +5358,7 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .se
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -5254,11 +5395,30 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .na
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .nameList li {
   height: 50px;
   line-height: 50px;
-  padding: 0px 50px;
+  padding: 0px 100px;
 }
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox {
   width: 1070px;
   height: 355px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox table {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox table tr {
+  text-align: center;
+  height: 50px;
+  border-bottom: solid 2px #83abe1;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox table tr:last-child {
+  border: none;
+}
+html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox table tr td {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 1415px) {
@@ -5270,13 +5430,16 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .in
     top: -60px;
   }
   html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .nameList li {
-    padding: 0px 30px;
+    padding: 0px 70px;
   }
   html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox {
     width: 830px;
   }
-  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.point .nameList li {
-    padding: 0px 70px;
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.audit .innerbox table tr td:nth-of-type(2) {
+    padding: 0px;
+  }
+  html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.actWallet .nameList li {
+    padding: 0px 30px;
   }
   html body .innerPage article .mid.dealWindow .topWindow .separateBox .record.sell .nameList li {
     font-size: 14px;
@@ -5334,7 +5497,7 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:h
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -5343,12 +5506,12 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:h
 html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn::before {
   content: "";
   position: absolute;
-  width: 145px;
-  height: 40px;
+  width: 140px;
+  height: 35px;
   left: 50%;
   transform: translateX(-50%);
-  top: 3px;
-  border-radius: 5px 5px 0px 0px;
+  top: 5px;
+  border-radius: 10px 10px 0px 0px;
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn span {
@@ -5357,10 +5520,120 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn s
   z-index: 1;
   font-size: 17px;
 }
+html body .innerPage article .mid.bettingWindow .topWindow .baseline {
+  width: 94%;
+  margin: 30px auto 0px;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .nameList li {
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 70px;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .nameList li:last-child {
+  padding: 0px 200px 0px 90px;
+}
 html body .innerPage article .mid.bettingWindow .topWindow .innerbox {
   width: 1070px;
-  height: 460px;
-  margin: 35px auto 0px;
+  height: 400px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  border-bottom: solid 2px #6b9cdd;
+  overflow: hidden;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line.open {
+  height: auto;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line.open button {
+  transform: rotate(180deg);
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line:nth-last-of-type(2) {
+  border: none;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line.total {
+  background: #ff90af;
+  width: 98%;
+  margin: 0px auto 20px;
+  border-radius: 15px;
+  border: none;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line.total li {
+  width: 21.4%;
+  color: #000;
+  font-weight: bold;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line li {
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 50px;
+  width: 21%;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line li:nth-of-type(4) {
+  margin-right: 90px;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line li.result {
+  color: #fff65a;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line button {
+  position: absolute;
+  width: 39px;
+  height: 29px;
+  background: url("../images/betting/betting_playArrow.png") no-repeat;
+  right: 50px;
+  top: 10px;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox {
+  width: 98%;
+  height: auto;
+  margin: 0px auto 20px;
+  overflow: hidden;
+  border: solid 2px #fff;
+  border-radius: 15px;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table {
+  width: 100%;
+  height: auto;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr {
+  text-align: center;
+  height: 50px;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr:nth-of-type(odd) {
+  background: #47decf;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr:nth-of-type(even) {
+  background: #73fff1;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr th {
+  vertical-align: middle;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td {
+  vertical-align: middle;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td:nth-of-type(1) {
+  width: 25%;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td:nth-of-type(2) {
+  width: 10%;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td:nth-of-type(3) {
+  width: 20%;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td:nth-of-type(4) {
+  width: 15%;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td:nth-of-type(5) {
+  width: 15%;
+}
+html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line .tableBox table tr td:nth-of-type(6) {
+  width: 15%;
 }
 
 @media only screen and (max-width: 1415px) {
@@ -5373,6 +5646,12 @@ html body .innerPage article .mid.bettingWindow .topWindow .innerbox {
   }
   html body .innerPage article .mid.bettingWindow .topWindow .innerbox {
     width: 830px;
+  }
+  html body .innerPage article .mid.bettingWindow .topWindow .nameList li {
+    padding: 0px 40px;
+  }
+  html body .innerPage article .mid.bettingWindow .topWindow .nameList li:nth-of-type(4) {
+    padding: 0px 160px 0px 80px;
   }
 }
 html body .innerPage article .mid.vipWindow .topWindow {
@@ -5481,7 +5760,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
     padding-right: 26px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
     padding-right: 26px;
   }
@@ -5506,7 +5785,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover, h
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:active, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -5564,7 +5843,7 @@ html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover, h
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover, html body .innerPage article .mid.vipWindow .topWindow .innerbox button:active, html body .innerPage article .mid.vipWindow .topWindow .innerbox button.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -5651,7 +5930,7 @@ html body .innerPage article .mid.transWindow .topWindow .selectbox {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.transWindow .topWindow .selectbox::before {
     display: none;
   }
@@ -5705,7 +5984,7 @@ html body .innerPage article .mid.transWindow .topWindow .savebtn:hover, html bo
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.transWindow .topWindow .savebtn:hover, html body .innerPage article .mid.transWindow .topWindow .savebtn:active, html body .innerPage article .mid.transWindow .topWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -5858,7 +6137,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .selectbox {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.withdrawWindow .topWindow .selectbox::before {
     display: none;
   }
@@ -5929,7 +6208,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover, html
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:active, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -6321,7 +6600,7 @@ html body .game .gamebox.boat ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.boat ul li a.turn div {
     transform: scale(1.2);
   }

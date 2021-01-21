@@ -59,12 +59,12 @@ html {
                                     &::before {
                                         content: "";
                                         position: absolute;
-                                        width: 145px;
-                                        height: 40px;
+                                        width: 140px;
+                                        height: 35px;
                                         left: 50%;
                                         transform: translateX(-50%);
-                                        top: 3px;
-                                        border-radius: 5px 5px 0px 0px;
+                                        top: 5px;
+                                        border-radius: 10px 10px 0px 0px;
                                         background: linear-gradient(to top,transparent 50%,#ffc9e7);
                                     }
                                     span {
@@ -75,10 +75,122 @@ html {
                                     }
                                 }
                             }
+                            .baseline {
+                                width: 94%;
+                                margin: 30px auto 0px;
+                            }
+                            .nameList {
+                                li {
+                                    height: 50px;
+                                    line-height: 50px;
+                                    padding: 0px 70px;
+                                    &:last-child {
+                                        padding: 0px 200px 0px 90px;
+                                    }                                
+                                }
+                            }
                             .innerbox {
                                 width: 1070px;
-                                height: 460px;
-                                margin: 35px auto 0px;
+                                height: 400px;
+                                overflow-x: hidden;
+                                overflow-y: auto;
+                                scrollbar-width: thin;
+                                .line {
+                                    width: 100%;
+                                    height: 50px;
+                                    text-align: center;
+                                    position: relative;
+                                    border-bottom: solid 2px #6b9cdd;
+                                    overflow: hidden;
+                                    &.open {
+                                        height: auto;
+                                        button {
+                                            transform: rotate(180deg);
+                                        }
+                                    }
+                                    &:nth-last-of-type(2) {
+                                        border: none;
+                                    }
+                                    &.total {
+                                        background: #ff90af;
+                                        width: 98%;
+                                        margin: 0px auto 20px;
+                                        border-radius: 15px;
+                                        border: none;
+                                        li {
+                                            width: 21.4%;
+                                            color: #000;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                    li {
+                                        display: inline-block;
+                                        color: #fff;
+                                        font-size: 18px;
+                                        line-height: 50px;
+                                        width: 21%;
+                                        &:nth-of-type(4) {
+                                            margin-right: 90px;
+                                        }
+                                        &.result {
+                                            color: #fff65a;
+                                        }
+                                    }
+                                    button {
+                                        position: absolute;
+                                        width: 39px;
+                                        height: 29px;
+                                        background: url('../images/betting/betting_playArrow.png') no-repeat;
+                                        right: 50px;
+                                        top: 10px;
+                                    }
+                                    .tableBox {
+                                        width: 98%;
+                                        height: auto;
+                                        margin: 0px auto 20px;
+                                        overflow: hidden;
+                                        border: solid 2px #fff;
+                                        border-radius: 15px;
+                                        table {
+                                            width: 100%;
+                                            height: auto;
+                                            tr {
+                                                text-align: center;
+                                                height: 50px;
+                                                &:nth-of-type(odd) {
+                                                    background: #47decf;
+                                                }
+                                                &:nth-of-type(even) {
+                                                    background: #73fff1;
+                                                }
+                                                th {
+                                                    vertical-align: middle;
+                                                }
+                                                td {
+                                                    vertical-align: middle;
+                                                    &:nth-of-type(1) {
+                                                        width: 25%;
+                                                    }
+                                                    &:nth-of-type(2) {
+                                                        width: 10%;
+                                                    }
+                                                    &:nth-of-type(3) {
+                                                        width: 20%;
+                                                    }
+                                                    &:nth-of-type(4) {
+                                                        width: 15%;
+                                                    }
+                                                    &:nth-of-type(5) {
+                                                        width: 15%;
+                                                    }
+                                                    &:nth-of-type(6) {
+                                                        width: 15%;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -104,6 +216,14 @@ html {
                                 }
                                 .innerbox {
                                     width: 830px;
+                                }
+                                .nameList {
+                                    li {
+                                        padding: 0px 40px;
+                                        &:nth-of-type(4) {
+                                            padding: 0px 160px 0px 80px;
+                                        }
+                                    }
                                 }
                             }
                         }

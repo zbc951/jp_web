@@ -22,7 +22,22 @@ $(function(){
 		$('.filter,.noacc').addClass('display');
 	})
 	$('.cancelbtn,.accbtn').click(function(){
-		$('.filter,.noacc').removeClass('display');
+		$('.filter,.noacc,.transWallet').removeClass('display');
+	})
+	$('.line_BNG a').click(function(){
+		$('.filter,.transWallet.BNG').addClass('display');
+	})
+	$('.line_PLS a').click(function(){
+		$('.filter,.transWallet.PLS').addClass('display');
+	})
+	$('.line_PT a').click(function(){
+		$('.filter,.transWallet.PT').addClass('display');
+	})
+	$('.line_SP a').click(function(){
+		$('.filter,.transWallet.SP').addClass('display');
+	})
+	$('.line_CQ9 a').click(function(){
+		$('.filter,.transWallet.CQ9').addClass('display');
 	})
 })
 //圖片輪播
@@ -203,7 +218,7 @@ $(function(){
 		$(this).siblings().removeClass('active');
 	})
 	$('.searchbtn').click(function(){
-		$('.slot,.slot_mainbox').removeClass('turn');
+		$('.slot,.gamebox').removeClass('turn');
 	})
 })
 //會員中心按鈕切換
@@ -318,5 +333,11 @@ $(function(){
 $(function(){
 	$('.walletBtn').hover(function(){
 		$('.innerWallet').toggleClass('display');
+	})
+})
+//betting line open
+$(function(){
+	$('.line button').click(function(){
+		$(this).closest('ul').toggleClass('open');
 	})
 })

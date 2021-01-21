@@ -41,10 +41,36 @@ html {
                                             display: block;
                                         }
                                     }
-                                    &.point {
+                                    &.audit {
+                                        .innerbox {
+                                            height: 285px;
+                                            table {
+                                                tr {
+                                                    td {
+                                                        &:nth-of-type(1) {
+                                                            width: 25%;
+                                                        }
+                                                        &:nth-of-type(2) {
+                                                            width: 25%;
+                                                            padding-left: 22px;
+                                                            text-align: left;
+                                                        }
+                                                        &:nth-of-type(3) {
+                                                            width: 25%;
+                                                            padding-right: 36px;
+                                                        }
+                                                        &:nth-of-type(4) {
+                                                            width: 25%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.actWallet {
                                         ul {
                                             li {
-                                                padding: 0px 100px;
+                                                padding: 0px 50px;
                                             }
                                         }
                                     }
@@ -119,12 +145,31 @@ html {
                                         li {
                                             height: 50px;
                                             line-height: 50px;
-                                            padding: 0px 50px;
+                                            padding: 0px 100px;
                                         }
                                     }
                                     .innerbox {
                                         width: 1070px;
                                         height: 355px;
+                                        overflow-x: hidden;
+                                        overflow-y: auto;
+                                        table {
+                                            width: 100%;
+                                            height: auto;
+                                            tr {
+                                                text-align: center;
+                                                height: 50px;
+                                                border-bottom: solid 2px #83abe1;
+                                                &:last-child {
+                                                    border: none;
+                                                }
+                                                td {
+                                                    color: #fff;
+                                                    vertical-align: middle;
+                                                    font-size: 18px;
+                                                }
+                                            }
+                                        }
                                     }
                                 }
                             }
@@ -154,16 +199,29 @@ html {
                                         }
                                         .nameList {
                                             li {
-                                                padding: 0px 30px;
+                                                padding: 0px 70px;
                                             }
                                         }
                                         .innerbox {
                                             width: 830px;
                                         }
-                                        &.point {
+                                        &.audit {
+                                            .innerbox {
+                                                table {
+                                                    tr {
+                                                        td {
+                                                            &:nth-of-type(2) {
+                                                                padding: 0px;
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        &.actWallet {
                                             .nameList {
                                                 li {
-                                                    padding: 0px 70px;
+                                                    padding: 0px 30px;
                                                 }
                                             }
                                         }

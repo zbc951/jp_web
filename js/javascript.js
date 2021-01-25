@@ -22,7 +22,7 @@ $(function(){
 		$('.filter,.noacc').addClass('display');
 	})
 	$('.cancelbtn,.accbtn').click(function(){
-		$('.filter,.noacc,.transWallet').removeClass('display');
+		$('.filter,.noacc,.transWallet,.noCard').removeClass('display');
 	})
 	$('.line_BNG a').click(function(){
 		$('.filter,.transWallet.BNG').addClass('display');

@@ -73,6 +73,52 @@ html {
                                                 padding: 0px 50px;
                                             }
                                         }
+                                        .innerbox {
+                                            table {
+                                                tr {
+                                                    td {
+                                                        &:nth-of-type(1) {
+                                                            width: 17%;
+                                                        }
+                                                        &:nth-of-type(2) {
+                                                            width: 14.5%;
+                                                        }
+                                                        &:nth-of-type(3) {
+                                                            width: 15.5%;
+                                                        }
+                                                        &:nth-of-type(4) {
+                                                            width: 16.5%;
+                                                        }
+                                                        &:nth-of-type(5) {
+                                                            width: 16%;
+                                                        }
+                                                        &:nth-of-type(6) {
+                                                            width: 21.5%;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    &.point {
+                                        table {
+                                            tr {
+                                                td {
+                                                    &:nth-of-type(1) {
+                                                        width: 24%;
+                                                    }
+                                                    &:nth-of-type(2) {
+                                                        width: 21%;
+                                                    }
+                                                    &:nth-of-type(3) {
+                                                        width: 31%;
+                                                    }
+                                                    &:nth-of-type(4) {
+                                                        width: 24%;
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                     &.sell {
                                         ul {
@@ -82,6 +128,44 @@ html {
                                         }
                                         .innerbox {
                                             height: 515px;
+                                            table {
+                                                tr {
+                                                    td {
+                                                        &:nth-of-type(1) {
+                                                            width: 12%;
+                                                        }
+                                                        &:nth-of-type(2) {
+                                                            width: 5.8%;
+                                                            text-align: right;
+                                                            padding-right: 3px;
+                                                        }
+                                                        &:nth-of-type(3) {
+                                                            width: 11.2%;
+                                                        }
+                                                        &:nth-of-type(4) {
+                                                            width: 6%;
+                                                        }
+                                                        &:nth-of-type(5) {
+                                                            width: 15%;
+                                                        }
+                                                        &:nth-of-type(6) {
+                                                            width: 9%;
+                                                        }
+                                                        &:nth-of-type(7) {
+                                                            width: 12%;
+                                                        }
+                                                        &:nth-of-type(8) {
+                                                            width: 10%;
+                                                        }
+                                                        &:nth-of-type(9) {
+                                                            width: 13%;
+                                                        }
+                                                        &:nth-of-type(10) {
+                                                            width: 6%;
+                                                        }
+                                                    }
+                                                }
+                                            }
                                         }
                                     }
                                     .selectBox {
@@ -166,7 +250,7 @@ html {
                                                 td {
                                                     color: #fff;
                                                     vertical-align: middle;
-                                                    font-size: 18px;
+                                                    font-size: 16px;
                                                 }
                                             }
                                         }

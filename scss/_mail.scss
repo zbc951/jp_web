@@ -141,11 +141,12 @@ html {
                                         }
                                         button {
                                             position: absolute;
-                                            width: 90px;
+                                            // width: 90px;
+                                            padding: 0px 10px;
                                             height: 40px;
                                             letter-spacing: 2px;
                                             top: 27px;
-                                            right: 150px;
+                                            right: 125px;
                                             &:nth-of-type(2) {
                                                 right: 50px;
                                             }

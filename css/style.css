@@ -80,8 +80,7 @@ select::-ms-expand {
 html {
   font-family: "my_font";
   background: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0px auto;
 }
 
@@ -126,7 +125,7 @@ html body header .top .lang {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang::before {
     display: none;
   }
@@ -139,9 +138,7 @@ html body header .top .lang::before {
   border-style: solid;
   border-width: 0px 2px 2px 0px;
   border-color: #fff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   right: 15px;
   top: 20px;
   pointer-events: none;
@@ -168,7 +165,7 @@ html body header .top .lang select {
     width: 120px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang select {
     width: 120px;
   }
@@ -195,7 +192,7 @@ html body header .top .account li {
     line-height: 15px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .account li {
     line-height: 15px;
   }
@@ -210,22 +207,6 @@ html body header .top .account li input {
   border: solid 1px #9214d2;
   padding-left: 5px;
   font-size: 13px;
-}
-html body header .top .account li input::-webkit-input-placeholder {
-  color: #858585;
-  font-size: 12px;
-}
-html body header .top .account li input::-moz-placeholder {
-  color: #858585;
-  font-size: 12px;
-}
-html body header .top .account li input:-ms-input-placeholder {
-  color: #858585;
-  font-size: 12px;
-}
-html body header .top .account li input::-ms-input-placeholder {
-  color: #858585;
-  font-size: 12px;
 }
 html body header .top .account li input::placeholder {
   color: #858585;
@@ -250,7 +231,7 @@ html body header .top .account li button {
     margin-top: 11px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .account li button {
     padding: 5px 6px;
     margin-top: 11px;
@@ -261,8 +242,6 @@ html body header .top .account li button.loginbtn {
   background: #8a1b2b;
 }
 html body header .top .account li button.loginbtn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, #ff0048), to(#ffed9b));
-  background: -o-linear-gradient(top, #ff0048 12%, #ffed9b 100%);
   background: linear-gradient(to bottom, #ff0048 12%, #ffed9b 100%);
   background-color: #ff0048;
 }
@@ -272,8 +251,6 @@ html body header .top .account li button.signbtn {
   margin-right: 30px;
 }
 html body header .top .account li button.signbtn:hover {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(12%, #8901ca), to(#a7ddff));
-  background: -o-linear-gradient(top, #8901ca 12%, #a7ddff 100%);
   background: linear-gradient(to bottom, #8901ca 12%, #a7ddff 100%);
   background-color: #8901ca;
 }
@@ -300,7 +277,7 @@ html body header .top .loginstyle li {
     margin-top: 13px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li {
     line-height: 15px;
     margin-top: 13px;
@@ -329,7 +306,7 @@ html body header .top .loginstyle li.list::before {
     right: 10px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.list::before {
     display: none;
   }
@@ -358,15 +335,13 @@ html body header .top .loginstyle li.list select {
     width: 45px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.list select {
     width: 45px;
   }
 }
 html body header .top .loginstyle li.depositbtn:hover a, html body header .top .loginstyle li.depositbtn:active a, html body header .top .loginstyle li.depositbtn.active a, html body header .top .loginstyle li.transbtn:hover a, html body header .top .loginstyle li.transbtn:active a, html body header .top .loginstyle li.transbtn.active a, html body header .top .loginstyle li.withdrawbtn:hover a, html body header .top .loginstyle li.withdrawbtn:active a, html body header .top .loginstyle li.withdrawbtn.active a {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   background: #ff6e1a;
 }
 html body header .top .loginstyle li.depositbtn a, html body header .top .loginstyle li.transbtn a, html body header .top .loginstyle li.withdrawbtn a {
@@ -385,7 +360,7 @@ html body header .top .loginstyle li.depositbtn a, html body header .top .logins
     line-height: 18px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.depositbtn a, html body header .top .loginstyle li.transbtn a, html body header .top .loginstyle li.withdrawbtn a {
     padding: 4px 8px 6px;
     line-height: 18px;
@@ -460,8 +435,7 @@ html body header .mid ul li.active a {
   font-weight: bold;
 }
 html body header .mid ul li.active a:hover {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 html body header .mid ul li a {
   display: block;
@@ -473,22 +447,15 @@ html body header .mid ul li a {
   font-size: 17px;
   -webkit-clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
           clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
-  -webkit-transition: 0.1s -webkit-transform;
-  transition: 0.1s -webkit-transform;
-  -o-transition: 0.1s transform;
   transition: 0.1s transform;
-  transition: 0.1s transform, 0.1s -webkit-transform;
 }
 html body header .mid ul li a:hover {
   background: #8a1b2b;
-  -webkit-animation: btnhover 0.3s 0s;
-          animation: btnhover 0.3s 0s;
+  animation: btnhover 0.3s 0s;
   font-weight: bold;
 }
 html body header .mid ul li a:active {
-  -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-          transform: scale(0.8);
+  transform: scale(0.8);
 }
 html body header .smallbtnbox .smallbtn {
   display: block;
@@ -499,19 +466,14 @@ html body header .smallbtnbox .smallbtn {
   background-size: 600%;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .smallbtnbox .smallbtn:hover, html body header .smallbtnbox .smallbtn:active, html body header .smallbtnbox .smallbtn.active {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body header .smallbtnbox .smallbtn:hover, html body header .smallbtnbox .smallbtn:active, html body header .smallbtnbox .smallbtn.active {
-  -webkit-animation: smallbtnhover 0.5s 0s;
-          animation: smallbtnhover 0.5s 0s;
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  animation: smallbtnhover 0.5s 0s;
+  transform: scale(1.2);
 }
 html body header .smallbtnbox .smallbtn.vip {
   right: 10px;
@@ -573,8 +535,7 @@ html body header .smallbtnbox div a {
   border: solid 6px #fff;
   position: relative;
   overflow: hidden;
-  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.2);
   font-weight: bold;
   font-size: 18px;
   line-height: 45px;
@@ -586,8 +547,7 @@ html body header .smallbtnbox div a:hover, html body header .smallbtnbox div a:a
   background: #ff7920;
 }
 html body header .smallbtnbox div a:hover::before, html body header .smallbtnbox div a:active::before, html body header .smallbtnbox div a.active::before {
-  -webkit-animation: btnbg linear 10s 0s infinite alternate;
-          animation: btnbg linear 10s 0s infinite alternate;
+  animation: btnbg linear 10s 0s infinite alternate;
 }
 html body header .smallbtnbox div a::before {
   content: "";
@@ -599,16 +559,13 @@ html body header .smallbtnbox div a::before {
   top: -30px;
 }
 html body header .smallbtnbox div a:nth-of-type(1) {
-  -webkit-animation: btnjumpin 0.2s ease-out 0s;
-          animation: btnjumpin 0.2s ease-out 0s;
+  animation: btnjumpin 0.2s ease-out 0s;
 }
 html body header .smallbtnbox div a:nth-of-type(2) {
-  -webkit-animation: btnjumpin 0.4s ease-out 0s;
-          animation: btnjumpin 0.4s ease-out 0s;
+  animation: btnjumpin 0.4s ease-out 0s;
 }
 html body header .smallbtnbox div a:nth-of-type(3) {
-  -webkit-animation: btnjumpin 0.6s ease-out 0s;
-          animation: btnjumpin 0.6s ease-out 0s;
+  animation: btnjumpin 0.6s ease-out 0s;
 }
 html body header .smallbtnbox div .arrow {
   display: block;
@@ -624,26 +581,19 @@ html body header .smallbtnbox div .arrow {
 html body header .smallbtnbox div .arrow:nth-of-type(1) {
   top: 20%;
   left: -16%;
-  -webkit-transform: rotate(-40deg);
-      -ms-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-  -webkit-animation: arrowjumpout1 0.4s ease-out 0s;
-          animation: arrowjumpout1 0.4s ease-out 0s;
+  transform: rotate(-40deg);
+  animation: arrowjumpout1 0.4s ease-out 0s;
 }
 html body header .smallbtnbox div .arrow:nth-of-type(2) {
   top: 44%;
   left: -12%;
-  -webkit-animation: arrowjumpout2 0.6s ease-out 0s;
-          animation: arrowjumpout2 0.6s ease-out 0s;
+  animation: arrowjumpout2 0.6s ease-out 0s;
 }
 html body header .smallbtnbox div .arrow:nth-of-type(3) {
   top: 68%;
   left: -16%;
-  -webkit-transform: rotate(40deg);
-      -ms-transform: rotate(40deg);
-          transform: rotate(40deg);
-  -webkit-animation: arrowjumpout3 0.8s ease-out 0s;
-          animation: arrowjumpout3 0.8s ease-out 0s;
+  transform: rotate(40deg);
+  animation: arrowjumpout3 0.8s ease-out 0s;
 }
 html body main {
   width: 100%;
@@ -657,9 +607,7 @@ html body main .marqueebox {
   z-index: 2;
   top: 1%;
   left: 52%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 680px;
   /*for IE*/
   /*for IE 9*/
@@ -669,7 +617,7 @@ html body main .marqueebox {
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .marqueebox::before {
     display: none;
   }
@@ -682,9 +630,7 @@ html body main .marqueebox::before {
   width: 0px;
   height: 103%;
   border-right: solid 2px #ff7095;
-  -webkit-transform: rotate(-26deg);
-      -ms-transform: rotate(-26deg);
-          transform: rotate(-26deg);
+  transform: rotate(-26deg);
   z-index: 2;
 }
 html body main .marqueebox marquee {
@@ -702,7 +648,7 @@ html body main .marqueebox marquee {
     border-color: #ff7095 #ff7095 #ff7095 transparent;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .marqueebox marquee {
     border-color: #ff7095 #ff7095 #ff7095 transparent;
   }
@@ -780,8 +726,6 @@ html body main .single-item .slick-dots li.slick-active button:before {
 html body main .midbar {
   width: 100%;
   height: 80px;
-  background: -webkit-gradient(linear, left top, right top, from(#ff527f), to(#8a1b2b));
-  background: -o-linear-gradient(left, #ff527f 0%, #8a1b2b 100%);
   background: linear-gradient(to right, #ff527f 0%, #8a1b2b 100%);
   background-color: #ff0042;
   text-align: center;
@@ -840,9 +784,7 @@ html body main .mainbox .up.up .imgbox .word1, html body main .mainbox .down.up 
   position: absolute;
   left: 15%;
   top: 31%;
-  -webkit-transform: rotate(18deg);
-      -ms-transform: rotate(18deg);
-          transform: rotate(18deg);
+  transform: rotate(18deg);
 }
 html body main .mainbox .up.up .imgbox .u2, html body main .mainbox .down.up .imgbox .u2 {
   background-position: 50% 0px;
@@ -865,9 +807,7 @@ html body main .mainbox .up.up .imgbox .word2, html body main .mainbox .down.up 
   position: absolute;
   left: 17%;
   top: 32%;
-  -webkit-transform: rotate(18deg);
-      -ms-transform: rotate(18deg);
-          transform: rotate(18deg);
+  transform: rotate(18deg);
 }
 html body main .mainbox .up.up .imgbox .u3, html body main .mainbox .down.up .imgbox .u3 {
   background-position: 100% 0px;
@@ -1004,178 +944,130 @@ html body main .mainbox .up .imgbox, html body main .mainbox .down .imgbox {
   position: absolute;
 }
 html body main .mainbox .up .imgbox.hover .imgbg, html body main .mainbox .down .imgbox.hover .imgbg {
-  -webkit-animation: imgboxhover 0.5s ease-in-out 0s;
-          animation: imgboxhover 0.5s ease-in-out 0s;
+  animation: imgboxhover 0.5s ease-in-out 0s;
 }
 html body main .mainbox .up .imgbox.hover .mask, html body main .mainbox .down .imgbox.hover .mask {
   height: 72%;
-  -webkit-animation: innermask 0.5s ease-in-out 0s;
-          animation: innermask 0.5s ease-in-out 0s;
+  animation: innermask 0.5s ease-in-out 0s;
   z-index: 3;
 }
 html body main .mainbox .up .imgbox.hover .imgbtn1, html body main .mainbox .up .imgbox.hover .imgbtn2, html body main .mainbox .down .imgbox.hover .imgbtn1, html body main .mainbox .down .imgbox.hover .imgbtn2 {
   display: block;
-  -webkit-animation: innerbtn 0.5s ease-out 0s, innerbtnfloat 1s ease-in-out 0.3s infinite alternate;
-          animation: innerbtn 0.5s ease-out 0s, innerbtnfloat 1s ease-in-out 0.3s infinite alternate;
+  animation: innerbtn 0.5s ease-out 0s, innerbtnfloat 1s ease-in-out 0.3s infinite alternate;
 }
 html body main .mainbox .up .imgbox.hover .btnshadow, html body main .mainbox .down .imgbox.hover .btnshadow {
   display: block;
-  -webkit-animation: innershadow 0.5s ease-out 0s;
-          animation: innershadow 0.5s ease-out 0s;
+  animation: innershadow 0.5s ease-out 0s;
 }
 html body main .mainbox .up .imgbox.hover_pub div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_pub div:nth-of-type(2) {
-  -webkit-animation: innerword 0.5s ease-in-out 0s;
-          animation: innerword 0.5s ease-in-out 0s;
+  animation: innerword 0.5s ease-in-out 0s;
   z-index: 4;
   top: 15%;
   left: 5%;
-  -webkit-transform: rotate(-38deg);
-      -ms-transform: rotate(-38deg);
-          transform: rotate(-38deg);
+  transform: rotate(-38deg);
 }
 html body main .mainbox .up .imgbox.hover_pub div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_pub div:nth-of-type(3) {
-  -webkit-animation: innerimg 0.5s ease-in-out 0s;
-          animation: innerimg 0.5s ease-in-out 0s;
+  animation: innerimg 0.5s ease-in-out 0s;
   top: -5%;
   right: 5%;
-  -webkit-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 html body main .mainbox .up .imgbox.hover_soc div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_soc div:nth-of-type(2) {
-  -webkit-animation: innerword_soc 0.5s ease-in-out 0s;
-          animation: innerword_soc 0.5s ease-in-out 0s;
+  animation: innerword_soc 0.5s ease-in-out 0s;
   z-index: 4;
   top: 10%;
   left: 10%;
-  -webkit-transform: rotate(-18deg);
-      -ms-transform: rotate(-18deg);
-          transform: rotate(-18deg);
+  transform: rotate(-18deg);
 }
 html body main .mainbox .up .imgbox.hover_soc div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_soc div:nth-of-type(3) {
-  -webkit-animation: innerimg_soc 0.5s ease-in-out 0s;
-          animation: innerimg_soc 0.5s ease-in-out 0s;
+  animation: innerimg_soc 0.5s ease-in-out 0s;
   top: -5%;
   right: 0%;
-  -webkit-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 html body main .mainbox .up .imgbox.hover_cat .imgbg, html body main .mainbox .down .imgbox.hover_cat .imgbg {
-  -webkit-animation: imgboxhover 0.5s ease-in-out 0s;
-          animation: imgboxhover 0.5s ease-in-out 0s;
+  animation: imgboxhover 0.5s ease-in-out 0s;
 }
 html body main .mainbox .up .imgbox.hover_cat .mask, html body main .mainbox .down .imgbox.hover_cat .mask {
   height: 72%;
-  -webkit-animation: innermask 0.5s ease-in-out 0s;
-          animation: innermask 0.5s ease-in-out 0s;
+  animation: innermask 0.5s ease-in-out 0s;
   z-index: 3;
 }
 html body main .mainbox .up .imgbox.hover_cat div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_cat div:nth-of-type(2) {
-  -webkit-animation: innerword_soc 0.5s ease-in-out 0s;
-          animation: innerword_soc 0.5s ease-in-out 0s;
+  animation: innerword_soc 0.5s ease-in-out 0s;
   z-index: 4;
   top: 10%;
   left: 10%;
-  -webkit-transform: rotate(-18deg);
-      -ms-transform: rotate(-18deg);
-          transform: rotate(-18deg);
+  transform: rotate(-18deg);
 }
 html body main .mainbox .up .imgbox.hover_cat div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_cat div:nth-of-type(3) {
-  -webkit-animation: innerimg_cat 0.5s ease-in-out 0s;
-          animation: innerimg_cat 0.5s ease-in-out 0s;
+  animation: innerimg_cat 0.5s ease-in-out 0s;
   top: -5%;
   right: 5%;
-  -webkit-transform: rotate(15deg);
-      -ms-transform: rotate(15deg);
-          transform: rotate(15deg);
+  transform: rotate(15deg);
 }
 html body main .mainbox .up .imgbox.hover_lot .imgbg, html body main .mainbox .down .imgbox.hover_lot .imgbg {
-  -webkit-animation: imgboxhover 0.5s ease-in-out 0s;
-          animation: imgboxhover 0.5s ease-in-out 0s;
+  animation: imgboxhover 0.5s ease-in-out 0s;
 }
 html body main .mainbox .up .imgbox.hover_lot .mask, html body main .mainbox .down .imgbox.hover_lot .mask {
   height: 72%;
-  -webkit-animation: innermask 0.5s ease-in-out 0s;
-          animation: innermask 0.5s ease-in-out 0s;
+  animation: innermask 0.5s ease-in-out 0s;
   z-index: 3;
 }
 html body main .mainbox .up .imgbox.hover_lot div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_lot div:nth-of-type(2) {
-  -webkit-animation: innerword_boat 0.5s ease-in-out 0s;
-          animation: innerword_boat 0.5s ease-in-out 0s;
+  animation: innerword_boat 0.5s ease-in-out 0s;
   z-index: 4;
   top: 20%;
   left: 5%;
-  -webkit-transform: rotate(-38deg);
-      -ms-transform: rotate(-38deg);
-          transform: rotate(-38deg);
+  transform: rotate(-38deg);
 }
 html body main .mainbox .up .imgbox.hover_lot div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_lot div:nth-of-type(3) {
-  -webkit-animation: innerimg_lot 0.5s ease-in-out 0s;
-          animation: innerimg_lot 0.5s ease-in-out 0s;
+  animation: innerimg_lot 0.5s ease-in-out 0s;
   top: 5%;
   right: 5%;
-  -webkit-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 html body main .mainbox .up .imgbox.hover_shark .imgbg, html body main .mainbox .down .imgbox.hover_shark .imgbg {
-  -webkit-animation: imgboxhover 0.5s ease-in-out 0s;
-          animation: imgboxhover 0.5s ease-in-out 0s;
+  animation: imgboxhover 0.5s ease-in-out 0s;
 }
 html body main .mainbox .up .imgbox.hover_shark .mask, html body main .mainbox .down .imgbox.hover_shark .mask {
   height: 72%;
-  -webkit-animation: innermask 0.5s ease-in-out 0s;
-          animation: innermask 0.5s ease-in-out 0s;
+  animation: innermask 0.5s ease-in-out 0s;
   z-index: 3;
 }
 html body main .mainbox .up .imgbox.hover_shark div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_shark div:nth-of-type(2) {
-  -webkit-animation: innerword_shark 0.5s ease-in-out 0s;
-          animation: innerword_shark 0.5s ease-in-out 0s;
+  animation: innerword_shark 0.5s ease-in-out 0s;
   z-index: 4;
   top: 15%;
   left: 0%;
-  -webkit-transform: rotate(-38deg);
-      -ms-transform: rotate(-38deg);
-          transform: rotate(-38deg);
+  transform: rotate(-38deg);
 }
 html body main .mainbox .up .imgbox.hover_shark div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_shark div:nth-of-type(3) {
-  -webkit-animation: innerimg_shark 0.5s ease-in-out 0s;
-          animation: innerimg_shark 0.5s ease-in-out 0s;
+  animation: innerimg_shark 0.5s ease-in-out 0s;
   top: -5%;
   right: 15%;
-  -webkit-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 html body main .mainbox .up .imgbox.hover_dice .imgbg, html body main .mainbox .down .imgbox.hover_dice .imgbg {
-  -webkit-animation: imgboxhover 0.5s ease-in-out 0s;
-          animation: imgboxhover 0.5s ease-in-out 0s;
+  animation: imgboxhover 0.5s ease-in-out 0s;
 }
 html body main .mainbox .up .imgbox.hover_dice .mask, html body main .mainbox .down .imgbox.hover_dice .mask {
   height: 72%;
-  -webkit-animation: innermask 0.5s ease-in-out 0s;
-          animation: innermask 0.5s ease-in-out 0s;
+  animation: innermask 0.5s ease-in-out 0s;
   z-index: 3;
 }
 html body main .mainbox .up .imgbox.hover_dice div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_dice div:nth-of-type(2) {
-  -webkit-animation: innerword_shark 0.5s ease-in-out 0s;
-          animation: innerword_shark 0.5s ease-in-out 0s;
+  animation: innerword_shark 0.5s ease-in-out 0s;
   z-index: 4;
   top: 15%;
   left: 0%;
-  -webkit-transform: rotate(-38deg);
-      -ms-transform: rotate(-38deg);
-          transform: rotate(-38deg);
+  transform: rotate(-38deg);
 }
 html body main .mainbox .up .imgbox.hover_dice div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_dice div:nth-of-type(3) {
-  -webkit-animation: innerimg 0.5s ease-in-out 0s;
-          animation: innerimg 0.5s ease-in-out 0s;
+  animation: innerimg 0.5s ease-in-out 0s;
   top: -5%;
   right: 5%;
-  -webkit-transform: rotate(30deg);
-      -ms-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 html body main .mainbox .up .imgbox .imgbg, html body main .mainbox .down .imgbox .imgbg {
   width: 100%;
@@ -1189,8 +1081,6 @@ html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox
   width: 100%;
   height: 0%;
   bottom: -0.5%;
-  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#1acdbb));
-  background: -o-linear-gradient(top, #000, #1acdbb);
   background: linear-gradient(to bottom, #000, #1acdbb);
   -webkit-clip-path: polygon(50% 0%, 100% 30%, 50% 100%, 0 30%);
           clip-path: polygon(50% 0%, 100% 30%, 50% 100%, 0 30%);
@@ -1202,7 +1092,7 @@ html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox .mask {
     display: none;
   }
@@ -1217,21 +1107,15 @@ html body main .mainbox .up .imgbox .imgbtn1, html body main .mainbox .down .img
   position: absolute;
   left: 50%;
   top: 40%;
-  -webkit-transform-origin: 0%;
-      -ms-transform-origin: 0%;
-          transform-origin: 0%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform-origin: 0%;
+  transform: translateX(-50%);
   z-index: 5;
   /*for IE*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html body main .mainbox .up .imgbox .imgbtn1, html body main .mainbox .down .imgbox .imgbtn1 {
     left: 30%;
-    -webkit-transform-origin: 50%;
-        -ms-transform-origin: 50%;
-            transform-origin: 50%;
+    transform-origin: 50%;
   }
 }
 html body main .mainbox .up .imgbox .imgbtn2, html body main .mainbox .down .imgbox .imgbtn2 {
@@ -1244,21 +1128,15 @@ html body main .mainbox .up .imgbox .imgbtn2, html body main .mainbox .down .img
   position: absolute;
   left: 50%;
   top: 40%;
-  -webkit-transform-origin: 0%;
-      -ms-transform-origin: 0%;
-          transform-origin: 0%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform-origin: 0%;
+  transform: translateX(-50%);
   z-index: 5;
   /*for IE*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html body main .mainbox .up .imgbox .imgbtn2, html body main .mainbox .down .imgbox .imgbtn2 {
     left: 30%;
-    -webkit-transform-origin: 50%;
-        -ms-transform-origin: 50%;
-            transform-origin: 50%;
+    transform-origin: 50%;
   }
 }
 html body main .mainbox .up .imgbox .btnshadow, html body main .mainbox .down .imgbox .btnshadow {
@@ -1271,9 +1149,7 @@ html body main .mainbox .up .imgbox .btnshadow, html body main .mainbox .down .i
   position: absolute;
   left: 50%;
   top: 70%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 5;
 }
 html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
@@ -1283,9 +1159,7 @@ html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   z-index: 10;
@@ -1298,7 +1172,7 @@ html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
     padding-bottom: 30%;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
     width: 55%;
     padding-bottom: 30%;
@@ -1314,8 +1188,6 @@ html body footer .partner {
   border-style: solid;
   border-color: #fff;
   border-width: 2px 0px 1px 0px;
-  background: -webkit-gradient(linear, right top, left top, from(#05aa99), to(#083b2b));
-  background: -o-linear-gradient(right, #05aa99 0%, #083b2b 100%);
   background: linear-gradient(to left, #05aa99 0%, #083b2b 100%);
   background-color: #083b2b;
 }
@@ -1395,8 +1267,6 @@ html body footer .bottombtn ul li a {
   position: relative;
 }
 html body footer .bottombtn ul li a:hover, html body footer .bottombtn ul li a:active, html body footer .bottombtn ul li a.active {
-  background: -webkit-gradient(linear, right top, left top, from(#ff527f), to(#8a1b2b));
-  background: -o-linear-gradient(right, #ff527f 0%, #8a1b2b 100%);
   background: linear-gradient(to left, #ff527f 0%, #8a1b2b 100%);
   background-color: #8a1b2b;
   border-radius: 20px;
@@ -1416,8 +1286,7 @@ html body footer .bottombtn ul li a::before {
   border-width: 0px;
 }
 html body footer .bottombtn ul li a:hover:before {
-  -webkit-animation: footerarrow ease-out 0.3s 0s, arrowmove ease-in-out 1s 0.2s infinite alternate;
-          animation: footerarrow ease-out 0.3s 0s, arrowmove ease-in-out 1s 0.2s infinite alternate;
+  animation: footerarrow ease-out 0.3s 0s, arrowmove ease-in-out 1s 0.2s infinite alternate;
   border-width: 10px;
 }
 html body footer .bottombtn ul li a.footer_btn1, html body footer .bottombtn ul li a.footer_btn2 {
@@ -1444,8 +1313,7 @@ html body footer .bottombtn ul li a.footer_btn1:hover, html body footer .bottomb
   padding: 0px;
 }
 html body footer .bottombtn ul li a.footer_btn1:hover::before, html body footer .bottombtn ul li a.footer_btn1:active::before, html body footer .bottombtn ul li a.footer_btn2:hover::before, html body footer .bottombtn ul li a.footer_btn2:active::before {
-  -webkit-animation: btnbg linear 10s 0s infinite alternate;
-          animation: btnbg linear 10s 0s infinite alternate;
+  animation: btnbg linear 10s 0s infinite alternate;
 }
 html body footer .bottombtn ul li a.footer_btn1.footer_btn1, html body footer .bottombtn ul li a.footer_btn2.footer_btn1 {
   color: #fff;
@@ -1480,9 +1348,7 @@ html body .jumpbox .noacc {
   height: 239px;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: url("../images/index/account_errorbg.png") no-repeat;
   z-index: 101;
   text-align: center;
@@ -1499,8 +1365,7 @@ html body .jumpbox .noacc .cancelbtn {
   right: -30px;
 }
 html body .jumpbox .noacc .cancelbtn:hover, html body .jumpbox .noacc .cancelbtn:active, html body .jumpbox .noacc .cancelbtn.acitve {
-  -webkit-animation: noacc_cancelbtn 0.8s linear 0s;
-          animation: noacc_cancelbtn 0.8s linear 0s;
+  animation: noacc_cancelbtn 0.8s linear 0s;
 }
 html body .jumpbox .noacc h1 {
   padding: 35px 0px 50px;
@@ -1514,8 +1379,7 @@ html body .jumpbox .noacc .accbtn {
   border-radius: 10px;
   margin-top: 25px;
   position: relative;
-  -webkit-box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
-          box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
+  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
 }
 html body .jumpbox .noacc .accbtn::before {
   content: "";
@@ -1525,9 +1389,7 @@ html body .jumpbox .noacc .accbtn::before {
   background: #8b4b0b;
   left: 50%;
   top: 6%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 5px 5px 10px 10px;
 }
 html body .jumpbox .noacc .accbtn::after {
@@ -1538,14 +1400,11 @@ html body .jumpbox .noacc .accbtn::after {
   background: #a4601b;
   left: 50%;
   top: 6%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 10px;
 }
 html body .jumpbox .noacc .accbtn:hover, html body .jumpbox .noacc .accbtn:active, html body .jumpbox .noacc .accbtn.active {
-  -webkit-box-shadow: 0px 0px 0px 2px #512800;
-          box-shadow: 0px 0px 0px 2px #512800;
+  box-shadow: 0px 0px 0px 2px #512800;
   margin-top: 29px;
 }
 html body .jumpbox .noacc .accbtn span {
@@ -1557,861 +1416,358 @@ html body .jumpbox .noacc .accbtn span {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 2;
-}
-
-@-webkit-keyframes btnhover {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-  }
-  20% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-  30% {
-    -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
-            clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
-  }
 }
 
 @keyframes btnhover {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
   20% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
   30% {
     -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
             clip-path: polygon(0% 0%, 95% 0%, 100% 100%, 5% 100%);
   }
 }
-@-webkit-keyframes smallbtnhover {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  20% {
-    -webkit-transform: scale(1.2) rotate(15deg);
-            transform: scale(1.2) rotate(15deg);
-  }
-  40% {
-    -webkit-transform: scale(1.2) rotate(-15deg);
-            transform: scale(1.2) rotate(-15deg);
-  }
-  60% {
-    -webkit-transform: scale(1.2) rotate(5deg);
-            transform: scale(1.2) rotate(5deg);
-  }
-  80% {
-    -webkit-transform: scale(1.2) rotate(-5deg);
-            transform: scale(1.2) rotate(-5deg);
-  }
-}
 @keyframes smallbtnhover {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   20% {
-    -webkit-transform: scale(1.2) rotate(15deg);
-            transform: scale(1.2) rotate(15deg);
+    transform: scale(1.2) rotate(15deg);
   }
   40% {
-    -webkit-transform: scale(1.2) rotate(-15deg);
-            transform: scale(1.2) rotate(-15deg);
+    transform: scale(1.2) rotate(-15deg);
   }
   60% {
-    -webkit-transform: scale(1.2) rotate(5deg);
-            transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
   }
   80% {
-    -webkit-transform: scale(1.2) rotate(-5deg);
-            transform: scale(1.2) rotate(-5deg);
-  }
-}
-@-webkit-keyframes btnjumpin {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: scale(1.2) rotate(-5deg);
   }
 }
 @keyframes btnjumpin {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@-webkit-keyframes arrowjumpout1 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50%) rotate(-40deg);
-            transform: translateX(50%) rotate(-40deg);
-  }
-  40% {
-    opacity: 0;
-    -webkit-transform: translateX(50%) rotate(-40deg);
-            transform: translateX(50%) rotate(-40deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0%) rotate(-40deg);
-            transform: translateX(0%) rotate(-40deg);
+    transform: translateX(0%);
   }
 }
 @keyframes arrowjumpout1 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(50%) rotate(-40deg);
-            transform: translateX(50%) rotate(-40deg);
+    transform: translateX(50%) rotate(-40deg);
   }
   40% {
     opacity: 0;
-    -webkit-transform: translateX(50%) rotate(-40deg);
-            transform: translateX(50%) rotate(-40deg);
+    transform: translateX(50%) rotate(-40deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0%) rotate(-40deg);
-            transform: translateX(0%) rotate(-40deg);
-  }
-}
-@-webkit-keyframes arrowjumpout2 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-  }
-  40% {
-    opacity: 0;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%) rotate(-40deg);
   }
 }
 @keyframes arrowjumpout2 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
   }
   40% {
     opacity: 0;
-    -webkit-transform: translateX(50%);
-            transform: translateX(50%);
+    transform: translateX(50%);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@-webkit-keyframes arrowjumpout3 {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateX(50%) rotate(40deg);
-            transform: translateX(50%) rotate(40deg);
-  }
-  40% {
-    opacity: 0;
-    -webkit-transform: translateX(50%) rotate(40deg);
-            transform: translateX(50%) rotate(40deg);
-  }
-  100% {
-    opacity: 1;
-    -webkit-transform: translateX(0%) rotate(40deg);
-            transform: translateX(0%) rotate(40deg);
+    transform: translateX(0%);
   }
 }
 @keyframes arrowjumpout3 {
   0% {
     opacity: 0;
-    -webkit-transform: translateX(50%) rotate(40deg);
-            transform: translateX(50%) rotate(40deg);
+    transform: translateX(50%) rotate(40deg);
   }
   40% {
     opacity: 0;
-    -webkit-transform: translateX(50%) rotate(40deg);
-            transform: translateX(50%) rotate(40deg);
+    transform: translateX(50%) rotate(40deg);
   }
   100% {
     opacity: 1;
-    -webkit-transform: translateX(0%) rotate(40deg);
-            transform: translateX(0%) rotate(40deg);
-  }
-}
-@-webkit-keyframes imgboxhover {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  20% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-  }
-  40% {
-    -webkit-transform: scaleX(1.2) scaleY(0.8);
-            transform: scaleX(1.2) scaleY(0.8);
-  }
-  60% {
-    -webkit-transform: scaleX(0.9) scaleY(1.1);
-            transform: scaleX(0.9) scaleY(1.1);
+    transform: translateX(0%) rotate(40deg);
   }
 }
 @keyframes imgboxhover {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   20% {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
+    transform: scale(0.6);
   }
   40% {
-    -webkit-transform: scaleX(1.2) scaleY(0.8);
-            transform: scaleX(1.2) scaleY(0.8);
+    transform: scaleX(1.2) scaleY(0.8);
   }
   60% {
-    -webkit-transform: scaleX(0.9) scaleY(1.1);
-            transform: scaleX(0.9) scaleY(1.1);
-  }
-}
-@-webkit-keyframes innerword {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: 20%;
-    top: 30%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
-    left: 35%;
-    top: 45%;
-  }
-  40% {
-    left: 20%;
-    top: 30%;
-    -webkit-transform: scale(0.8) rotate(-30deg);
-            transform: scale(0.8) rotate(-30deg);
-  }
-  60% {
-    left: 5%;
-    top: 15%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
+    transform: scaleX(0.9) scaleY(1.1);
   }
 }
 @keyframes innerword {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     left: 20%;
     top: 30%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
+    transform: scale(0.6) rotate(10deg);
     left: 35%;
     top: 45%;
   }
   40% {
     left: 20%;
     top: 30%;
-    -webkit-transform: scale(0.8) rotate(-30deg);
-            transform: scale(0.8) rotate(-30deg);
+    transform: scale(0.8) rotate(-30deg);
   }
   60% {
     left: 5%;
     top: 15%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
-  }
-}
-@-webkit-keyframes innerword_soc {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: 20%;
-    top: 30%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
-    left: 35%;
-    top: 45%;
-  }
-  40% {
-    left: 20%;
-    top: 30%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
-  }
-  60% {
-    left: 8%;
-    top: 8%;
-    -webkit-transform: scale(1.2) rotate(-18deg);
-            transform: scale(1.2) rotate(-18deg);
+    transform: scale(1.2) rotate(-38deg);
   }
 }
 @keyframes innerword_soc {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     left: 20%;
     top: 30%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
+    transform: scale(0.6) rotate(10deg);
     left: 35%;
     top: 45%;
   }
   40% {
     left: 20%;
     top: 30%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
+    transform: scale(0.8) rotate(0deg);
   }
   60% {
     left: 8%;
     top: 8%;
-    -webkit-transform: scale(1.2) rotate(-18deg);
-            transform: scale(1.2) rotate(-18deg);
-  }
-}
-@-webkit-keyframes innerword_lot {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: 20%;
-    top: 30%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
-    left: 35%;
-    top: 45%;
-  }
-  40% {
-    left: 20%;
-    top: 30%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
-  }
-  60% {
-    left: 13%;
-    top: 13%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
+    transform: scale(1.2) rotate(-18deg);
   }
 }
 @keyframes innerword_lot {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     left: 20%;
     top: 30%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
+    transform: scale(0.6) rotate(10deg);
     left: 35%;
     top: 45%;
   }
   40% {
     left: 20%;
     top: 30%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
+    transform: scale(0.8) rotate(0deg);
   }
   60% {
     left: 13%;
     top: 13%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
-  }
-}
-@-webkit-keyframes innerword_boat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: 10%;
-    top: 40%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
-    left: 25%;
-    top: 50%;
-  }
-  40% {
-    left: 20%;
-    top: 45%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
-  }
-  60% {
-    left: 5%;
-    top: 20%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
+    transform: scale(1.2) rotate(-38deg);
   }
 }
 @keyframes innerword_boat {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     left: 10%;
     top: 40%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
+    transform: scale(0.6) rotate(10deg);
     left: 25%;
     top: 50%;
   }
   40% {
     left: 20%;
     top: 45%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
+    transform: scale(0.8) rotate(0deg);
   }
   60% {
     left: 5%;
     top: 20%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
-  }
-}
-@-webkit-keyframes innerword_shark {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    left: 20%;
-    top: 30%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
-    left: 35%;
-    top: 45%;
-  }
-  40% {
-    left: 20%;
-    top: 30%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
-  }
-  60% {
-    left: 0%;
-    top: 15%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
+    transform: scale(1.2) rotate(-38deg);
   }
 }
 @keyframes innerword_shark {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     left: 20%;
     top: 30%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(10deg);
-            transform: scale(0.6) rotate(10deg);
+    transform: scale(0.6) rotate(10deg);
     left: 35%;
     top: 45%;
   }
   40% {
     left: 20%;
     top: 30%;
-    -webkit-transform: scale(0.8) rotate(0deg);
-            transform: scale(0.8) rotate(0deg);
+    transform: scale(0.8) rotate(0deg);
   }
   60% {
     left: 0%;
     top: 15%;
-    -webkit-transform: scale(1.2) rotate(-38deg);
-            transform: scale(1.2) rotate(-38deg);
-  }
-}
-@-webkit-keyframes innerimg {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    right: 10%;
-    top: 10%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
-    right: 30%;
-    top: 30%;
-  }
-  40% {
-    right: 10%;
-    top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
-  }
-  60% {
-    top: -5%;
-    right: 5%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(-38deg);
   }
 }
 @keyframes innerimg {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     right: 10%;
     top: 10%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
+    transform: scale(0.6) rotate(-10deg);
     right: 30%;
     top: 30%;
   }
   40% {
     right: 10%;
     top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
+    transform: scale(0.8) rotate(30deg);
   }
   60% {
     top: -5%;
     right: 5%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
-  }
-}
-@-webkit-keyframes innerimg_soc {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    right: 10%;
-    top: 10%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
-    right: 20%;
-    top: 20%;
-  }
-  40% {
-    top: 10%;
-    right: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
-  }
-  60% {
-    top: -5%;
-    right: 0%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(30deg);
   }
 }
 @keyframes innerimg_soc {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     right: 10%;
     top: 10%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
+    transform: scale(0.6) rotate(-10deg);
     right: 20%;
     top: 20%;
   }
   40% {
     top: 10%;
     right: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
+    transform: scale(0.8) rotate(30deg);
   }
   60% {
     top: -5%;
     right: 0%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
-  }
-}
-@-webkit-keyframes innerimg_cat {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    right: 10%;
-    top: 10%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
-    right: 20%;
-    top: 20%;
-  }
-  40% {
-    right: 10%;
-    top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
-  }
-  60% {
-    top: -5%;
-    right: 5%;
-    -webkit-transform: scale(1.2) rotate(15deg);
-            transform: scale(1.2) rotate(15deg);
+    transform: scale(1.2) rotate(30deg);
   }
 }
 @keyframes innerimg_cat {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     right: 10%;
     top: 10%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
+    transform: scale(0.6) rotate(-10deg);
     right: 20%;
     top: 20%;
   }
   40% {
     right: 10%;
     top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
+    transform: scale(0.8) rotate(30deg);
   }
   60% {
     top: -5%;
     right: 5%;
-    -webkit-transform: scale(1.2) rotate(15deg);
-            transform: scale(1.2) rotate(15deg);
-  }
-}
-@-webkit-keyframes innerimg_lot {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    right: 15%;
-    top: 15%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
-    right: 30%;
-    top: 40%;
-  }
-  40% {
-    right: 10%;
-    top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
-  }
-  60% {
-    top: 5%;
-    right: 5%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(15deg);
   }
 }
 @keyframes innerimg_lot {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     right: 15%;
     top: 15%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
+    transform: scale(0.6) rotate(-10deg);
     right: 30%;
     top: 40%;
   }
   40% {
     right: 10%;
     top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
+    transform: scale(0.8) rotate(30deg);
   }
   60% {
     top: 5%;
     right: 5%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
-  }
-}
-@-webkit-keyframes innerimg_shark {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    right: 10%;
-    top: 10%;
-  }
-  20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
-    right: 30%;
-    top: 30%;
-  }
-  40% {
-    right: 10%;
-    top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
-  }
-  60% {
-    top: -5%;
-    right: 15%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
+    transform: scale(1.2) rotate(30deg);
   }
 }
 @keyframes innerimg_shark {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     right: 10%;
     top: 10%;
   }
   20% {
-    -webkit-transform: scale(0.6) rotate(-10deg);
-            transform: scale(0.6) rotate(-10deg);
+    transform: scale(0.6) rotate(-10deg);
     right: 30%;
     top: 30%;
   }
   40% {
     right: 10%;
     top: 10%;
-    -webkit-transform: scale(0.8) rotate(30deg);
-            transform: scale(0.8) rotate(30deg);
+    transform: scale(0.8) rotate(30deg);
   }
   60% {
     top: -5%;
     right: 15%;
-    -webkit-transform: scale(1.2) rotate(30deg);
-            transform: scale(1.2) rotate(30deg);
-  }
-}
-@-webkit-keyframes innermask {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  20% {
-    -webkit-transform: scaleX(0.2) scaleY(0.4);
-            transform: scaleX(0.2) scaleY(0.4);
-  }
-  40% {
-    -webkit-transform: scaleX(0.4) scaleY(0.8);
-            transform: scaleX(0.4) scaleY(0.8);
-  }
-  60% {
-    -webkit-transform: scaleX(0.8) scaleY(1.2);
-            transform: scaleX(0.8) scaleY(1.2);
+    transform: scale(1.2) rotate(30deg);
   }
 }
 @keyframes innermask {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   20% {
-    -webkit-transform: scaleX(0.2) scaleY(0.4);
-            transform: scaleX(0.2) scaleY(0.4);
+    transform: scaleX(0.2) scaleY(0.4);
   }
   40% {
-    -webkit-transform: scaleX(0.4) scaleY(0.8);
-            transform: scaleX(0.4) scaleY(0.8);
+    transform: scaleX(0.4) scaleY(0.8);
   }
   60% {
-    -webkit-transform: scaleX(0.8) scaleY(1.2);
-            transform: scaleX(0.8) scaleY(1.2);
-  }
-}
-@-webkit-keyframes innerbtn {
-  0% {
-    -webkit-transform: scale(0) translateX(-50%);
-            transform: scale(0) translateX(-50%);
-  }
-  40% {
-    -webkit-transform: scale(0.6) translateX(-50%);
-            transform: scale(0.6) translateX(-50%);
-  }
-  60% {
-    -webkit-transform: scale(1.2) translateX(-50%);
-            transform: scale(1.2) translateX(-50%);
+    transform: scaleX(0.8) scaleY(1.2);
   }
 }
 @keyframes innerbtn {
   0% {
-    -webkit-transform: scale(0) translateX(-50%);
-            transform: scale(0) translateX(-50%);
+    transform: scale(0) translateX(-50%);
   }
   40% {
-    -webkit-transform: scale(0.6) translateX(-50%);
-            transform: scale(0.6) translateX(-50%);
+    transform: scale(0.6) translateX(-50%);
   }
   60% {
-    -webkit-transform: scale(1.2) translateX(-50%);
-            transform: scale(1.2) translateX(-50%);
-  }
-}
-@-webkit-keyframes innerbtnfloat {
-  0% {
-    -webkit-transform: translateY(0%) translateX(-50%);
-            transform: translateY(0%) translateX(-50%);
-  }
-  100% {
-    -webkit-transform: translateY(10%) translateX(-50%);
-            transform: translateY(10%) translateX(-50%);
+    transform: scale(1.2) translateX(-50%);
   }
 }
 @keyframes innerbtnfloat {
   0% {
-    -webkit-transform: translateY(0%) translateX(-50%);
-            transform: translateY(0%) translateX(-50%);
+    transform: translateY(0%) translateX(-50%);
   }
   100% {
-    -webkit-transform: translateY(10%) translateX(-50%);
-            transform: translateY(10%) translateX(-50%);
-  }
-}
-@-webkit-keyframes innershadow {
-  0% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
+    transform: translateY(10%) translateX(-50%);
   }
 }
 @keyframes innershadow {
@@ -2422,32 +1778,12 @@ html body .jumpbox .noacc .accbtn span {
     opacity: 1;
   }
 }
-@-webkit-keyframes noacc_cancelbtn {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  33% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
 @keyframes noacc_cancelbtn {
   0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   33% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes btnbg {
-  0% {
-    left: -30px;
-  }
-  100% {
-    left: -330px;
+    transform: rotate(0deg);
   }
 }
 @keyframes btnbg {
@@ -2458,40 +1794,15 @@ html body .jumpbox .noacc .accbtn span {
     left: -330px;
   }
 }
-@-webkit-keyframes footerarrow {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-  }
-  50% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 @keyframes footerarrow {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
   }
   50% {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes arrowmove {
-  0% {
-    left: 12px;
-  }
-  50% {
-    left: 16px;
+    transform: scale(1);
   }
 }
 @keyframes arrowmove {
@@ -2531,9 +1842,7 @@ html ::-webkit-scrollbar-track {
 html body .signup {
   width: 100%;
   height: 100%;
-  -webkit-transform: translateY(60px);
-      -ms-transform: translateY(60px);
-          transform: translateY(60px);
+  transform: translateY(60px);
   overflow: visible;
 }
 html body .signup .signupbox {
@@ -2542,8 +1851,7 @@ html body .signup .signupbox {
   background: #1b1b1b;
   margin: 0px auto;
   border-radius: 50px;
-  -webkit-box-shadow: 2px 7px 0px 3px #000, 0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
-          box-shadow: 2px 7px 0px 3px #000, 0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
+  box-shadow: 2px 7px 0px 3px #000, 0px -1px 0px 3px #000, 0px 0px 5px #fff inset;
   text-align: center;
 }
 html body .signup .signupbox h1 {
@@ -2592,7 +1900,7 @@ html body .signup .signupbox .inputbox .checkbtn {
     padding: 6px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .signup .signupbox .inputbox .checkbtn {
     padding: 6px;
   }
@@ -2605,8 +1913,6 @@ html body .signup .signupbox .inputbox span {
 html body .signup .signupbox .signupbtn {
   width: 180px;
   height: 58px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#135838), to(#20873b));
-  background: -o-linear-gradient(bottom, #135838 0%, #20873b 100%);
   background: linear-gradient(to top, #135838 0%, #20873b 100%);
   background-color: #135838;
   float: right;
@@ -2617,17 +1923,13 @@ html body .signup .signupbox .signupbtn {
   color: #fff;
   letter-spacing: 5px;
   text-shadow: 2px 2px #000;
-  -webkit-box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
-          box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
+  box-shadow: 0px 0px 0px 2px #000, 2px 2px 3px 2px rgba(154, 218, 131, 0.81) inset, -2px -2px 3px 2px rgba(0, 0, 0, 0.81) inset;
   position: relative;
 }
 html body .signup .signupbox .signupbtn:hover, html body .signup .signupbox .signupbtn:active, html body .signup .signupbox .signupbtn.active {
-  background: -webkit-gradient(linear, left top, left bottom, from(#135838), to(#20873b));
-  background: -o-linear-gradient(top, #135838 0%, #20873b 100%);
   background: linear-gradient(to bottom, #135838 0%, #20873b 100%);
   background-color: #20873b;
-  -webkit-box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
-          box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
+  box-shadow: 0px 0px 0px 2px #000, -2px -2px 3px 2px rgba(154, 218, 131, 0.81) inset, 2px 2px 3px 2px rgba(0, 0, 0, 0.81) inset;
 }
 html body .signup .signupbox .signupbtn span {
   display: block;
@@ -2636,9 +1938,7 @@ html body .signup .signupbox .signupbtn span {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   background: url("../images/word/signup_btnword.png") no-repeat;
 }
 html body .bg {
@@ -2669,8 +1969,7 @@ html body .game .img .bgimg1 {
   background-size: 100%;
   position: fixed;
   margin: 35px 0px 0px 5px;
-  -webkit-animation: lword 1.5s linear 0s infinite alternate;
-          animation: lword 1.5s linear 0s infinite alternate;
+  animation: lword 1.5s linear 0s infinite alternate;
 }
 html body .game .img .bgimg2 {
   width: 184px;
@@ -2679,8 +1978,7 @@ html body .game .img .bgimg2 {
   background-size: 100%;
   position: fixed;
   margin: 70px 0px 0px 1125px;
-  -webkit-animation: rword 1.5s linear 0s infinite;
-          animation: rword 1.5s linear 0s infinite;
+  animation: rword 1.5s linear 0s infinite;
 }
 html body .game .img .bgimg3 {
   width: 615px;
@@ -2690,14 +1988,9 @@ html body .game .img .bgimg3 {
   position: absolute;
   top: -90px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transform-origin: 0%;
-      -ms-transform-origin: 0%;
-          transform-origin: 0%;
-  -webkit-animation: money 1.5s linear 0s infinite;
-          animation: money 1.5s linear 0s infinite;
+  transform: translateX(-50%);
+  transform-origin: 0%;
+  animation: money 1.5s linear 0s infinite;
 }
 html body .game .img .logo {
   width: 769px;
@@ -2707,9 +2000,7 @@ html body .game .img .logo {
   position: absolute;
   left: 50%;
   top: 60px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .game .img button {
   width: 184px;
@@ -2717,11 +2008,7 @@ html body .game .img button {
   position: absolute;
   left: 50%;
   top: 220px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left top, right top, from(#00e990), to(#00eff8));
-  background: -o-linear-gradient(left, #00e990 0%, #00eff8 100%);
+  transform: translateX(-50%);
   background: linear-gradient(to right, #00e990 0%, #00eff8 100%);
   background-color: #ff3d6a;
   border-radius: 30px;
@@ -2729,13 +2016,10 @@ html body .game .img button {
   color: #fff2a3;
   font-size: 18px;
   font-weight: bold;
-  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48);
-          box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48);
   text-shadow: 0px 2px 0px #000;
 }
 html body .game .img button:hover, html body .game .img button:active, html body .game .img button.active {
-  background: -webkit-gradient(linear, left top, right top, from(#ff8e23), to(#ff3d6a));
-  background: -o-linear-gradient(left, #ff8e23 0%, #ff3d6a 100%);
   background: linear-gradient(to right, #ff8e23 0%, #ff3d6a 100%);
   background-color: #ff8e23;
   color: #fff;
@@ -2746,15 +2030,12 @@ html body .game .gamebox {
   height: 1475px;
   left: 50%;
   bottom: 0px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: #98263c;
   border-radius: 20px 20px 0px 0px;
   border: solid 5px #fff;
   border-bottom-width: 0px;
-  -webkit-box-shadow: 0px 0px 0px 4px #98263c;
-          box-shadow: 0px 0px 0px 4px #98263c;
+  box-shadow: 0px 0px 0px 4px #98263c;
 }
 html body .game .gamebox.turn {
   height: 920px;
@@ -2825,24 +2106,18 @@ html body .game .gamebox ul li.searchline .searchbtn {
   padding-bottom: 3.3%;
   border-radius: 15px;
   border: solid 5px #000;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #0e715b), color-stop(50%, #00ecbf));
-  background: -o-linear-gradient(bottom, #0e715b 45%, #00ecbf 50%);
   background: linear-gradient(to top, #0e715b 45%, #00ecbf 50%);
   background-color: #00ecbf;
-  -webkit-box-shadow: 0px 0px 7px 0px rgba(225, 225, 225, 0.5) inset;
-          box-shadow: 0px 0px 7px 0px rgba(225, 225, 225, 0.5) inset;
+  box-shadow: 0px 0px 7px 0px rgba(225, 225, 225, 0.5) inset;
   position: relative;
   float: left;
   margin: 3% 0% 0% 2.5%;
 }
 html body .game .gamebox ul li.searchline .searchbtn:hover, html body .game .gamebox ul li.searchline .searchbtn:active, html body .game .gamebox ul li.searchline .searchbtn.active {
   border: solid 5px #fff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(45%, #0e715b), color-stop(50%, #073b2f));
-  background: -o-linear-gradient(bottom, #0e715b 45%, #073b2f 50%);
   background: linear-gradient(to top, #0e715b 45%, #073b2f 50%);
   background-color: #073b2f;
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 html body .game .gamebox ul li.searchline .searchbtn span {
   display: block;
@@ -2854,9 +2129,7 @@ html body .game .gamebox ul li.searchline .searchbtn span {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 html body .game .gamebox ul li.searchline .searchword {
   color: #fff;
@@ -2889,29 +2162,26 @@ html body .game .gamebox ul li.searchline .rebtn:hover, html body .game .gamebox
     padding: 5px 3px 5px 20px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn:hover, html body .game .gamebox ul li.searchline .rebtn:active, html body .game .gamebox ul li.searchline .rebtn.active {
     padding: 5px 3px 5px 20px;
   }
 }
 html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game .gamebox ul li.searchline .rebtn:active::before, html body .game .gamebox ul li.searchline .rebtn.active::before {
-  -webkit-animation: rebtn 1s linear 0s infinite;
-          animation: rebtn 1s linear 0s infinite;
+  animation: rebtn 1s linear 0s infinite;
   top: 4px;
   /*for IE*/
   /*for IE 9*/
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game .gamebox ul li.searchline .rebtn:active::before, html body .game .gamebox ul li.searchline .rebtn.active::before {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     left: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game .gamebox ul li.searchline .rebtn:active::before, html body .game .gamebox ul li.searchline .rebtn.active::before {
-    -webkit-animation: none;
-            animation: none;
+    animation: none;
     left: 0px;
   }
 }
@@ -2932,7 +2202,7 @@ html body .game .gamebox ul li.searchline .rebtn::before {
     left: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn {
     padding: 1px 1px 1px 20px;
   }
@@ -2951,8 +2221,7 @@ html body .game .gamebox ul li.searchline input {
   padding-left: 10px;
   border-radius: 5px;
   border: solid 2px #000;
-  -webkit-box-shadow: 3px 3px 0px 0px #c7c7c7 inset;
-          box-shadow: 3px 3px 0px 0px #c7c7c7 inset;
+  box-shadow: 3px 3px 0px 0px #c7c7c7 inset;
   font-size: 16px;
 }
 html body .game .gamebox ul li a {
@@ -2964,26 +2233,19 @@ html body .game .gamebox ul li a {
   float: left;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li a.turn div {
-    -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-            transform: scale(1.3);
+    transform: scale(1.3);
   }
 }
 html body .game .gamebox ul li a:hover div, html body .game .gamebox ul li a:active div, html body .game .gamebox ul li a.active div {
-  -webkit-filter: brightness(0.3);
-          filter: brightness(0.3);
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  filter: brightness(0.3);
+  transform: scale(1.3);
 }
 html body .game .gamebox ul li a div {
   width: 100%;
   height: 100%;
   background-size: 100%;
-  -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   position: absolute;
   left: 0px;
@@ -3011,8 +2273,6 @@ html body .game .gamebox ul li a button {
   opacity: 0;
   width: 120px;
   height: 50px;
-  background: -webkit-gradient(linear, right top, left top, from(#ff3a6d), to(#ff8f22));
-  background: -o-linear-gradient(right, #ff3a6d 0%, #ff8f22 100%);
   background: linear-gradient(to left, #ff3a6d 0%, #ff8f22 100%);
   background-color: #ff3a6d;
   border-radius: 30px;
@@ -3020,15 +2280,11 @@ html body .game .gamebox ul li a button {
   font-size: 15px;
   color: #fff;
   position: absolute;
-  -webkit-transition: 0.5s all;
-  -o-transition: 0.5s all;
   transition: 0.5s all;
   pointer-events: none;
   top: 0%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
 }
 html body .game .gamebox ul li a button.display {
   top: 50%;
@@ -3039,9 +2295,7 @@ html body .game .gamebox ul li a span {
   width: 100%;
   left: 50%;
   bottom: -40px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   font-size: 16px;
   color: #00eddb;
 }
@@ -3050,8 +2304,6 @@ html body .game .gamebox ul li .morebtn {
   width: 65px;
   height: 65px;
   border-radius: 40px;
-  background: -webkit-gradient(linear, left top, right top, from(#00e990), to(#00eff8));
-  background: -o-linear-gradient(left, #00e990 0%, #00eff8 100%);
   background: linear-gradient(to right, #00e990 0%, #00eff8 100%);
   background-color: #00e990;
   border: solid 5px #fff;
@@ -3061,12 +2313,9 @@ html body .game .gamebox ul li .morebtn {
   font-size: 16px;
   position: relative;
   margin-top: 85px;
-  -webkit-box-shadow: 0px 4px 7px 0px rgba(2, 0, 29, 0.48);
-          box-shadow: 0px 4px 7px 0px rgba(2, 0, 29, 0.48);
+  box-shadow: 0px 4px 7px 0px rgba(2, 0, 29, 0.48);
 }
 html body .game .gamebox ul li .morebtn:hover, html body .game .gamebox ul li .morebtn:active, html body .game .gamebox ul li .morebtn.active {
-  background: -webkit-gradient(linear, left top, right top, from(#ff3a6d), to(#ff8f22));
-  background: -o-linear-gradient(left, #ff3a6d 0%, #ff8f22 100%);
   background: linear-gradient(to right, #ff3a6d 0%, #ff8f22 100%);
   background-color: #ff3a6d;
   color: #fff;
@@ -3121,36 +2370,26 @@ html body .game .gamebox ul.slot_select li.searchline .partnerbox button {
   margin: -61px 0px 30px 5px;
   background: transparent;
   position: relative;
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
-  -webkit-transition: 0.15s all;
-  -o-transition: 0.15s all;
+  transform: scale(0.9);
   transition: 0.15s all;
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1):hover, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1).active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(2):hover, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(2).active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(3):hover, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(3).active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(4):hover, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(4).active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(5):hover, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(5).active {
   background: url("../images/slot/slot_selectBG.png") no-repeat;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1):hover::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1).active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(2):hover::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(2).active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(3):hover::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(3).active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(4):hover::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(4).active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(5):hover::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(5).active::after {
   background: #861128;
   border-color: #00ecbf;
-  -webkit-box-shadow: 0px 0px 0px 6px #99273d;
-          box-shadow: 0px 0px 0px 6px #99273d;
+  box-shadow: 0px 0px 0px 6px #99273d;
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1):active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(2):active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(3):active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(4):active, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(5):active {
   background: url("../images/word/slot_selectBG.png") no-repeat;
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1):active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(2):active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(3):active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(4):active::after, html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(5):active::after {
   background: #861128;
   border-color: #00ecbf;
-  -webkit-box-shadow: 0px 0px 0px 6px #99273d;
-          box-shadow: 0px 0px 0px 6px #99273d;
+  box-shadow: 0px 0px 0px 6px #99273d;
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button::before {
   content: "";
@@ -3161,9 +2400,7 @@ html body .game .gamebox ul.slot_select li.searchline .partnerbox button::before
   left: 50%;
   top: 38.5%;
   z-index: 2;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button::after {
   content: "";
@@ -3172,14 +2409,11 @@ html body .game .gamebox ul.slot_select li.searchline .partnerbox button::after 
   height: 80px;
   border-radius: 50px;
   left: 62px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 42px;
   border-style: solid;
   border-width: 6px;
-  -webkit-box-shadow: 0px 0px 0px 6px #fff;
-          box-shadow: 0px 0px 0px 6px #fff;
+  box-shadow: 0px 0px 0px 6px #fff;
 }
 html body .game .gamebox ul.slot_select li.searchline .partnerbox button:nth-of-type(1) {
   margin-left: 40px;
@@ -3227,9 +2461,7 @@ html body .game .gamebox ul.slot_select li.searchline .partnerbox button span {
   bottom: -30px;
   font-size: 22px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   pointer-events: none;
 }
 html body .game .gamebox ul.slot_select li a {
@@ -3251,8 +2483,7 @@ html body .gotop {
   width: 70px;
   height: 70px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 4px 7px 0px rgba(2, 0, 29, 0.21);
-          box-shadow: 0px 4px 7px 0px rgba(2, 0, 29, 0.21);
+  box-shadow: 0px 4px 7px 0px rgba(2, 0, 29, 0.21);
   right: 30px;
   bottom: 50px;
   background: #fff;
@@ -3273,9 +2504,7 @@ html body .jumpbox .transWallet {
   height: 326px;
   top: 20%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: url("../images/slot/slot_jumpBoxBG.png") no-repeat;
   z-index: 101;
   text-align: center;
@@ -3292,8 +2521,7 @@ html body .jumpbox .transWallet .cancelbtn {
   right: -30px;
 }
 html body .jumpbox .transWallet .cancelbtn:hover, html body .jumpbox .transWallet .cancelbtn:active, html body .jumpbox .transWallet .cancelbtn.acitve {
-  -webkit-animation: noacc_cancelbtn 0.8s linear 0s;
-          animation: noacc_cancelbtn 0.8s linear 0s;
+  animation: noacc_cancelbtn 0.8s linear 0s;
 }
 html body .jumpbox .transWallet h1 {
   padding: 35px 0px 45px;
@@ -3333,8 +2561,7 @@ html body .jumpbox .transWallet .accbtn {
   border-radius: 10px;
   margin-top: 25px;
   position: relative;
-  -webkit-box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
-          box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
+  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
 }
 html body .jumpbox .transWallet .accbtn::before {
   content: "";
@@ -3344,9 +2571,7 @@ html body .jumpbox .transWallet .accbtn::before {
   background: #8b4b0b;
   left: 50%;
   top: 6%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 5px 5px 10px 10px;
 }
 html body .jumpbox .transWallet .accbtn::after {
@@ -3357,14 +2582,11 @@ html body .jumpbox .transWallet .accbtn::after {
   background: #a4601b;
   left: 50%;
   top: 6%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 10px;
 }
 html body .jumpbox .transWallet .accbtn:hover, html body .jumpbox .transWallet .accbtn:active, html body .jumpbox .transWallet .accbtn.active {
-  -webkit-box-shadow: 0px 0px 0px 2px #512800;
-          box-shadow: 0px 0px 0px 2px #512800;
+  box-shadow: 0px 0px 0px 2px #512800;
   margin-top: 29px;
 }
 html body .jumpbox .transWallet .accbtn span {
@@ -3376,95 +2598,42 @@ html body .jumpbox .transWallet .accbtn span {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   z-index: 2;
-}
-
-@-webkit-keyframes money {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0) translateY(-100px) translateX(-50%);
-            transform: scale(0) translateY(-100px) translateX(-50%);
-  }
-  50% {
-    opacity: 1;
-    -webkit-transform: scale(1) translateY(0px) translateX(-50%);
-            transform: scale(1) translateY(0px) translateX(-50%);
-  }
 }
 
 @keyframes money {
   0% {
     opacity: 0;
-    -webkit-transform: scale(0) translateY(-100px) translateX(-50%);
-            transform: scale(0) translateY(-100px) translateX(-50%);
+    transform: scale(0) translateY(-100px) translateX(-50%);
   }
   50% {
     opacity: 1;
-    -webkit-transform: scale(1) translateY(0px) translateX(-50%);
-            transform: scale(1) translateY(0px) translateX(-50%);
-  }
-}
-@-webkit-keyframes lword {
-  50% {
-    -webkit-transform: rotate(20deg) translateX(10px) translateY(10px);
-            transform: rotate(20deg) translateX(10px) translateY(10px);
+    transform: scale(1) translateY(0px) translateX(-50%);
   }
 }
 @keyframes lword {
   50% {
-    -webkit-transform: rotate(20deg) translateX(10px) translateY(10px);
-            transform: rotate(20deg) translateX(10px) translateY(10px);
-  }
-}
-@-webkit-keyframes rword {
-  50% {
-    -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
-            transform: rotate(0deg) translateX(0px) translateY(0px);
-  }
-  60% {
-    -webkit-transform: rotate(-10deg) translateX(-10px) translateY(-10px);
-            transform: rotate(-10deg) translateX(-10px) translateY(-10px);
-  }
-  80% {
-    -webkit-transform: rotate(15deg) translateX(10px) translateY(10px);
-            transform: rotate(15deg) translateX(10px) translateY(10px);
+    transform: rotate(20deg) translateX(10px) translateY(10px);
   }
 }
 @keyframes rword {
   50% {
-    -webkit-transform: rotate(0deg) translateX(0px) translateY(0px);
-            transform: rotate(0deg) translateX(0px) translateY(0px);
+    transform: rotate(0deg) translateX(0px) translateY(0px);
   }
   60% {
-    -webkit-transform: rotate(-10deg) translateX(-10px) translateY(-10px);
-            transform: rotate(-10deg) translateX(-10px) translateY(-10px);
+    transform: rotate(-10deg) translateX(-10px) translateY(-10px);
   }
   80% {
-    -webkit-transform: rotate(15deg) translateX(10px) translateY(10px);
-            transform: rotate(15deg) translateX(10px) translateY(10px);
-  }
-}
-@-webkit-keyframes rebtn {
-  0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(15deg) translateX(10px) translateY(10px);
   }
 }
 @keyframes rebtn {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 html body .game.fish {
@@ -3483,8 +2652,7 @@ html body .game .fishimg .bgimg1 {
   position: absolute;
   top: 195px;
   left: 8px;
-  -webkit-animation: fish_leftimg 3s linear 0s infinite;
-          animation: fish_leftimg 3s linear 0s infinite;
+  animation: fish_leftimg 3s linear 0s infinite;
 }
 html body .game .fishimg .bgimg2 {
   width: 204px;
@@ -3494,8 +2662,7 @@ html body .game .fishimg .bgimg2 {
   position: absolute;
   top: 33px;
   right: 47px;
-  -webkit-animation: fish_rightimg 3s linear 0s infinite;
-          animation: fish_rightimg 3s linear 0s infinite;
+  animation: fish_rightimg 3s linear 0s infinite;
 }
 html body .game .fishimg .logo {
   width: 790px;
@@ -3512,8 +2679,6 @@ html body .game .fishimg button {
   position: absolute;
   right: 280px;
   top: 215px;
-  background: -webkit-gradient(linear, left top, right top, from(#00e990), to(#00eff8));
-  background: -o-linear-gradient(left, #00e990 0%, #00eff8 100%);
   background: linear-gradient(to right, #00e990 0%, #00eff8 100%);
   background-color: #ff3d6a;
   border-radius: 30px;
@@ -3521,14 +2686,11 @@ html body .game .fishimg button {
   color: #fff2a3;
   font-size: 18px;
   font-weight: bold;
-  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48);
-          box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48);
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48);
   text-shadow: 0px 2px 0px #000;
   z-index: 2;
 }
 html body .game .fishimg button:hover, html body .game .fishimg button:active, html body .game .fishimg button.active {
-  background: -webkit-gradient(linear, left top, right top, from(#ffdf00), to(#ff4b00));
-  background: -o-linear-gradient(left, #ffdf00 0%, #ff4b00 100%);
   background: linear-gradient(to right, #ffdf00 0%, #ff4b00 100%);
   background-color: #ff8e23;
   color: #fff;
@@ -3536,8 +2698,7 @@ html body .game .fishimg button:hover, html body .game .fishimg button:active, h
 html body .game .gamebox.fish {
   height: 615px;
   background: #0359a5;
-  -webkit-box-shadow: 0px 0px 0px 4px #0359a5;
-          box-shadow: 0px 0px 0px 4px #0359a5;
+  box-shadow: 0px 0px 0px 4px #0359a5;
 }
 html body .game .gamebox.fish ul {
   width: 100%;
@@ -3560,17 +2721,13 @@ html body .game .gamebox.fish ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.fish ul li a.turn div {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body .game .gamebox.fish ul li a:hover div, html body .game .gamebox.fish ul li a:active div, html body .game .gamebox.fish ul li a.active div {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 html body .game .gamebox.fish ul li a:nth-of-type(1) div {
   background-position-Y: 13px;
@@ -3603,191 +2760,81 @@ html body .game .bg.fish {
   background: url("../images/fish/fish_bg.png") no-repeat top center;
 }
 
-@-webkit-keyframes fish_leftimg {
-  0% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 195px;
-    left: 8px;
-  }
-  10% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 260px;
-    left: 80px;
-  }
-  30% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 200px;
-    left: 120px;
-  }
-  40% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 200px;
-    left: 120px;
-  }
-  70% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 170px;
-    left: -30px;
-  }
-  85% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 170px;
-    left: -30px;
-  }
-  100% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 195px;
-    left: 8px;
-  }
-}
-
 @keyframes fish_leftimg {
   0% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 195px;
     left: 8px;
   }
   10% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 260px;
     left: 80px;
   }
   30% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 200px;
     left: 120px;
   }
   40% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 200px;
     left: 120px;
   }
   70% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 170px;
     left: -30px;
   }
   85% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 170px;
     left: -30px;
   }
   100% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 195px;
     left: 8px;
-  }
-}
-@-webkit-keyframes fish_rightimg {
-  0% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 33px;
-    right: 47px;
-  }
-  10% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 100px;
-    right: 100px;
-  }
-  30% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 100px;
-    right: 100px;
-  }
-  40% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 100px;
-    right: 100px;
-  }
-  60% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 50px;
-    right: -50px;
-  }
-  80% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
-    top: 50px;
-    right: -50px;
-  }
-  90% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 50px;
-    right: -50px;
-  }
-  100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
-    top: 33px;
-    right: 47px;
   }
 }
 @keyframes fish_rightimg {
   0% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 33px;
     right: 47px;
   }
   10% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 100px;
     right: 100px;
   }
   30% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 100px;
     right: 100px;
   }
   40% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 100px;
     right: 100px;
   }
   60% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 50px;
     right: -50px;
   }
   80% {
-    -webkit-transform: scaleX(-1);
-            transform: scaleX(-1);
+    transform: scaleX(-1);
     top: 50px;
     right: -50px;
   }
   90% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 50px;
     right: -50px;
   }
   100% {
-    -webkit-transform: scaleX(1);
-            transform: scaleX(1);
+    transform: scaleX(1);
     top: 33px;
     right: 47px;
   }
@@ -3808,8 +2855,7 @@ html body .game .sportimg .bgimg1 {
   position: absolute;
   top: 185px;
   left: 220px;
-  -webkit-animation: sport_left1 1.5s ease-out 0s infinite;
-          animation: sport_left1 1.5s ease-out 0s infinite;
+  animation: sport_left1 1.5s ease-out 0s infinite;
 }
 html body .game .sportimg .bgimg2 {
   width: 88px;
@@ -3818,8 +2864,7 @@ html body .game .sportimg .bgimg2 {
   background-size: 100%;
   position: fixed;
   margin: 55px 0px 0px -290px;
-  -webkit-animation: sport_left2 1.5s linear 0s infinite;
-          animation: sport_left2 1.5s linear 0s infinite;
+  animation: sport_left2 1.5s linear 0s infinite;
 }
 html body .game .sportimg .bgimg3 {
   width: 86px;
@@ -3829,8 +2874,7 @@ html body .game .sportimg .bgimg3 {
   position: absolute;
   top: 60px;
   right: 225px;
-  -webkit-animation: sport_right1 1.5s ease-out 0s infinite;
-          animation: sport_right1 1.5s ease-out 0s infinite;
+  animation: sport_right1 1.5s ease-out 0s infinite;
 }
 html body .game .sportimg .bgimg4 {
   width: 154px;
@@ -3839,8 +2883,7 @@ html body .game .sportimg .bgimg4 {
   background-size: 100%;
   position: fixed;
   margin: 110px 0px 0px 1375px;
-  -webkit-animation: sport_left2 1.5s linear 0s infinite;
-          animation: sport_left2 1.5s linear 0s infinite;
+  animation: sport_left2 1.5s linear 0s infinite;
 }
 html body .game .sportimg .logo {
   width: 436px;
@@ -3849,16 +2892,13 @@ html body .game .sportimg .logo {
   background-size: 100%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 40px;
 }
 html body .game .gamebox.sport {
   height: 590px;
   background: #97253b;
-  -webkit-box-shadow: 0px 0px 0px 4px #97253b;
-          box-shadow: 0px 0px 0px 4px #97253b;
+  box-shadow: 0px 0px 0px 4px #97253b;
 }
 html body .game .gamebox.sport ul li {
   height: 80%;
@@ -3877,17 +2917,13 @@ html body .game .gamebox.sport ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.sport ul li a.turn div {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body .game .gamebox.sport ul li a:hover div, html body .game .gamebox.sport ul li a:active div, html body .game .gamebox.sport ul li a.active div {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 html body .game .gamebox.sport ul li a:nth-of-type(2) div {
   background-position-X: 100%;
@@ -3910,32 +2946,6 @@ html body .game .bg.sport {
   background: url("../images/sport/sport_bg.png") no-repeat top center;
 }
 
-@-webkit-keyframes sport_left1 {
-  0% {
-    opacity: 0;
-    top: 0px;
-    left: -200px;
-  }
-  50% {
-    opacity: 0;
-    top: 0px;
-  }
-  65% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  70% {
-    opacity: 1;
-    top: 160px;
-    -webkit-transform: scaleX(1.2) scaleY(0.8);
-            transform: scaleX(1.2) scaleY(0.8);
-  }
-  100% {
-    opacity: 0;
-    top: 0px;
-  }
-}
-
 @keyframes sport_left1 {
   0% {
     opacity: 0;
@@ -3947,90 +2957,44 @@ html body .game .bg.sport {
     top: 0px;
   }
   65% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   70% {
     opacity: 1;
     top: 160px;
-    -webkit-transform: scaleX(1.2) scaleY(0.8);
-            transform: scaleX(1.2) scaleY(0.8);
+    transform: scaleX(1.2) scaleY(0.8);
   }
   100% {
     opacity: 0;
     top: 0px;
   }
 }
-@-webkit-keyframes sport_left2 {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
 @keyframes sport_left2 {
   0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
   100% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-}
-@-webkit-keyframes sport_right1 {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  10% {
-    -webkit-transform: scaleX(1.2) scaleY(0.8);
-            transform: scaleX(1.2) scaleY(0.8);
-  }
-  30% {
-    -webkit-transform: scaleX(0.8) scaleY(1.2);
-            transform: scaleX(0.8) scaleY(1.2);
-  }
-  50% {
-    -webkit-transform: scaleX(1.1) scaleY(0.9);
-            transform: scaleX(1.1) scaleY(0.9);
-  }
-  60% {
-    -webkit-transform: scaleX(0.9) scaleY(1.1);
-            transform: scaleX(0.9) scaleY(1.1);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: rotate(0deg);
   }
 }
 @keyframes sport_right1 {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   10% {
-    -webkit-transform: scaleX(1.2) scaleY(0.8);
-            transform: scaleX(1.2) scaleY(0.8);
+    transform: scaleX(1.2) scaleY(0.8);
   }
   30% {
-    -webkit-transform: scaleX(0.8) scaleY(1.2);
-            transform: scaleX(0.8) scaleY(1.2);
+    transform: scaleX(0.8) scaleY(1.2);
   }
   50% {
-    -webkit-transform: scaleX(1.1) scaleY(0.9);
-            transform: scaleX(1.1) scaleY(0.9);
+    transform: scaleX(1.1) scaleY(0.9);
   }
   60% {
-    -webkit-transform: scaleX(0.9) scaleY(1.1);
-            transform: scaleX(0.9) scaleY(1.1);
+    transform: scaleX(0.9) scaleY(1.1);
   }
   70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
 }
 html body .game.poker {
@@ -4048,8 +3012,7 @@ html body .game .pokerimg .bgimg1 {
   background-size: 100%;
   position: fixed;
   margin: 25px 0px 0px 30px;
-  -webkit-animation: lword 1s linear 0s infinite;
-          animation: lword 1s linear 0s infinite;
+  animation: lword 1s linear 0s infinite;
 }
 html body .game .pokerimg .bgimg2 {
   width: 187px;
@@ -4058,8 +3021,7 @@ html body .game .pokerimg .bgimg2 {
   background-size: 100%;
   position: fixed;
   margin: 25px 0px 0px 1050px;
-  -webkit-animation: poker_rightimg 1.5s linear 0s infinite;
-          animation: poker_rightimg 1.5s linear 0s infinite;
+  animation: poker_rightimg 1.5s linear 0s infinite;
 }
 html body .game .pokerimg .bgimg3 {
   width: 604px;
@@ -4069,11 +3031,8 @@ html body .game .pokerimg .bgimg3 {
   position: absolute;
   top: 185px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-animation: poker_midimg 3s linear 0s infinite;
-          animation: poker_midimg 3s linear 0s infinite;
+  transform: translateX(-50%);
+  animation: poker_midimg 3s linear 0s infinite;
 }
 html body .game .pokerimg .logo {
   width: 628px;
@@ -4082,9 +3041,7 @@ html body .game .pokerimg .logo {
   background-size: 100%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 40px;
 }
 html body .game .pokerimg button {
@@ -4092,9 +3049,7 @@ html body .game .pokerimg button {
   height: 70px;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 215px;
   background: #1194e3;
   border-radius: 40px;
@@ -4102,14 +3057,11 @@ html body .game .pokerimg button {
   color: #fff100;
   font-size: 18px;
   font-weight: bold;
-  -webkit-box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48), 1px 3px 8px 0px #fff inset;
-          box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48), 1px 3px 8px 0px #fff inset;
+  box-shadow: 0px 2px 7px 0px rgba(0, 0, 0, 0.48), 1px 3px 8px 0px #fff inset;
   text-shadow: 0px 2px 0px #000;
   z-index: 2;
 }
 html body .game .pokerimg button:hover, html body .game .pokerimg button:active, html body .game .pokerimg button.active {
-  background: -webkit-gradient(linear, left top, right top, from(#00e990), to(#00eff8));
-  background: -o-linear-gradient(left, #00e990 0%, #00eff8 100%);
   background: linear-gradient(to right, #00e990 0%, #00eff8 100%);
   background-color: #00eff8;
   color: #fff;
@@ -4117,8 +3069,7 @@ html body .game .pokerimg button:hover, html body .game .pokerimg button:active,
 html body .game .gamebox.poker {
   height: 600px;
   background: #be4700;
-  -webkit-box-shadow: 0px 0px 0px 4px #be4700;
-          box-shadow: 0px 0px 0px 4px #be4700;
+  box-shadow: 0px 0px 0px 4px #be4700;
 }
 html body .game .gamebox.poker ul {
   width: 100%;
@@ -4141,17 +3092,13 @@ html body .game .gamebox.poker ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.poker ul li a.turn div {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body .game .gamebox.poker ul li a:hover div, html body .game .gamebox.poker ul li a:active div, html body .game .gamebox.poker ul li a.active div {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 html body .game .gamebox.poker ul li a:nth-of-type(2) div {
   background-position-X: 100%;
@@ -4174,109 +3121,44 @@ html body .game .bg.poker {
   background: url("../images/poker/poker_bg.png") no-repeat top center;
 }
 
-@-webkit-keyframes poker_rightimg {
-  0% {
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
-  }
-  20% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  30% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-  50% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
-  }
-  60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  70% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-}
-
 @keyframes poker_rightimg {
   0% {
-    -webkit-transform: rotate(0deg) scale(1);
-            transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
   }
   20% {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
+    transform: scale(0.8);
   }
   30% {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
   50% {
-    -webkit-transform: rotate(-10deg);
-            transform: rotate(-10deg);
+    transform: rotate(-10deg);
   }
   60% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   70% {
-    -webkit-transform: rotate(10deg);
-            transform: rotate(10deg);
-  }
-}
-@-webkit-keyframes poker_midimg {
-  0% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
-  }
-  20% {
-    -webkit-transform: translateX(-50%) translateY(-10%);
-            transform: translateX(-50%) translateY(-10%);
-  }
-  30% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
-  }
-  70% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
-  }
-  80% {
-    -webkit-transform: translateX(-50%) translateY(-10%);
-            transform: translateX(-50%) translateY(-10%);
-  }
-  100% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
+    transform: rotate(10deg);
   }
 }
 @keyframes poker_midimg {
   0% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
   }
   20% {
-    -webkit-transform: translateX(-50%) translateY(-10%);
-            transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-50%) translateY(-10%);
   }
   30% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
   }
   70% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
   }
   80% {
-    -webkit-transform: translateX(-50%) translateY(-10%);
-            transform: translateX(-50%) translateY(-10%);
+    transform: translateX(-50%) translateY(-10%);
   }
   100% {
-    -webkit-transform: translateX(-50%) translateY(0%);
-            transform: translateX(-50%) translateY(0%);
+    transform: translateX(-50%) translateY(0%);
   }
 }
 html body .game.lottery {
@@ -4294,8 +3176,7 @@ html body .game .lotteryimg .bgimg1 {
   background-size: 100%;
   position: fixed;
   margin: 30px 0px 0px 1340px;
-  -webkit-animation: poker_rightimg 1.5s linear 0s infinite;
-          animation: poker_rightimg 1.5s linear 0s infinite;
+  animation: poker_rightimg 1.5s linear 0s infinite;
 }
 html body .game .lotteryimg .logo {
   width: 943px;
@@ -4304,16 +3185,13 @@ html body .game .lotteryimg .logo {
   background-size: 100%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 40px;
 }
 html body .game .gamebox.lottery {
   height: 600px;
   background: #be4700;
-  -webkit-box-shadow: 0px 0px 0px 4px #be4700;
-          box-shadow: 0px 0px 0px 4px #be4700;
+  box-shadow: 0px 0px 0px 4px #be4700;
 }
 html body .game .gamebox.lottery ul li {
   height: 80%;
@@ -4332,17 +3210,13 @@ html body .game .gamebox.lottery ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.lottery ul li a.turn div {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body .game .gamebox.lottery ul li a:hover div, html body .game .gamebox.lottery ul li a:active div, html body .game .gamebox.lottery ul li a.active div {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 html body .game .gamebox.lottery ul li a:nth-of-type(2) div {
   background-position-X: 50%;
@@ -4383,8 +3257,7 @@ html body .game .liveimg .bgimg1 {
   background-size: 100%;
   position: fixed;
   margin: 15px 0px 0px -357px;
-  -webkit-animation: live_img1 2s ease-in-out 0s infinite alternate;
-          animation: live_img1 2s ease-in-out 0s infinite alternate;
+  animation: live_img1 2s ease-in-out 0s infinite alternate;
 }
 html body .game .liveimg .bgimg2 {
   width: 274px;
@@ -4394,8 +3267,7 @@ html body .game .liveimg .bgimg2 {
   position: absolute;
   top: 25px;
   left: 5px;
-  -webkit-animation: live_leftimg2 1s ease-in-out 0s infinite;
-          animation: live_leftimg2 1s ease-in-out 0s infinite;
+  animation: live_leftimg2 1s ease-in-out 0s infinite;
 }
 html body .game .liveimg .bgimg3 {
   width: 530px;
@@ -4404,8 +3276,7 @@ html body .game .liveimg .bgimg3 {
   background-size: 100%;
   position: fixed;
   margin: 15px 0px 0px 1027px;
-  -webkit-animation: live_img1 1.5s ease-in-out 0s infinite alternate;
-          animation: live_img1 1.5s ease-in-out 0s infinite alternate;
+  animation: live_img1 1.5s ease-in-out 0s infinite alternate;
 }
 html body .game .liveimg .bgimg4 {
   width: 354px;
@@ -4415,8 +3286,7 @@ html body .game .liveimg .bgimg4 {
   position: absolute;
   top: 5px;
   right: -25px;
-  -webkit-animation: live_rightimg2 1.5s ease-in-out 0s infinite;
-          animation: live_rightimg2 1.5s ease-in-out 0s infinite;
+  animation: live_rightimg2 1.5s ease-in-out 0s infinite;
 }
 html body .game .liveimg .logo {
   width: 379px;
@@ -4425,16 +3295,13 @@ html body .game .liveimg .logo {
   background-size: 100%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 30px;
 }
 html body .game .gamebox.live {
   height: 925px;
   background: #381b4b;
-  -webkit-box-shadow: 0px 0px 0px 4px #6e0db2;
-          box-shadow: 0px 0px 0px 4px #6e0db2;
+  box-shadow: 0px 0px 0px 4px #6e0db2;
 }
 html body .game .gamebox.live ul li {
   height: 89%;
@@ -4455,17 +3322,13 @@ html body .game .gamebox.live ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.live ul li a.turn div {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body .game .gamebox.live ul li a:hover div, html body .game .gamebox.live ul li a:active div, html body .game .gamebox.live ul li a.active div {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 html body .game .gamebox.live ul li a:nth-of-type(2) div {
   background-position-X: 25%;
@@ -4504,15 +3367,6 @@ html body .game .bg.live {
   background: url("../images/live/live_bg.png") no-repeat top center;
 }
 
-@-webkit-keyframes live_img1 {
-  0% {
-    top: 130px;
-  }
-  100% {
-    top: 180px;
-  }
-}
-
 @keyframes live_img1 {
   0% {
     top: 130px;
@@ -4521,84 +3375,35 @@ html body .game .bg.live {
     top: 180px;
   }
 }
-@-webkit-keyframes live_leftimg2 {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  20% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
-  }
-  40% {
-    -webkit-transform: scaleX(0.95) scaleY(1.05);
-            transform: scaleX(0.95) scaleY(1.05);
-  }
-  60% {
-    -webkit-transform: scaleX(1.05) scaleY(0.95);
-            transform: scaleX(1.05) scaleY(0.95);
-  }
-  70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
 @keyframes live_leftimg2 {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   20% {
-    -webkit-transform: scale(0.95);
-            transform: scale(0.95);
+    transform: scale(0.95);
   }
   40% {
-    -webkit-transform: scaleX(0.95) scaleY(1.05);
-            transform: scaleX(0.95) scaleY(1.05);
+    transform: scaleX(0.95) scaleY(1.05);
   }
   60% {
-    -webkit-transform: scaleX(1.05) scaleY(0.95);
-            transform: scaleX(1.05) scaleY(0.95);
+    transform: scaleX(1.05) scaleY(0.95);
   }
   70% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-}
-@-webkit-keyframes live_rightimg2 {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  20% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-  40% {
-    -webkit-transform: scale(1.1) rotate(10deg);
-            transform: scale(1.1) rotate(10deg);
-  }
-  70% {
-    -webkit-transform: scale(1.1) rotate(-10deg);
-            transform: scale(1.1) rotate(-10deg);
+    transform: scale(1);
   }
 }
 @keyframes live_rightimg2 {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   20% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
   40% {
-    -webkit-transform: scale(1.1) rotate(10deg);
-            transform: scale(1.1) rotate(10deg);
+    transform: scale(1.1) rotate(10deg);
   }
   70% {
-    -webkit-transform: scale(1.1) rotate(-10deg);
-            transform: scale(1.1) rotate(-10deg);
+    transform: scale(1.1) rotate(-10deg);
   }
 }
 html body .discount article {
@@ -4653,8 +3458,7 @@ html body .discount article .discount_mainbox .mid .imgBox {
   position: relative;
 }
 html body .discount article .discount_mainbox .mid .imgBox:hover div, html body .discount article .discount_mainbox .mid .imgBox:active div, html body .discount article .discount_mainbox .mid .imgBox.active div {
-  -webkit-filter: brightness(0.3);
-          filter: brightness(0.3);
+  filter: brightness(0.3);
 }
 html body .discount article .discount_mainbox .mid .imgBox:hover p, html body .discount article .discount_mainbox .mid .imgBox:hover button, html body .discount article .discount_mainbox .mid .imgBox:active p, html body .discount article .discount_mainbox .mid .imgBox:active button, html body .discount article .discount_mainbox .mid .imgBox.active p, html body .discount article .discount_mainbox .mid .imgBox.active button {
   left: 50%;
@@ -4666,8 +3470,6 @@ html body .discount article .discount_mainbox .mid .imgBox div {
   padding-bottom: 28.938%;
   background: url("../images/discount/discount_mainbanner.png") no-repeat;
   background-size: 100%;
-  -webkit-transition: 0.3s all;
-  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 html body .discount article .discount_mainbox .mid .imgBox div.img2 {
@@ -4685,11 +3487,7 @@ html body .discount article .discount_mainbox .mid .imgBox p {
   letter-spacing: 5px;
   left: 85%;
   top: 80px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
+  transform: translateX(-50%);
   transition: 0.4s all;
 }
 html body .discount article .discount_mainbox .mid .imgBox button {
@@ -4697,23 +3495,16 @@ html body .discount article .discount_mainbox .mid .imgBox button {
   position: absolute;
   width: 220px;
   height: 70px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#ffd64b), color-stop(18%, #e3a435), color-stop(35%, #ffc949), color-stop(72%, #fdf5c7), to(#ffd64b));
-  background: -o-linear-gradient(bottom, #ffd64b 0%, #e3a435 18%, #ffc949 35%, #fdf5c7 72%, #ffd64b 100%);
   background: linear-gradient(to top, #ffd64b 0%, #e3a435 18%, #ffc949 35%, #fdf5c7 72%, #ffd64b 100%);
   border: solid 5px #000;
-  -webkit-box-shadow: 0px 0px 0px 5px #6363e5;
-          box-shadow: 0px 0px 0px 5px #6363e5;
+  box-shadow: 0px 0px 0px 5px #6363e5;
   left: 15%;
   bottom: 87px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 10px;
   font-size: 21px;
   font-weight: bold;
   z-index: 1;
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
   transition: 0.4s all;
 }
 html body .discount article .discount_innerpage {
@@ -4723,18 +3514,13 @@ html body .discount article .discount_innerpage {
   height: 940px;
   left: 50%;
   bottom: 0px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, from(#6c1028), to(#b72b4d));
-  background: -o-linear-gradient(bottom, #6c1028 0%, #b72b4d);
+  transform: translateX(-50%);
   background: linear-gradient(to top, #6c1028 0%, #b72b4d);
   background-color: #a12342;
   border-radius: 40px 40px 0px 0px;
   border: solid 5px #620d26;
   border-bottom-width: 0px;
-  -webkit-box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
-          box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
+  box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
 }
 html body .discount article .discount_innerpage.display {
   display: block;
@@ -4781,13 +3567,10 @@ html body .discount article .discount_innerpage .contentbox .title button {
   left: -290px;
 }
 html body .discount article .discount_innerpage .contentbox .title button:hover {
-  -webkit-animation: discount_btn 0.3s ease-out 0s;
-          animation: discount_btn 0.3s ease-out 0s;
+  animation: discount_btn 0.3s ease-out 0s;
 }
 html body .discount article .discount_innerpage .contentbox .title button:active, html body .discount article .discount_innerpage .contentbox .title button.active {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 html body .discount article .discount_innerpage .contentbox .hideBoard {
   width: 100%;
@@ -4815,25 +3598,12 @@ html body .discount .bg {
   z-index: -999;
 }
 
-@-webkit-keyframes discount_btn {
-  0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  30% {
-    -webkit-transform: scaleX(1.1) scaleY(1.3);
-            transform: scaleX(1.1) scaleY(1.3);
-  }
-}
-
 @keyframes discount_btn {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   30% {
-    -webkit-transform: scaleX(1.1) scaleY(1.3);
-            transform: scaleX(1.1) scaleY(1.3);
+    transform: scaleX(1.1) scaleY(1.3);
   }
 }
 @media only screen and (max-width: 1800px) {
@@ -4896,24 +3666,17 @@ html body .innerPage article .leftside .moneybtn a {
   background: #000;
   border: solid 5px #b5203f;
   margin: 10px 10px 10px 0px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
-  -webkit-box-shadow: 0px 2px 0px 0px #ffffff80 inset;
-          box-shadow: 0px 2px 0px 0px #ffffff80 inset;
+  box-shadow: 0px 2px 0px 0px #ffffff80 inset;
   position: relative;
 }
 html body .innerPage article .leftside .moneybtn a:hover, html body .innerPage article .leftside .moneybtn a:active, html body .innerPage article .leftside .moneybtn a.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f, #2a4d7c);
   background: linear-gradient(to top, #273f5f, #2a4d7c);
   background-color: #2a4d7c;
   border-color: #122845;
 }
 html body .innerPage article .leftside .moneybtn a:hover::before, html body .innerPage article .leftside .moneybtn a:active::before, html body .innerPage article .leftside .moneybtn a.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000045));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000045);
   background: linear-gradient(to top, transparent 50%, #00000045);
 }
 html body .innerPage article .leftside .moneybtn a:hover::after, html body .innerPage article .leftside .moneybtn a:active::after, html body .innerPage article .leftside .moneybtn a.active::after {
@@ -4925,14 +3688,10 @@ html body .innerPage article .leftside .moneybtn a::before {
   width: 60px;
   height: 60px;
   border-radius: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(40%, #f56684), to(#ffffff80));
-  background: -o-linear-gradient(bottom, #f56684 40%, #ffffff80);
   background: linear-gradient(to top, #f56684 40%, #ffffff80);
   left: 50%;
   top: 4px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .innerPage article .leftside .moneybtn a::after {
   content: "";
@@ -4942,9 +3701,7 @@ html body .innerPage article .leftside .moneybtn a::after {
   background: url("../images/word/money_ic.png") no-repeat;
   left: 50%;
   top: -12px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .innerPage article .leftside .moneybtn a:nth-of-type(2)::after {
   background-position-x: 50%;
@@ -4967,23 +3724,16 @@ html body .innerPage article .leftside .leftbtnbox a {
   padding-left: 60px;
   border: solid 5px #184c4a;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
-  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
-  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+  box-shadow: 0px 3px 0px 0px #ffffff5c inset;
 }
 html body .innerPage article .leftside .leftbtnbox a:hover, html body .innerPage article .leftside .leftbtnbox a:active, html body .innerPage article .leftside .leftbtnbox a.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f, #2a4d7c);
   background: linear-gradient(to top, #273f5f, #2a4d7c);
   background-color: #2a4d7c;
   border-color: #122845;
 }
 html body .innerPage article .leftside .leftbtnbox a:hover::before, html body .innerPage article .leftside .leftbtnbox a:active::before, html body .innerPage article .leftside .leftbtnbox a.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000045));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000045);
   background: linear-gradient(to top, transparent 50%, #00000045);
 }
 html body .innerPage article .leftside .leftbtnbox a::before {
@@ -4992,32 +3742,22 @@ html body .innerPage article .leftside .leftbtnbox a::before {
   width: 225px;
   height: 40px;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff80));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff80);
   background: linear-gradient(to top, transparent 50%, #ffffff80);
   left: 50%;
   top: 6px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1) {
   border-color: #b23f00;
   background-color: #ff7e00;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #ff7e00), color-stop(63%, #ff9e21));
-  background: -o-linear-gradient(bottom, #ff7e00 23%, #ff9e21 63%);
   background: linear-gradient(to top, #ff7e00 23%, #ff9e21 63%);
 }
 html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1):hover, html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1):active, html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1).active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f, #2a4d7c);
   background: linear-gradient(to top, #273f5f, #2a4d7c);
   background-color: #2a4d7c;
   border-color: #122845;
 }
 html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1):hover::before, html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1):active::before, html body .innerPage article .leftside .leftbtnbox a:nth-of-type(1).active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000045));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000045);
   background: linear-gradient(to top, transparent 50%, #00000045);
 }
 html body .innerPage article .leftside .leftbtnbox a:nth-of-type(2) span {
@@ -5123,8 +3863,6 @@ html body .innerPage article .mid.walletWindow .topWindow .innerbox table button
   color: #fff;
   letter-spacing: 3px;
   text-shadow: 1px 1px 0px #000;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #ff92a9), color-stop(50%, #f56684));
-  background: -o-linear-gradient(top, #ff92a9 50%, #f56684 50%);
   background: linear-gradient(to bottom, #ff92a9 50%, #f56684 50%);
   background-color: #f56684;
   /*for IE*/
@@ -5135,7 +3873,7 @@ html body .innerPage article .mid.walletWindow .topWindow .innerbox table button
     padding-left: 10px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.walletWindow .topWindow .innerbox table button {
     padding-left: 10px;
   }
@@ -5177,8 +3915,6 @@ html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platf
   display: inline-block;
   width: 140px;
   height: 90px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #31dbca), color-stop(50%, #63f8e9));
-  background: -o-linear-gradient(bottom, #31dbca 50%, #63f8e9 50%);
   background: linear-gradient(to top, #31dbca 50%, #63f8e9 50%);
   background-color: #31dbca;
   border-radius: 15px;
@@ -5205,12 +3941,9 @@ html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platf
   height: 25px;
   border: solid 5px #cd002b;
   border-radius: 8px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #ff4b71), color-stop(63%, #ff5478));
-  background: -o-linear-gradient(bottom, #ff4b71 23%, #ff5478 63%);
   background: linear-gradient(to top, #ff4b71 23%, #ff5478 63%);
   background-color: #ff5478;
-  -webkit-box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
-          box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
+  box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
   position: absolute;
   color: #fff;
   font-size: 14px;
@@ -5240,16 +3973,13 @@ html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platf
   width: 25px;
   height: 25px;
   border-radius: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #ff4b71), color-stop(63%, #ff5478));
-  background: -o-linear-gradient(bottom, #ff4b71 23%, #ff5478 63%);
   background: linear-gradient(to top, #ff4b71 23%, #ff5478 63%);
   background-color: #ff5478;
   position: absolute;
   top: 4px;
   right: 15px;
   border: solid 5px #cd002b;
-  -webkit-box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
-          box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
+  box-shadow: 0px 5px 3px 0px #ff9cb1 inset;
   text-align: center;
   line-height: 25px;
   font-weight: bold;
@@ -5301,12 +4031,9 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
   padding-top: 3px;
   border: solid 5px #184c4a;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
-  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
-  -webkit-box-shadow: 0px 3px 0px 0px #ffffff5c inset;
-          box-shadow: 0px 3px 0px 0px #ffffff5c inset;
+  box-shadow: 0px 3px 0px 0px #ffffff5c inset;
   /*for IE*/
   /*for IE 9*/
 }
@@ -5315,7 +4042,7 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
     padding: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .rightside .askbtn, html body .innerPage article .fixside .askbtn {
     padding: 0px;
   }
@@ -5329,14 +4056,12 @@ html body .innerPage article .rightside .askbtn:hover, html body .innerPage arti
     background-color: #2ea8a2;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .rightside .askbtn:hover, html body .innerPage article .rightside .askbtn:active, html body .innerPage article .rightside .askbtn.active, html body .innerPage article .fixside .askbtn:hover, html body .innerPage article .fixside .askbtn:active, html body .innerPage article .fixside .askbtn.active {
     background-color: #2ea8a2;
   }
 }
 html body .innerPage article .rightside .askbtn:hover::before, html body .innerPage article .rightside .askbtn:active::before, html body .innerPage article .rightside .askbtn.active::before, html body .innerPage article .fixside .askbtn:hover::before, html body .innerPage article .fixside .askbtn:active::before, html body .innerPage article .fixside .askbtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#0000005e));
-  background: -o-linear-gradient(bottom, transparent 50%, #0000005e);
   background: linear-gradient(to top, transparent 50%, #0000005e);
 }
 html body .innerPage article .rightside .askbtn::before, html body .innerPage article .fixside .askbtn::before {
@@ -5346,12 +4071,8 @@ html body .innerPage article .rightside .askbtn::before, html body .innerPage ar
   height: 40px;
   left: 50%;
   top: 4px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   border-radius: 10px 10px 0px 0px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff5e));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff5e);
   background: linear-gradient(to top, transparent 50%, #ffffff5e);
 }
 html body .innerPage article .rightside .askbtn span, html body .innerPage article .fixside .askbtn span {
@@ -5434,21 +4155,16 @@ html body .innerPage article .fixside .windowBtn {
   border-right-width: 0px;
   left: -60px;
   top: 15px;
-  -webkit-box-shadow: 3px 0px 3px 0px #a7cdffab inset, 4px 0px 0px 0px #284873;
-          box-shadow: 3px 0px 3px 0px #a7cdffab inset, 4px 0px 0px 0px #284873;
+  box-shadow: 3px 0px 3px 0px #a7cdffab inset, 4px 0px 0px 0px #284873;
 }
 html body .innerPage article .fixside .windowBtn::before {
   content: "";
   position: absolute;
   top: 50%;
   left: 6px;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 75px;
   height: 150px;
-  background: -webkit-gradient(linear, right top, left top, color-stop(33%, transparent), to(#ffffff61));
-  background: -o-linear-gradient(right, transparent 33%, #ffffff61);
   background: linear-gradient(to left, transparent 33%, #ffffff61);
   border-radius: 50px 0px 0px 50px;
 }
@@ -5472,8 +4188,6 @@ html body .innerPage article .fixside .askbtn {
 }
 html body .innerPage article .fixside .bettingWindow, html body .innerPage article .fixside .activeWindow {
   left: 65px;
-  -webkit-transition: 0.4s all;
-  -o-transition: 0.4s all;
   transition: 0.4s all;
 }
 html body .innerPage article .fixside .bettingWindow.display, html body .innerPage article .fixside .activeWindow.display {
@@ -5503,20 +4217,16 @@ html body .innerPage .bg {
 .bg_darkblue {
   border: solid 5px #122845;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
   background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
   background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
 }
 
 .innerbox {
   background: #507ab0;
   border: solid 1px #5885c2;
   border-radius: 15px;
-  -webkit-box-shadow: 0px 2px 0px 0px #0000003b inset;
-          box-shadow: 0px 2px 0px 0px #0000003b inset;
+  box-shadow: 0px 2px 0px 0px #0000003b inset;
   margin: 0px auto;
   overflow: hidden;
   position: relative;
@@ -5526,9 +4236,7 @@ html body .innerPage .bg {
   color: #fff;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   letter-spacing: 3px;
 }
 
@@ -5543,23 +4251,18 @@ html body .innerPage .bg {
   position: absolute;
   top: -60px;
   left: 20px;
-  -webkit-box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
-          box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
+  box-shadow: 0px 5px 0px 0px #2a4c79, 0px 3px 2px 0px #a7cdffa1 inset;
 }
 .separateBox .btnbox button::before {
   content: "";
   position: absolute;
   width: 175px;
   height: 50px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000047));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000047);
   background: linear-gradient(to top, transparent 50%, #00000047);
   border-radius: 50px 50px 0px 0px;
   left: 50%;
   top: 5px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .separateBox .btnbox button:last-child {
   left: 230px;
@@ -5568,19 +4271,14 @@ html body .innerPage .bg {
   font-size: 14px;
 }
 .separateBox .btnbox button.turn {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
   border-color: #b5203f;
-  -webkit-box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
-          box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
+  box-shadow: 0px 3px 2px 0px #ffcfd9 inset;
   top: -60px;
   height: 55px;
 }
 .separateBox .btnbox button.turn::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffffff69));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffffff69);
   background: linear-gradient(to top, transparent 50%, #ffffff69);
 }
 .separateBox .btnbox button span {
@@ -5599,28 +4297,19 @@ html body .innerPage .bg {
   display: block;
   border: solid 5px #b5203f;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #f56684), to(#ff92a9));
-  background: -o-linear-gradient(bottom, #f56684 42%, #ff92a9 100%);
   background: linear-gradient(to top, #f56684 42%, #ff92a9 100%);
   background-color: #f56684;
-  -webkit-box-shadow: 0px 3px 1px 0px #ffffff63 inset;
-          box-shadow: 0px 3px 1px 0px #ffffff63 inset;
+  box-shadow: 0px 3px 1px 0px #ffffff63 inset;
   position: relative;
 }
 .savebtn:hover::before, .savebtn:active::before, .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 .savebtn::before {
   content: "";
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 .savebtn span {
@@ -5651,7 +4340,7 @@ html body .innerPage .bg {
   border-color: #29fff6 transparent transparent transparent;
   pointer-events: none;
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox::before {
     display: none;
   }
@@ -5679,7 +4368,7 @@ html body .innerPage .bg {
   background: url("../images/discount/present_calc.png") no-repeat;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .calc {
     display: none;
   }
@@ -5711,7 +4400,7 @@ html body .innerPage .bg {
     padding-top: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .datebtn button:nth-of-type(2) {
     padding-top: 0px;
   }
@@ -5721,7 +4410,7 @@ html body .innerPage .bg {
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .datebtn button {
     line-height: 0px;
   }
@@ -5773,8 +4462,7 @@ html body .innerPage .bg {
 }
 .inputList li input.lightbase {
   background: #507ab0;
-  -webkit-box-shadow: 0px 3px 0px 0px #0000005e inset;
-          box-shadow: 0px 3px 0px 0px #0000005e inset;
+  box-shadow: 0px 3px 0px 0px #0000005e inset;
 }
 .inputList li span {
   color: #29fff6;
@@ -5791,8 +4479,6 @@ html body .innerPage .bg {
   padding-bottom: 3px;
   border-radius: 8px;
   text-shadow: 1px 1px 0px #000;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, #148883), color-stop(50%, #57c9c4));
-  background: -o-linear-gradient(bottom, #148883 50%, #57c9c4 50%);
   background: linear-gradient(to top, #148883 50%, #57c9c4 50%);
   background-color: #148883;
   /*for IE*/
@@ -5803,7 +4489,7 @@ html body .innerPage .bg {
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .greenBtn {
     line-height: 0px;
   }
@@ -5861,15 +4547,11 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
   display: inline-block;
   width: 18px;
   height: 22px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#a2a2a2), to(#ffffff));
-  background: -o-linear-gradient(bottom, #a2a2a2, #ffffff);
   background: linear-gradient(to top, #a2a2a2, #ffffff);
   background-color: #a2a2a2;
   color: #000;
   text-align: center;
-  -webkit-transform: translateY(2px);
-      -ms-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
   line-height: 22px;
   padding-left: 3px;
   font-size: 15px;
@@ -5878,28 +4560,21 @@ html body .innerPage article .mid.memberWindow .topWindow .innerbox p span {
   border-radius: 5px;
   font-weight: bold;
   margin: 0px 5px;
-  -webkit-box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
-          box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
+  box-shadow: 0px 2px 0px 0px #00000075 inset, 0px 2px 0px 0px #7f7f7f, 0px 0px 0px 1px #000, 0px 2px 0px 1px #000;
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span:nth-of-type(1) {
   margin-left: 8px;
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active {
-  background: -webkit-gradient(linear, left bottom, left top, from(#a00f00), to(#ff0000));
-  background: -o-linear-gradient(bottom, #a00f00, #ff0000);
   background: linear-gradient(to top, #a00f00, #ff0000);
   background-color: #ff0000;
   color: #fff;
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active2 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#9da000), to(#d0ff00));
-  background: -o-linear-gradient(bottom, #9da000, #d0ff00);
   background: linear-gradient(to top, #9da000, #d0ff00);
   background-color: #d0ff00;
 }
 html body .innerPage article .mid.memberWindow .topWindow .innerbox p span.active3 {
-  background: -webkit-gradient(linear, left bottom, left top, from(#00a043), to(#2bff00));
-  background: -o-linear-gradient(bottom, #00a043, #2bff00);
   background: linear-gradient(to top, #00a043, #2bff00);
   background-color: #2bff00;
 }
@@ -5987,26 +4662,20 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
   }
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:hover::before, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:active::before, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn::before {
   content: "";
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
   width: 220px;
   height: 40px;
@@ -6036,7 +4705,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     margin-bottom: 50px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
     margin-bottom: 50px;
   }
@@ -6054,17 +4723,14 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox input.lightbase {
   background: #507ab0;
-  -webkit-box-shadow: 0px 3px 0px 0px #0000005e inset;
-          box-shadow: 0px 3px 0px 0px #0000005e inset;
+  box-shadow: 0px 3px 0px 0px #0000005e inset;
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
   display: inline-block;
   width: 75px;
   height: 43px;
   margin-left: 5px;
-  -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
   /*for IE*/
   /*for IE 9*/
 }
@@ -6073,7 +4739,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
     line-height: 0px;
   }
@@ -6125,13 +4791,11 @@ html body .innerPage article .mid.cardWindow .topWindow button {
   background: #b5b5b5;
   border-radius: 15px;
   border: solid 4px #122845;
-  -webkit-box-shadow: 0px 2px 0px 0px #828282 inset;
-          box-shadow: 0px 2px 0px 0px #828282 inset;
+  box-shadow: 0px 2px 0px 0px #828282 inset;
   margin: 20px 0px 0px 40px;
 }
 html body .innerPage article .mid.cardWindow .topWindow button.card1 {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   border: none;
   background: url("../images/creditcard/creditcard_img.png") no-repeat;
 }
@@ -6188,15 +4852,13 @@ html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover, html 
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:active, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
   }
 }
 html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover::before, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:active::before, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid.cardWindow .bottomWindow .savebtn::before {
@@ -6207,11 +4869,7 @@ html body .innerPage article .mid.cardWindow .bottomWindow .savebtn::before {
   border-radius: 8px 8px 0px 0px;
   top: 5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 
@@ -6273,8 +4931,6 @@ html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .
   /*for IE 9*/
 }
 html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover::before, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active::before, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#0000003b));
-  background: -o-linear-gradient(bottom, transparent 50%, #0000003b);
   background: linear-gradient(to top, transparent 50%, #0000003b);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -6283,7 +4939,7 @@ html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -6295,13 +4951,9 @@ html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .
   width: 145px;
   height: 40px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 3px;
   border-radius: 5px 5px 0px 0px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn span {
@@ -6407,10 +5059,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .
   border-radius: 12px;
   position: absolute;
   background: #ed5474;
-  -webkit-box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
-          box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
-  -webkit-transition: 0.25s all;
-  -o-transition: 0.25s all;
+  box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
   transition: 0.25s all;
 }
 html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox .rowbtn div::before {
@@ -6419,13 +5068,9 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .
   left: 50%;
   top: 5px;
   border-radius: 5px 5px 0px 0px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 120px;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#df244c));
-  background: -o-linear-gradient(bottom, transparent 50%, #df244c);
   background: linear-gradient(to top, transparent 50%, #df244c);
 }
 html body .innerPage article .mid.mailWindow .topWindow .separateBox .messages .messagebtnbox button {
@@ -6476,10 +5121,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   border-radius: 12px;
   position: absolute;
   background: #ed5474;
-  -webkit-box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
-          box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
-  -webkit-transition: 0.25s all;
-  -o-transition: 0.25s all;
+  box-shadow: 0px 3px 3px 0px #ffffffb0 inset;
   transition: 0.25s all;
 }
 html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox .rowbtn div::before {
@@ -6488,13 +5130,9 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   left: 50%;
   top: 5px;
   border-radius: 5px 5px 0px 0px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 120px;
   height: 30px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#df244c));
-  background: -o-linear-gradient(bottom, transparent 50%, #df244c);
   background: linear-gradient(to top, transparent 50%, #df244c);
 }
 html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .postbtnbox button {
@@ -6521,8 +5159,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   border: solid 5px #122845;
   border-radius: 60px 20px 20px 60px;
   background: #507ab0;
-  -webkit-box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
-          box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
+  box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
   text-align: left;
   position: relative;
   cursor: pointer;
@@ -6530,8 +5167,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
 .mailBox .mail:hover, .mailBox .mail:active {
   border-color: #64e1dc;
   background: #ee5978;
-  -webkit-box-shadow: 0px 3px 3px #ee5978 inset, 0px -4px 0px 0px #ff8cab inset;
-          box-shadow: 0px 3px 3px #ee5978 inset, 0px -4px 0px 0px #ff8cab inset;
+  box-shadow: 0px 3px 3px #ee5978 inset, 0px -4px 0px 0px #ff8cab inset;
 }
 .mailBox .mail:hover .mail_ic, .mailBox .mail:active .mail_ic {
   background-position-x: 100%;
@@ -6540,8 +5176,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   background: #2a4d7c;
 }
 .mailBox .mail.active:hover, .mailBox .mail.active:active {
-  -webkit-box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
-          box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
+  box-shadow: 0px 3px 3px #83ade3 inset, 0px -4px 0px 0px #2d5384 inset;
   border-color: #122845;
 }
 .mailBox .mail.active:hover .mail_ic, .mailBox .mail.active:active .mail_ic {
@@ -6554,9 +5189,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   background: url("../images/mail/mail_ic.png") no-repeat;
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 20px;
 }
 .mailBox .mail h1 {
@@ -6586,9 +5219,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   border-radius: 12px;
   bottom: 30px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   text-align: center;
 }
 .page button {
@@ -6597,28 +5228,20 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
   height: 55px;
   border-radius: 30px;
   border: solid 5px #00302e;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #148883), to(#3a9995));
-  background: -o-linear-gradient(bottom, #148883 42%, #3a9995 100%);
   background: linear-gradient(to top, #148883 42%, #3a9995 100%);
   background-color: #148883;
-  -webkit-box-shadow: 0px 3px 3px 0px #6be3de inset;
-          box-shadow: 0px 3px 3px 0px #6be3de inset;
+  box-shadow: 0px 3px 3px 0px #6be3de inset;
   right: -70px;
   top: -3px;
 }
 .page button:hover, .page button:active, .page button.active {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(42%, #ffd633), color-stop(99%, #ffa200));
-  background: -o-linear-gradient(bottom, #ffd633 42%, #ffa200 99%);
   background: linear-gradient(to top, #ffd633 42%, #ffa200 99%);
   border-color: #994c00;
-  -webkit-box-shadow: 0px 3px 3px 0px #c95a00 inset;
-          box-shadow: 0px 3px 3px 0px #c95a00 inset;
+  box-shadow: 0px 3px 3px 0px #c95a00 inset;
 }
 .page button:hover::before, .page button:active::before, .page button.active::before {
   background-position-x: 100%;
-  -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .page button::before {
   content: "";
@@ -6635,14 +5258,10 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
 }
 .page button:nth-of-type(2):hover::before, .page button:nth-of-type(2):active::before, .page button:nth-of-type(2).active::before {
   background-position-x: 100%;
-  -webkit-transform: scaleX(1);
-      -ms-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 .page button:nth-of-type(2)::before {
-  -webkit-transform: scaleX(-1);
-      -ms-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .page p {
   color: #fff;
@@ -6731,8 +5350,6 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .se
   /*for IE 9*/
 }
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover::before, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active::before, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#0000003b));
-  background: -o-linear-gradient(bottom, transparent 50%, #0000003b);
   background: linear-gradient(to top, transparent 50%, #0000003b);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -6741,7 +5358,7 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .se
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -6753,13 +5370,9 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .se
   width: 140px;
   height: 35px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 5px;
   border-radius: 10px 10px 0px 0px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn span {
@@ -6876,8 +5489,6 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:h
   /*for IE 9*/
 }
 html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover::before, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active::before, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#0000003b));
-  background: -o-linear-gradient(bottom, transparent 50%, #0000003b);
   background: linear-gradient(to top, transparent 50%, #0000003b);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -6886,7 +5497,7 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:h
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -6898,13 +5509,9 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn::
   width: 140px;
   height: 35px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 5px;
   border-radius: 10px 10px 0px 0px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn span {
@@ -6944,9 +5551,7 @@ html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line.open 
   height: auto;
 }
 html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line.open button {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 html body .innerPage article .mid.bettingWindow .topWindow .innerbox .line:nth-last-of-type(2) {
   border: none;
@@ -7054,12 +5659,9 @@ html body .innerPage article .mid.vipWindow .topWindow {
   height: 720px;
   border: solid 5px #122845;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
   background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
   background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
   position: relative;
 }
 html body .innerPage article .mid.vipWindow .topWindow .topIC {
@@ -7118,8 +5720,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .barBody {
   border-radius: 15px;
   background: #507ab0;
   border: solid 1px #5885c2;
-  -webkit-box-shadow: 0px 2px 2px 0px #365276 inset;
-          box-shadow: 0px 2px 2px 0px #365276 inset;
+  box-shadow: 0px 2px 2px 0px #365276 inset;
   margin: 20px auto 0px;
   position: relative;
 }
@@ -7129,8 +5730,6 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .barBody.short {
   height: 12px;
 }
 html body .innerPage article .mid.vipWindow .topWindow .barbox .barBody.short div {
-  background: -webkit-gradient(linear, left bottom, left top, from(#00b8b0), to(#36fff6));
-  background: -o-linear-gradient(bottom, #00b8b0 0%, #36fff6 100%);
   background: linear-gradient(to top, #00b8b0 0%, #36fff6 100%);
   background-color: #36fff6;
   border-color: #36fff6;
@@ -7139,8 +5738,6 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .barBody div {
   width: 21%;
   height: calc(100% - 4px);
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#87c800), to(#c0ff3e));
-  background: -o-linear-gradient(bottom, #87c800 0%, #c0ff3e 100%);
   background: linear-gradient(to top, #87c800 0%, #c0ff3e 100%);
   background-color: #87c800;
   border: solid 2px #cdff65;
@@ -7151,9 +5748,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox span {
   display: inline-block;
   color: #fff;
   padding: 0px 15px 0px 35px;
-  -webkit-transform: translateY(-1px);
-      -ms-transform: translateY(-1px);
-          transform: translateY(-1px);
+  transform: translateY(-1px);
 }
 html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
   padding-right: 31px;
@@ -7165,7 +5760,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
     padding-right: 26px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
     padding-right: 26px;
   }
@@ -7190,15 +5785,13 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover, h
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:active, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
   }
 }
 html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover::before, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:active::before, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn::before {
@@ -7209,19 +5802,13 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn::before 
   border-radius: 8px 8px 0px 0px;
   top: 5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn span {
   display: inline;
   font-size: 16px;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px);
+  transform: translateY(0px);
   padding: 0px;
 }
 html body .innerPage article .mid.vipWindow .topWindow .baseline {
@@ -7239,9 +5826,7 @@ html body .innerPage article .mid.vipWindow .topWindow .innerbox button {
   height: 58px;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   bottom: -80px;
   color: #fff;
   font-weight: bold;
@@ -7258,15 +5843,13 @@ html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover, h
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover, html body .innerPage article .mid.vipWindow .topWindow .innerbox button:active, html body .innerPage article .mid.vipWindow .topWindow .innerbox button.active {
     border-color: #f56684;
     background-color: #b5203f;
   }
 }
 html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover::before, html body .innerPage article .mid.vipWindow .topWindow .innerbox button:active::before, html body .innerPage article .mid.vipWindow .topWindow .innerbox button.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid.vipWindow .topWindow .innerbox button::before {
@@ -7277,11 +5860,7 @@ html body .innerPage article .mid.vipWindow .topWindow .innerbox button::before 
   border-radius: 8px 8px 0px 0px;
   top: 5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.vipWindow .topWindow .innerbox .nameList li {
@@ -7351,7 +5930,7 @@ html body .innerPage article .mid.transWindow .topWindow .selectbox {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.transWindow .topWindow .selectbox::before {
     display: none;
   }
@@ -7373,8 +5952,7 @@ html body .innerPage article .mid.transWindow .topWindow .selectbox select {
   height: 42px;
   border: solid 1px #c8dfff;
   background: #183051;
-  -webkit-box-shadow: 0px 2px 2px 0px #102036 inset;
-          box-shadow: 0px 2px 2px 0px #102036 inset;
+  box-shadow: 0px 2px 2px 0px #102036 inset;
   border-radius: 10px;
   color: #fff;
   padding-left: 10px;
@@ -7406,15 +5984,13 @@ html body .innerPage article .mid.transWindow .topWindow .savebtn:hover, html bo
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.transWindow .topWindow .savebtn:hover, html body .innerPage article .mid.transWindow .topWindow .savebtn:active, html body .innerPage article .mid.transWindow .topWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
   }
 }
 html body .innerPage article .mid.transWindow .topWindow .savebtn:hover::before, html body .innerPage article .mid.transWindow .topWindow .savebtn:active::before, html body .innerPage article .mid.transWindow .topWindow .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid.transWindow .topWindow .savebtn::before {
@@ -7425,11 +6001,7 @@ html body .innerPage article .mid.transWindow .topWindow .savebtn::before {
   border-radius: 8px 8px 0px 0px;
   top: 5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.transWindow .topWindow .savebtn span {
@@ -7479,16 +6051,12 @@ html body .innerPage article .mid.transWindow .topWindow .innerbox table tr td .
   position: absolute;
   top: 3px;
   left: 175px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #00adc1), color-stop(63%, #1ed2d9));
-  background: -o-linear-gradient(bottom, #00adc1 23%, #1ed2d9 63%);
   background: linear-gradient(to top, #00adc1 23%, #1ed2d9 63%);
   background-color: #00adc1;
-  -webkit-box-shadow: 0px 3px 3px 0px #56ffff inset;
-          box-shadow: 0px 3px 3px 0px #56ffff inset;
+  box-shadow: 0px 3px 3px 0px #56ffff inset;
 }
 html body .innerPage article .mid.transWindow .topWindow .innerbox table tr td .rebtn:hover::before, html body .innerPage article .mid.transWindow .topWindow .innerbox table tr td .rebtn:active::before, html body .innerPage article .mid.transWindow .topWindow .innerbox table tr td .rebtn.active::before {
-  -webkit-animation: rebtn2 0.6s linear 0s infinite;
-          animation: rebtn2 0.6s linear 0s infinite;
+  animation: rebtn2 0.6s linear 0s infinite;
 }
 html body .innerPage article .mid.transWindow .topWindow .innerbox table tr td .rebtn::before {
   content: "";
@@ -7498,30 +6066,15 @@ html body .innerPage article .mid.transWindow .topWindow .innerbox table tr td .
   background: url("../images/wallet/arrow_re.png") no-repeat;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-@-webkit-keyframes rebtn2 {
-  0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
-  }
-  100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
-  }
+  transform: translate(-50%, -50%);
 }
 
 @keyframes rebtn2 {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0deg);
-            transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
-    -webkit-transform: translate(-50%, -50%) rotate(360deg);
-            transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 html body .innerPage article .mid.depositWindow .topWindow {
@@ -7529,12 +6082,9 @@ html body .innerPage article .mid.depositWindow .topWindow {
   height: 720px;
   border: solid 5px #122845;
   border-radius: 15px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#273f5f), to(#2a4d7c));
-  background: -o-linear-gradient(bottom, #273f5f 0%, #2a4d7c 100%);
   background: linear-gradient(to top, #273f5f 0%, #2a4d7c 100%);
   background-color: #2a4d7c;
-  -webkit-box-shadow: 0px 2px 3px 0px #a7cdffab inset;
-          box-shadow: 0px 2px 3px 0px #a7cdffab inset;
+  box-shadow: 0px 2px 3px 0px #a7cdffab inset;
 }
 html body .innerPage article .mid.depositWindow .topWindow h1 {
   color: #ffffac;
@@ -7587,7 +6137,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .selectbox {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.withdrawWindow .topWindow .selectbox::before {
     display: none;
   }
@@ -7615,8 +6165,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .selectbox select {
   height: 42px;
   border: solid 1px #c8dfff;
   background: #183051;
-  -webkit-box-shadow: 0px 2px 2px 0px #102036 inset;
-          box-shadow: 0px 2px 2px 0px #102036 inset;
+  box-shadow: 0px 2px 2px 0px #102036 inset;
   border-radius: 10px;
   color: #fff;
   padding-left: 10px;
@@ -7631,8 +6180,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .selectbox input {
   height: 42px;
   border: solid 1px #c8dfff;
   background: #183051;
-  -webkit-box-shadow: 0px 2px 2px 0px #102036 inset;
-          box-shadow: 0px 2px 2px 0px #102036 inset;
+  box-shadow: 0px 2px 2px 0px #102036 inset;
   border-radius: 10px;
   color: #fff;
   padding-left: 10px;
@@ -7660,15 +6208,13 @@ html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover, html
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:active, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
   }
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover::before, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:active::before, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn.active::before {
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#00000052));
-  background: -o-linear-gradient(bottom, transparent 50%, #00000052);
   background: linear-gradient(to top, transparent 50%, #00000052);
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .savebtn::before {
@@ -7679,11 +6225,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .savebtn::before {
   border-radius: 8px 8px 0px 0px;
   top: 5px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, transparent), to(#ffc9e7));
-  background: -o-linear-gradient(bottom, transparent 50%, #ffc9e7);
+  transform: translateX(-50%);
   background: linear-gradient(to top, transparent 50%, #ffc9e7);
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .savebtn span {
@@ -7737,16 +6279,12 @@ html body .innerPage article .mid.withdrawWindow .topWindow .innerbox table tr t
   position: absolute;
   top: 3px;
   left: 175px;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(23%, #00adc1), color-stop(63%, #1ed2d9));
-  background: -o-linear-gradient(bottom, #00adc1 23%, #1ed2d9 63%);
   background: linear-gradient(to top, #00adc1 23%, #1ed2d9 63%);
   background-color: #00adc1;
-  -webkit-box-shadow: 0px 3px 3px 0px #56ffff inset;
-          box-shadow: 0px 3px 3px 0px #56ffff inset;
+  box-shadow: 0px 3px 3px 0px #56ffff inset;
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .innerbox table tr td .rebtn:hover::before, html body .innerPage article .mid.withdrawWindow .topWindow .innerbox table tr td .rebtn:active::before, html body .innerPage article .mid.withdrawWindow .topWindow .innerbox table tr td .rebtn.active::before {
-  -webkit-animation: rebtn2 0.6s linear 0s infinite;
-          animation: rebtn2 0.6s linear 0s infinite;
+  animation: rebtn2 0.6s linear 0s infinite;
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .innerbox table tr td .rebtn::before {
   content: "";
@@ -7756,9 +6294,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .innerbox table tr t
   background: url("../images/wallet/arrow_re.png") no-repeat;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .remindbox {
   width: 790px;
@@ -7768,8 +6304,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .remindbox {
   border-radius: 15px;
   background: #ff5858;
   margin: 0px auto;
-  -webkit-box-shadow: 0px 3px 3px 0px #c51d1d inset;
-          box-shadow: 0px 3px 3px 0px #c51d1d inset;
+  box-shadow: 0px 3px 3px 0px #c51d1d inset;
 }
 html body .innerPage article .mid.withdrawWindow .topWindow .remindbox h2 {
   font-size: 18px;
@@ -7801,18 +6336,13 @@ html body .rule article .leftside .btnWindow {
   height: 76px;
   border: solid 5px #122845;
   border-radius: 18px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#1e3966), to(#122845));
-  background: -o-linear-gradient(top, #1e3966 0%, #122845 100%);
   background: linear-gradient(to bottom, #1e3966 0%, #122845 100%);
   background-color: #122845;
-  -webkit-box-shadow: 0px 0px 0px 3px #fff inset;
-          box-shadow: 0px 0px 0px 3px #fff inset;
+  box-shadow: 0px 0px 0px 3px #fff inset;
   margin-bottom: 12px;
 }
 html body .rule article .leftside .btnWindow.open {
   height: 360px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#0ec1ae), to(#008b7c));
-  background: -o-linear-gradient(bottom, #0ec1ae 0%, #008b7c 100%);
   background: linear-gradient(to top, #0ec1ae 0%, #008b7c 100%);
   background-color: #008b7c;
 }
@@ -7821,9 +6351,7 @@ html body .rule article .leftside .btnWindow.open h1 {
 }
 html body .rule article .leftside .btnWindow.open h1::after {
   background-position-x: 100%;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 html body .rule article .leftside .btnWindow.open ul {
   display: block;
@@ -7891,8 +6419,7 @@ html body .rule article .leftside .btnWindow ul li:hover, html body .rule articl
 html body .rule article .leftside .btnWindow ul li.active {
   background: #ff3644;
   color: #fffbb4;
-  -webkit-box-shadow: 0px 0px 0px 4px #ff3644;
-          box-shadow: 0px 0px 0px 4px #ff3644;
+  box-shadow: 0px 0px 0px 4px #ff3644;
   border: solid 4px #0cb9a6;
 }
 html body .rule article .mid {
@@ -7909,10 +6436,7 @@ html body .rule article .mid .innerbox {
   padding: 35px 40px 89%;
   border: solid 6px #122845;
   border-radius: 25px;
-  -webkit-box-shadow: 0px 0px 0px 5px #fff inset, 0px 0px 0px 10px #66c9bf inset;
-          box-shadow: 0px 0px 0px 5px #fff inset, 0px 0px 0px 10px #66c9bf inset;
-  background: -webkit-gradient(linear, left bottom, left top, from(#008b7c), to(#00ab99));
-  background: -o-linear-gradient(bottom, #008b7c 0%, #00ab99 100%);
+  box-shadow: 0px 0px 0px 5px #fff inset, 0px 0px 0px 10px #66c9bf inset;
   background: linear-gradient(to top, #008b7c 0%, #00ab99 100%);
   background-color: #008b7c;
   overflow-x: hidden;
@@ -7993,8 +6517,7 @@ html body .rule article .mid .innerbox .pbox .codeBox button:hover, html body .r
   font-weight: bold;
 }
 html body .rule article .mid .innerbox .pbox .codeBox button:hover::before, html body .rule article .mid .innerbox .pbox .codeBox button:active::before, html body .rule article .mid .innerbox .pbox .codeBox button.active::before {
-  -webkit-animation: btnbg linear 10s 0s infinite alternate;
-          animation: btnbg linear 10s 0s infinite alternate;
+  animation: btnbg linear 10s 0s infinite alternate;
 }
 html body .rule article .mid .innerbox .pbox .codeBox button::before {
   content: "";
@@ -8045,8 +6568,7 @@ html body .game .boatimg .bgimg1 {
   background-size: 100%;
   position: fixed;
   margin: 125px 0px 0px 1270px;
-  -webkit-animation: poker_rightimg 1.5s linear 0s infinite;
-          animation: poker_rightimg 1.5s linear 0s infinite;
+  animation: poker_rightimg 1.5s linear 0s infinite;
 }
 html body .game .boatimg .logo {
   width: 943px;
@@ -8055,16 +6577,13 @@ html body .game .boatimg .logo {
   background-size: 100%;
   position: absolute;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   top: 40px;
 }
 html body .game .gamebox.boat {
   height: 600px;
   background: #003123;
-  -webkit-box-shadow: 0px 0px 0px 4px #003c23;
-          box-shadow: 0px 0px 0px 4px #003c23;
+  box-shadow: 0px 0px 0px 4px #003c23;
 }
 html body .game .gamebox.boat ul li {
   height: 80%;
@@ -8082,17 +6601,13 @@ html body .game .gamebox.boat ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.boat ul li a.turn div {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
 html body .game .gamebox.boat ul li a:hover div, html body .game .gamebox.boat ul li a:active div, html body .game .gamebox.boat ul li a.active div {
-  -webkit-transform: scale(1.2);
-      -ms-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 html body .game .gamebox.boat ul li a div {
   background: url("../images/game_icon/boat_mainimg.png") no-repeat;
@@ -8113,8 +6628,8 @@ html body .game .bg.boat {
 }
 
 html body .activeWallet article {
-  width: 1054px;
-  height: 925px;
+  width: 1060px;
+  height: 965px;
   margin: 0px auto;
 }
 html body .activeWallet article .activeWallet_mainbox {
@@ -8122,21 +6637,31 @@ html body .activeWallet article .activeWallet_mainbox {
   width: 100%;
   height: 100%;
   padding-top: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 html body .activeWallet article .activeWallet_mainbox.display {
   display: block;
+}
+html body .activeWallet article .activeWallet_mainbox div:last-child {
+  margin-bottom: 80px;
 }
 html body .activeWallet article .activeWallet_mainbox .imgBox {
   width: 1054px;
   height: 305px;
   background: url("../images/activeWallet/activeWallet_imgBG.png") no-repeat;
 }
+html body .activeWallet article .activeWallet_mainbox .imgBox:nth-of-type(2) {
+  background-position-y: 50%;
+}
+html body .activeWallet article .activeWallet_mainbox .imgBox:nth-of-type(3) {
+  background-position-y: 100%;
+}
 html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox {
-  width: 280px;
+  width: 300px;
   height: 225px;
-  margin: 45px 40px 0px 0px;
+  margin: 45px 20px 0px 0px;
   float: right;
-  background: #000;
 }
 html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox h1 {
   padding: 0px 0px 10px 0px;
@@ -8158,39 +6683,106 @@ html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox .basel
   background: #b63c59;
 }
 html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox button {
-  width: 120px;
-  height: 90px;
+  width: 140px;
+  height: 60px;
   border: solid 5px #620d26;
+  margin: 10px 8px 0px 0px;
+  border-radius: 10px;
+  background: linear-gradient(to top, #ffd64b 0%, #e3a435 18%, #ffc949 35%, #fdf5c7 72%, #ffd64b 100%);
+  font-size: 16px;
+  font-weight: bold;
 }
-html body .activeWallet article .discount_innerpage {
+html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox button:last-child {
+  margin-right: 0px;
+  width: 148px;
+}
+html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox button:hover, html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox button:active, html body .activeWallet article .activeWallet_mainbox .imgBox .contentBox button.active {
+  background: linear-gradient(to top, #1acdbb 0%, #0c9d8e 18%, #1acdbb 35%, #88fff3 72%, #1acdbb 100%);
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox {
+  width: 1046px;
+  height: 280px;
+  border: solid 4px #620d26;
+  border-radius: 40px;
+  background: linear-gradient(to top, #6c1028 0%, #b72b4d 100%);
+  box-shadow: 0px 0px 2px 3px #d8486a inset;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .leftImg {
+  display: inline-block;
+  width: 675px;
+  height: 250px;
+  background: #fff;
+  border: solid 4px #620d26;
+  margin: 10px 0px 0px 13px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 3px 2px #d64769;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox {
+  width: 300px;
+  height: 225px;
+  margin: 27px 20px 0px 0px;
+  float: right;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox h1 {
+  padding: 0px 0px 10px 0px;
+  line-height: 28px;
+  font-size: 22px;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox p.date {
+  font-size: 14px;
+  line-height: 14px;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox .baseline {
+  width: 100%;
+  margin: 10px 0px;
+  background: #b63c59;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox button {
+  width: 140px;
+  height: 60px;
+  border: solid 5px #620d26;
+  margin: 10px 8px 0px 0px;
+  border-radius: 10px;
+  background: linear-gradient(to top, #ffd64b 0%, #e3a435 18%, #ffc949 35%, #fdf5c7 72%, #ffd64b 100%);
+  font-size: 16px;
+  font-weight: bold;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox button:last-child {
+  margin-right: 0px;
+  width: 148px;
+}
+html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox button:hover, html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox button:active, html body .activeWallet article .activeWallet_mainbox .demoBox .contentBox button.active {
+  background: linear-gradient(to top, #1acdbb 0%, #0c9d8e 18%, #1acdbb 35%, #88fff3 72%, #1acdbb 100%);
+}
+html body .activeWallet article .activeWallet_innerpage {
   display: none;
   position: absolute;
   width: 1040px;
   height: 940px;
   left: 50%;
   bottom: 0px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  background: -webkit-gradient(linear, left bottom, left top, from(#6c1028), to(#b72b4d));
-  background: -o-linear-gradient(bottom, #6c1028 0%, #b72b4d);
+  transform: translateX(-50%);
   background: linear-gradient(to top, #6c1028 0%, #b72b4d);
   background-color: #a12342;
   border-radius: 40px 40px 0px 0px;
   border: solid 5px #620d26;
   border-bottom-width: 0px;
-  -webkit-box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
-          box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
+  box-shadow: 0px 0px 5px 2px #ffe0e099 inset;
 }
-html body .activeWallet article .discount_innerpage.display {
+html body .activeWallet article .activeWallet_innerpage.display {
   display: block;
 }
-html body .activeWallet article .discount_innerpage .bannerbox {
+html body .activeWallet article .activeWallet_innerpage .bannerbox {
   width: 100%;
   height: 275px;
   position: relative;
 }
-html body .activeWallet article .discount_innerpage .bannerbox div {
+html body .activeWallet article .activeWallet_innerpage .bannerbox div {
   width: 1111px;
   height: 309px;
   background: url("../images/discount/discount_banner.png") no-repeat;
@@ -8199,12 +6791,12 @@ html body .activeWallet article .discount_innerpage .bannerbox div {
   left: -35px;
   top: -28px;
 }
-html body .activeWallet article .discount_innerpage .contentbox {
+html body .activeWallet article .activeWallet_innerpage .contentBox {
   width: calc(100% - 70px);
   height: 660px;
   padding: 0px 35px;
 }
-html body .activeWallet article .discount_innerpage .contentbox .title {
+html body .activeWallet article .activeWallet_innerpage .contentBox .title {
   width: 535px;
   height: 57px;
   border-radius: 15px;
@@ -8218,7 +6810,7 @@ html body .activeWallet article .discount_innerpage .contentbox .title {
   letter-spacing: 5px;
   position: relative;
 }
-html body .activeWallet article .discount_innerpage .contentbox .title button {
+html body .activeWallet article .activeWallet_innerpage .contentBox .title button {
   position: absolute;
   width: 142px;
   height: 51px;
@@ -8226,31 +6818,55 @@ html body .activeWallet article .discount_innerpage .contentbox .title button {
   bottom: 3px;
   left: -290px;
 }
-html body .activeWallet article .discount_innerpage .contentbox .title button:hover {
-  -webkit-animation: discount_btn 0.3s ease-out 0s;
-          animation: discount_btn 0.3s ease-out 0s;
+html body .activeWallet article .activeWallet_innerpage .contentBox .title button:hover {
+  animation: discount_btn 0.3s ease-out 0s;
 }
-html body .activeWallet article .discount_innerpage .contentbox .title button:active, html body .activeWallet article .discount_innerpage .contentbox .title button.active {
-  -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+html body .activeWallet article .activeWallet_innerpage .contentBox .title button:active, html body .activeWallet article .activeWallet_innerpage .contentBox .title button.active {
+  transform: scale(0.9);
 }
-html body .activeWallet article .discount_innerpage .contentbox .hideBoard {
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard {
   width: 100%;
   height: 480px;
   overflow: auto;
 }
-html body .activeWallet article .discount_innerpage .contentbox .hideBoard h1 {
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard h1 {
   color: #ccff62;
-  font-size: 19px;
+  font-size: 16px;
+  letter-spacing: 3px;
   padding: 40px 0px 5px;
 }
-html body .activeWallet article .discount_innerpage .contentbox .hideBoard p {
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard p {
   color: #fff;
   line-height: 26px;
 }
-html body .activeWallet article .discount_innerpage .contentbox .hideBoard p.lastP {
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard p.lastP {
   padding-top: 30px;
+}
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard button {
+  display: block;
+  width: 350px;
+  height: 70px;
+  border: solid 5px #00453e;
+  margin: 100px auto 50px;
+  border-radius: 15px;
+  background: linear-gradient(to top, #1acdbb 0%, #0c9d8e 18%, #1acdbb 35%, #88fff3 72%, #1acdbb 100%);
+  font-size: 19px;
+  font-weight: bold;
+  position: relative;
+}
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard button::before {
+  content: "";
+  position: absolute;
+  width: 330px;
+  height: 50px;
+  background: linear-gradient(to top, transparent, #ffffff60);
+  left: 50%;
+  top: 5px;
+  transform: translateX(-50%);
+  border-radius: 10px 10px 0px 0px;
+}
+html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard button:hover::before, html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard button:active::before, html body .activeWallet article .activeWallet_innerpage .contentBox .hideBoard button.active::before {
+  background: linear-gradient(to top, transparent, #00000040);
 }
 html body .activeWallet .bg {
   width: 100%;
@@ -8263,12 +6879,10 @@ html body .activeWallet .bg {
 
 @keyframes discount_btn {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
   }
   30% {
-    -webkit-transform: scaleX(1.1) scaleY(1.3);
-            transform: scaleX(1.1) scaleY(1.3);
+    transform: scaleX(1.1) scaleY(1.3);
   }
 }
 @media only screen and (max-width: 1800px) {

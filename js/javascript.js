@@ -289,7 +289,7 @@ $(function(){
 		$('.rule .GD').siblings().removeClass('display');
 	})
 })
-//discount
+//discount/activeWallet
 $(function(){
 	$('.discount_mainbox .leftside button').click(function(){
 		$(this).addClass('active');
@@ -297,12 +297,16 @@ $(function(){
 	})
 	$('.openPage1').click(function(){
 		$('.page1').addClass('display');
-		$('.discount_mainbox').removeClass('display');
+		$('.discount_mainbox,.activeWallet_mainbox').removeClass('display');
 	})
 	$('.discount_innerpage .contentbox .title button').click(function(){
 		$('.discount_innerpage').removeClass('display');
 		$('.discount_mainbox').addClass('display');
 		$('.discount article').removeClass('inner');
+	})
+	$('.activeWallet_innerpage .contentBox .title button').click(function(){
+		$('.activeWallet_innerpage').removeClass('display');
+		$('.activeWallet_mainbox').addClass('display');
 	})
 	$('.discount_mainbox .imgBox').click(function(){
 		$('.discount article').addClass('inner');

@@ -52,9 +52,11 @@ html {
                     .mid {
                         float: left;
                         width: 72.192%;
-                        height: 0px;
-                        padding-bottom: 64.384%;
+                        height: 940px;
+                        // padding-bottom: 64.384%;
                         margin-top: 0.549%;
+                        overflow-x: hidden;
+                        overflow-y: scroll;
                         // width: 1054px;
                         // height: calc(100% - 25px);
                         // margin-top: 8px;
@@ -99,6 +101,66 @@ html {
                                 letter-spacing: 5px;
                                 left: 85%;
                                 top: 80px;
+                                transform: translateX(-50%);
+                                transition: 0.4s all;
+                            }
+                            button {
+                                opacity: 0;
+                                position: absolute;
+                                width: 220px;
+                                height: 70px;
+                                background: linear-gradient(to top,#ffd64b 0%,#e3a435 18%,#ffc949 35%,#fdf5c7 72%,#ffd64b 100%);
+                                border: solid 5px #000;
+                                box-shadow: 0px 0px 0px 5px #6363e5;
+                                left: 15%;
+                                bottom: 87px;
+                                transform: translateX(-50%);
+                                border-radius: 10px;
+                                font-size: 21px;
+                                font-weight: bold;
+                                z-index: 1;
+                                transition: 0.4s all;
+                            }
+                        }
+                        .demoBox {
+                            width: calc(100% - 8px);
+                            height: 0px;
+                            padding-bottom: 26.938%;
+                            background: linear-gradient(to top,#6c1028 0%,#b72b4d 100%);
+                            border: solid 4px #620d26;
+                            border-radius: 40px;
+                            box-shadow: 0px 0px 3px 2px #d8486a inset;
+                            position: relative;
+                            cursor: pointer;
+                            &:hover,&:active,&.active {
+                                div {
+                                    filter: brightness(0.3);
+                                }
+                                p,button {
+                                    left: 50%;
+                                    opacity: 1;
+                                }
+                            }
+                            .bannerImg {
+                                width: 97%;
+                                height: 0px;
+                                background: #fff;
+                                border: solid 4px #620d26;
+                                border-radius: 25px;
+                                margin: 1% auto 0px;
+                                padding-bottom: 24.3%;
+                                box-shadow: 0px 0px 3px 2px #d8486a;
+                                transition: 0.3s all;
+                            }
+                            p {
+                                opacity: 0;
+                                position: absolute;
+                                font-size: 40px;
+                                font-weight: bold;
+                                color: #fff;
+                                letter-spacing: 5px;
+                                left: 85%;
+                                top: 60px;
                                 transform: translateX(-50%);
                                 transition: 0.4s all;
                             }
@@ -236,7 +298,7 @@ html {
                 article {
                     .discount_mainbox {
                         .mid {
-                            .imgBox {
+                            .imgBox,.demoBox {
                                 button {
                                     width: 175px;
                                     height: 55px;
@@ -262,6 +324,12 @@ html {
                                 p {
                                     font-size: 30px;
                                     top: 55px;
+                                }
+                            }
+                            .demoBox {
+                                p {
+                                    font-size: 30px;
+                                    top: 40px;
                                 }
                             }
                         }

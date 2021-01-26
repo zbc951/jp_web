@@ -164,6 +164,7 @@ html {
 .mailBox {
     overflow: auto;
     height: 480px;
+    scrollbar-width: thin;
     .mail {
         width: 90%;
         height: 100px;

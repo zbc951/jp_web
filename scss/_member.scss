@@ -132,7 +132,8 @@ html {
                                         display: block;
                                     }
                                     .flowWindow {
-                                        overflow: auto;
+                                        overflow-x: hidden;
+                                        overflow-y: auto;
                                         height: 300px;
                                         scrollbar-width: thin;
                                         .inputList {

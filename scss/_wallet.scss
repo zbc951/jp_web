@@ -310,7 +310,9 @@ html {
                                         height: 275px;
                                         padding: 15px 25px;
                                         text-align: center;
-                                        overflow: auto;
+                                        overflow-x: hidden;
+                                        overflow-y: auto;
+                                        scrollbar-width: thin;
                                         .overBox {
                                             display: inline-block;
                                             width: 135px;
@@ -611,6 +613,14 @@ html {
                             margin-top: -60px;
                             position: relative;
                             z-index: 1;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                margin-top: -15px;
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                margin-top: -15px;
+                            }
                         }
                         p {
                             width: 10px;

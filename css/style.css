@@ -100,11 +100,11 @@ html ::-webkit-scrollbar {
   height: 5px;
 }
 html ::-webkit-scrollbar-thumb {
-  background: #a7ddff;
+  background: #fcff27;
   border-radius: 5px;
 }
 html ::-webkit-scrollbar-track {
-  background: #a3a3a3;
+  background: #0d2523;
   border-radius: 5px;
 }
 html body header {
@@ -1834,10 +1834,10 @@ html ::-webkit-scrollbar {
   height: 5px;
 }
 html ::-webkit-scrollbar-thumb {
-  background: #a7ddff;
+  background: #fcff27;
 }
 html ::-webkit-scrollbar-track {
-  background: #a3a3a3;
+  background: #0d2523;
 }
 html body .signup {
   width: 100%;
@@ -3987,7 +3987,9 @@ html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platf
   height: 275px;
   padding: 15px 25px;
   text-align: center;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .platform .innerbox .overBox, html body .innerPage article .mid.walletWindow .bottomWindow .separateBox .freeWallet .innerbox .overBox {
   display: inline-block;
@@ -4285,6 +4287,18 @@ html body .innerPage article .fixside .windowBtn span {
   margin-top: -60px;
   position: relative;
   z-index: 1;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .innerPage article .fixside .windowBtn span {
+    margin-top: -15px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .innerPage article .fixside .windowBtn span {
+    margin-top: -15px;
+  }
 }
 html body .innerPage article .fixside .windowBtn p {
   width: 10px;
@@ -4747,7 +4761,8 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
   display: block;
 }
 html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow {
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   height: 300px;
   scrollbar-width: thin;
 }
@@ -5321,6 +5336,7 @@ html body .innerPage article .mid.mailWindow .topWindow .separateBox .posts .pos
 .mailBox {
   overflow: auto;
   height: 480px;
+  scrollbar-width: thin;
 }
 .mailBox .mail {
   width: 90%;
@@ -5635,6 +5651,7 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .in
   height: 355px;
   overflow-x: hidden;
   overflow-y: auto;
+  scrollbar-width: thin;
 }
 html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .innerbox table {
   width: 100%;

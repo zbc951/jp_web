@@ -1345,16 +1345,84 @@ html body .jumpbox .noacc {
   display: none;
   position: fixed;
   width: 482px;
-  height: 239px;
+  height: auto;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background: url("../images/index/account_errorbg.png") no-repeat;
   z-index: 101;
   text-align: center;
 }
 html body .jumpbox .noacc.display {
   display: block;
+}
+html body .jumpbox .noacc .top {
+  width: 100%;
+  height: 100px;
+  background: url("../images/index/tipBG1.png") no-repeat;
+}
+html body .jumpbox .noacc .top p {
+  padding: 30px 0px 0px 15px;
+  color: #783c00;
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+html body .jumpbox .noacc .mid {
+  width: 100%;
+  height: auto;
+  background: url("../images/index/tipBG2.png");
+}
+html body .jumpbox .noacc .bottom {
+  width: 100%;
+  height: 137px;
+  background: url("../images/index/tipBG3.png") no-repeat;
+}
+html body .jumpbox .noacc .bottom .accbtn {
+  width: 140px;
+  height: 46px;
+  background: #783c00;
+  border-radius: 10px;
+  margin-top: 35px;
+  position: relative;
+  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
+}
+html body .jumpbox .noacc .bottom .accbtn::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 30px;
+  background: #8b4b0b;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  border-radius: 5px 5px 10px 10px;
+}
+html body .jumpbox .noacc .bottom .accbtn::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 10px;
+  background: #a4601b;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+html body .jumpbox .noacc .bottom .accbtn:hover, html body .jumpbox .noacc .bottom .accbtn:active, html body .jumpbox .noacc .bottom .accbtn.active {
+  box-shadow: 0px 0px 0px 2px #512800;
+  margin-top: 39px;
+}
+html body .jumpbox .noacc .bottom .accbtn span {
+  display: block;
+  width: 55px;
+  height: 25px;
+  background: url("../images/word/signup_btnword.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
 }
 html body .jumpbox .noacc .cancelbtn {
   width: 41px;
@@ -1366,58 +1434,6 @@ html body .jumpbox .noacc .cancelbtn {
 }
 html body .jumpbox .noacc .cancelbtn:hover, html body .jumpbox .noacc .cancelbtn:active, html body .jumpbox .noacc .cancelbtn.acitve {
   animation: noacc_cancelbtn 0.8s linear 0s;
-}
-html body .jumpbox .noacc h1 {
-  padding: 35px 0px 50px;
-  color: #783c00;
-  font-weight: bold;
-}
-html body .jumpbox .noacc .accbtn {
-  width: 140px;
-  height: 46px;
-  background: #783c00;
-  border-radius: 10px;
-  margin-top: 25px;
-  position: relative;
-  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
-}
-html body .jumpbox .noacc .accbtn::before {
-  content: "";
-  position: absolute;
-  width: 95%;
-  height: 30px;
-  background: #8b4b0b;
-  left: 50%;
-  top: 6%;
-  transform: translateX(-50%);
-  border-radius: 5px 5px 10px 10px;
-}
-html body .jumpbox .noacc .accbtn::after {
-  content: "";
-  position: absolute;
-  width: 95%;
-  height: 10px;
-  background: #a4601b;
-  left: 50%;
-  top: 6%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-}
-html body .jumpbox .noacc .accbtn:hover, html body .jumpbox .noacc .accbtn:active, html body .jumpbox .noacc .accbtn.active {
-  box-shadow: 0px 0px 0px 2px #512800;
-  margin-top: 29px;
-}
-html body .jumpbox .noacc .accbtn span {
-  display: block;
-  width: 55px;
-  height: 25px;
-  background: url("../images/word/signup_btnword.png") no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 2;
 }
 
 @keyframes btnhover {
@@ -2501,16 +2517,110 @@ html body .jumpbox .transWallet {
   display: none;
   position: fixed;
   width: 482px;
-  height: 326px;
+  height: auto;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background: url("../images/slot/slot_jumpBoxBG.png") no-repeat;
   z-index: 101;
   text-align: center;
 }
 html body .jumpbox .transWallet.display {
   display: block;
+}
+html body .jumpbox .transWallet .top {
+  width: 100%;
+  height: 100px;
+  background: url("../images/index/tipBG1.png") no-repeat;
+  text-align: center;
+}
+html body .jumpbox .transWallet .top p {
+  padding: 30px 0px 0px 12px;
+  color: #783c00;
+  font-weight: bold;
+  font-size: 18px;
+}
+html body .jumpbox .transWallet .mid {
+  width: 100%;
+  height: auto;
+  background: url("../images/index/tipBG2.png");
+}
+html body .jumpbox .transWallet .mid p {
+  letter-spacing: 5px;
+}
+html body .jumpbox .transWallet .mid p span {
+  font-weight: bold;
+  padding-left: 15px;
+  letter-spacing: 0px;
+}
+html body .jumpbox .transWallet .mid .selectBox {
+  color: #000;
+  width: 274px;
+  margin: 20px auto 0px;
+  font-size: 18px;
+  padding-right: 23px;
+}
+html body .jumpbox .transWallet .mid .selectBox::before {
+  left: 245px;
+  border-color: #8b4b0b transparent transparent transparent;
+}
+html body .jumpbox .transWallet .mid .selectBox select {
+  width: 195px;
+  padding-left: 15px;
+  border: solid 2px #5f5f5f;
+  background: #fff3bf;
+  color: #512800;
+}
+html body .jumpbox .transWallet .bottom {
+  width: 100%;
+  height: 137px;
+  background: url("../images/index/tipBG3.png") no-repeat;
+}
+html body .jumpbox .transWallet .bottom .accbtn {
+  width: 270px;
+  height: 46px;
+  background: #783c00;
+  border-radius: 10px;
+  margin-top: 25px;
+  position: relative;
+  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
+}
+html body .jumpbox .transWallet .bottom .accbtn::before {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 30px;
+  background: #8b4b0b;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  border-radius: 5px 5px 10px 10px;
+}
+html body .jumpbox .transWallet .bottom .accbtn::after {
+  content: "";
+  position: absolute;
+  width: 95%;
+  height: 10px;
+  background: #a4601b;
+  left: 50%;
+  top: 6%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+html body .jumpbox .transWallet .bottom .accbtn:hover, html body .jumpbox .transWallet .bottom .accbtn:active, html body .jumpbox .transWallet .bottom .accbtn.active {
+  box-shadow: 0px 0px 0px 2px #512800;
+  margin-top: 29px;
+}
+html body .jumpbox .transWallet .bottom .accbtn span {
+  display: block;
+  width: 98px;
+  height: 21px;
+  background: url("../images/word/slot_jumpBoxWord.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
 }
 html body .jumpbox .transWallet .cancelbtn {
   width: 41px;
@@ -2522,84 +2632,6 @@ html body .jumpbox .transWallet .cancelbtn {
 }
 html body .jumpbox .transWallet .cancelbtn:hover, html body .jumpbox .transWallet .cancelbtn:active, html body .jumpbox .transWallet .cancelbtn.acitve {
   animation: noacc_cancelbtn 0.8s linear 0s;
-}
-html body .jumpbox .transWallet h1 {
-  padding: 35px 0px 45px;
-  color: #783c00;
-  font-weight: bold;
-}
-html body .jumpbox .transWallet p {
-  letter-spacing: 5px;
-}
-html body .jumpbox .transWallet p span {
-  font-weight: bold;
-  padding-left: 15px;
-  letter-spacing: 0px;
-}
-html body .jumpbox .transWallet .selectBox {
-  color: #000;
-  width: 274px;
-  margin: 20px auto;
-  font-size: 18px;
-  padding-right: 23px;
-}
-html body .jumpbox .transWallet .selectBox::before {
-  left: 245px;
-  border-color: #8b4b0b transparent transparent transparent;
-}
-html body .jumpbox .transWallet .selectBox select {
-  width: 195px;
-  padding-left: 15px;
-  border: solid 2px #5f5f5f;
-  background: #fff3bf;
-  color: #512800;
-}
-html body .jumpbox .transWallet .accbtn {
-  width: 270px;
-  height: 46px;
-  background: #783c00;
-  border-radius: 10px;
-  margin-top: 25px;
-  position: relative;
-  box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
-}
-html body .jumpbox .transWallet .accbtn::before {
-  content: "";
-  position: absolute;
-  width: 95%;
-  height: 30px;
-  background: #8b4b0b;
-  left: 50%;
-  top: 6%;
-  transform: translateX(-50%);
-  border-radius: 5px 5px 10px 10px;
-}
-html body .jumpbox .transWallet .accbtn::after {
-  content: "";
-  position: absolute;
-  width: 95%;
-  height: 10px;
-  background: #a4601b;
-  left: 50%;
-  top: 6%;
-  transform: translateX(-50%);
-  border-radius: 10px;
-}
-html body .jumpbox .transWallet .accbtn:hover, html body .jumpbox .transWallet .accbtn:active, html body .jumpbox .transWallet .accbtn.active {
-  box-shadow: 0px 0px 0px 2px #512800;
-  margin-top: 29px;
-}
-html body .jumpbox .transWallet .accbtn span {
-  display: block;
-  width: 98px;
-  height: 21px;
-  background: url("../images/word/slot_jumpBoxWord.png") no-repeat;
-  background-size: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  z-index: 2;
 }
 
 @keyframes money {
@@ -6357,51 +6389,56 @@ html body .innerPage article .mid.depositWindow .topWindow .innerbox {
   width: 800px;
   height: 530px;
 }
-html body .noCard {
+html body .jumpbox .noCard {
   display: none;
   position: fixed;
   width: 482px;
-  height: 239px;
+  height: auto;
   top: 20%;
   left: 50%;
   transform: translateX(-50%);
-  background: url("../images/index/account_errorbg.png") no-repeat;
   z-index: 101;
   text-align: center;
 }
-html body .noCard.display {
+html body .jumpbox .noCard.display {
   display: block;
 }
-html body .noCard .cancelbtn {
-  width: 41px;
-  height: 40px;
-  background: url("../images/index/xx.png") no-repeat;
-  position: absolute;
-  top: -30px;
-  right: -30px;
+html body .jumpbox .noCard .top {
+  width: 100%;
+  height: 100px;
+  background: url("../images/index/tipBG1.png") no-repeat;
 }
-html body .noCard .cancelbtn:hover, html body .noCard .cancelbtn:active, html body .noCard .cancelbtn.acitve {
-  animation: noacc_cancelbtn 0.8s linear 0s;
-}
-html body .noCard h1 {
-  padding: 35px 0px 30px;
+html body .jumpbox .noCard .top p {
+  padding: 30px 0px 0px 15px;
   color: #783c00;
   font-weight: bold;
+  letter-spacing: 5px;
+  font-size: 18px;
 }
-html body .noCard p {
+html body .jumpbox .noCard .mid {
+  width: 100%;
+  height: auto;
+  background: url("../images/index/tipBG2.png");
+}
+html body .jumpbox .noCard .mid p {
   font-size: 16px;
   line-height: 20px;
 }
-html body .noCard .accbtn {
+html body .jumpbox .noCard .bottom {
+  width: 100%;
+  height: 137px;
+  background: url("../images/index/tipBG3.png") no-repeat;
+}
+html body .jumpbox .noCard .bottom .accbtn {
   width: 140px;
   height: 46px;
   background: #783c00;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 35px;
   position: relative;
   box-shadow: 0px 4px 0px 2px #512800, 0px 0px 0px 2px #512800;
 }
-html body .noCard .accbtn::before {
+html body .jumpbox .noCard .bottom .accbtn::before {
   content: "";
   position: absolute;
   width: 95%;
@@ -6412,7 +6449,7 @@ html body .noCard .accbtn::before {
   transform: translateX(-50%);
   border-radius: 5px 5px 10px 10px;
 }
-html body .noCard .accbtn::after {
+html body .jumpbox .noCard .bottom .accbtn::after {
   content: "";
   position: absolute;
   width: 95%;
@@ -6423,11 +6460,11 @@ html body .noCard .accbtn::after {
   transform: translateX(-50%);
   border-radius: 10px;
 }
-html body .noCard .accbtn:hover, html body .noCard .accbtn:active, html body .noCard .accbtn.active {
+html body .jumpbox .noCard .bottom .accbtn:hover, html body .jumpbox .noCard .bottom .accbtn:active, html body .jumpbox .noCard .bottom .accbtn.active {
   box-shadow: 0px 0px 0px 2px #512800;
-  margin-top: 29px;
+  margin-top: 39px;
 }
-html body .noCard .accbtn span {
+html body .jumpbox .noCard .bottom .accbtn span {
   display: block;
   width: 55px;
   height: 25px;
@@ -6438,6 +6475,17 @@ html body .noCard .accbtn span {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 2;
+}
+html body .jumpbox .noCard .cancelbtn {
+  width: 41px;
+  height: 40px;
+  background: url("../images/index/xx.png") no-repeat;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+}
+html body .jumpbox .noCard .cancelbtn:hover, html body .jumpbox .noCard .cancelbtn:active, html body .jumpbox .noCard .cancelbtn.acitve {
+  animation: noacc_cancelbtn 0.8s linear 0s;
 }
 
 html body .innerPage article .mid.withdrawWindow .topWindow {

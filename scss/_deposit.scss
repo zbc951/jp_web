@@ -42,85 +42,103 @@ html {
                 }
             }
         }
-        .noCard {
-            display: none;
-            position: fixed;
-            width: 482px;
-            height: 239px;
-            top: 20%;
-            left: 50%;
-            transform: translateX(-50%);
-            background: url('../images/index/account_errorbg.png') no-repeat;
-            z-index: 101;
-            text-align: center;
-            &.display {
-                display: block;
-            }
-            .cancelbtn {
-                width: 41px;
-                height: 40px;
-                background: url('../images/index/xx.png') no-repeat;
-                position: absolute;
-                top: -30px;
-                right: -30px;
-                &:hover,&:active,&.acitve {
-                    animation: noacc_cancelbtn 0.8s linear 0s;
-                }
-            }
-            h1 {
-                padding: 35px 0px 30px;
-                color: #783c00;
-                font-weight: bold;
-            }
-            p {
-                font-size: 16px;
-                line-height: 20px;
-            }
-            .accbtn {
-                width: 140px;
-                height: 46px;
-                background: #783c00;
-                border-radius: 10px;
-                margin-top: 25px;
-                position: relative;
-                box-shadow: 0px 4px 0px 2px #512800,0px 0px 0px 2px #512800;
-                &::before {
-                    content: "";
-                    position: absolute;
-                    width: 95%;
-                    height: 30px;
-                    background: #8b4b0b;
-                    left: 50%;
-                    top: 6%;
-                    transform: translateX(-50%);
-                    border-radius: 5px 5px 10px 10px;
-                }
-                &::after {
-                    content: "";
-                    position: absolute;
-                    width: 95%;
-                    height: 10px;
-                    background: #a4601b;
-                    left: 50%;
-                    top: 6%;
-                    transform: translateX(-50%);
-                    border-radius: 10px;
-                }
-                &:hover,&:active,&.active {
-                    box-shadow: 0px 0px 0px 2px #512800;
-                    margin-top: 29px;
-                }
-                span {
+        .jumpbox {
+            .noCard {
+                display: none;
+                position: fixed;
+                width: 482px;
+                height: auto;
+                top: 20%;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 101;
+                text-align: center;
+                &.display {
                     display: block;
-                    width: 55px;
-                    height: 25px;
-                    background: url('../images/word/signup_btnword.png') no-repeat;
-                    background-size: 100%;
+                }
+                .top {
+                    width: 100%;
+                    height: 100px;
+                    background: url('../images/index/tipBG1.png') no-repeat;
+                    p {
+                        padding: 30px 0px 0px 15px;
+                        color: #783c00;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        font-size: 18px;
+                    }
+                }
+                .mid {
+                    width: 100%;
+                    height: auto;
+                    background: url('../images/index/tipBG2.png');
+                    p {
+                        font-size: 16px;
+                        line-height: 20px
+                    };
+                }
+                .bottom {
+                    width: 100%;
+                    height: 137px;
+                    background: url('../images/index/tipBG3.png') no-repeat;
+                    .accbtn {
+                        width: 140px;
+                        height: 46px;
+                        background: #783c00;
+                        border-radius: 10px;
+                        margin-top: 35px;
+                        position: relative;
+                        box-shadow: 0px 4px 0px 2px #512800,0px 0px 0px 2px #512800;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 95%;
+                            height: 30px;
+                            background: #8b4b0b;
+                            left: 50%;
+                            top: 6%;
+                            transform: translateX(-50%);
+                            border-radius: 5px 5px 10px 10px;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 95%;
+                            height: 10px;
+                            background: #a4601b;
+                            left: 50%;
+                            top: 6%;
+                            transform: translateX(-50%);
+                            border-radius: 10px;
+                        }
+                        &:hover,&:active,&.active {
+                            box-shadow: 0px 0px 0px 2px #512800;
+                            margin-top: 39px;
+                        }
+                        span {
+                            display: block;
+                            width: 55px;
+                            height: 25px;
+                            background: url('../images/word/signup_btnword.png') no-repeat;
+                            background-size: 100%;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            z-index: 2;
+                        }
+                    }
+                }
+                .cancelbtn {
+                    width: 41px;
+                    height: 40px;
+                    background: url('../images/index/xx.png') no-repeat;
                     position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    transform: translateX(-50%) translateY(-50%);
-                    z-index: 2;
+                    top: -30px;
+                    right: -30px;
+                    &:hover,&:active,&.acitve {
+                        animation: noacc_cancelbtn 0.8s linear 0s;
+                    }
                 }
             }
         }

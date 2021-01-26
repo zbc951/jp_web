@@ -5,7 +5,7 @@ html {
             article {
                 // width: 76.241%;
                 max-width: 1425px;
-                height: 965px;
+                height: auto;
                 // height: 0px;  
                 // padding-bottom: 49.0865%;
                 margin: 0px auto;
@@ -15,13 +15,13 @@ html {
                     width: 100%;
                     // height: 0px;
                     // padding-bottom: 64.384%;
-                    height: 100%;
+                    height: auto;
                     &.display {
                         display: block;
                     }
                     //左列
                     .leftside {
-                        float: left;
+                        position: fixed;
                         // width: 24.658%;
                         // height: 0%;
                         // padding-bottom: 64.384%;
@@ -45,16 +45,15 @@ html {
                     }
                     //中
                     .mid {
-                        float: left;
+                        float: right;
                         // width: 72.192%;
                         // height: 0px;
                         // padding-bottom: 64.384%;
                         // margin-top: 0.549%;
-                        overflow-x: hidden;
-                        overflow-y: scroll;
                         width: 1054px;
-                        height: calc(100% - 25px);
+                        height: auto;
                         margin-top: 8px;
+                        padding-bottom: 50px;
                         .imgBox {
                             // width: 100%;
                             // height: 0px;

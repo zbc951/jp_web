@@ -4,13 +4,13 @@ html {
             //主區域
             article {
                 width: 1060px;
-                height: 965px;  
+                height: auto;  
                 margin: 0px auto;
                 //選單
                 .activeWallet_mainbox {
                     display: none;
                     width: 100%;
-                    height: 100%;
+                    height: auto;
                     padding-top: 10px;
                     overflow-x: hidden;
                     overflow-y: auto;

@@ -106,6 +106,7 @@ html {
                                         height: auto;
                                         button {
                                             transform: rotate(180deg);
+                                            background-position-y: 100%;
                                         }
                                     }
                                     &:nth-last-of-type(2) {

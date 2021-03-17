@@ -585,7 +585,9 @@ html {
                                 display: inline-block;
                                 margin: 5% 0.45% 0% 3%;
                                 text-align: center;
-                                box-shadow: none;
+                                div {
+                                    box-shadow: none;
+                                }
                             } 
                         }
                     }

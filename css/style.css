@@ -2279,7 +2279,6 @@ html body .game .gamebox ul li a div {
   height: 100%;
   transition: all 0.2s;
   position: absolute;
-  box-shadow: 0px 2px 8px 0px #000;
   left: 0px;
   top: 0px;
 }
@@ -2310,18 +2309,22 @@ html body .game .gamebox ul li a div.slot_innimg6 {
 html body .game .gamebox ul li a div.slot_innimg7 {
   background: url("../images/game_icon/slot/slot_mainimg7.png") no-repeat;
   background-size: 100%;
+  box-shadow: 0px 2px 8px 0px #000;
 }
 html body .game .gamebox ul li a div.slot_innimg8 {
   background: url("../images/game_icon/slot/slot_mainimg8.png") no-repeat;
   background-size: 100%;
+  box-shadow: 0px 2px 8px 0px #000;
 }
 html body .game .gamebox ul li a div.slot_innimg9 {
   background: url("../images/game_icon/slot/slot_mainimg9.png") no-repeat;
   background-size: 100%;
+  box-shadow: 0px 2px 8px 0px #000;
 }
 html body .game .gamebox ul li a div.slot_innimg10 {
   background: url("../images/game_icon/slot/slot_mainimg10.png") no-repeat;
   background-size: 100%;
+  box-shadow: 0px 2px 8px 0px #000;
 }
 html body .game .gamebox ul li a button {
   opacity: 0;
@@ -2524,9 +2527,6 @@ html body .game .gamebox ul.slot_select li a {
   display: inline-block;
   margin: 5% 0.45% 0% 3%;
   text-align: center;
-}
-html body .game .gamebox ul.slot_select li a div {
-  box-shadow: none;
 }
 html body .game .bg {
   width: 100%;

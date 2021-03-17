@@ -106,9 +106,10 @@ html {
                     height: 100%;
                     li {
                         width: 100%;
-                        height: 18%;
+                        height: auto;
                         position: relative;
-                        text-align: center;
+                        text-align: left;
+                        padding: 4% 0px 8%;
                         &::before {
                             content: "";
                             position: absolute;
@@ -130,6 +131,9 @@ html {
                             padding-bottom: 6%;
                             background: url('../images/game_icon/slot/slot_innerlogo.png') no-repeat;
                             background-size: 500%;
+                        }
+                        &:nth-of-type(1) {
+                            padding: 0px;
                         }
                         &:nth-of-type(3) {
                             &::after {
@@ -277,12 +281,13 @@ html {
                         }
                         //機台
                         a {
-                            display: block;
-                            width: 150px;
-                            height: 150px;
-                            margin: 2% 1.5% 0%;
+                            display: inline-block;
+                            width: 120px;
+                            height: 120px;
                             position: relative;
-                            float: left;
+                            text-align: center;
+                            background-size: 100%;
+                            margin: 0px 2%;
                             /*for IE 9*/
                             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                                 &.turn {
@@ -296,32 +301,68 @@ html {
                                     filter: brightness(0.3);
                                     transform: scale(1.3);
                                 }
+                            }  
+                            &.longStyle {
+                                margin: 0px 1%;
+                                width: 177px;
+                                height: 115px;
+
+                                &:nth-of-type(1) {
+                                    margin-left: 3.5%;
+                                }
+                            }      
+                            &:nth-of-type(1) {
+                                margin-left: 5%;
                             }
                             div {
                                 width: 100%;
                                 height: 100%;
-                                background-size: 100%;
                                 transition: all 0.2s;
                                 position: absolute;
+                                box-shadow: 0px 2px 8px 0px #000;
                                 left: 0px;
                                 top: 0px;
                                 &.slot_innimg1 {
                                     background: url('../images/game_icon/slot/slot_mainimg1.png') no-repeat;
+                                    background-size: 100%;
                                 }
                                 &.slot_innimg2 {
                                     background: url('../images/game_icon/slot/slot_mainimg2.png') no-repeat;
+                                    background-size: 100%;
                                 }
                                 &.slot_innimg3 {
                                     background: url('../images/game_icon/slot/slot_mainimg3.png') no-repeat;
+                                    background-size: 100%;
                                 }
                                 &.slot_innimg4 {
                                     background: url('../images/game_icon/slot/slot_mainimg4.png') no-repeat;
+                                    background-size: 100%;
                                 }
                                 &.slot_innimg5 {
                                     background: url('../images/game_icon/slot/slot_mainimg5.png') no-repeat;
+                                    background-size: 100%;
                                 }
                                 &.slot_innimg6 {
                                     background: url('../images/game_icon/slot/slot_mainimg6.png') no-repeat;
+                                    background-size: 100%;
+                                }
+                                //方形
+                                &.slot_innimg7 {
+                                    background: url('../images/game_icon/slot/slot_mainimg7.png') no-repeat;
+                                    background-size: 100%;
+                                }
+                                &.slot_innimg8 {
+                                    background: url('../images/game_icon/slot/slot_mainimg8.png') no-repeat;
+                                    background-size: 100%;
+                                }
+                                //長方形
+                                &.slot_innimg9 {
+                                    background: url('../images/game_icon/slot/slot_mainimg9.png') no-repeat;
+                                    background-size: 100%;
+                                }
+                                &.slot_innimg10 {
+                                    background: url('../images/game_icon/slot/slot_mainimg10.png') no-repeat;
+                                    background-size: 100%;
                                 }
                             }
                             button {
@@ -357,7 +398,6 @@ html {
                         } 
                         //more
                         .morebtn {
-                            float: left;
                             width: 65px;
                             height: 65px;
                             border-radius: 40px;
@@ -368,8 +408,10 @@ html {
                             font-weight: bold;
                             padding-bottom: 15px;
                             font-size: 16px;
-                            position: relative;
-                            margin-top: 85px;
+                            position: absolute;
+                            top: 44%;
+                            right: 4%;
+                            transform: translateY(-50%);
                             box-shadow: 0px 4px 7px 0px rgba(2,0,29,.48);
                             &:hover,&:active,&.active {
                                 background: linear-gradient(to right, #ff3a6d 0%, #ff8f22 100%);
@@ -412,6 +454,7 @@ html {
                             height: 665px;
                             overflow-x: hidden;
                             overflow-y: auto;
+                            padding: 0px;
                             &::before {
                                 display: none;
                             }

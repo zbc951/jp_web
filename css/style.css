@@ -2524,6 +2524,7 @@ html body .game .gamebox ul.slot_select li a {
   display: inline-block;
   margin: 5% 0.45% 0% 3%;
   text-align: center;
+  box-shadow: none;
 }
 html body .game .bg {
   width: 100%;

@@ -561,6 +561,7 @@ html {
                     z-index: 2;
                 }
                 marquee {
+                    height: 16px;
                     background: #eefff5;
                     padding: 10px 0px;
                     border: solid 2px #ff7095;
@@ -811,6 +812,16 @@ html {
                                 right: 11%;
                                 top: 20%;
                             }
+                            //暫放圖
+                            .img1_3 {
+                                width: 60%;
+                                height: 100%;
+                                background: url('../images/index/down_img1_3.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                right: 2%;
+                                top: 9%;
+                            }
                             //彩票字
                             .word1 {
                                 width: 31%;
@@ -826,6 +837,17 @@ html {
                                 width: 54%;
                                 height: 20%;
                                 background: url('../images/word/down_word1_2.png') no-repeat;
+                                background-size: 100%;
+                                position: absolute;
+                                left: 11%;
+                                top: 40%;
+                                z-index: 1;
+                            }
+                            //暫放字
+                            .word1_3 {
+                                width: 54%;
+                                height: 20%;
+                                background: url('../images/word/down_word1_3.png') no-repeat;
                                 background-size: 100%;
                                 position: absolute;
                                 left: 11%;
@@ -882,6 +904,24 @@ html {
                                 z-index: 2;
                             }
                         }
+                        .snap {
+                            position: absolute;
+                            background: linear-gradient(to right,#00eed6,#009888);
+                            width: 29%;
+                            height: 0px;
+                            padding-bottom: 20.6%;
+                            left: 28.42%;
+                            bottom: -69%;
+                            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                display: none;
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                display: none;
+                            }
+                        }
                     }
                     //外框
                     .imgbox {
@@ -906,6 +946,14 @@ html {
                             .btnshadow {
                                 display: block;
                                 animation: innershadow 0.5s ease-out 0s;
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    display: none;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    display: none;
+                                }
                             }
                         }
                         &.hover_pub {
@@ -985,9 +1033,9 @@ html {
                                     transform: rotate(-38deg);
                                 }
                                 &:nth-of-type(3) {
-                                    animation: innerimg_lot 0.5s ease-in-out 0s;
-                                    top: 5%;
-                                    right: 5%;
+                                    animation: innerimg_snap 0.5s ease-in-out 0s;
+                                    top: -10%;
+                                    right: 0%;
                                     transform: rotate(30deg);
                                 }
                             }
@@ -1154,11 +1202,55 @@ html {
             .partner {
                 width: 100%;
                 height: 100px;
-                border-style: solid;
-                border-color: #fff;
-                border-width: 2px 0px 1px 0px;
                 background: linear-gradient(to left, #05aa99 0%, #083b2b 100%);
                 background-color: #083b2b;
+                &.payment {
+                    background: linear-gradient(to right, #05aa99 0%, #70c1b9 100%);
+                    ul {
+                        li {
+                            width: 133px;
+                            height: 47px;
+                            margin-top: 22px;
+                            background: url('../images/index/partnerImg2.png') no-repeat;
+                            &.turn {
+                                background-position-y: -47px;
+                            }
+                            &:nth-of-type(2) {
+                                background-position-x: -133px;
+                            }
+                            &:nth-of-type(3) {
+                                background-position-x: -266px;
+                            }
+                            &:nth-of-type(4) {
+                                background-position-x: -399px;
+                            }
+                            &:nth-of-type(5) {
+                                background-position-x: -532px;
+                            }
+                            &:nth-of-type(6) {
+                                background-position-x: -665px;
+                            }
+                            &:nth-of-type(7) {
+                                background-position-x: -798px;
+                            }
+                            &:nth-of-type(8) {
+                                background-position-x: -931px;
+                            }
+                            &:nth-of-type(9) {
+                                background-position-x: -1064px;
+                            }
+                            &:nth-of-type(10) {
+                                background-position-x: -1197px;
+                            }
+                            &:nth-of-type(11) {
+                                background-position-x: -1330px;
+                            }
+                            &:nth-of-type(12) {
+                                background-position-x: -1463px;
+                            }
+                        }
+                    }
+                }
                 ul {
                     text-align: center;
                     font-size: 0px;
@@ -1710,6 +1802,28 @@ html {
     60% {
         top: 5%;
         right: 5%;
+        transform: scale(1.2) rotate(30deg);
+    }
+}
+@keyframes innerimg_snap {
+    0% {
+        transform: scale(1);
+        right: 15%;
+        top: 15%;
+    }
+    20% {
+        transform: scale(0.6) rotate(-10deg);
+        right: 20%;
+        top: 30%;
+    }
+    40% {
+        right: 5%;
+        top: 5%;
+        transform: scale(0.8) rotate(30deg);
+    }
+    60% {
+        top: -10%;
+        right: 0%;
         transform: scale(1.2) rotate(30deg);
     }
 }

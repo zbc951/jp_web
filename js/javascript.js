@@ -132,34 +132,85 @@ $(function(){
 $(function(){
 	var partnerAni = function(){
 		setTimeout(function(){
-			$('.partner li:nth-of-type(1)').addClass('turn');
-			$('.partner li:nth-of-type(5)').removeClass('turn');
+			$('.gaming li:nth-of-type(1)').addClass('turn');
+			$('.gaming li:nth-of-type(5)').removeClass('turn');
 		},0)
 		setTimeout(function(){
-			$('.partner li:nth-of-type(2)').addClass('turn');
-			$('.partner li:nth-of-type(1)').removeClass('turn');
+			$('.gaming li:nth-of-type(2)').addClass('turn');
+			$('.gaming li:nth-of-type(1)').removeClass('turn');
 		},1500)
 		setTimeout(function(){
-			$('.partner li:nth-of-type(3)').addClass('turn');
-			$('.partner li:nth-of-type(2)').removeClass('turn');
+			$('.gaming li:nth-of-type(3)').addClass('turn');
+			$('.gaming li:nth-of-type(2)').removeClass('turn');
 		},3000)
 		setTimeout(function(){
-			$('.partner li:nth-of-type(3)').addClass('turn');
-			$('.partner li:nth-of-type(2)').removeClass('turn');
-		},3000)
-		setTimeout(function(){
-			$('.partner li:nth-of-type(4)').addClass('turn');
-			$('.partner li:nth-of-type(3)').removeClass('turn');
+			$('.gaming li:nth-of-type(4)').addClass('turn');
+			$('.gaming li:nth-of-type(3)').removeClass('turn');
 		},4500)
 		setTimeout(function(){
-			$('.partner li:nth-of-type(5)').addClass('turn');
-			$('.partner li:nth-of-type(4)').removeClass('turn');
+			$('.gaming li:nth-of-type(5)').addClass('turn');
+			$('.gaming li:nth-of-type(4)').removeClass('turn');
 		},6000)
 		setTimeout(function(){
 			partnerAni();
 		},7500)
 	}
 	partnerAni();
+
+	var partnerAni2 = function(){
+		setTimeout(function(){
+			$('.payment li:nth-of-type(1)').addClass('turn');
+			$('.payment li:nth-of-type(12)').removeClass('turn');
+		},0)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(2)').addClass('turn');
+			$('.payment li:nth-of-type(1)').removeClass('turn');
+		},1500)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(3)').addClass('turn');
+			$('.payment li:nth-of-type(2)').removeClass('turn');
+		},3000)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(4)').addClass('turn');
+			$('.payment li:nth-of-type(3)').removeClass('turn');
+		},4500)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(5)').addClass('turn');
+			$('.payment li:nth-of-type(4)').removeClass('turn');
+		},6000)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(6)').addClass('turn');
+			$('.payment li:nth-of-type(5)').removeClass('turn');
+		},7500)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(7)').addClass('turn');
+			$('.payment li:nth-of-type(6)').removeClass('turn');
+		},9000)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(8)').addClass('turn');
+			$('.payment li:nth-of-type(7)').removeClass('turn');
+		},10500)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(9)').addClass('turn');
+			$('.payment li:nth-of-type(8)').removeClass('turn');
+		},12000)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(10)').addClass('turn');
+			$('.payment li:nth-of-type(9)').removeClass('turn');
+		},13500)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(11)').addClass('turn');
+			$('.payment li:nth-of-type(10)').removeClass('turn');
+		},15000)
+		setTimeout(function(){
+			$('.payment li:nth-of-type(12)').addClass('turn');
+			$('.payment li:nth-of-type(11)').removeClass('turn');
+		},16500)
+		setTimeout(function(){
+			partnerAni2();
+		},18000)
+	}
+	partnerAni2();
 })
 //回到頂端按鈕
 $(function(){

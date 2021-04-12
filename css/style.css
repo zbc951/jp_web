@@ -125,7 +125,7 @@ html body header .top .lang {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang::before {
     display: none;
   }
@@ -165,7 +165,7 @@ html body header .top .lang select {
     width: 120px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .lang select {
     width: 120px;
   }
@@ -192,7 +192,7 @@ html body header .top .account li {
     line-height: 15px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .account li {
     line-height: 15px;
   }
@@ -231,7 +231,7 @@ html body header .top .account li button {
     margin-top: 11px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .account li button {
     padding: 5px 6px;
     margin-top: 11px;
@@ -277,7 +277,7 @@ html body header .top .loginstyle li {
     margin-top: 13px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li {
     line-height: 15px;
     margin-top: 13px;
@@ -306,7 +306,7 @@ html body header .top .loginstyle li.list::before {
     right: 10px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.list::before {
     display: none;
   }
@@ -335,7 +335,7 @@ html body header .top .loginstyle li.list select {
     width: 45px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.list select {
     width: 45px;
   }
@@ -360,7 +360,7 @@ html body header .top .loginstyle li.depositbtn a, html body header .top .logins
     line-height: 18px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .top .loginstyle li.depositbtn a, html body header .top .loginstyle li.transbtn a, html body header .top .loginstyle li.withdrawbtn a {
     padding: 4px 8px 6px;
     line-height: 18px;
@@ -466,7 +466,7 @@ html body header .smallbtnbox .smallbtn {
   background-size: 600%;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header .smallbtnbox .smallbtn:hover, html body header .smallbtnbox .smallbtn:active, html body header .smallbtnbox .smallbtn.active {
     transform: scale(1.2);
   }
@@ -617,7 +617,7 @@ html body main .marqueebox {
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .marqueebox::before {
     display: none;
   }
@@ -634,6 +634,7 @@ html body main .marqueebox::before {
   z-index: 2;
 }
 html body main .marqueebox marquee {
+  height: 16px;
   background: #eefff5;
   padding: 10px 0px;
   border: solid 2px #ff7095;
@@ -648,7 +649,7 @@ html body main .marqueebox marquee {
     border-color: #ff7095 #ff7095 #ff7095 transparent;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .marqueebox marquee {
     border-color: #ff7095 #ff7095 #ff7095 transparent;
   }
@@ -870,6 +871,15 @@ html body main .mainbox .up.down .imgbox .img1_2, html body main .mainbox .down.
   right: 11%;
   top: 20%;
 }
+html body main .mainbox .up.down .imgbox .img1_3, html body main .mainbox .down.down .imgbox .img1_3 {
+  width: 60%;
+  height: 100%;
+  background: url("../images/index/down_img1_3.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  right: 2%;
+  top: 9%;
+}
 html body main .mainbox .up.down .imgbox .word1, html body main .mainbox .down.down .imgbox .word1 {
   width: 31%;
   height: 30%;
@@ -883,6 +893,16 @@ html body main .mainbox .up.down .imgbox .word1_2, html body main .mainbox .down
   width: 54%;
   height: 20%;
   background: url("../images/word/down_word1_2.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  left: 11%;
+  top: 40%;
+  z-index: 1;
+}
+html body main .mainbox .up.down .imgbox .word1_3, html body main .mainbox .down.down .imgbox .word1_3 {
+  width: 54%;
+  height: 20%;
+  background: url("../images/word/down_word1_3.png") no-repeat;
   background-size: 100%;
   position: absolute;
   left: 11%;
@@ -936,6 +956,29 @@ html body main .mainbox .up.down .imgbox .word3, html body main .mainbox .down.d
   top: 41%;
   z-index: 2;
 }
+html body main .mainbox .up.down .snap, html body main .mainbox .down.down .snap {
+  position: absolute;
+  background: linear-gradient(to right, #00eed6, #009888);
+  width: 29%;
+  height: 0px;
+  padding-bottom: 20.6%;
+  left: 28.42%;
+  bottom: -69%;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body main .mainbox .up.down .snap, html body main .mainbox .down.down .snap {
+    display: none;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body main .mainbox .up.down .snap, html body main .mainbox .down.down .snap {
+    display: none;
+  }
+}
 html body main .mainbox .up .imgbox, html body main .mainbox .down .imgbox {
   display: block;
   width: 28.59%;
@@ -958,6 +1001,18 @@ html body main .mainbox .up .imgbox.hover .imgbtn1, html body main .mainbox .up 
 html body main .mainbox .up .imgbox.hover .btnshadow, html body main .mainbox .down .imgbox.hover .btnshadow {
   display: block;
   animation: innershadow 0.5s ease-out 0s;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body main .mainbox .up .imgbox.hover .btnshadow, html body main .mainbox .down .imgbox.hover .btnshadow {
+    display: none;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body main .mainbox .up .imgbox.hover .btnshadow, html body main .mainbox .down .imgbox.hover .btnshadow {
+    display: none;
+  }
 }
 html body main .mainbox .up .imgbox.hover_pub div:nth-of-type(2), html body main .mainbox .down .imgbox.hover_pub div:nth-of-type(2) {
   animation: innerword 0.5s ease-in-out 0s;
@@ -1022,9 +1077,9 @@ html body main .mainbox .up .imgbox.hover_lot div:nth-of-type(2), html body main
   transform: rotate(-38deg);
 }
 html body main .mainbox .up .imgbox.hover_lot div:nth-of-type(3), html body main .mainbox .down .imgbox.hover_lot div:nth-of-type(3) {
-  animation: innerimg_lot 0.5s ease-in-out 0s;
-  top: 5%;
-  right: 5%;
+  animation: innerimg_snap 0.5s ease-in-out 0s;
+  top: -10%;
+  right: 0%;
   transform: rotate(30deg);
 }
 html body main .mainbox .up .imgbox.hover_shark .imgbg, html body main .mainbox .down .imgbox.hover_shark .imgbg {
@@ -1092,7 +1147,7 @@ html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .mainbox .up .imgbox .mask, html body main .mainbox .down .imgbox .mask {
     display: none;
   }
@@ -1172,7 +1227,7 @@ html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
     padding-bottom: 30%;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body main .mainbox .up .imgbox a, html body main .mainbox .down .imgbox a {
     width: 55%;
     padding-bottom: 30%;
@@ -1185,11 +1240,53 @@ html body footer {
 html body footer .partner {
   width: 100%;
   height: 100px;
-  border-style: solid;
-  border-color: #fff;
-  border-width: 2px 0px 1px 0px;
   background: linear-gradient(to left, #05aa99 0%, #083b2b 100%);
   background-color: #083b2b;
+}
+html body footer .partner.payment {
+  background: linear-gradient(to right, #05aa99 0%, #70c1b9 100%);
+}
+html body footer .partner.payment ul li {
+  width: 133px;
+  height: 47px;
+  margin-top: 22px;
+  background: url("../images/index/partnerImg2.png") no-repeat;
+}
+html body footer .partner.payment ul li.turn {
+  background-position-y: -47px;
+}
+html body footer .partner.payment ul li:nth-of-type(2) {
+  background-position-x: -133px;
+}
+html body footer .partner.payment ul li:nth-of-type(3) {
+  background-position-x: -266px;
+}
+html body footer .partner.payment ul li:nth-of-type(4) {
+  background-position-x: -399px;
+}
+html body footer .partner.payment ul li:nth-of-type(5) {
+  background-position-x: -532px;
+}
+html body footer .partner.payment ul li:nth-of-type(6) {
+  background-position-x: -665px;
+}
+html body footer .partner.payment ul li:nth-of-type(7) {
+  background-position-x: -798px;
+}
+html body footer .partner.payment ul li:nth-of-type(8) {
+  background-position-x: -931px;
+}
+html body footer .partner.payment ul li:nth-of-type(9) {
+  background-position-x: -1064px;
+}
+html body footer .partner.payment ul li:nth-of-type(10) {
+  background-position-x: -1197px;
+}
+html body footer .partner.payment ul li:nth-of-type(11) {
+  background-position-x: -1330px;
+}
+html body footer .partner.payment ul li:nth-of-type(12) {
+  background-position-x: -1463px;
 }
 html body footer .partner ul {
   text-align: center;
@@ -1731,6 +1828,28 @@ html body .jumpbox .noacc .cancelbtn:hover, html body .jumpbox .noacc .cancelbtn
     transform: scale(1.2) rotate(30deg);
   }
 }
+@keyframes innerimg_snap {
+  0% {
+    transform: scale(1);
+    right: 15%;
+    top: 15%;
+  }
+  20% {
+    transform: scale(0.6) rotate(-10deg);
+    right: 20%;
+    top: 30%;
+  }
+  40% {
+    right: 5%;
+    top: 5%;
+    transform: scale(0.8) rotate(30deg);
+  }
+  60% {
+    top: -10%;
+    right: 0%;
+    transform: scale(1.2) rotate(30deg);
+  }
+}
 @keyframes innerimg_shark {
   0% {
     transform: scale(1);
@@ -1916,7 +2035,7 @@ html body .signup .signupbox .inputbox .checkbtn {
     padding: 6px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .signup .signupbox .inputbox .checkbtn {
     padding: 6px;
   }
@@ -2182,7 +2301,7 @@ html body .game .gamebox ul li.searchline .rebtn:hover, html body .game .gamebox
     padding: 5px 3px 5px 20px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn:hover, html body .game .gamebox ul li.searchline .rebtn:active, html body .game .gamebox ul li.searchline .rebtn.active {
     padding: 5px 3px 5px 20px;
   }
@@ -2199,7 +2318,7 @@ html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game 
     left: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn:hover::before, html body .game .gamebox ul li.searchline .rebtn:active::before, html body .game .gamebox ul li.searchline .rebtn.active::before {
     animation: none;
     left: 0px;
@@ -2222,7 +2341,7 @@ html body .game .gamebox ul li.searchline .rebtn::before {
     left: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li.searchline .rebtn {
     padding: 1px 1px 1px 20px;
   }
@@ -2254,7 +2373,7 @@ html body .game .gamebox ul li a {
   margin: 0px 2%;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox ul li a.turn div {
     transform: scale(1.3);
   }
@@ -2796,7 +2915,7 @@ html body .game .gamebox.fish ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.fish ul li a.turn div {
     transform: scale(1.2);
   }
@@ -2992,7 +3111,7 @@ html body .game .gamebox.sport ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.sport ul li a.turn div {
     transform: scale(1.2);
   }
@@ -3167,7 +3286,7 @@ html body .game .gamebox.poker ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.poker ul li a.turn div {
     transform: scale(1.2);
   }
@@ -3285,7 +3404,7 @@ html body .game .gamebox.lottery ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.lottery ul li a.turn div {
     transform: scale(1.2);
   }
@@ -3397,7 +3516,7 @@ html body .game .gamebox.live ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.live ul li a.turn div {
     transform: scale(1.2);
   }
@@ -4026,7 +4145,7 @@ html body .innerPage article .mid.walletWindow .topWindow .innerbox table button
     padding-left: 10px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.walletWindow .topWindow .innerbox table button {
     padding-left: 10px;
   }
@@ -4228,7 +4347,7 @@ html body .innerPage article .rightside .askbtn, html body .innerPage article .f
     padding: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .rightside .askbtn, html body .innerPage article .fixside .askbtn {
     padding: 0px;
   }
@@ -4242,7 +4361,7 @@ html body .innerPage article .rightside .askbtn:hover, html body .innerPage arti
     background-color: #2ea8a2;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .rightside .askbtn:hover, html body .innerPage article .rightside .askbtn:active, html body .innerPage article .rightside .askbtn.active, html body .innerPage article .fixside .askbtn:hover, html body .innerPage article .fixside .askbtn:active, html body .innerPage article .fixside .askbtn.active {
     background-color: #2ea8a2;
   }
@@ -4370,7 +4489,7 @@ html body .innerPage article .fixside .windowBtn span {
     margin-top: -15px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .fixside .windowBtn span {
     margin-top: -15px;
   }
@@ -4538,7 +4657,7 @@ html body .innerPage .bg {
   border-color: #29fff6 transparent transparent transparent;
   pointer-events: none;
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox::before {
     display: none;
   }
@@ -4566,7 +4685,7 @@ html body .innerPage .bg {
   background: url("../images/discount/present_calc.png") no-repeat;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .calc {
     display: none;
   }
@@ -4598,7 +4717,7 @@ html body .innerPage .bg {
     padding-top: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .datebtn button:nth-of-type(2) {
     padding-top: 0px;
   }
@@ -4608,7 +4727,7 @@ html body .innerPage .bg {
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .selectBox .datebtn button {
     line-height: 0px;
   }
@@ -4689,7 +4808,7 @@ html body .innerPage .bg {
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   .greenBtn {
     line-height: 0px;
   }
@@ -4863,7 +4982,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:hover, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn:active, html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -4906,7 +5025,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     margin-bottom: 50px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox {
     margin-bottom: 50px;
   }
@@ -4940,7 +5059,7 @@ html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor
     line-height: 0px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.memberWindow .bottomWindow .separateBox .infor .flowWindow .inputbox button {
     line-height: 0px;
   }
@@ -5086,7 +5205,7 @@ html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover, html 
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:hover, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn:active, html body .innerPage article .mid.cardWindow .bottomWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -5173,7 +5292,7 @@ html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:hover, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn:active, html body .innerPage article .mid.presentWindow .topWindow .separateBox .goods .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -5682,7 +5801,7 @@ html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .se
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:hover, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn:active, html body .innerPage article .mid.dealWindow .topWindow .separateBox .record .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -5819,7 +5938,7 @@ html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:h
     border-color: #f56684;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:hover, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn:active, html body .innerPage article .mid.bettingWindow .topWindow .selectBox .savebtn.active {
     background-color: #b5203f;
     border-color: #f56684;
@@ -6083,7 +6202,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
     padding-right: 26px;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .barbox span.down {
     padding-right: 26px;
   }
@@ -6108,7 +6227,7 @@ html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover, h
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:hover, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn:active, html body .innerPage article .mid.vipWindow .topWindow .barbox .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -6166,7 +6285,7 @@ html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover, h
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.vipWindow .topWindow .innerbox button:hover, html body .innerPage article .mid.vipWindow .topWindow .innerbox button:active, html body .innerPage article .mid.vipWindow .topWindow .innerbox button.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -6253,7 +6372,7 @@ html body .innerPage article .mid.transWindow .topWindow .selectbox {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.transWindow .topWindow .selectbox::before {
     display: none;
   }
@@ -6307,7 +6426,7 @@ html body .innerPage article .mid.transWindow .topWindow .savebtn:hover, html bo
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.transWindow .topWindow .savebtn:hover, html body .innerPage article .mid.transWindow .topWindow .savebtn:active, html body .innerPage article .mid.transWindow .topWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -6565,7 +6684,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .selectbox {
   position: relative;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.withdrawWindow .topWindow .selectbox::before {
     display: none;
   }
@@ -6636,7 +6755,7 @@ html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover, html
     background-color: #b5203f;
   }
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:hover, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn:active, html body .innerPage article .mid.withdrawWindow .topWindow .savebtn.active {
     border-color: #f56684;
     background-color: #b5203f;
@@ -7034,7 +7153,7 @@ html body .game .gamebox.boat ul li a {
   float: none;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .game .gamebox.boat ul li a.turn div {
     transform: scale(1.2);
   }

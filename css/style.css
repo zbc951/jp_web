@@ -1245,48 +1245,19 @@ html body footer .partner {
 }
 html body footer .partner.payment {
   background: linear-gradient(to right, #05aa99 0%, #70c1b9 100%);
+  text-align: center;
+  position: relative;
 }
-html body footer .partner.payment ul li {
-  width: 133px;
-  height: 47px;
-  margin-top: 22px;
-  background: url("../images/index/partnerImg2.png") no-repeat;
-}
-html body footer .partner.payment ul li.turn {
-  background-position-y: -47px;
-}
-html body footer .partner.payment ul li:nth-of-type(2) {
-  background-position-x: -133px;
-}
-html body footer .partner.payment ul li:nth-of-type(3) {
-  background-position-x: -266px;
-}
-html body footer .partner.payment ul li:nth-of-type(4) {
-  background-position-x: -399px;
-}
-html body footer .partner.payment ul li:nth-of-type(5) {
-  background-position-x: -532px;
-}
-html body footer .partner.payment ul li:nth-of-type(6) {
-  background-position-x: -665px;
-}
-html body footer .partner.payment ul li:nth-of-type(7) {
-  background-position-x: -798px;
-}
-html body footer .partner.payment ul li:nth-of-type(8) {
-  background-position-x: -931px;
-}
-html body footer .partner.payment ul li:nth-of-type(9) {
-  background-position-x: -1064px;
-}
-html body footer .partner.payment ul li:nth-of-type(10) {
-  background-position-x: -1197px;
-}
-html body footer .partner.payment ul li:nth-of-type(11) {
-  background-position-x: -1330px;
-}
-html body footer .partner.payment ul li:nth-of-type(12) {
-  background-position-x: -1463px;
+html body footer .partner.payment div {
+  width: 90%;
+  height: 0px;
+  padding-bottom: 3%;
+  background: url("../images/index/partnerImg3.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 html body footer .partner ul {
   text-align: center;

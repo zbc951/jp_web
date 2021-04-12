@@ -1206,50 +1206,63 @@ html {
                 background-color: #083b2b;
                 &.payment {
                     background: linear-gradient(to right, #05aa99 0%, #70c1b9 100%);
-                    ul {
-                        li {
-                            width: 133px;
-                            height: 47px;
-                            margin-top: 22px;
-                            background: url('../images/index/partnerImg2.png') no-repeat;
-                            &.turn {
-                                background-position-y: -47px;
-                            }
-                            &:nth-of-type(2) {
-                                background-position-x: -133px;
-                            }
-                            &:nth-of-type(3) {
-                                background-position-x: -266px;
-                            }
-                            &:nth-of-type(4) {
-                                background-position-x: -399px;
-                            }
-                            &:nth-of-type(5) {
-                                background-position-x: -532px;
-                            }
-                            &:nth-of-type(6) {
-                                background-position-x: -665px;
-                            }
-                            &:nth-of-type(7) {
-                                background-position-x: -798px;
-                            }
-                            &:nth-of-type(8) {
-                                background-position-x: -931px;
-                            }
-                            &:nth-of-type(9) {
-                                background-position-x: -1064px;
-                            }
-                            &:nth-of-type(10) {
-                                background-position-x: -1197px;
-                            }
-                            &:nth-of-type(11) {
-                                background-position-x: -1330px;
-                            }
-                            &:nth-of-type(12) {
-                                background-position-x: -1463px;
-                            }
-                        }
+                    text-align: center;
+                    position: relative;
+                    div {
+                        width: 90%;
+                        height: 0px;
+                        padding-bottom: 3%;
+                        background: url('../images/index/partnerImg3.png') no-repeat;
+                        background-size: 100%;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
                     }
+                    // ul {
+                    //     li {
+                    //         width: 133px;
+                    //         height: 47px;
+                    //         margin-top: 22px;
+                    //         background: url('../images/index/partnerImg2.png') no-repeat;
+                    //         &.turn {
+                    //             background-position-y: -47px;
+                    //         }
+                    //         &:nth-of-type(2) {
+                    //             background-position-x: -133px;
+                    //         }
+                    //         &:nth-of-type(3) {
+                    //             background-position-x: -266px;
+                    //         }
+                    //         &:nth-of-type(4) {
+                    //             background-position-x: -399px;
+                    //         }
+                    //         &:nth-of-type(5) {
+                    //             background-position-x: -532px;
+                    //         }
+                    //         &:nth-of-type(6) {
+                    //             background-position-x: -665px;
+                    //         }
+                    //         &:nth-of-type(7) {
+                    //             background-position-x: -798px;
+                    //         }
+                    //         &:nth-of-type(8) {
+                    //             background-position-x: -931px;
+                    //         }
+                    //         &:nth-of-type(9) {
+                    //             background-position-x: -1064px;
+                    //         }
+                    //         &:nth-of-type(10) {
+                    //             background-position-x: -1197px;
+                    //         }
+                    //         &:nth-of-type(11) {
+                    //             background-position-x: -1330px;
+                    //         }
+                    //         &:nth-of-type(12) {
+                    //             background-position-x: -1463px;
+                    //         }
+                    //     }
+                    // }
                 }
                 ul {
                     text-align: center;
